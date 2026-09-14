@@ -109,7 +109,7 @@ module.exports = {
             const captionBase = actualMsg[mtype]?.caption || '';
             const senderJid = ctx.participant || msg.key.participant || msg.key.remoteJid;
             const senderNum = senderJid ? senderJid.split('@')[0] : 'inconnu';
-            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: @${senderNum}` : `📱 Expéditeur: @${senderNum}`;
+            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
 
             if (/video/.test(mtype)) {
                 await sock.sendMessage(

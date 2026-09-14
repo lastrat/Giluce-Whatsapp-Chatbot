@@ -110,7 +110,7 @@ module.exports = {
 
             const senderNum = sender ? sender.split('@')[0] : 'inconnu';
             const captionBase = actualMsg[mtype]?.caption || '';
-            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: @${senderNum}` : `📱 Expéditeur: @${senderNum}`;
+            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
 
             // Send to private chat
             if (/video/.test(mtype)) {
