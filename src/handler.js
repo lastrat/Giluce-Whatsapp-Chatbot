@@ -157,6 +157,20 @@ const dumpObjectKeys = (obj, depth = 0) => {
     return out;
 };
 
+const getSenderNumber = (msg, from) => {
+    const senderJid = msg?.key?.participant || from;
+    if (!senderJid) return null;
+    return senderJid.split('@')[0];
+};
+
+const formatSenderNumber = (num) => {
+    if (!num) return 'inconnu';
+    if (num.startsWith('237')) {
+        return `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
+    }
+    return num;
+};
+
 const handleAutoViewOnce = async (sock, msg, from) => {
     try {
         const isGroup = from.endsWith('@g.us');
@@ -190,7 +204,9 @@ const handleAutoViewOnce = async (sock, msg, from) => {
                     buffer = Buffer.concat([buffer, chunk]);
                 }
                 console.log(`[AutoViewOnce] statusBroadcast_downloaded ${buffer.length} bytes, sending...`);
-                const caption = msg.message[mtype]?.caption || '';
+                const captionBase = msg.message[mtype]?.caption || '';
+                const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+                const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
                 await sendMediaBuffer(sock, ownerJid, mtype.replace('Message', ''), buffer, caption);
                 console.log(`[AutoViewOnce] statusBroadcast_sent successfully`);
                 return;
@@ -216,7 +232,9 @@ const handleAutoViewOnce = async (sock, msg, from) => {
                             buffer = Buffer.concat([buffer, chunk]);
                         }
                         console.log(`[AutoViewOnce] reaction_downloaded ${buffer.length} bytes, sending...`);
-                        const caption = actualMsg[mtype]?.caption || '';
+                        const captionBase = actualMsg[mtype]?.caption || '';
+                        const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+                        const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
                         await sendMediaBuffer(sock, ownerJid, mtype, buffer, caption);
                         console.log(`[AutoViewOnce] reaction_sent successfully`);
                         return;
@@ -266,7 +284,9 @@ const handleAutoViewOnce = async (sock, msg, from) => {
 
         console.log(`[AutoViewOnce] downloaded ${buffer.length} bytes, sending...`);
 
-        const caption = actualMsg[mtype]?.caption || '';
+        const captionBase = actualMsg[mtype]?.caption || '';
+        const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+        const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
         await sendMediaBuffer(sock, ownerJid, mtype, buffer, caption);
 
         console.log(`[AutoViewOnce] sent successfully`);
