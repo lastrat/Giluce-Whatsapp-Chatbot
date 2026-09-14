@@ -2,6 +2,7 @@
  * ViewOnce Private Command - Reveal view-once messages to private chat
  */
 
+const config = require('../../config');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
 module.exports = {
@@ -107,7 +108,9 @@ module.exports = {
                 buffer = Buffer.concat([buffer, chunk]);
             }
 
-            const caption = actualMsg[mtype]?.caption || '';
+            const senderNum = sender ? sender.split('@')[0] : 'inconnu';
+            const captionBase = actualMsg[mtype]?.caption || '';
+            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: @${senderNum}` : `📱 Expéditeur: @${senderNum}`;
 
             // Send to private chat
             if (/video/.test(mtype)) {
@@ -115,7 +118,7 @@ module.exports = {
                     ownerJid,
                     {
                         video: buffer,
-                        caption: `📹 View-once video from ${chatId}\n\n${caption}`,
+                        caption,
                         mimetype: 'video/mp4'
                     }
                 );
@@ -124,7 +127,7 @@ module.exports = {
                     ownerJid,
                     {
                         image: buffer,
-                        caption: `🖼️ View-once image from ${chatId}\n\n${caption}`,
+                        caption,
                         mimetype: 'image/jpeg'
                     }
                 );

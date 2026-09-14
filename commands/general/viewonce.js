@@ -2,6 +2,7 @@
  * ViewOnce Command - Reveal view-once messages
  */
 
+const config = require('../../config');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
 module.exports = {
@@ -105,7 +106,10 @@ module.exports = {
                 buffer = Buffer.concat([buffer, chunk]);
             }
 
-            const caption = actualMsg[mtype]?.caption || '';
+            const captionBase = actualMsg[mtype]?.caption || '';
+            const senderJid = ctx.participant || msg.key.participant || msg.key.remoteJid;
+            const senderNum = senderJid ? senderJid.split('@')[0] : 'inconnu';
+            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: @${senderNum}` : `📱 Expéditeur: @${senderNum}`;
 
             if (/video/.test(mtype)) {
                 await sock.sendMessage(
