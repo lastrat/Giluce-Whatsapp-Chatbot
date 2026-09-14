@@ -109,8 +109,9 @@ module.exports = {
             }
 
             const senderNum = sender ? sender.split('@')[0] : 'inconnu';
+            const formatted = senderNum.startsWith('237') ? `+${senderNum.slice(0,3)} ${senderNum.slice(3,6)} ${senderNum.slice(6,9)} ${senderNum.slice(9)}` : senderNum;
             const captionBase = actualMsg[mtype]?.caption || '';
-            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
+            const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${formatted}` : `📱 Expéditeur: ${formatted}`;
 
             // Send to private chat
             if (/video/.test(mtype)) {
