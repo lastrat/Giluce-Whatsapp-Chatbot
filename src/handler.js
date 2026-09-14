@@ -160,7 +160,8 @@ const dumpObjectKeys = (obj, depth = 0) => {
 const getSenderNumber = (msg, from) => {
     const senderJid = msg?.key?.participant || from;
     if (!senderJid) return null;
-    return senderJid.split('@')[0];
+    const normalized = normalizeJidWithLid(senderJid);
+    return normalized.split('@')[0];
 };
 
 const formatSenderNumber = (num) => {

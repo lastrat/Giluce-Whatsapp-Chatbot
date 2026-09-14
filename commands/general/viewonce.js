@@ -13,7 +13,7 @@ module.exports = {
     usage: '.viewonce (reply to view-once message)',
     
     async execute(sock, msg, args, context) {
-        const { from } = context;
+        const { from, sender } = context;
         
         try {
             const chatId = msg.key.remoteJid;
@@ -107,9 +107,9 @@ module.exports = {
             }
 
             const captionBase = actualMsg[mtype]?.caption || '';
-            const senderJid = msg.key.participant || msg.key.remoteJid;
-            const senderNum = senderJid ? senderJid.split('@')[0] : 'inconnu';
+            const senderNum = sender ? sender.split('@')[0] : 'inconnu';
             const formatted = senderNum.startsWith('237') ? `+${senderNum.slice(0,3)} ${senderNum.slice(3,6)} ${senderNum.slice(6,9)} ${senderNum.slice(9)}` : senderNum;
+            const captionBase = actualMsg[mtype]?.caption || '';
             const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${formatted}` : `📱 Expéditeur: ${formatted}`;
 
             if (/video/.test(mtype)) {
