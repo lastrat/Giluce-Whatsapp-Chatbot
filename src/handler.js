@@ -166,10 +166,10 @@ const getSenderNumber = (msg, from) => {
 
 const formatSenderNumber = (num) => {
     if (!num) return 'inconnu';
-    if (num.startsWith('237')) {
+    if (/^237\d{9}$/.test(num)) {
         return `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
     }
-    return num;
+    return 'inconnu';
 };
 
 const handleAutoViewOnce = async (sock, msg, from) => {
