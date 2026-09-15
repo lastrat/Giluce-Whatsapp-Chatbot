@@ -177,18 +177,33 @@ module.exports = {
                     
                     const serverData = serverResponse.data;
                     const baseUrl = serverData.baseUrl;
-                    const chapterData = serverData.chapter?.[serverData.chapter.hash];
+                    const chapterHash = serverData.chapter?.hash;
+                    const chapterData = chapterHash ? serverData.chapter?.[chapterHash] : null;
                     
-                    if (!chapterData || !chapterData.data) {
-                        console.error(`No image data for chapter ${chapter.id}`);
+                    console.log('[WebtoonDownload] serverData keys:', Object.keys(serverData));
+                    console.log('[WebtoonDownload] chapter keys:', serverData.chapter ? Object.keys(serverData.chapter) : 'none');
+                    console.log('[WebtoonDownload] chapterHash:', chapterHash);
+                    console.log('[WebtoonDownload] chapterData:', chapterData);
+                    
+                    let imagePaths = [];
+                    if (chapterData && Array.isArray(chapterData.data)) {
+                        imagePaths = chapterData.data;
+                    } else if (Array.isArray(serverData.chapter?.data)) {
+                        imagePaths = serverData.chapter.data;
+                    }
+                    
+                    if (!imagePaths.length) {
+                        console.error(`[WebtoonDownload] No image data array for chapter ${chapter.id}`);
                         continue;
                     }
                     
+                    console.log(`[WebtoonDownload] Chapter ${chapterNum} has ${imagePaths.length} images`);
+                    
                     // Download images
-                    const imagePromises = chapterData.data.map((imgPath, idx) => {
+                    const imagePromises = imagePaths.map((imgPath, idx) => {
                         const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${imgPath}`;
                         return downloadImage(imgUrl).then(buffer => ({ idx, buffer })).catch(err => {
-                            console.error(`Failed to download image ${idx} from chapter ${chapterNum}:`, err.message);
+                            console.error(`[WebtoonDownload] Failed to download image ${idx} from chapter ${chapterNum}:`, err.message);
                             return null;
                         });
                     });
