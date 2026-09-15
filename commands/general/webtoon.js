@@ -71,8 +71,9 @@ module.exports = {
             
         } catch (error) {
             console.error('Webtoon command error:', error);
+            const detail = error.response?.data?.detail || error.message;
             await sock.sendMessage(from, { 
-                text: `❌ Failed to search webtoons: ${error.message}` 
+                text: `❌ Failed to search webtoons: ${detail}`
             });
         }
     }

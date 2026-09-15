@@ -255,7 +255,7 @@ class WebtoonAPI:
         
         async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Webtoon not found")
+                raise ValueError("Webtoon not found")
             
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
@@ -319,7 +319,7 @@ class WebtoonAPI:
         
         async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Webtoon not found")
+                raise ValueError("Webtoon not found")
             
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
@@ -376,7 +376,7 @@ class WebtoonAPI:
         
         async with session.get(api_url, timeout=aiohttp.ClientTimeout(total=30)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Webtoon not found")
+                raise ValueError("Webtoon not found")
             
             data = await response.json()
             manga = data.get("data", {})
@@ -440,7 +440,7 @@ class WebtoonAPI:
         
         async with session.get(chapter_id, timeout=aiohttp.ClientTimeout(total=60)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Chapter not found")
+                raise ValueError("Chapter not found")
             
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
@@ -476,7 +476,7 @@ class WebtoonAPI:
         
         async with session.get(chapter_id, timeout=aiohttp.ClientTimeout(total=60)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Chapter not found")
+                raise ValueError("Chapter not found")
             
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
@@ -500,7 +500,7 @@ class WebtoonAPI:
         
         async with session.get(chapter_url, timeout=aiohttp.ClientTimeout(total=30)) as response:
             if response.status != 200:
-                raise HTTPException(status_code=404, detail="Chapter not found")
+                raise ValueError("Chapter not found")
             
             data = await response.json()
             chapter = data.get("data", {})

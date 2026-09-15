@@ -127,8 +127,9 @@ module.exports = {
             
         } catch (error) {
             console.error('Webtoon download command error:', error);
+            const detail = error.response?.data?.detail || error.response?.data?.message || error.message;
             await sock.sendMessage(from, { 
-                text: `❌ Failed to download webtoon: ${error.message}` 
+                text: `❌ Failed to download webtoon: ${detail}`
             });
         }
     }

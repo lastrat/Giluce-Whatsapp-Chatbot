@@ -89,21 +89,12 @@ async def search_webtoon(request: WebtoonSearchRequest):
         api = WebtoonAPI()
         results = await api.search(request.query, request.source)
         return results
-        
-    except ImportError:
-        logger.warning("WebtoonAPI not implemented yet, returning mock data")
-        return [
-            WebtoonInfo(
-                title=f"Mock result for: {request.query}",
-                author="Unknown",
-                description="This is a placeholder. Implement WebtoonAPI for real results.",
-                cover_url=None,
-                chapters=[],
-                source=request.source
-            )
-        ]
+         
+    except ImportError as e:
+        logger.error("WebtoonAPI import failed: %s", e)
+        raise HTTPException(status_code=500, detail=f"WebtoonAPI import failed: {e}")
     except Exception as e:
-        logger.error(f"Search failed: {e}")
+        logger.error("Search failed: %s", e)
         raise HTTPException(status_code=500, detail=str(e))
 
 
