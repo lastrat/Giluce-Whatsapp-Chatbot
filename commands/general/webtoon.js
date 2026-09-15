@@ -76,9 +76,12 @@ module.exports = {
                             timeout: 20000,
                             headers: { 'User-Agent': 'Mozilla/5.0' }
                         });
+                        const imageBuffer = Buffer.from(imgResponse.data);
+                        if (!imageBuffer.length) throw new Error('Empty cover image');
                         await sock.sendMessage(from, {
-                            image: Buffer.from(imgResponse.data),
-                            caption
+                            image: imageBuffer,
+                            caption,
+                            mimetype: 'image/jpeg'
                         });
                         continue;
                     } catch (error) {
