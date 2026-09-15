@@ -51,27 +51,46 @@ module.exports = {
                 });
             }
             
-            let resultText = `📚 *Webtoon Search Results for: "${query}"*\n\n`;
+            await sock.sendMessage(from, { 
+                text: `📚 *Webtoon Search Results for: "${query}"*`
+            });
             
-            mangaList.slice(0, 5).forEach((manga, index) => {
+            for (const manga of mangaList.slice(0, 5)) {
                 const attr = manga.attributes || {};
                 const title = attr.title?.en || Object.values(attr.title || {})[0] || 'Unknown';
                 const author = (attr.author || [])[0] || 'Unknown';
                 const status = attr.status || 'Unknown';
                 const mangaId = manga.id;
+                const desc = (attr.description?.en || Object.values(attr.description || {})[0] || '')?.slice(0, 300) || '';
                 
-                resultText += `${index + 1}. *${title}*\n`;
-                resultText += `   Author: ${author}\n`;
-                resultText += `   Status: ${status}\n`;
-                resultText += `   ID: ${mangaId}\n`;
-                resultText += `\n`;
-            });
-            
-            resultText += `💡 Use .webtoon-download <manga_id> to download as PDF\n`;
-            resultText += `Example: .webtoon-download ${mangaList[0].id}`;
+                const coverRel = (manga.relationships || []).find(r => r.type === 'cover_art');
+                const coverFileName = coverRel?.attributes?.fileName;
+                const coverUrl = coverFileName ? `https://uploads.mangadex.org/covers/${mangaId}/${coverFileName}` : null;
+                
+                const caption = `*${title}*\nAuthor: ${author}\nStatus: ${status}\n${desc ? desc + '\n' : ''}ID: ${mangaId}`;
+                
+                if (coverUrl) {
+                    try {
+                        const imgResponse = await axios.get(coverUrl, {
+                            responseType: 'arraybuffer',
+                            timeout: 20000,
+                            headers: { 'User-Agent': 'Mozilla/5.0' }
+                        });
+                        await sock.sendMessage(from, {
+                            image: Buffer.from(imgResponse.data),
+                            caption
+                        });
+                        continue;
+                    } catch (error) {
+                        console.error('Cover download failed:', error.message);
+                    }
+                }
+                
+                await sock.sendMessage(from, { text: caption });
+            }
             
             await sock.sendMessage(from, { 
-                text: resultText 
+                text: `💡 Use .webtoon-download <manga_id> to download as PDF\nExample: .webtoon-download ${mangaList[0].id}`
             });
             
         } catch (error) {
