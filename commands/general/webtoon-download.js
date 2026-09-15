@@ -34,7 +34,39 @@ function downloadImage(url) {
 }
 
 // Create PDF from images
-function createPdfFromImages(images, outputPath, title) {
+async function createPdfFromImages(images, outputPath, title) {
+    const validImages = [];
+    
+    for (let i = 0; i < images.length; i++) {
+        const imgBuffer = images[i];
+        try {
+            const img = PDFDocument.Image.open ? undefined : undefined;
+            // Validate image by trying to open it
+            const testDoc = new PDFDocument({ autoFirstPage: false });
+            let imageOk = false;
+            testDoc.on('error', () => {});
+            try {
+                const imgInstance = testDoc.openImage(imgBuffer);
+                imageOk = true;
+            } catch (e) {
+                console.error(`[WebtoonDownload] Invalid image at index ${i}: ${e.message}`);
+            }
+            testDoc.destroy();
+            
+            if (imageOk) {
+                validImages.push(imgBuffer);
+            } else {
+                console.warn(`[WebtoonDownload] Skipping invalid image at index ${i}`);
+            }
+        } catch (error) {
+            console.error(`[WebtoonDownload] Error validating image ${i}:`, error.message);
+        }
+    }
+    
+    if (!validImages.length) {
+        throw new Error('No valid images for PDF generation');
+    }
+    
     return new Promise((resolve, reject) => {
         try {
             const doc = new PDFDocument({ size: 'A4', autoFirstPage: false });
@@ -45,11 +77,12 @@ function createPdfFromImages(images, outputPath, title) {
             stream.on('finish', () => resolve(outputPath));
             stream.on('error', reject);
 
-            images.forEach((imgBuffer, index) => {
+            let addedPages = 0;
+            for (let i = 0; i < validImages.length; i++) {
                 try {
-                    const img = doc.openImage(imgBuffer);
-                    const pageWidth = 595.28; // A4 width
-                    const pageHeight = 841.89; // A4 height
+                    const img = doc.openImage(validImages[i]);
+                    const pageWidth = 595.28;
+                    const pageHeight = 841.89;
                     const margin = 20;
                     
                     const availableWidth = pageWidth - (margin * 2);
@@ -68,11 +101,13 @@ function createPdfFromImages(images, outputPath, title) {
                     
                     doc.addPage({ size: [pageWidth, pageHeight] });
                     doc.image(img, margin, margin, { width: finalWidth, height: finalHeight });
+                    addedPages++;
                 } catch (err) {
-                    console.error(`Failed to add image ${index} to PDF:`, err.message);
+                    console.error(`[WebtoonDownload] Failed to add image ${i} to PDF:`, err.message);
                 }
-            });
+            }
 
+            console.log(`[WebtoonDownload] PDF pages created: ${addedPages}/${validImages.length}`);
             doc.end();
         } catch (error) {
             reject(error);
@@ -237,7 +272,15 @@ module.exports = {
             
             // Generate PDF
             const pdfPath = path.join(DOWNLOADS_DIR, `${mangaId}.pdf`);
+            console.log('[WebtoonDownload] Generating PDF with', allImages.length, 'images...');
             await createPdfFromImages(allImages, pdfPath, mangaTitle);
+            
+            const pdfStats = fs.statSync(pdfPath);
+            console.log('[WebtoonDownload] PDF created:', pdfPath, 'size:', pdfStats.size, 'bytes');
+            
+            if (pdfStats.size < 1000) {
+                throw new Error(`PDF file too small: ${pdfStats.size} bytes`);
+            }
             
             // Send PDF
             const pdfBuffer = fs.readFileSync(pdfPath);
