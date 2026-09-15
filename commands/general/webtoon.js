@@ -34,6 +34,7 @@ module.exports = {
                     title: query,
                     limit: 10,
                     'contentRating[]': ['safe', 'suggestive'],
+                    'includes[]': ['cover_art'],
                     order: { relevance: 'desc' }
                 },
                 timeout: 30000,
@@ -63,33 +64,48 @@ module.exports = {
                 const mangaId = manga.id;
                 const desc = (attr.description?.en || Object.values(attr.description || {})[0] || '')?.slice(0, 300) || '';
                 
-                const coverRel = (manga.relationships || []).find(r => r.type === 'cover_art');
-                const coverFileName = coverRel?.attributes?.fileName;
-                const coverUrl = coverFileName ? `https://uploads.mangadex.org/covers/${mangaId}/${coverFileName}` : null;
+                let coverUrl = null;
+                try {
+                    const coverRel = (manga.relationships || []).find(r => r.type === 'cover_art');
+                    const coverFileName = coverRel?.attributes?.fileName;
+                    if (coverFileName) {
+                        coverUrl = `https://uploads.mangadex.org/covers/${mangaId}/${coverFileName}`;
+                    } else {
+                        console.log('[Webtoon] Missing cover_art in relationships for', mangaId, 'rels:', (manga.relationships || []).map(r => r.type));
+                    }
+                } catch (error) {
+                    console.error('[Webtoon] Cover resolution failed for', mangaId, ':', error.message);
+                }
                 
                 const caption = `*${title}*\nAuthor: ${author}\nStatus: ${status}\n${desc ? desc + '\n' : ''}ID: ${mangaId}`;
                 
-                if (coverUrl) {
-                    try {
-                        const imgResponse = await axios.get(coverUrl, {
-                            responseType: 'arraybuffer',
-                            timeout: 20000,
-                            headers: { 'User-Agent': 'Mozilla/5.0' }
-                        });
-                        const imageBuffer = Buffer.from(imgResponse.data);
-                        if (!imageBuffer.length) throw new Error('Empty cover image');
-                        await sock.sendMessage(from, {
-                            image: imageBuffer,
-                            caption,
-                            mimetype: 'image/jpeg'
-                        });
-                        continue;
-                    } catch (error) {
-                        console.error('Cover download failed:', error.message);
-                    }
+                if (!coverUrl) {
+                    await sock.sendMessage(from, { text: caption });
+                    continue;
                 }
                 
-                await sock.sendMessage(from, { text: caption });
+                try {
+                    const imgResponse = await axios.get(coverUrl, {
+                        responseType: 'arraybuffer',
+                        timeout: 20000,
+                        headers: { 'User-Agent': 'Mozilla/5.0' }
+                    });
+                    const imageBuffer = Buffer.from(imgResponse.data);
+                    console.log('[Webtoon] Cover bytes for', title, ':', imageBuffer.length);
+                    if (!imageBuffer.length) {
+                        console.error('[Webtoon] Empty cover buffer for', title);
+                        await sock.sendMessage(from, { text: caption });
+                        continue;
+                    }
+                    await sock.sendMessage(from, {
+                        image: imageBuffer,
+                        caption
+                    });
+                    console.log('[Webtoon] Image sent for', title);
+                } catch (error) {
+                    console.error('[Webtoon] Image send failed for', title, ':', error.message);
+                    await sock.sendMessage(from, { text: caption });
+                }
             }
             
             await sock.sendMessage(from, { 
