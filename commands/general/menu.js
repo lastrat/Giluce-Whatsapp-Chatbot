@@ -42,7 +42,9 @@ module.exports = {
 │ ├ .take - Voler sticker
 │ ├ .crop - Rogner sticker
 │ ├ .attp - Sticker animé
-│ └ .igs - Sticker Instagram
+│ ├ .igs - Sticker Instagram
+│ ├ .webtoon - Rechercher webtoon
+│ └ .webtoon-download - Télécharger webtoon PDF
 │
 │ 🎨 TextMaker
 │ ├ .1917 - Style 1917

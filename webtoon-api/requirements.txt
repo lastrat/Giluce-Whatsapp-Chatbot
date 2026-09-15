@@ -1,0 +1,27 @@
+# Webtoon Downloader API Requirements
+# Install with: pip install -r requirements.txt
+
+# API Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# HTTP Clients
+aiohttp>=3.9.0
+requests>=2.31.0
+
+# HTML Parsing
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Image Processing
+Pillow>=10.1.0
+
+# PDF Generation
+reportlab>=4.0.0
+
+# Async Support
+aiofiles>=23.2.0
+
+# Utilities
+python-dotenv>=1.0.0
