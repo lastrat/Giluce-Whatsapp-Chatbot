@@ -126,7 +126,7 @@ module.exports = {
                 params: {
                     limit: 100,
                     order: { chapter: 'asc' },
-                    contentRating[]: ['safe', 'suggestive']
+                    'contentRating[]': ['safe', 'suggestive']
                 },
                 timeout: 30000,
                 headers: {

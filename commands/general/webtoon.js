@@ -33,7 +33,7 @@ module.exports = {
                 params: {
                     title: query,
                     limit: 10,
-                    contentRating[]: ['safe', 'suggestive'],
+                    'contentRating[]': ['safe', 'suggestive'],
                     order: { relevance: 'desc' }
                 },
                 timeout: 30000,
