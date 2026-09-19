@@ -369,7 +369,8 @@ module.exports = {
             chapters.forEach((ch, idx) => {
                 const chNum = ch.attributes.chapter || '?';
                 const chTitle = ch.attributes.title || '';
-                chapterList += `${idx + 1}. Chapter ${chNum}${chTitle ? ` - ${chTitle}` : ''}\n`;
+                const label = chNum !== '?' ? `Chapter ${chNum}` : (chTitle || `Part ${idx + 1}`);
+                chapterList += `${idx + 1}. ${label}${chTitle && chNum !== '?' ? ` - ${chTitle}` : ''}\n`;
             });
             
             await sock.sendMessage(from, { 
@@ -399,22 +400,31 @@ module.exports = {
             return false;
         }
         
+        const trimmed = body.trim().toLowerCase();
+        
+        // Only intercept messages that look like chapter selections
+        const looksLikeSelection = trimmed === 'all' || 
+            /^\d+(\s+\d+)*$/.test(trimmed) || 
+            /^\d+\s*-\s*\d+$/.test(trimmed) ||
+            /^\d+(,\s*\d+)+$/.test(trimmed);
+        
+        if (!looksLikeSelection) {
+            return false;
+        }
+        
         const { mangaId, mangaTitle, chapters } = pending;
         
         // Parse selection
         let selectedChapters = [];
-        const trimmed = body.trim().toLowerCase();
         
         if (trimmed === 'all') {
             selectedChapters = chapters;
         } else if (trimmed.includes('-')) {
-            // Range selection: "1-5"
             const [start, end] = trimmed.split('-').map(Number);
             if (!isNaN(start) && !isNaN(end) && start >= 1 && end <= chapters.length && start <= end) {
                 selectedChapters = chapters.slice(start - 1, end);
             }
         } else {
-            // Multiple numbers: "1 2 3" or "1,2,3"
             const numbers = trimmed.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1 && n <= chapters.length);
             selectedChapters = numbers.map(n => chapters[n - 1]).filter(Boolean);
         }
@@ -427,7 +437,7 @@ module.exports = {
         }
         
         await sock.sendMessage(from, { 
-            text: `✅ Selected ${selectedChapters.length} chapter(s): ${selectedChapters.map(c => c.attributes.chapter || '?').join(', ')}\nStarting download...`
+            text: `✅ Selected ${selectedChapters.length} chapter(s)\nStarting download...`
         });
         
         // Clear pending state
