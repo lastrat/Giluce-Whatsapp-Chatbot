@@ -17,43 +17,14 @@ if (!fs.existsSync(DOWNLOADS_DIR)) {
 
 const MANGA_DEX_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'application/json',
+    'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'en-US,en;q=0.9',
+    'Origin': 'https://mangadex.org',
     'Referer': 'https://mangadex.org/'
 };
 
 const MANGA_DEX_BASE = 'https://api.mangadex.org';
 
-async function fetchWithRetry(url, options = {}, retries = 3) {
-    for (let attempt = 1; attempt <= retries; attempt++) {
-        try {
-            const response = await axios.get(url, {
-                ...options,
-                headers: {
-                    ...MANGA_DEX_HEADERS,
-                    ...(options.headers || {})
-                },
-                timeout: options.timeout || 30000,
-                httpsAgent: new https.Agent({ keepAlive: false }),
-                httpAgent: new http.Agent({ keepAlive: false })
-            });
-            return response;
-        } catch (error) {
-            const isLastAttempt = attempt === retries;
-            const isNetworkError = error.code === 'ECONNRESET' || error.code === 'ENOTFOUND' || error.code === 'ECONNREFUSED' || error.message === 'socket hang up';
-            
-            if (isLastAttempt || !isNetworkError) {
-                throw error;
-            }
-            
-            const delay = Math.min(5000, 1000 * Math.pow(2, attempt - 1));
-            console.error(`[WebtoonDownload] Retry ${attempt}/${retries} after ${delay}ms for ${url}: ${error.message}`);
-            await new Promise(resolve => setTimeout(resolve, delay));
-        }
-    }
-}
-
-// Download image from URL to buffer
 function downloadImage(url) {
     return new Promise((resolve, reject) => {
         const client = url.startsWith('https') ? https : http;
@@ -64,45 +35,14 @@ function downloadImage(url) {
             res.on('error', reject);
         });
         req.on('error', reject);
-        req.setTimeout(30000, () => {
+        req.setTimeout(60000, () => {
             req.destroy();
             reject(new Error('Image download timeout'));
         });
     });
 }
 
-// Create PDF from images
-async function createPdfFromImages(images, outputPath, title) {
-    const validImages = [];
-    
-    for (let i = 0; i < images.length; i++) {
-        const imgBuffer = images[i];
-        try {
-            const testDoc = new PDFDocument({ autoFirstPage: false });
-            let imageOk = false;
-            testDoc.on('error', () => {});
-            try {
-                const imgInstance = testDoc.openImage(imgBuffer);
-                imageOk = true;
-            } catch (e) {
-                console.error(`[WebtoonDownload] Invalid image at index ${i}: ${e.message}`);
-            }
-            testDoc.destroy();
-            
-            if (imageOk) {
-                validImages.push(imgBuffer);
-            } else {
-                console.warn(`[WebtoonDownload] Skipping invalid image at index ${i}`);
-            }
-        } catch (error) {
-            console.error(`[WebtoonDownload] Error validating image ${i}:`, error.message);
-        }
-    }
-    
-    if (!validImages.length) {
-        throw new Error('No valid images for PDF generation');
-    }
-    
+function createPdfFromImages(images, outputPath, title) {
     return new Promise((resolve, reject) => {
         try {
             const doc = new PDFDocument({ size: 'A4', autoFirstPage: false });
@@ -114,16 +54,14 @@ async function createPdfFromImages(images, outputPath, title) {
             stream.on('error', reject);
 
             let addedPages = 0;
-            for (let i = 0; i < validImages.length; i++) {
+            for (let i = 0; i < images.length; i++) {
                 try {
-                    const img = doc.openImage(validImages[i]);
+                    const img = doc.openImage(images[i]);
                     const pageWidth = 595.28;
                     const pageHeight = 841.89;
                     const margin = 20;
-                    
                     const availableWidth = pageWidth - (margin * 2);
                     const availableHeight = pageHeight - (margin * 2);
-                    
                     const imgRatio = img.width / img.height;
                     let finalWidth, finalHeight;
                     
@@ -143,12 +81,40 @@ async function createPdfFromImages(images, outputPath, title) {
                 }
             }
 
-            console.log(`[WebtoonDownload] PDF pages created: ${addedPages}/${validImages.length}`);
+            console.log(`[WebtoonDownload] PDF pages created: ${addedPages}/${images.length}`);
             doc.end();
         } catch (error) {
             reject(error);
         }
     });
+}
+
+async function fetchWithRetry(url, options = {}, retries = 3) {
+    for (let attempt = 1; attempt <= retries; attempt++) {
+        try {
+            const response = await axios.get(url, {
+                ...options,
+                headers: {
+                    ...MANGA_DEX_HEADERS,
+                    ...(options.headers || {})
+                },
+                timeout: options.timeout || 60000,
+                httpsAgent: new https.Agent({ keepAlive: false }),
+                httpAgent: new http.Agent({ keepAlive: false })
+            });
+            return response;
+        } catch (error) {
+            console.error(`[WebtoonDownload] Attempt ${attempt}/${retries} failed for ${url}: ${error.message}`);
+            
+            if (attempt === retries) {
+                throw error;
+            }
+            
+            const delay = Math.min(5000, 1000 * Math.pow(2, attempt - 1));
+            console.error(`[WebtoonDownload] Retrying in ${delay}ms...`);
+            await new Promise(resolve => setTimeout(resolve, delay));
+        }
+    }
 }
 
 module.exports = {
@@ -179,11 +145,11 @@ module.exports = {
             // Get manga info
             let mangaResponse;
             try {
-                mangaResponse = await fetchWithRetry(`${MANGA_DEX_BASE}/manga/${mangaId}`, {}, 3);
+                mangaResponse = await fetchWithRetry(`${MANGA_DEX_BASE}/manga/${mangaId}`);
             } catch (error) {
                 console.error('[WebtoonDownload] Manga info fetch failed:', error.message);
                 return await sock.sendMessage(from, { 
-                    text: `❌ Failed to fetch manga info from MangaDex: ${error.message}\nThis may be a network issue or MangaDex rate limit.` 
+                    text: `❌ Failed to fetch manga info: ${error.message}\n\nCheck:\n1. Internet connection\n2. MangaDex is not blocked\n3. Manga ID is correct` 
                 });
             }
             
@@ -193,7 +159,7 @@ module.exports = {
             
             // Get chapters
             await sock.sendMessage(from, { 
-                text: '📥 Fetching chapters...'
+                text: '📥 Fetching chapters list...'
             });
             
             let chaptersResponse;
@@ -204,11 +170,11 @@ module.exports = {
                         order: { chapter: 'asc' },
                         'contentRating[]': ['safe', 'suggestive']
                     }
-                }, 3);
+                });
             } catch (error) {
                 console.error('[WebtoonDownload] Chapters fetch failed:', error.message);
                 return await sock.sendMessage(from, { 
-                    text: `❌ Failed to fetch chapters from MangaDex: ${error.message}` 
+                    text: `❌ Failed to fetch chapters: ${error.message}` 
                 });
             }
             
@@ -221,12 +187,12 @@ module.exports = {
             
             if (!chapters.length) {
                 return await sock.sendMessage(from, { 
-                    text: '❌ No chapters found.' 
+                    text: '❌ No chapters found for this manga.' 
                 });
             }
             
             await sock.sendMessage(from, { 
-                text: `📥 Downloading ${chapters.length} chapters...`
+                text: `📚 Found ${chapters.length} chapters\nStarting download...`
             });
             
             // Download all chapter images
@@ -239,23 +205,19 @@ module.exports = {
             for (let i = 0; i < chapters.length; i++) {
                 const chapter = chapters[i];
                 const chapterNum = chapter.attributes.chapter || '?';
+                const chapterId = chapter.id;
                 
                 await sock.sendMessage(from, { 
                     text: `⏳ Downloading chapter ${i + 1}/${chapters.length}...`
                 });
                 
                 try {
-                    const serverResponse = await fetchWithRetry(`https://api.mangadex.org/at-home/server/${chapter.id}`, {}, 3);
+                    const serverResponse = await fetchWithRetry(`${MANGA_DEX_BASE}/at-home/server/${chapterId}`);
                     
                     const serverData = serverResponse.data;
                     const baseUrl = serverData.baseUrl;
                     const chapterHash = serverData.chapter?.hash;
                     const chapterData = chapterHash ? serverData.chapter?.[chapterHash] : null;
-                    
-                    console.log('[WebtoonDownload] serverData keys:', Object.keys(serverData));
-                    console.log('[WebtoonDownload] chapter keys:', serverData.chapter ? Object.keys(serverData.chapter) : 'none');
-                    console.log('[WebtoonDownload] chapterHash:', chapterHash);
-                    console.log('[WebtoonDownload] chapterData:', chapterData);
                     
                     let imagePaths = [];
                     if (chapterData && Array.isArray(chapterData.data)) {
@@ -265,19 +227,20 @@ module.exports = {
                     }
                     
                     if (!imagePaths.length) {
-                        console.error(`[WebtoonDownload] No image data array for chapter ${chapter.id}`);
+                        console.error(`[WebtoonDownload] No images for chapter ${chapterNum}`);
                         continue;
                     }
                     
-                    console.log(`[WebtoonDownload] Chapter ${chapterNum} has ${imagePaths.length} images`);
+                    console.log(`[WebtoonDownload] Chapter ${chapterNum}: ${imagePaths.length} images`);
                     
-                    // Download images
                     const imagePromises = imagePaths.map((imgPath, idx) => {
                         const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${imgPath}`;
-                        return downloadImage(imgUrl).then(buffer => ({ idx, buffer })).catch(err => {
-                            console.error(`[WebtoonDownload] Failed to download image ${idx} from chapter ${chapterNum}:`, err.message);
-                            return null;
-                        });
+                        return downloadImage(imgUrl)
+                            .then(buffer => ({ idx, buffer }))
+                            .catch(err => {
+                                console.error(`[WebtoonDownload] Failed image ${idx} ch ${chapterNum}:`, err.message);
+                                return null;
+                            });
                     });
                     
                     const imageResults = await Promise.all(imagePromises);
@@ -288,49 +251,73 @@ module.exports = {
                         continue;
                     }
                     
-                    // Sort by index
                     validImages.sort((a, b) => a.idx - b.idx);
                     allImages.push(...validImages.map(img => img.buffer));
                     
                 } catch (error) {
-                    console.error(`[WebtoonDownload] Failed to download chapter ${chapterNum}:`, error.message);
+                    console.error(`[WebtoonDownload] Failed chapter ${chapterNum}:`, error.message);
                 }
             }
             
             if (allImages.length === 0) {
                 return await sock.sendMessage(from, { 
-                    text: '❌ Failed to download any images.' 
+                    text: '❌ Failed to download any images.\nTry again later or choose another manga.' 
                 });
             }
             
             await sock.sendMessage(from, { 
-                text: '📄 Generating PDF...'
+                text: `📄 Generating PDF with ${allImages.length} pages...`
             });
             
             // Generate PDF
             const pdfPath = path.join(DOWNLOADS_DIR, `${mangaId}.pdf`);
-            console.log('[WebtoonDownload] Generating PDF with', allImages.length, 'images...');
-            await createPdfFromImages(allImages, pdfPath, mangaTitle);
-            
-            const pdfStats = fs.statSync(pdfPath);
-            console.log('[WebtoonDownload] PDF created:', pdfPath, 'size:', pdfStats.size, 'bytes');
-            
-            if (pdfStats.size < 1000) {
-                throw new Error(`PDF file too small: ${pdfStats.size} bytes`);
+            try {
+                await createPdfFromImages(allImages, pdfPath, mangaTitle);
+                
+                const pdfStats = fs.statSync(pdfPath);
+                console.log('[WebtoonDownload] PDF created:', pdfStats.size, 'bytes');
+                
+                if (pdfStats.size < 1000) {
+                    throw new Error(`PDF too small: ${pdfStats.size} bytes`);
+                }
+                
+                const pdfBuffer = fs.readFileSync(pdfPath);
+                await sock.sendMessage(from, {
+                    document: pdfBuffer,
+                    mimetype: 'application/pdf',
+                    fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
+                    caption: `✅ ${mangaTitle}\n${chapters.length} chapters | ${allImages.length} pages`
+                }, { quoted: msg });
+                
+            } catch (pdfError) {
+                console.error('[WebtoonDownload] PDF failed:', pdfError.message);
+                
+                // Fallback: send images directly
+                await sock.sendMessage(from, { 
+                    text: `⚠️ PDF generation failed, sending ${allImages.length} images directly...` 
+                });
+                
+                for (let i = 0; i < Math.min(allImages.length, 10); i++) {
+                    try {
+                        await sock.sendMessage(from, {
+                            image: allImages[i],
+                            caption: `${mangaTitle} - Page ${i + 1}`
+                        });
+                    } catch (e) {
+                        console.error(`[WebtoonDownload] Failed to send image ${i}:`, e.message);
+                    }
+                }
+                
+                if (allImages.length > 10) {
+                    await sock.sendMessage(from, { 
+                        text: `... and ${allImages.length - 10} more pages` 
+                    });
+                }
             }
-            
-            // Send PDF
-            const pdfBuffer = fs.readFileSync(pdfPath);
-            await sock.sendMessage(from, {
-                document: pdfBuffer,
-                mimetype: 'application/pdf',
-                fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
-                caption: `✅ Downloaded: ${mangaTitle}\n${chapters.length} chapters, ${allImages.length} pages`
-            }, { quoted: msg });
             
             // Clean up
             try {
-                fs.unlinkSync(pdfPath);
+                if (fs.existsSync(pdfPath)) fs.unlinkSync(pdfPath);
                 fs.rmSync(tempDir, { recursive: true, force: true });
             } catch (e) {
                 console.error('Failed to clean up temp files:', e);
