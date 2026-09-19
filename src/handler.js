@@ -791,6 +791,13 @@ const handleMessage = async (sock, msg) => {
         
         body = (body || '').trim();
         
+        // Webtoon chapter selection conversation
+        const webtoonDownloadCmd = getCommand('webtoon-download');
+        if (webtoonDownloadCmd && webtoonDownloadCmd.handleSelection) {
+            const handled = await webtoonDownloadCmd.handleSelection(sock, msg, from, body);
+            if (handled) return;
+        }
+        
         // Anti-all protection
         if (isGroup) {
             const groupSettings = database.getGroupSettings(from);
