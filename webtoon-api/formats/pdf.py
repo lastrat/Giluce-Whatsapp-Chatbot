@@ -37,7 +37,7 @@ def create_pdf_from_bytes(
             img = Image.open(BytesIO(data))
             img.load()
             
-            # Convert to RGB if needed
+            # Convert to RGB JPEG explicitly
             if img.mode in ('RGBA', 'LA', 'P'):
                 if img.mode == 'P':
                     img = img.convert('RGBA')
@@ -47,7 +47,12 @@ def create_pdf_from_bytes(
             elif img.mode != 'RGB':
                 img = img.convert('RGB')
             
-            images.append((idx, img))
+            # Force JPEG buffer
+            jpeg_buffer = BytesIO()
+            img.save(jpeg_buffer, format='JPEG', quality=90)
+            jpeg_buffer.seek(0)
+            
+            images.append((idx, jpeg_buffer))
         except Exception as e:
             logger.warning(f"Failed to process image {idx}: {e}")
             continue
@@ -64,13 +69,10 @@ def create_pdf_from_bytes(
         c = canvas.Canvas(str(tmp_path))
         c.setTitle(title)
         
-        for idx, img in images:
+        for idx, img_buffer in images:
+            img = Image.open(img_buffer)
             img_width, img_height = img.size
             c.setPageSize((img_width, img_height))
-            
-            img_buffer = BytesIO()
-            img.save(img_buffer, format='JPEG', quality=95)
-            img_buffer.seek(0)
             
             c.drawImage(ImageReader(img_buffer), 0, 0, img_width, img_height)
             c.showPage()

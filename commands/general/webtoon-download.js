@@ -10,6 +10,7 @@ const path = require('path');
 const PDFDocument = require('pdfkit');
 const https = require('https');
 const http = require('http');
+const sharp = require('sharp');
 
 const DOWNLOADS_DIR = path.join(__dirname, '../../temp/webtoon-downloads');
 if (!fs.existsSync(DOWNLOADS_DIR)) {
@@ -58,7 +59,17 @@ function downloadImage(url) {
         const req = client.get(url, { headers: MANGA_DEX_HEADERS }, (res) => {
             const chunks = [];
             res.on('data', chunk => chunks.push(chunk));
-            res.on('end', () => resolve(Buffer.concat(chunks)));
+            res.on('end', async () => {
+                try {
+                    const buffer = Buffer.concat(chunks);
+                    const jpegBuffer = await sharp(buffer)
+                        .jpeg({ quality: 90 })
+                        .toBuffer();
+                    resolve(jpegBuffer);
+                } catch (err) {
+                    reject(new Error(`Image conversion failed: ${err.message}`));
+                }
+            });
             res.on('error', reject);
         });
         req.on('error', reject);
@@ -134,7 +145,8 @@ async function sendImagesDirectly(sock, from, msg, images, title, maxImages = 10
         try {
             await sock.sendMessage(from, {
                 image: limited[i],
-                caption: `${title} - Page ${i + 1}`
+                caption: `${title} - Page ${i + 1}`,
+                mimetype: 'image/jpeg'
             });
         } catch (e) {
             console.error(`[WebtoonDownload] Failed to send image ${i}:`, e.message);

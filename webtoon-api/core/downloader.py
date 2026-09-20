@@ -71,9 +71,12 @@ class ImageDownloader:
                             content.extend(chunk)
                     data = bytes(content)
                 
-                # Validate image
+                # Validate and convert image to RGB JPEG
                 img = Image.open(BytesIO(data))
-                img.verify()
+                img = img.convert('RGB')
+                buffer = BytesIO()
+                img.save(buffer, format='JPEG', quality=90)
+                data = buffer.getvalue()
                 
                 return index, data, None
                 
