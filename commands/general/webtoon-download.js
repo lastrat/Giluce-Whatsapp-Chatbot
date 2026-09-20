@@ -53,6 +53,16 @@ async function fetchWithRetry(url, options = {}, retries = 3) {
     }
 }
 
+function detectMimeType(buffer) {
+    if (!buffer || buffer.length < 12) return 'application/octet-stream';
+    const bytes = buffer.slice(0, 12);
+    if (bytes[0] === 0xFF && bytes[1] === 0xD8) return 'image/jpeg';
+    if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4E && bytes[3] === 0x47) return 'image/png';
+    if (bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46) return 'image/gif';
+    if (bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46) return 'image/webp';
+    return 'application/octet-stream';
+}
+
 function downloadImage(url) {
     return new Promise((resolve, reject) => {
         const client = url.startsWith('https') ? https : http;
@@ -62,12 +72,29 @@ function downloadImage(url) {
             res.on('end', async () => {
                 try {
                     const buffer = Buffer.concat(chunks);
-                    const jpegBuffer = await sharp(buffer)
-                        .jpeg({ quality: 90 })
-                        .toBuffer();
-                    resolve(jpegBuffer);
+                    if (!buffer.length) {
+                        reject(new Error('Empty image buffer'));
+                        return;
+                    }
+                    const mimeType = detectMimeType(buffer);
+                    
+                    // Try sharp conversion for formats it supports
+                    if (mimeType !== 'image/webp') {
+                        try {
+                            const jpegBuffer = await sharp(buffer)
+                                .jpeg({ quality: 90 })
+                                .toBuffer();
+                            resolve(jpegBuffer);
+                            return;
+                        } catch (sharpError) {
+                            console.error(`[WebtoonDownload] Sharp conversion failed, using raw buffer: ${sharpError.message}`);
+                        }
+                    }
+                    
+                    // Fallback: return raw buffer with detected mimetype
+                    resolve(buffer);
                 } catch (err) {
-                    reject(new Error(`Image conversion failed: ${err.message}`));
+                    reject(new Error(`Image processing failed: ${err.message}`));
                 }
             });
             res.on('error', reject);
@@ -143,10 +170,13 @@ async function sendImagesDirectly(sock, from, msg, images, title, maxImages = 10
     });
     for (let i = 0; i < limited.length; i++) {
         try {
+            const item = limited[i];
+            const buffer = typeof item === 'object' && item.buffer ? item.buffer : item;
+            const mimeType = typeof item === 'object' && item.mimeType ? item.mimeType : 'image/jpeg';
             await sock.sendMessage(from, {
-                image: limited[i],
+                image: buffer,
                 caption: `${title} - Page ${i + 1}`,
-                mimetype: 'image/jpeg'
+                mimetype: mimeType
             });
         } catch (e) {
             console.error(`[WebtoonDownload] Failed to send image ${i}:`, e.message);
@@ -197,7 +227,7 @@ async function downloadChapters(sock, from, msg, chapters, mangaTitle) {
             const imagePromises = imagePaths.map((imgPath, idx) => {
                 const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${imgPath}`;
                 return downloadImage(imgUrl)
-                    .then(buffer => ({ idx, buffer }))
+                    .then(result => ({ idx, ...result }))
                     .catch(err => {
                         console.error(`[WebtoonDownload] Failed image ${idx} ch ${chapterNum}:`, err.message);
                         return null;
@@ -213,7 +243,7 @@ async function downloadChapters(sock, from, msg, chapters, mangaTitle) {
             }
             
             validImages.sort((a, b) => a.idx - b.idx);
-            allImages.push(...validImages.map(img => img.buffer));
+            allImages.push(...validImages);
             
         } catch (error) {
             console.error(`[WebtoonDownload] Failed chapter ${chapterNum}:`, error.message);
