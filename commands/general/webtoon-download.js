@@ -67,14 +67,26 @@ function downloadImage(url) {
         const client = url.startsWith('https') ? https : http;
         const req = client.get(url, { headers: MANGA_DEX_HEADERS }, (res) => {
             const chunks = [];
+            
             res.on('data', chunk => chunks.push(chunk));
             res.on('end', () => {
                 try {
                     const buffer = Buffer.concat(chunks);
+                    const statusCode = res.statusCode;
+                    const contentType = res.headers['content-type'] || '';
+                    
+                    console.log(`[WebtoonDownload] Download result: ${url} -> status=${statusCode}, size=${buffer.length}, contentType=${contentType}`);
+                    
+                    if (statusCode !== 200) {
+                        reject(new Error(`HTTP ${statusCode} for ${url}`));
+                        return;
+                    }
+                    
                     if (!buffer.length) {
                         reject(new Error('Empty image buffer'));
                         return;
                     }
+                    
                     const mimeType = detectMimeType(buffer);
                     resolve({ buffer, mimeType });
                 } catch (err) {
@@ -136,7 +148,18 @@ async function downloadFileToBuffer(url) {
         const req = client.get(url, { headers: MANGA_DEX_HEADERS }, (res) => {
             const chunks = [];
             res.on('data', chunk => chunks.push(chunk));
-            res.on('end', () => resolve(Buffer.concat(chunks)));
+            res.on('end', () => {
+                const buffer = Buffer.concat(chunks);
+                const statusCode = res.statusCode;
+                console.log(`[WebtoonDownload] File download: ${url} -> status=${statusCode}, size=${buffer.length}`);
+                
+                if (statusCode !== 200) {
+                    reject(new Error(`HTTP ${statusCode} for ${url}`));
+                    return;
+                }
+                
+                resolve(buffer);
+            });
             res.on('error', reject);
         });
         req.on('error', reject);
