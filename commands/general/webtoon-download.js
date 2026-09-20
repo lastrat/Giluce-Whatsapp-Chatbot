@@ -234,7 +234,7 @@ async function downloadChapters(sock, from, msg, chapters, mangaTitle) {
             console.log(`[WebtoonDownload] Chapter ${chapterNum}: ${imagePaths.length} images, baseUrl=${baseUrl}, hash=${chapterHash}`);
             
             const imagePromises = imagePaths.map((imgPath, idx) => {
-                const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${chapterHash}/${imgPath}`;
+                const imgUrl = `${baseUrl}/${chapterHash}/${imgPath}`;
                 console.log(`[WebtoonDownload] Downloading image ${idx}: ${imgUrl}`);
                 return downloadImage(imgUrl)
                     .then(result => ({ idx, result }))
