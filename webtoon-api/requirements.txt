@@ -16,7 +16,6 @@ lxml>=4.9.0
 
 # Image Processing
 Pillow>=10.1.0
-pillow-webp>=0.1.0
 
 # PDF Generation
 reportlab>=4.0.0
