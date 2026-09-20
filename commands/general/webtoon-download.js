@@ -156,6 +156,8 @@ async function sendImagesDirectly(sock, from, msg, images, title, maxImages = 10
         try {
             const item = limited[i];
             const buffer = Buffer.isBuffer(item) ? item : (item && item.buffer ? item.buffer : Buffer.from(item));
+            const mimeType = typeof item === 'object' && item.mimeType ? item.mimeType : 'image/jpeg';
+            console.log(`[WebtoonDownload] Sending image ${i}: ${buffer.length} bytes, mimeType=${mimeType}`);
             await sock.sendMessage(from, {
                 image: buffer,
                 caption: `${title} - Page ${i + 1}`
@@ -206,8 +208,11 @@ async function downloadChapters(sock, from, msg, chapters, mangaTitle) {
                 continue;
             }
             
+            console.log(`[WebtoonDownload] Chapter ${chapterNum}: ${imagePaths.length} images, baseUrl=${baseUrl}, hash=${chapterHash}`);
+            
             const imagePromises = imagePaths.map((imgPath, idx) => {
-                const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${imgPath}`;
+                const imgUrl = `https://uploads.mangadex.org/data/${baseUrl}/${chapterHash}/${imgPath}`;
+                console.log(`[WebtoonDownload] Downloading image ${idx}: ${imgUrl}`);
                 return downloadImage(imgUrl)
                     .then(result => ({ idx, result }))
                     .catch(err => {
@@ -223,6 +228,11 @@ async function downloadChapters(sock, from, msg, chapters, mangaTitle) {
                 console.error(`[WebtoonDownload] No valid images for chapter ${chapterNum}`);
                 continue;
             }
+            
+            validImages.forEach(img => {
+                const size = Buffer.isBuffer(img.result) ? img.result.length : (img.result && img.result.buffer ? img.result.buffer.length : 0);
+                console.log(`[WebtoonDownload] Chapter ${chapterNum} image ${img.idx}: ${size} bytes, mimeType=${img.result.mimeType || 'unknown'}`);
+            });
             
             validImages.sort((a, b) => a.idx - b.idx);
             allImages.push(...validImages.map(img => img.result));
