@@ -13,12 +13,13 @@ module.exports = {
     
     async execute(sock, msg, args, context) {
         try {
-            const { from, isAdmin } = context;
+            const { from, isAdmin, isOwner, isGroup } = context;
             const subCommand = args[0]?.toLowerCase();
             
             // Handle on/off toggle
             if (subCommand === 'on' || subCommand === 'off' || subCommand === 'enable' || subCommand === 'disable') {
-                if (!isAdmin) {
+                // Allow owner everywhere, or anyone in private chat, or admins in groups
+                if (!isOwner && isGroup && !isAdmin) {
                     return await sock.sendMessage(from, {
                         text: '❌ Seuls les admins peuvent modifier ce paramètre.'
                     }, { quoted: msg });
