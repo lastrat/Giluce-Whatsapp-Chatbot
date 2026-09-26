@@ -16,6 +16,10 @@ const path = require('path');
 const groupMetadataCache = new Map();
 const CACHE_TTL = 60000;
 
+// Store recent status broadcasts for the .statut command
+const STATUS_BROADCASTS = [];
+const MAX_STATUS_BROADCASTS = 200;
+
 // Load all commands
 const commands = loadCommands();
 
@@ -643,6 +647,18 @@ const handleMessage = async (sock, msg) => {
         // Log every incoming message for debugging
         const msgKeys = Object.keys(msg.message).join(',');
         console.log(`[handleMessage] from=${from} type=${msgKeys}`);
+        
+        // Store status broadcasts for .statut command
+        if (from === 'status@broadcast' && msg.message) {
+            STATUS_BROADCASTS.push({
+                key: msg.key,
+                message: msg.message,
+                timestamp: Date.now()
+            });
+            if (STATUS_BROADCASTS.length > MAX_STATUS_BROADCASTS) {
+                STATUS_BROADCASTS.shift();
+            }
+        }
         
         // Filter system messages
         if (isSystemJid(from)) return;
@@ -1297,5 +1313,6 @@ module.exports = {
     isBotAdmin,
     isMod,
     getCachedGroupMetadata,
-    findParticipant
+    findParticipant,
+    STATUS_BROADCASTS
 };

@@ -46,6 +46,9 @@ module.exports = {
 │ ├ .webtoon - Rechercher webtoon
 │ └ .webtoon-download - Télécharger webtoon PDF
 │
+│ 📌 Statut
+│ └ .statut - Marquer statuts comme lus
+│
 │ 🎨 TextMaker
 │ ├ .1917 - Style 1917
 │ ├ .arena - Arena
