@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const config = require('../config');
+const { normalizeJidWithLid } = require('@whiskeysockets/baileys');
 
 const ANTIDELETE_DB = path.join(__dirname, '../database/antidelete.json');
 const MESSAGE_CACHE = new Map();
@@ -43,6 +44,16 @@ function setEnabled(enabled) {
 
 function getSenderJid(msg) {
     return msg?.key?.participant || msg?.key?.remoteJid;
+}
+
+function getSenderNumber(senderJid) {
+    if (!senderJid) return 'inconnu';
+    const normalized = normalizeJidWithLid(senderJid);
+    const num = normalized.split('@')[0];
+    if (/^237\d{9}$/.test(num)) {
+        return `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
+    }
+    return num;
 }
 
 function extractMessageContent(msg) {
@@ -147,7 +158,7 @@ async function forwardToAdmin(sock, cachedMsg) {
 
         const ownerJid = `${ownerNumber}@s.whatsapp.net`;
         const senderJid = cachedMsg.senderJid;
-        const senderNum = senderJid ? senderJid.split('@')[0] : 'inconnu';
+        const senderNum = getSenderNumber(senderJid);
         const isPrivate = !senderJid.endsWith('@g.us');
         
         if (!isPrivate) return; // Only forward private messages to admin
@@ -160,7 +171,7 @@ async function forwardToAdmin(sock, cachedMsg) {
         });
 
         const notification = `🗑️ *Message supprimé détecté*\n\n` +
-            `👤 *Expéditeur:* @${senderNum}\n` +
+            `👤 *Expéditeur:* ${senderNum}\n` +
             `⏰ *À:* ${timeStr}\n`;
 
         if (content.conversation) {
