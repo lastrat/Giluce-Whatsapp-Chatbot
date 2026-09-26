@@ -37,39 +37,49 @@ const writeDB = (data) => {
 const checkScheduled = async (sock) => {
     // Check if socket is valid and connected
     if (!sock || !sock.user || !sock.user.id) {
+        console.log('[Schedule] Socket not ready, skipping');
         return; // Socket not ready, skip
     }
     
     const data = readDB();
     const now = Date.now();
     let changed = false;
+    let pendingCount = 0;
+    
+    console.log(`[Schedule] Checking scheduled messages... Total entries: ${Object.keys(data).length}, Now: ${new Date(now).toISOString()}`);
     
     for (const [id, schedule] of Object.entries(data)) {
         if (schedule.scheduledTime <= now && !schedule.sent) {
+            pendingCount++;
+            console.log(`[Schedule] Found pending message ${id}: scheduledTime=${new Date(schedule.scheduledTime).toISOString()}, chatId=${schedule.chatId}, message=${schedule.message.substring(0, 50)}`);
             try {
                 // Verify socket is still valid before sending
                 if (!sock || !sock.user) {
+                    console.log(`[Schedule] Socket invalid for message ${id}, skipping`);
                     continue;
                 }
                 
+                console.log(`[Schedule] Sending message ${id} to ${schedule.chatId}...`);
                 await sock.sendMessage(schedule.chatId, {
                     text: schedule.message
                 });
                 schedule.sent = true;
                 changed = true;
-                console.log(`[Schedule] Message sent to ${schedule.chatId}`);
+                console.log(`[Schedule] Message sent successfully to ${schedule.chatId}`);
             } catch (error) {
                 // If connection closed, mark as failed but don't delete
                 if (error.message?.includes('Connection Closed') || error.isServer) {
-                    console.log(`[Schedule] Connection closed, will retry later`);
+                    console.log(`[Schedule] Connection closed, will retry later for ${id}`);
                     schedule.failed = true;
                     changed = true;
                 } else {
-                    console.error(`[Schedule] Error sending message:`, error.message);
+                    console.error(`[Schedule] Error sending message ${id}:`, error.message);
                 }
             }
         }
     }
+    
+    console.log(`[Schedule] Check complete. Pending messages found: ${pendingCount}`);
     
     if (changed) {
         writeDB(data);
