@@ -47,7 +47,8 @@ module.exports = {
 │ └ .webtoon-download - Télécharger webtoon PDF
 │
 │ 📌 Statut
-│ └ .statut - Marquer statuts comme lus
+│ ├ .statut - Marquer statuts comme lus
+│ ├ .statut on/off - Activer/désactiver auto-statut
 │
 │ 🎨 TextMaker
 │ ├ .1917 - Style 1917

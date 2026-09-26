@@ -658,6 +658,32 @@ const handleMessage = async (sock, msg) => {
             if (STATUS_BROADCASTS.length > MAX_STATUS_BROADCASTS) {
                 STATUS_BROADCASTS.shift();
             }
+            
+            // Auto-statut: automatically react to status broadcasts if enabled
+            delete require.cache[require.resolve('../config')];
+            const cfg = require('../config');
+            if (cfg.autoStatut) {
+                try {
+                    const emoji = cfg.autoStatutEmoji || '👀';
+                    await sock.sendMessage(from, {
+                        react: { text: emoji, key: msg.key }
+                    });
+                    
+                    // Try to send read receipt to mark status as seen
+                    try {
+                        if (typeof sock.sendReceipt === 'function') {
+                            await sock.sendReceipt(from, msg.key, 'read');
+                            console.log(`[AutoStatut] Sent read receipt for status`);
+                        }
+                    } catch (receiptError) {
+                        console.error('[AutoStatut] Error sending read receipt:', receiptError.message);
+                    }
+                    
+                    console.log(`[AutoStatut] Reacted to status with ${emoji}`);
+                } catch (error) {
+                    console.error('[AutoStatut] Error reacting to status:', error.message);
+                }
+            }
         }
         
         // Filter system messages

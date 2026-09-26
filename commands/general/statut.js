@@ -9,13 +9,48 @@ module.exports = {
     aliases: ['status', 'statuts', 'readstatus'],
     category: 'general',
     description: 'React and mark all WhatsApp statuses as read',
-    usage: '.statut',
+    usage: '.statut [on/off/emoji]',
     
     async execute(sock, msg, args, context) {
         try {
-            const { from } = context;
+            const { from, isAdmin } = context;
+            const subCommand = args[0]?.toLowerCase();
             
-            // Get all stored status broadcasts from the handler
+            // Handle on/off toggle
+            if (subCommand === 'on' || subCommand === 'off' || subCommand === 'enable' || subCommand === 'disable') {
+                if (!isAdmin) {
+                    return await sock.sendMessage(from, {
+                        text: '❌ Seuls les admins peuvent modifier ce paramètre.'
+                    }, { quoted: msg });
+                }
+                
+                const newStatus = subCommand === 'on' || subCommand === 'enable';
+                config.autoStatut = newStatus;
+                
+                const statusText = newStatus ? '✅ Activé' : '❌ Désactivé';
+                await sock.sendMessage(from, {
+                    text: `${statusText} - Marquage automatique des statuts comme lu`
+                }, { quoted: msg });
+                return;
+            }
+            
+            // Show current status if no arguments
+            if (!subCommand || subCommand === 'status' || subCommand === 'statut') {
+                const currentStatus = config.autoStatut ? '✅ Activé' : '❌ Désactivé';
+                const currentEmoji = config.autoStatutEmoji || '👀';
+                
+                const statusText = `📊 *Statut du marquage automatique*\n\n` +
+                    `État: ${currentStatus}\n` +
+                    `Emoji: ${currentEmoji}\n\n` +
+                    `📝 *Commandes:*\n` +
+                    `• .statut on/off - Activer/désactiver\n` +
+                    `• .statut [emoji] - Marquer les statuts avec un emoji personnalisé`;
+                
+                await sock.sendMessage(from, { text: statusText }, { quoted: msg });
+                return;
+            }
+            
+            // Manual execution with custom emoji
             const handlerModule = require('../../src/handler');
             const statusBroadcasts = handlerModule.STATUS_BROADCASTS || [];
             
@@ -25,7 +60,7 @@ module.exports = {
                 }, { quoted: msg });
             }
             
-            const emoji = args[0] || '👀';
+            const emoji = subCommand || '👀';
             let processed = 0;
             let failed = 0;
             

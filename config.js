@@ -28,6 +28,8 @@ module.exports = {
     autoReactMode: 'all', // set bot or all via cmd
     antiviewonce: true,
     antidelete: true,
+    autoStatut: false,
+    autoStatutEmoji: '👀',
     
     // Group Settings Defaults
     defaultGroupSettings: {
