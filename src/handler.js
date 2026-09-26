@@ -1210,18 +1210,23 @@ const handleAntigroupmention = async (sock, msg, groupMetadata) => {
 // ==================== AUTO-REPLY, SCHEDULE, REMINDER CHECK ====================
 
 const initializeAutomation = () => {
+    console.log('[Automation] Initializing automation loop...');
     // Check every 30 seconds
     setInterval(async () => {
         try {
+            console.log('[Automation] Running automation check...');
             // Get all sessions and their sockets
             const sessionManager = require('./sessionManager');
             const sessions = sessionManager.getAllSessions();
+            
+            console.log(`[Automation] Found ${sessions.length} sessions`);
             
             for (const sessionData of sessions) {
                 const session = sessionManager.getSession(sessionData.id);
                 
                 // Only process authenticated sessions
                 if (!session || !session.socket || session.state !== 'authenticated') {
+                    console.log(`[Automation] Skipping session ${sessionData.id}: state=${session?.state}, hasSocket=${!!session?.socket}`);
                     continue;
                 }
                 
@@ -1229,8 +1234,11 @@ const initializeAutomation = () => {
                 
                 // Verify socket is connected
                 if (!activeSock.user || !activeSock.user.id) {
+                    console.log(`[Automation] Socket not ready for session ${sessionData.id}`);
                     continue;
                 }
+                
+                console.log(`[Automation] Processing session ${sessionData.id} (${sessionData.phoneNumber})`);
                 
                 // Check scheduled messages
                 const scheduleCmd = require('../commands/automation/schedule');
