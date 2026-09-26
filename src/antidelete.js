@@ -6,12 +6,56 @@
 const fs = require('fs');
 const path = require('path');
 const config = require('../config');
-const { normalizeJidWithLid } = require('@whiskeysockets/baileys');
 
 const ANTIDELETE_DB = path.join(__dirname, '../database/antidelete.json');
 const MESSAGE_CACHE = new Map();
 const CACHE_TTL = 2 * 60 * 60 * 1000; // 2 hours
 const MAX_CACHE = 500;
+const SESSIONS_DIR = path.join(__dirname, '../sessions');
+
+function getSessionDir() {
+    const dirs = fs.readdirSync(SESSIONS_DIR, { withFileTypes: true });
+    const existing = dirs.find(dir => dir.isDirectory());
+    return existing ? path.join(SESSIONS_DIR, existing.name) : null;
+}
+
+function getSenderNumber(senderJid) {
+    if (!senderJid) return 'inconnu';
+    
+    const num = senderJid.split('@')[0];
+    
+    // If it's a LID, try to find the mapping
+    if (senderJid.endsWith('@lid')) {
+        const sessionDir = getSessionDir();
+        if (sessionDir) {
+            const mappingFile = path.join(sessionDir, `lid-mapping-${num}_reverse.json`);
+            if (fs.existsSync(mappingFile)) {
+                try {
+                    const mapped = JSON.parse(fs.readFileSync(mappingFile, 'utf-8'));
+                    if (mapped && typeof mapped === 'string') {
+                        const formatted = formatPhoneNumber(mapped);
+                        if (formatted !== mapped) return formatted;
+                        return mapped;
+                    }
+                } catch (error) {
+                    console.error('[AntiDelete] Error reading LID mapping:', error.message);
+                }
+            }
+        }
+        return num;
+    }
+    
+    return formatPhoneNumber(num);
+}
+
+function formatPhoneNumber(num) {
+    if (!num) return 'inconnu';
+    const cleaned = num.replace(/[^0-9]/g, '');
+    if (/^237\d{9}$/.test(cleaned)) {
+        return `+${cleaned.slice(0,3)} ${cleaned.slice(3,6)} ${cleaned.slice(6,9)} ${cleaned.slice(9)}`;
+    }
+    return cleaned;
+}
 
 function initDB() {
     if (!fs.existsSync(ANTIDELETE_DB)) {
@@ -44,16 +88,6 @@ function setEnabled(enabled) {
 
 function getSenderJid(msg) {
     return msg?.key?.participant || msg?.key?.remoteJid;
-}
-
-function getSenderNumber(senderJid) {
-    if (!senderJid) return 'inconnu';
-    const normalized = normalizeJidWithLid(senderJid);
-    const num = normalized.split('@')[0];
-    if (/^237\d{9}$/.test(num)) {
-        return `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
-    }
-    return num;
 }
 
 function extractMessageContent(msg) {
