@@ -1109,6 +1109,7 @@ const handleAntilink = async (sock, msg, groupMetadata) => {
         const sender = msg.key.participant || msg.key.remoteJid;
         
         const groupSettings = database.getGroupSettings(from);
+        console.log('[Antilink] Checking antilink for group:', from, 'settings:', groupSettings);
         if (!groupSettings.antilink) return;
         
         const body = msg.message?.conversation || 
@@ -1116,16 +1117,25 @@ const handleAntilink = async (sock, msg, groupMetadata) => {
                      msg.message?.imageMessage?.caption || 
                      msg.message?.videoMessage?.caption || '';
         
+        console.log('[Antilink] Message body:', body);
+        
         const linkPattern = /(https?:\/\/)?([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}(\/[^\s]*)?/i;
         
-        if (linkPattern.test(body)) {
+        const hasLink = linkPattern.test(body);
+        console.log('[Antilink] Has link:', hasLink);
+        
+        if (hasLink) {
             const senderIsAdmin = await isAdmin(sock, sender, from, groupMetadata);
             const senderIsOwner = isOwner(sender);
+            
+            console.log('[Antilink] Sender is admin:', senderIsAdmin, 'is owner:', senderIsOwner);
             
             if (senderIsAdmin || senderIsOwner) return;
             
             const botIsAdmin = await isBotAdmin(sock, from, groupMetadata);
             const action = (groupSettings.antilinkAction || 'delete').toLowerCase();
+            
+            console.log('[Antilink] Bot is admin:', botIsAdmin, 'action:', action);
             
             if (action === 'kick' && botIsAdmin) {
                 try {
