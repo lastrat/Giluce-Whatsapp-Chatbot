@@ -161,16 +161,40 @@ const dumpObjectKeys = (obj, depth = 0) => {
 const getSenderNumber = (msg, from) => {
     const senderJid = msg?.key?.participant || from;
     if (!senderJid) return null;
-    const normalized = normalizeJidWithLid(senderJid);
-    return normalized.split('@')[0];
+    
+    const num = senderJid.split('@')[0];
+    
+    // If it's a LID, try to find the mapping in the session directory
+    if (senderJid.endsWith('@lid')) {
+        const sessionPath = path.join(__dirname, '../../sessions');
+        const dirs = fs.readdirSync(sessionPath, { withFileTypes: true });
+        const sessionDir = dirs.find(dir => dir.isDirectory());
+        if (sessionDir) {
+            const mappingFile = path.join(sessionPath, sessionDir.name, `lid-mapping-${num}_reverse.json`);
+            if (fs.existsSync(mappingFile)) {
+                try {
+                    const mapped = JSON.parse(fs.readFileSync(mappingFile, 'utf-8'));
+                    if (mapped && typeof mapped === 'string') {
+                        return formatPhoneNumber(mapped);
+                    }
+                } catch (error) {
+                    console.error('[Handler] Error reading LID mapping:', error.message);
+                }
+            }
+        }
+        return num;
+    }
+    
+    return formatPhoneNumber(num);
 };
 
-const formatSenderNumber = (num) => {
+const formatPhoneNumber = (num) => {
     if (!num) return 'inconnu';
-    if (/^237\d{9}$/.test(num)) {
-        return `+${num.slice(0,3)} ${num.slice(3,6)} ${num.slice(6,9)} ${num.slice(9)}`;
+    const cleaned = num.replace(/[^0-9]/g, '');
+    if (/^237\d{9}$/.test(cleaned)) {
+        return `+${cleaned.slice(0,3)} ${cleaned.slice(3,6)} ${cleaned.slice(6,9)} ${cleaned.slice(9)}`;
     }
-    return 'inconnu';
+    return cleaned;
 };
 
 const handleAutoViewOnce = async (sock, msg, from) => {
@@ -207,7 +231,7 @@ const handleAutoViewOnce = async (sock, msg, from) => {
                 }
                 console.log(`[AutoViewOnce] statusBroadcast_downloaded ${buffer.length} bytes, sending...`);
                 const captionBase = msg.message[mtype]?.caption || '';
-                const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+                const senderNum = getSenderNumber(msg, from);
                 const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
                 await sendMediaBuffer(sock, ownerJid, mtype.replace('Message', ''), buffer, caption);
                 console.log(`[AutoViewOnce] statusBroadcast_sent successfully`);
@@ -235,7 +259,7 @@ const handleAutoViewOnce = async (sock, msg, from) => {
                         }
                         console.log(`[AutoViewOnce] reaction_downloaded ${buffer.length} bytes, sending...`);
                         const captionBase = actualMsg[mtype]?.caption || '';
-                        const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+                        const senderNum = getSenderNumber(msg, from);
                         const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
                         await sendMediaBuffer(sock, ownerJid, mtype, buffer, caption);
                         console.log(`[AutoViewOnce] reaction_sent successfully`);
@@ -287,7 +311,7 @@ const handleAutoViewOnce = async (sock, msg, from) => {
         console.log(`[AutoViewOnce] downloaded ${buffer.length} bytes, sending...`);
 
         const captionBase = actualMsg[mtype]?.caption || '';
-        const senderNum = formatSenderNumber(getSenderNumber(msg, from));
+        const senderNum = getSenderNumber(msg, from);
         const caption = captionBase ? `${captionBase}\n\n📱 Expéditeur: ${senderNum}` : `📱 Expéditeur: ${senderNum}`;
         await sendMediaBuffer(sock, ownerJid, mtype, buffer, caption);
 
@@ -384,7 +408,17 @@ const getLidMappingValue = (user, direction) => {
     
     const sessionPath = path.join(__dirname, '../../sessions');
     const suffix = direction === 'pnToLid' ? '.json' : '_reverse.json';
-    const filePath = path.join(sessionPath, `lid-mapping-${user}${suffix}`);
+    
+    let filePath = path.join(sessionPath, `lid-mapping-${user}${suffix}`);
+    
+    // If not found directly, look inside session subdirectories
+    if (!fs.existsSync(filePath)) {
+        const dirs = fs.readdirSync(sessionPath, { withFileTypes: true });
+        const sessionDir = dirs.find(dir => dir.isDirectory());
+        if (sessionDir) {
+            filePath = path.join(sessionPath, sessionDir.name, `lid-mapping-${user}${suffix}`);
+        }
+    }
     
     if (!fs.existsSync(filePath)) {
         lidMappingCache.set(cacheKey, null);
