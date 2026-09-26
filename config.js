@@ -5,7 +5,7 @@
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['237698954932'], // Add your number without + or spaces
+    ownerNumber: ['237671624397'], // Add your number without + or spaces
     ownerName: ['Giluce Bot', 'Admin'],
     
     // Bot Configuration
@@ -27,6 +27,7 @@ module.exports = {
     autoReact: false,
     autoReactMode: 'all', // set bot or all via cmd
     antiviewonce: true,
+    antidelete: true,
     
     // Group Settings Defaults
     defaultGroupSettings: {
@@ -45,7 +46,7 @@ module.exports = {
         goodbye: true,
         goodbyeMessage: 'Goodbye @user 👋 We will miss you!',
         antiSpam: false,
-        antidelete: false,
+        antidelete: true,
         nsfw: false,
         detect: false,
         chatbot: false,

@@ -5,6 +5,7 @@
 
 const config = require('../config');
 const database = require('./database');
+const antidelete = require('./antidelete');
 const { loadCommands, getCommand } = require('./utils/commandLoader');
 const { addMessage } = require('./utils/groupstats');
 const { jidDecode, jidEncode, downloadContentFromMessage } = require('@whiskeysockets/baileys');
@@ -611,6 +612,13 @@ const handleMessage = async (sock, msg) => {
         
         // Filter system messages
         if (isSystemJid(from)) return;
+        
+        // Anti-Delete
+        if (antidelete.isDeletionEvent(msg)) {
+            await antidelete.handleDelete(sock, msg);
+            return;
+        }
+        antidelete.cacheMessage(msg);
         
         // Handle group participant join - send service menu
         if (msg.messageStubType && msg.messageStubType.includes('GROUP_PARTICIPANT_ADD')) {
