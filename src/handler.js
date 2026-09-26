@@ -166,7 +166,7 @@ const getSenderNumber = (msg, from) => {
     
     // If it's a LID, try to find the mapping in the session directory
     if (senderJid.endsWith('@lid')) {
-        const sessionPath = path.join(__dirname, '../../sessions');
+    const sessionPath = path.join(__dirname, '../sessions');
         const dirs = fs.readdirSync(sessionPath, { withFileTypes: true });
         const sessionDir = dirs.find(dir => dir.isDirectory());
         if (sessionDir) {
@@ -406,7 +406,7 @@ const getLidMappingValue = (user, direction) => {
         return lidMappingCache.get(cacheKey);
     }
     
-    const sessionPath = path.join(__dirname, '../../sessions');
+    const sessionPath = path.join(__dirname, '../sessions');
     const suffix = direction === 'pnToLid' ? '.json' : '_reverse.json';
     
     let filePath = path.join(sessionPath, `lid-mapping-${user}${suffix}`);
