@@ -751,6 +751,14 @@ const handleMessage = async (sock, msg) => {
             addMessage(from, sender);
         }
         
+        // Anti-link
+        if (isGroup) {
+            const groupSettings = database.getGroupSettings(from);
+            if (groupSettings.antilink) {
+                await handleAntilink(sock, msg, groupMetadata);
+            }
+        }
+        
         // Anti-group mention
         if (isGroup) {
             const groupSettings = database.getGroupSettings(from);
