@@ -213,7 +213,7 @@ module.exports = {
         await sock.sendMessage(from, { text: `✅ Selected ${selectedChapters.length} chapter(s)\nStarting download...` });
         pendingWebtoonDownloads.delete(from);
         const chaptersStr = selectedChapters.map(ch => ch.number).join(',');
-        await downloadChaptersDirect(sock, msg, mangaId, chaptersStr, mangaTitle);
+        await downloadChaptersDirect(sock, from, msg, mangaId, chaptersStr, mangaTitle);
         return true;
     }
 };
