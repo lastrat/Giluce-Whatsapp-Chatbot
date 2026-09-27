@@ -2,7 +2,11 @@
  * Menu Command - Display bot menu (Mobile-friendly with box characters)
  */
 
+const fs = require('fs');
+const path = require('path');
 const config = require('../../config');
+
+const MENU_IMAGE_PATH = path.join(__dirname, '../utils/bot_image.jpg');
 
 module.exports = {
     name: 'menu',
@@ -141,6 +145,20 @@ module.exports = {
 │
 └───────────┘`;
 
-        await sock.sendMessage(from, { text: menuText });
+        // Send menu with image if available
+        if (fs.existsSync(MENU_IMAGE_PATH)) {
+            try {
+                await sock.sendMessage(from, {
+                    image: fs.readFileSync(MENU_IMAGE_PATH),
+                    caption: menuText,
+                    mimetype: 'image/jpeg'
+                });
+            } catch (error) {
+                console.error('[Menu] Error sending menu with image:', error.message);
+                await sock.sendMessage(from, { text: menuText });
+            }
+        } else {
+            await sock.sendMessage(from, { text: menuText });
+        }
     }
 };
