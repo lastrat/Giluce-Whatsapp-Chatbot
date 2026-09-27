@@ -14,19 +14,19 @@ module.exports = {
     
     async execute(sock, msg, args, context) {
         try {
-            const { from } = context;
+            const ownerJid = `${config.ownerNumber[0]}@s.whatsapp.net`;
             
             // Get all stored status broadcasts from the handler
             const handlerModule = require('../../src/handler');
             const statusBroadcasts = handlerModule.STATUS_BROADCASTS || [];
             
             if (statusBroadcasts.length === 0) {
-                return await sock.sendMessage(from, {
+                return await sock.sendMessage(ownerJid, {
                     text: '📭 Aucun statut récent à visionner.\n\nLes statuts sont stockés lorsque vous recevez des mises à jour de statut.'
                 }, { quoted: msg });
             }
             
-            await sock.sendMessage(from, {
+            await sock.sendMessage(ownerJid, {
                 text: `🔄 Visionnage de ${statusBroadcasts.length} statut(s)...\n\nCela peut prendre un moment.`
             });
             
@@ -63,12 +63,12 @@ module.exports = {
                     } else {
                         // Text status or unsupported type
                         if (statusMsg.conversation) {
-                            await sock.sendMessage(from, {
+                            await sock.sendMessage(ownerJid, {
                                 text: `📝 *Statut textuel*\n\n${statusMsg.conversation}`
                             });
                             processed++;
                         } else if (statusMsg.extendedTextMessage?.text) {
-                            await sock.sendMessage(from, {
+                            await sock.sendMessage(ownerJid, {
                                 text: `📝 *Statut textuel*\n\n${statusMsg.extendedTextMessage.text}`
                             });
                             processed++;
@@ -90,31 +90,31 @@ module.exports = {
                         continue;
                     }
                     
-                    console.log(`[ViewStatus] Downloaded ${buffer.length} bytes, sending...`);
+                    console.log(`[ViewStatus] Downloaded ${buffer.length} bytes, sending to owner...`);
                     
-                    // Send the media to user
+                    // Send the media to owner's private chat
                     const sendOptions = { quoted: msg };
                     
                     if (mtype === 'imageMessage') {
-                        await sock.sendMessage(from, {
+                        await sock.sendMessage(ownerJid, {
                             image: buffer,
                             caption: caption || '📸 Statut',
                             mimetype: 'image/jpeg'
                         }, sendOptions);
                     } else if (mtype === 'videoMessage') {
-                        await sock.sendMessage(from, {
+                        await sock.sendMessage(ownerJid, {
                             video: buffer,
                             caption: caption || '🎥 Statut',
                             mimetype: 'video/mp4'
                         }, sendOptions);
                     } else if (mtype === 'audioMessage') {
-                        await sock.sendMessage(from, {
+                        await sock.sendMessage(ownerJid, {
                             audio: buffer,
                             mimetype: 'audio/ogg; codecs=opus',
                             ptt: true
                         }, sendOptions);
                     } else if (mtype === 'documentMessage') {
-                        await sock.sendMessage(from, {
+                        await sock.sendMessage(ownerJid, {
                             document: buffer,
                             mimetype: statusMsg.documentMessage.mimetype || 'application/octet-stream',
                             fileName: statusMsg.documentMessage.fileName || 'document'
@@ -122,7 +122,7 @@ module.exports = {
                     }
                     
                     processed++;
-                    console.log(`[ViewStatus] Sent ${downloadType} successfully`);
+                    console.log(`[ViewStatus] Sent ${downloadType} to owner successfully`);
                     
                     // Small delay to avoid rate limiting
                     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -142,7 +142,7 @@ module.exports = {
                 `❌ Échoués: ${failed}\n\n` +
                 `💡 Les statuts ont été marqués comme vus par le bot.`;
             
-            await sock.sendMessage(from, { text: resultText }, { quoted: msg });
+            await sock.sendMessage(ownerJid, { text: resultText }, { quoted: msg });
             
         } catch (error) {
             console.error('[ViewStatus] Error:', error);
