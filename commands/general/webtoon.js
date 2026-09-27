@@ -1,15 +1,18 @@
 /**
- * Webtoon Command - Search webtoons on MangaDex
+ * Webtoon Command - Search webtoons on Comix.to
  */
 
-const axios = require('axios');
+const { exec } = require('child_process');
+const path = require('path');
 const config = require('../../config');
+
+const COMIX_SEARCH_SCRIPT = path.join(__dirname, '../../comix-downloader/search_comix.py');
 
 module.exports = {
     name: 'webtoon',
     aliases: ['wt', 'webtoon-search'],
     category: 'general',
-    description: 'Search webtoons on MangaDex',
+    description: 'Search webtoons on Comix.to',
     usage: '.webtoon <query>',
     
     async execute(sock, msg, args, context) {
@@ -25,28 +28,34 @@ module.exports = {
             const query = args.join(' ');
             
             await sock.sendMessage(from, { 
-                text: '🔍 Searching webtoons...',
+                text: '🔍 Searching webtoons on Comix.to...',
                 react: { text: '🔍', key: msg.key }
             });
             
-            const searchResponse = await axios.get('https://api.mangadex.org/manga', {
-                params: {
-                    title: query,
-                    limit: 10,
-                    'contentRating[]': ['safe', 'suggestive'],
-                    'includes[]': ['cover_art'],
-                    order: { relevance: 'desc' }
-                },
-                timeout: 30000,
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                }
+            // Search using Comix.to via Python script
+            const searchResults = await new Promise((resolve, reject) => {
+                exec(`python "${COMIX_SEARCH_SCRIPT}" "${query.replace(/"/g, '\\"')}"`, 
+                    { timeout: 120000 },
+                    (error, stdout, stderr) => {
+                        if (error) {
+                            reject(new Error(`Search failed: ${error.message}`));
+                            return;
+                        }
+                        try {
+                            const result = JSON.parse(stdout);
+                            if (result.ok) {
+                                resolve(result.items);
+                            } else {
+                                reject(new Error(result.error || 'Unknown error'));
+                            }
+                        } catch (e) {
+                            reject(new Error(`Failed to parse search results: ${e.message}`));
+                        }
+                    }
+                );
             });
             
-            const data = searchResponse.data;
-            const mangaList = data.data || [];
-            
-            if (!mangaList.length) {
+            if (!searchResults.length) {
                 return await sock.sendMessage(from, { 
                     text: '❌ No webtoons found for your query.' 
                 });
@@ -56,47 +65,56 @@ module.exports = {
                 text: `📚 *Webtoon Search Results for: "${query}"*`
             });
             
-            for (const manga of mangaList.slice(0, 5)) {
-                const attr = manga.attributes || {};
-                const title = attr.title?.en || Object.values(attr.title || {})[0] || 'Unknown';
-                const author = (attr.author || [])[0] || 'Unknown';
-                const status = attr.status || 'Unknown';
-                const mangaId = manga.id;
-                const desc = (attr.description?.en || Object.values(attr.description || {})[0] || '')?.slice(0, 300) || '';
+            for (const manga of searchResults.slice(0, 5)) {
+                const title = manga.title || 'Unknown';
+                const mangaType = manga.manga_type || 'Unknown';
+                const status = manga.status || 'Unknown';
+                const year = manga.year || 'N/A';
+                const latestChapter = manga.latest_chapter || 'N/A';
+                const ratedAvg = manga.rated_avg || 'N/A';
+                const mangaCode = manga.manga_code;
+                const canonicalUrl = manga.canonical_url || `https://comix.to/title/${mangaCode}`;
+                const posterUrl = manga.poster_url;
                 
-                let coverUrl = null;
-                try {
-                    const coverRel = (manga.relationships || []).find(r => r.type === 'cover_art');
-                    const coverFileName = coverRel?.attributes?.fileName;
-                    if (coverFileName) {
-                        coverUrl = `https://uploads.mangadex.org/covers/${mangaId}/${coverFileName}`;
-                    } else {
-                        console.log('[Webtoon] Missing cover_art in relationships for', mangaId, 'rels:', (manga.relationships || []).map(r => r.type));
-                    }
-                } catch (error) {
-                    console.error('[Webtoon] Cover resolution failed for', mangaId, ':', error.message);
-                }
+                const caption = `*${title}*\n` +
+                    `Type: ${mangaType}\n` +
+                    `Status: ${status}\n` +
+                    `Year: ${year}\n` +
+                    `Latest Chapter: ${latestChapter}\n` +
+                    `Rating: ${ratedAvg}\n` +
+                    `ID: ${mangaCode}\n` +
+                    `URL: ${canonicalUrl}`;
                 
-                const caption = `*${title}*\nAuthor: ${author}\nStatus: ${status}\n${desc ? desc + '\n' : ''}ID: ${mangaId}`;
-                
-                if (!coverUrl) {
+                if (!posterUrl) {
                     await sock.sendMessage(from, { text: caption });
                     continue;
                 }
                 
                 try {
-                    const imgResponse = await axios.get(coverUrl, {
-                        responseType: 'arraybuffer',
-                        timeout: 20000,
-                        headers: { 'User-Agent': 'Mozilla/5.0' }
+                    const https = require('https');
+                    const http = require('http');
+                    
+                    const imageBuffer = await new Promise((resolve, reject) => {
+                        const url = new URL(posterUrl);
+                        const lib = url.protocol === 'https:' ? https : http;
+                        lib.get(posterUrl, { 
+                            headers: { 'User-Agent': 'Mozilla/5.0' },
+                            timeout: 20000 
+                        }, (res) => {
+                            const chunks = [];
+                            res.on('data', chunk => chunks.push(chunk));
+                            res.on('end', () => resolve(Buffer.concat(chunks)));
+                            res.on('error', reject);
+                        }).on('error', reject);
                     });
-                    const imageBuffer = Buffer.from(imgResponse.data);
+                    
                     console.log('[Webtoon] Cover bytes for', title, ':', imageBuffer.length);
                     if (!imageBuffer.length) {
                         console.error('[Webtoon] Empty cover buffer for', title);
                         await sock.sendMessage(from, { text: caption });
                         continue;
                     }
+                    
                     await sock.sendMessage(from, {
                         image: imageBuffer,
                         caption
@@ -109,7 +127,7 @@ module.exports = {
             }
             
             await sock.sendMessage(from, { 
-                text: `💡 Use .webtoon-download <manga_id> to download as PDF\nExample: .webtoon-download ${mangaList[0].id}`
+                text: `💡 Use .webtoon-download <manga_code> to download as PDF\nExample: .webtoon-download ${searchResults[0].manga_code}`
             });
             
         } catch (error) {
