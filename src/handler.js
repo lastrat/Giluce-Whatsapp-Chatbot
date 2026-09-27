@@ -672,28 +672,12 @@ const handleMessage = async (sock, msg) => {
             if (cfg.autoStatut) {
                 try {
                     const emoji = cfg.autoStatutEmoji || '👀';
-                    
-                    // For status broadcasts, get the actual sender JID from participant
-                    const targetJid = msg.key.participant || from;
-                    
-                    // Send read receipt to mark status as seen
-                    if (typeof sock.sendReceipt === 'function' && targetJid && targetJid !== from) {
-                        try {
-                            // sendReceipt expects an array of message IDs
-                            await sock.sendReceipt(targetJid, [msg.key.id], 'read');
-                            console.log(`[AutoStatut] Sent read receipt to ${targetJid} for status`);
-                        } catch (receiptError) {
-                            console.error('[AutoStatut] Error sending read receipt:', receiptError.message);
-                        }
-                    }
-                    
-                    // Also react to the status broadcast
                     await sock.sendMessage(from, {
                         react: { text: emoji, key: msg.key }
                     });
                     console.log(`[AutoStatut] Reacted to status with ${emoji}`);
                 } catch (error) {
-                    console.error('[AutoStatut] Error:', error.message);
+                    console.error('[AutoStatut] Error reacting to status:', error.message);
                 }
             }
         }
