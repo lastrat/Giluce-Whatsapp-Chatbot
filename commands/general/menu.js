@@ -49,6 +49,7 @@ module.exports = {
 │ 📌 Statut
 │ ├ .statut - Marquer statuts comme lus
 │ ├ .statut on/off - Activer/désactiver auto-statut
+│ └ .viewstatus - Visionner les statuts
 │
 │ 🎨 TextMaker
 │ ├ .1917 - Style 1917
