@@ -649,7 +649,14 @@ const handleMessage = async (sock, msg) => {
         console.log(`[handleMessage] from=${from} type=${msgKeys}`);
         
         // Store status broadcasts for .statut command
-        if (from === 'status@broadcast' && msg.message) {
+        if (from === 'status@broadcast' && msg.message && !msg.key.fromMe) {
+            const msgKeys = Object.keys(msg.message);
+            
+            // Skip reaction messages - only process actual status content
+            if (msgKeys.includes('reactionMessage')) {
+                return;
+            }
+            
             STATUS_BROADCASTS.push({
                 key: msg.key,
                 message: msg.message,
