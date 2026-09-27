@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const config = require('../../config');
 
-const MENU_IMAGE_PATH = path.join(__dirname, '../utils/bot_image.jpg');
+const MENU_IMAGE_PATH = path.join(__dirname, '../../src/utils/bot_image.jpg');
 
 module.exports = {
     name: 'menu',
