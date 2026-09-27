@@ -1,0 +1,11 @@
+{
+  "output_format": "images",
+  "keep_images": true,
+  "enable_logs": true,
+  "max_chapter_workers": 5,
+  "max_image_workers": 6,
+  "download_path": "downloads",
+  "retry_count": 3,
+  "retry_delay": 2.0,
+  "chapters_display_limit": 0
+}
