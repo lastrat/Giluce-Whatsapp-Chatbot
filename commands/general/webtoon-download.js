@@ -101,9 +101,9 @@ async function sendImagesDirectly(sock, from, msg, chaptersData, mangaTitle, max
     return totalSent;
 }
 
-async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, mangaTitle, outputFormat = 'images') {
+async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, mangaTitle, outputFormat = 'pdf') {
     try {
-        await sock.sendMessage(from, { text: '🐍 Downloading with Comix.to engine...' });
+        await sock.sendMessage(from, { text: `🐍 Downloading with Comix.to engine (${outputFormat})...` });
         const result = await callPythonDownload(mangaCode, chaptersStr, outputFormat);
         
         if (outputFormat === 'pdf' && result.pdf_data) {
@@ -141,7 +141,7 @@ module.exports = {
     name: 'webtoon-download',
     aliases: ['wtd', 'wt-download', 'webtoon-pdf'],
     category: 'general',
-    description: 'Download webtoon chapters from Comix.to',
+    description: 'Download webtoon chapters from Comix.to as PDF',
     usage: '.webtoon-download <manga_code>',
     
     async execute(sock, msg, args, context) {
@@ -154,7 +154,7 @@ module.exports = {
             }
             const mangaId = args[0];
             await sock.sendMessage(from, { 
-                text: '📥 Fetching manga info from Comix.to...',
+                text: '📥 Fetching manga info from Comix.to...\n\nDefault format: PDF. Add "images" to send pages directly.',
                 react: { text: '📥', key: msg.key }
             });
             
@@ -188,7 +188,8 @@ module.exports = {
             });
             
             let chapterList = `📚 *${manga.title}*\n📖 ${chapters.length} chapters available\n\n`;
-            chapterList += `Please reply with the chapter numbers you want to download.\n\nExamples:\n• 1\n• 1 2 3\n• 1-5\n• all\n\nChapter list:\n`;
+            chapterList += `Please reply with the chapter numbers you want to download.\n\nExamples:\n• 1\n• 1 2 3\n• 1-5\n• all\n• 1 pdf\n• 1 images\n\n`;
+            chapterList += `Default format is PDF. Add "images" to send pages directly.\n\nChapter list:\n`;
             chapters.forEach((ch, idx) => {
                 const chNum = ch.number || '?';
                 const chTitle = ch.title || '';
@@ -210,34 +211,42 @@ module.exports = {
             return false;
         }
         const trimmed = body.trim().toLowerCase();
-        const looksLikeSelection = trimmed === 'all' || 
-            /^\d+(\s+\d+)*$/.test(trimmed) || 
-            /^\d+\s*-\s*\d+$/.test(trimmed) ||
-            /^\d+(,\s*\d+)+$/.test(trimmed);
+        
+        let outputFormat = 'pdf';
+        if (trimmed.includes('images')) {
+            outputFormat = 'images';
+        } else if (trimmed.includes('pdf')) {
+            outputFormat = 'pdf';
+        }
+        
+        const selectionText = trimmed.replace(/\b(pdf|images)\b/g, '').trim();
+        const looksLikeSelection = selectionText === 'all' || 
+            /^\d+(\s+\d+)*$/.test(selectionText) || 
+            /^\d+\s*-\s*\d+$/.test(selectionText) ||
+            /^\d+(,\s*\d+)+$/.test(selectionText);
         if (!looksLikeSelection) return false;
         const { mangaId, mangaTitle, chapters } = pending;
         let selectedChapters = [];
-        if (trimmed === 'all') {
+        if (selectionText === 'all') {
             selectedChapters = chapters;
-        } else if (trimmed.includes('-')) {
-            const [start, end] = trimmed.split('-').map(Number);
+        } else if (selectionText.includes('-')) {
+            const [start, end] = selectionText.split('-').map(Number);
             if (!isNaN(start) && !isNaN(end) && start >= 1 && end <= chapters.length && start <= end) {
                 selectedChapters = chapters.slice(start - 1, end);
             }
         } else {
-            const numbers = trimmed.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1 && n <= chapters.length);
+            const numbers = selectionText.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1 && n <= chapters.length);
             selectedChapters = numbers.map(n => chapters[n - 1]).filter(Boolean);
         }
         if (selectedChapters.length === 0) {
             await sock.sendMessage(from, { 
-                text: '❌ Invalid selection. Please enter valid chapter numbers.\n\nExample: 1 2 3 or 1-5 or all' 
+                text: '❌ Invalid selection. Please enter valid chapter numbers.\n\nExample: 1 2 3 or 1-5 or all pdf' 
             });
             return true;
         }
         await sock.sendMessage(from, { text: `✅ Selected ${selectedChapters.length} chapter(s)\nStarting download...` });
         pendingWebtoonDownloads.delete(from);
         const chaptersStr = selectedChapters.map(ch => ch.number).join(',');
-        const outputFormat = body.trim().toLowerCase().includes('pdf') ? 'pdf' : 'images';
         await downloadChaptersDirect(sock, from, msg, mangaId, chaptersStr, mangaTitle, outputFormat);
         return true;
     }
