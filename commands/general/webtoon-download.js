@@ -231,16 +231,19 @@ module.exports = {
             selectedChapters = chapters;
         } else if (selectionText.includes('-')) {
             const [start, end] = selectionText.split('-').map(Number);
-            if (!isNaN(start) && !isNaN(end) && start >= 1 && end <= chapters.length && start <= end) {
-                selectedChapters = chapters.slice(start - 1, end);
+            if (!isNaN(start) && !isNaN(end) && start >= 1 && end >= start) {
+                selectedChapters = chapters.filter(ch => {
+                    const chNum = parseInt(ch.number, 10);
+                    return !isNaN(chNum) && start <= chNum && chNum <= end;
+                });
             }
         } else {
-            const numbers = selectionText.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1 && n <= chapters.length);
-            selectedChapters = numbers.map(n => chapters[n - 1]).filter(Boolean);
+            const numbers = new Set(selectionText.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1));
+            selectedChapters = chapters.filter(ch => numbers.has(parseInt(ch.number, 10)));
         }
         if (selectedChapters.length === 0) {
             await sock.sendMessage(from, { 
-                text: '❌ Invalid selection. Please enter valid chapter numbers.\n\nExample: 1 2 3 or 1-5 or all pdf' 
+                text: '❌ Invalid selection. Please enter valid chapter numbers.\n\nExample: 1 2 3 or 1-5 or all' 
             });
             return true;
         }

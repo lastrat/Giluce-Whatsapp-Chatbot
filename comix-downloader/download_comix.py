@@ -32,7 +32,7 @@ def parse_chapters(chapters_str: str, total_chapters: list) -> list:
                 if start <= ch_num <= end and ch not in selected:
                     selected.append(ch)
     else:
-        numbers = [int(x) for x in chapters_str.split() if x.isdigit()]
+        numbers = [int(x) for x in __import__('re').split(r'[\s,]+', chapters_str) if x.isdigit()]
         for num in numbers:
             for ch in total_chapters:
                 if ch['number'] == str(num) and ch not in selected:
