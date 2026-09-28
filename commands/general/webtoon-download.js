@@ -49,9 +49,10 @@ function downloadImage(url) {
     });
 }
 
-async function callPythonDownload(mangaCode, chaptersStr) {
+async function callPythonDownload(mangaCode, chaptersStr, outputFormat = 'images') {
     return new Promise((resolve, reject) => {
-        const cmd = `python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaCode}" "${chaptersStr}"`;
+        const pdfFlag = outputFormat === 'pdf' ? ' --pdf' : '';
+        const cmd = `python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaCode}" "${chaptersStr}"${pdfFlag}`;
         exec(cmd, { timeout: 600000, maxBuffer: 50 * 1024 * 1024 }, (error, stdout) => {
             if (error) {
                 reject(new Error(`Download failed: ${error.message}`));
@@ -83,6 +84,10 @@ async function sendImagesDirectly(sock, from, msg, chaptersData, mangaTitle, max
             try {
                 const img = limited[i];
                 const buffer = Buffer.from(img.data, 'base64');
+                if (buffer.length < 10240) {
+                    console.warn(`[WebtoonDownload] Skipping small image ${i + 1}: ${buffer.length} bytes`);
+                    continue;
+                }
                 await sock.sendMessage(from, {
                     image: buffer,
                     caption: `${mangaTitle} - Chapter ${chapterData.number} - Page ${i + 1}`
@@ -96,18 +101,32 @@ async function sendImagesDirectly(sock, from, msg, chaptersData, mangaTitle, max
     return totalSent;
 }
 
-async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, mangaTitle) {
+async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, mangaTitle, outputFormat = 'images') {
     try {
         await sock.sendMessage(from, { text: '🐍 Downloading with Comix.to engine...' });
-        const result = await callPythonDownload(mangaCode, chaptersStr);
+        const result = await callPythonDownload(mangaCode, chaptersStr, outputFormat);
+        
+        if (outputFormat === 'pdf' && result.pdf_data) {
+            const pdfBuffer = Buffer.from(result.pdf_data, 'base64');
+            await sock.sendMessage(from, {
+                document: pdfBuffer,
+                mimetype: 'application/pdf',
+                fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
+                caption: `✅ ${mangaTitle}\n${result.total_chapters_downloaded} chapter(s)`
+            });
+            return;
+        }
+        
         if (!result.chapters || result.chapters.length === 0) {
             await sock.sendMessage(from, { text: '❌ No chapters downloaded.' });
             return;
         }
+        
         const totalImages = result.chapters.reduce((sum, ch) => sum + (ch.images ? ch.images.length : 0), 0);
         await sock.sendMessage(from, {
             text: `✅ Downloaded ${result.total_chapters_downloaded} chapter(s) with ${totalImages} pages.\nSending images...`
         });
+        
         const sent = await sendImagesDirectly(sock, from, msg, result.chapters, mangaTitle, 10);
         await sock.sendMessage(from, {
             text: `✅ Sent ${sent} images from ${result.total_chapters_downloaded} chapter(s).`
@@ -138,8 +157,9 @@ module.exports = {
                 text: '📥 Fetching manga info from Comix.to...',
                 react: { text: '📥', key: msg.key }
             });
+            
             const searchResults = await new Promise((resolve, reject) => {
-                exec(`python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaId}" "1-1"`, 
+                exec(`python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaId}" "list"`, 
                     { timeout: 120000, maxBuffer: 10 * 1024 * 1024 },
                     (error, stdout) => {
                         if (error) return reject(new Error(`Search failed: ${error.message}`));
@@ -152,17 +172,21 @@ module.exports = {
                     }
                 );
             });
+            
             const manga = searchResults.manga;
             const chapters = searchResults.chapters || [];
+            
             if (!chapters.length) {
                 return await sock.sendMessage(from, { text: '❌ No chapters found for this manga.' });
             }
+            
             pendingWebtoonDownloads.set(from, {
                 mangaId,
                 mangaTitle: manga.title,
                 chapters,
                 timestamp: Date.now()
             });
+            
             let chapterList = `📚 *${manga.title}*\n📖 ${chapters.length} chapters available\n\n`;
             chapterList += `Please reply with the chapter numbers you want to download.\n\nExamples:\n• 1\n• 1 2 3\n• 1-5\n• all\n\nChapter list:\n`;
             chapters.forEach((ch, idx) => {
@@ -213,7 +237,8 @@ module.exports = {
         await sock.sendMessage(from, { text: `✅ Selected ${selectedChapters.length} chapter(s)\nStarting download...` });
         pendingWebtoonDownloads.delete(from);
         const chaptersStr = selectedChapters.map(ch => ch.number).join(',');
-        await downloadChaptersDirect(sock, from, msg, mangaId, chaptersStr, mangaTitle);
+        const outputFormat = body.trim().toLowerCase().includes('pdf') ? 'pdf' : 'images';
+        await downloadChaptersDirect(sock, from, msg, mangaId, chaptersStr, mangaTitle, outputFormat);
         return true;
     }
 };

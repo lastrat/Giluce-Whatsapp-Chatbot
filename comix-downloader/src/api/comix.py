@@ -141,15 +141,21 @@ async def _publish_comix_session(browser, page) -> None:
 
 async def _page_has_cloudflare_challenge(page) -> bool:
     """Identify Cloudflare's challenge page without false title matches."""
-    title = await page.evaluate("document.title")
-    title = title if isinstance(title, str) else ""
-    if title.strip().lower() == _CLOUDFLARE_TITLE:
-        return True
     try:
+        title = await page.evaluate("document.title")
+        title = title if isinstance(title, str) else ""
+        lower_title = title.strip().lower()
+        if lower_title in {"just a moment...", "attention required!", "attention required! | cloudflare"}:
+            return True
         marker = await page.evaluate(
-            "Boolean(document.querySelector('#challenge-running, #challenge-stage, form#challenge-form'))"
+            "Boolean(document.querySelector('#challenge-running, #challenge-stage, form#challenge-form, #cf-challenge-running'))"
         )
-        return marker is True
+        if marker is True:
+            return True
+        body_text = await page.evaluate("document.body && document.body.innerText ? document.body.innerText.slice(0, 200) : ''") or ""
+        if "cloudflare" in body_text.lower() and ("attention" in body_text.lower() or "verify you are human" in body_text.lower()):
+            return True
+        return False
     except Exception:
         return False
 

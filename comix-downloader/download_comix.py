@@ -1,12 +1,15 @@
 """
 Download webtoon chapters from Comix.to and output as JSON.
-Usage: python download_comix.py <manga_code> <chapters>
+Usage: python download_comix.py <manga_code> <chapters|list> [--pdf]
 """
 
 import sys
 import json
 import base64
 import asyncio
+import tempfile
+import subprocess
+import os
 from pathlib import Path
 
 project_root = Path(__file__).parent
@@ -24,59 +27,20 @@ def parse_chapters(chapters_str: str, total_chapters: list) -> list:
         parts = chapters_str.split('-')
         if len(parts) == 2:
             start, end = int(parts[0]), int(parts[1])
-            for i in range(start - 1, end):
-                if 0 <= i < len(total_chapters):
-                    selected.append(total_chapters[i])
+            for ch in total_chapters:
+                ch_num = float(ch['number']) if ch['number'] else 0
+                if start <= ch_num <= end and ch not in selected:
+                    selected.append(ch)
     else:
         numbers = [int(x) for x in chapters_str.split() if x.isdigit()]
         for num in numbers:
-            if 1 <= num <= len(total_chapters):
-                selected.append(total_chapters[num - 1])
+            for ch in total_chapters:
+                if ch['number'] == str(num) and ch not in selected:
+                    selected.append(ch)
     return selected
 
 
-async def download_chapter_images(chapter, manga_slug):
-    try:
-        report = await ComixAPI._get_chapter_images_async(
-            chapter["chapter_id"],
-            manga_slug=manga_slug,
-            chapter_number=chapter["number"],
-            headless=True
-        )
-        images = []
-        for i, img_data in enumerate(report.image_urls):
-            if isinstance(img_data, str) and img_data.startswith('data:image/'):
-                header, b64_data = img_data.split(',', 1)
-                img_bytes = base64.b64decode(b64_data)
-            else:
-                import requests
-                response = requests.get(img_data, timeout=30, headers={'User-Agent': 'Mozilla/5.0'})
-                img_bytes = response.content
-            images.append({
-                'index': i + 1,
-                'data': base64.b64encode(img_bytes).decode('utf-8'),
-                'mime': 'image/webp' if isinstance(img_data, str) and img_data.startswith('data:image/webp') else 'image/jpeg'
-            })
-        return {
-            'chapter_id': chapter["chapter_id"],
-            'number': chapter["number"],
-            'title': chapter.get("title", ""),
-            'images': images,
-            'page_count': len(images),
-            'skipped_pages': report.skipped_pages,
-            'failed_pages': report.failed_pages
-        }
-    except Exception as e:
-        return {
-            'chapter_id': chapter["chapter_id"],
-            'number': chapter["number"],
-            'title': chapter.get("title", ""),
-            'error': str(e),
-            'images': []
-        }
-
-
-async def main_async(manga_code: str, chapters_str: str):
+async def main_async(manga_code: str, chapters_str: str, output_format: str = 'images'):
     try:
         manga = await ComixAPI._get_manga_info_async(manga_code, headless=True)
         manga_slug = manga.slug or manga.hash_id or manga_code
@@ -86,33 +50,147 @@ async def main_async(manga_code: str, chapters_str: str):
             print(json.dumps({"ok": False, "error": "No chapters found"}))
             return
         
+        if chapters_str.strip().lower() == 'list':
+            chapter_list = []
+            for ch in chapters:
+                chapter_list.append({
+                    'chapter_id': ch['chapter_id'],
+                    'number': ch['number'],
+                    'title': ch.get('title', '')
+                })
+            result = {
+                "ok": True,
+                "manga": {
+                    "code": manga_code,
+                    "title": manga.title,
+                    "slug": manga_slug,
+                    "manga_type": manga.manga_type,
+                    "status": manga.status,
+                    "poster_url": manga.poster_url,
+                    "latest_chapter": manga.latest_chapter
+                },
+                "chapters": chapter_list,
+                "output_format": "list",
+                "total_chapters": len(chapters)
+            }
+            print(json.dumps(result))
+            return
+        
         selected_chapters = parse_chapters(chapters_str, chapters)
         if not selected_chapters:
             print(json.dumps({"ok": False, "error": "Invalid chapter selection"}))
             return
         
-        chapters_data = []
-        for chapter in selected_chapters:
-            print(f"Downloading chapter {chapter['number']}...", file=sys.stderr)
-            chapter_data = await download_chapter_images(chapter, manga_slug)
-            chapters_data.append(chapter_data)
+        chapter_numbers = [ch['number'] for ch in selected_chapters]
+        chapters_arg = ','.join(chapter_numbers)
         
-        result = {
-            "ok": True,
-            "manga": {
-                "code": manga_code,
-                "title": manga.title,
-                "slug": manga_slug,
-                "manga_type": manga.manga_type,
-                "status": manga.status,
-                "poster_url": manga.poster_url,
-                "latest_chapter": manga.latest_chapter
-            },
-            "chapters": chapters_data,
-            "output_format": "images",
-            "total_chapters_downloaded": len([c for c in chapters_data if c.get('images')])
-        }
-        print(json.dumps(result))
+        with tempfile.TemporaryDirectory(prefix='comix-dl-') as tmpdir:
+            cmd = [
+                sys.executable,
+                str(project_root / 'main.py'),
+                'download',
+                f'https://comix.to/title/{manga_slug}',
+                '--chapters', chapters_arg,
+                '--format', output_format,
+                '--output', tmpdir,
+                '--headless'
+            ]
+            
+            env = {
+                'PYTHONIOENCODING': 'utf-8',
+                'PYTHONUNBUFFERED': '1'
+            }
+            
+            result_proc = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                timeout=600,
+                cwd=str(project_root),
+                env={**os.environ, **env}
+            )
+            
+            manga_dir = None
+            for entry in Path(tmpdir).iterdir():
+                if entry.is_dir():
+                    manga_dir = entry
+                    break
+            
+            if manga_dir is None or not any(manga_dir.rglob('*.*')):
+                error_msg = result_proc.stderr[:500] if result_proc.stderr else result_proc.stdout[:500]
+                print(json.dumps({
+                    "ok": False,
+                    "error": f"Download failed: {error_msg}"
+                }))
+                return
+            
+            if output_format == 'pdf':
+                pdf_files = list(manga_dir.rglob('*.pdf'))
+                if not pdf_files:
+                    print(json.dumps({
+                        "ok": False,
+                        "error": "No PDF generated"
+                    }))
+                    return
+                
+                pdf_data = base64.b64encode(pdf_files[0].read_bytes()).decode('utf-8')
+                result = {
+                    "ok": True,
+                    "manga": {
+                        "code": manga_code,
+                        "title": manga.title,
+                        "slug": manga_slug,
+                        "manga_type": manga.manga_type,
+                        "status": manga.status,
+                        "poster_url": manga.poster_url,
+                        "latest_chapter": manga.latest_chapter
+                    },
+                    "output_format": "pdf",
+                    "pdf_data": pdf_data,
+                    "total_chapters_downloaded": len(selected_chapters)
+                }
+            else:
+                chapters_data = []
+                for ch in selected_chapters:
+                    ch_title_safe = ch.get('title', '').replace('/', '_').replace('\\', '_')
+                    ch_dir_name = f"Chapter_{ch['number']}_{ch_title_safe}"
+                    ch_dir = manga_dir / ch_dir_name
+                    images = []
+                    if ch_dir.exists():
+                        for img_file in sorted(ch_dir.glob('*.*')):
+                            if img_file.suffix.lower() in {'.webp', '.jpg', '.jpeg', '.png'}:
+                                img_bytes = img_file.read_bytes()
+                                if len(img_bytes) >= 10240:
+                                    images.append({
+                                        'index': len(images) + 1,
+                                        'data': base64.b64encode(img_bytes).decode('utf-8'),
+                                        'mime': 'image/webp' if img_file.suffix == '.webp' else 'image/jpeg'
+                                    })
+                    chapters_data.append({
+                        'chapter_id': ch['chapter_id'],
+                        'number': ch['number'],
+                        'title': ch.get('title', ''),
+                        'images': images,
+                        'page_count': len(images)
+                    })
+                
+                result = {
+                    "ok": True,
+                    "manga": {
+                        "code": manga_code,
+                        "title": manga.title,
+                        "slug": manga_slug,
+                        "manga_type": manga.manga_type,
+                        "status": manga.status,
+                        "poster_url": manga.poster_url,
+                        "latest_chapter": manga.latest_chapter
+                    },
+                    "chapters": chapters_data,
+                    "output_format": "images",
+                    "total_chapters_downloaded": len([c for c in chapters_data if c.get('images')])
+                }
+            
+            print(json.dumps(result))
     except Exception as e:
         import traceback
         traceback.print_exc(file=sys.stderr)
@@ -121,11 +199,12 @@ async def main_async(manga_code: str, chapters_str: str):
 
 def main():
     if len(sys.argv) < 3:
-        print(json.dumps({"ok": False, "error": "Usage: python download_comix.py <manga_code> <chapters>"}))
+        print(json.dumps({"ok": False, "error": "Usage: python download_comix.py <manga_code> <chapters|list> [--pdf]"}))
         sys.exit(1)
     manga_code = sys.argv[1]
     chapters_str = sys.argv[2]
-    asyncio.run(main_async(manga_code, chapters_str))
+    output_format = 'pdf' if '--pdf' in sys.argv else 'images'
+    asyncio.run(main_async(manga_code, chapters_str, output_format))
 
 
 if __name__ == "__main__":
