@@ -90,65 +90,22 @@ async def main_async(manga_code: str, chapters_str: str, output_format: str = 'i
                 unique_chapters.append(ch)
         selected_chapters = unique_chapters
         
+        output_dir = Path(tempfile.mkdtemp(prefix='comix-dl-'))
         chapters_data = []
         
         if output_format == 'pdf':
             for ch in selected_chapters:
-                with tempfile.TemporaryDirectory(prefix='comix-dl-') as tmpdir:
-                    cmd = [
-                        sys.executable,
-                        str(project_root / 'main.py'),
-                        'download',
-                        f'https://comix.to/title/{manga_slug}',
-                        '--chapters', str(ch['number']),
-                        '--format', 'pdf',
-                        '--output', tmpdir,
-                        '--headless'
-                    ]
-                    
-                    env = {
-                        'PYTHONIOENCODING': 'utf-8',
-                        'PYTHONUNBUFFERED': '1'
-                    }
-                    
-                    result_proc = subprocess.run(
-                        cmd,
-                        capture_output=True,
-                        text=True,
-                        timeout=600,
-                        cwd=str(project_root),
-                        env={**os.environ, **env}
-                    )
-                    
-                    manga_dir = None
-                    for entry in Path(tmpdir).iterdir():
-                        if entry.is_dir():
-                            manga_dir = entry
-                            break
-                    
-                    if manga_dir and any(manga_dir.rglob('*.pdf')):
-                        pdf_files = list(manga_dir.rglob('*.pdf'))
-                        pdf_data = base64.b64encode(pdf_files[0].read_bytes()).decode('utf-8')
-                        chapters_data.append({
-                            'chapter_id': ch['chapter_id'],
-                            'number': ch['number'],
-                            'title': ch.get('title', ''),
-                            'pdf_data': pdf_data,
-                            'file_name': f"{manga.title.replace('/', '_')}_Chapter_{ch['number']}.pdf"
-                        })
-        else:
-            with tempfile.TemporaryDirectory(prefix='comix-dl-') as tmpdir:
-                chapter_numbers = [ch['number'] for ch in selected_chapters]
-                chapters_arg = ','.join(chapter_numbers)
+                ch_output_dir = output_dir / f"Chapter_{ch['number']}"
+                ch_output_dir.mkdir(parents=True, exist_ok=True)
                 
                 cmd = [
                     sys.executable,
                     str(project_root / 'main.py'),
                     'download',
                     f'https://comix.to/title/{manga_slug}',
-                    '--chapters', chapters_arg,
-                    '--format', 'images',
-                    '--output', tmpdir,
+                    '--chapters', str(ch['number']),
+                    '--format', 'pdf',
+                    '--output', str(ch_output_dir),
                     '--headless'
                 ]
                 
@@ -166,69 +123,89 @@ async def main_async(manga_code: str, chapters_str: str, output_format: str = 'i
                     env={**os.environ, **env}
                 )
                 
-                manga_dir = None
-                for entry in Path(tmpdir).iterdir():
-                    if entry.is_dir():
-                        manga_dir = entry
-                        break
-                
-                if manga_dir:
-                    for ch in selected_chapters:
-                        ch_title_safe = ch.get('title', '').replace('/', '_').replace('\\', '_')
-                        ch_dir_name = f"Chapter_{ch['number']}_{ch_title_safe}"
-                        ch_dir = manga_dir / ch_dir_name
-                        images = []
-                        if ch_dir.exists():
-                            for img_file in sorted(ch_dir.glob('*.*')):
-                                if img_file.suffix.lower() in {'.webp', '.jpg', '.jpeg', '.png'}:
-                                    img_bytes = img_file.read_bytes()
-                                    if len(img_bytes) >= 10240:
-                                        images.append({
-                                            'index': len(images) + 1,
-                                            'data': base64.b64encode(img_bytes).decode('utf-8'),
-                                            'mime': 'image/webp' if img_file.suffix == '.webp' else 'image/jpeg'
-                                        })
-                        chapters_data.append({
-                            'chapter_id': ch['chapter_id'],
-                            'number': ch['number'],
-                            'title': ch.get('title', ''),
-                            'images': images,
-                            'page_count': len(images)
-                        })
-        
-        if output_format == 'pdf':
-            result = {
-                "ok": True,
-                "manga": {
-                    "code": manga_code,
-                    "title": manga.title,
-                    "slug": manga_slug,
-                    "manga_type": manga.manga_type,
-                    "status": manga.status,
-                    "poster_url": manga.poster_url,
-                    "latest_chapter": manga.latest_chapter
-                },
-                "output_format": "pdf",
-                "chapters": chapters_data,
-                "total_chapters_downloaded": len(chapters_data)
-            }
+                pdf_files = list(ch_output_dir.rglob('*.pdf'))
+                if pdf_files:
+                    pdf_path = pdf_files[0]
+                    chapters_data.append({
+                        'chapter_id': ch['chapter_id'],
+                        'number': ch['number'],
+                        'title': ch.get('title', ''),
+                        'pdf_path': str(pdf_path),
+                        'file_name': f"{manga.title.replace('/', '_')}_Chapter_{ch['number']}.pdf"
+                    })
         else:
-            result = {
-                "ok": True,
-                "manga": {
-                    "code": manga_code,
-                    "title": manga.title,
-                    "slug": manga_slug,
-                    "manga_type": manga.manga_type,
-                    "status": manga.status,
-                    "poster_url": manga.poster_url,
-                    "latest_chapter": manga.latest_chapter
-                },
-                "chapters": chapters_data,
-                "output_format": "images",
-                "total_chapters_downloaded": len([c for c in chapters_data if c.get('images')])
+            chapters_arg = ','.join(ch['number'] for ch in selected_chapters)
+            cmd = [
+                sys.executable,
+                str(project_root / 'main.py'),
+                'download',
+                f'https://comix.to/title/{manga_slug}',
+                '--chapters', chapters_arg,
+                '--format', 'images',
+                '--output', str(output_dir),
+                '--headless'
+            ]
+            
+            env = {
+                'PYTHONIOENCODING': 'utf-8',
+                'PYTHONUNBUFFERED': '1'
             }
+            
+            result_proc = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                timeout=600,
+                cwd=str(project_root),
+                env={**os.environ, **env}
+            )
+            
+            manga_dir = None
+            for entry in output_dir.iterdir():
+                if entry.is_dir():
+                    manga_dir = entry
+                    break
+            
+            if manga_dir:
+                for ch in selected_chapters:
+                    ch_title_safe = ch.get('title', '').replace('/', '_').replace('\\', '_')
+                    ch_dir_name = f"Chapter_{ch['number']}_{ch_title_safe}"
+                    ch_dir = manga_dir / ch_dir_name
+                    images = []
+                    if ch_dir.exists():
+                        for img_file in sorted(ch_dir.glob('*.*')):
+                            if img_file.suffix.lower() in {'.webp', '.jpg', '.jpeg', '.png'}:
+                                img_bytes = img_file.read_bytes()
+                                if len(img_bytes) >= 10240:
+                                    images.append({
+                                        'index': len(images) + 1,
+                                        'data': base64.b64encode(img_bytes).decode('utf-8'),
+                                        'mime': 'image/webp' if img_file.suffix == '.webp' else 'image/jpeg'
+                                    })
+                    chapters_data.append({
+                        'chapter_id': ch['chapter_id'],
+                        'number': ch['number'],
+                        'title': ch.get('title', ''),
+                        'images': images,
+                        'page_count': len(images)
+                    })
         
+        result = {
+            "ok": True,
+            "manga": {
+                "code": manga_code,
+                "title": manga.title,
+                "slug": manga_slug,
+                "manga_type": manga.manga_type,
+                "status": manga.status,
+                "poster_url": manga.poster_url,
+                "latest_chapter": manga.latest_chapter
+            },
+            "output_dir": str(output_dir),
+            "output_format": output_format,
+            "chapters": chapters_data,
+            "total_chapters_downloaded": len(chapters_data)
+        }
         print(json.dumps(result))
     except Exception as e:
         import traceback

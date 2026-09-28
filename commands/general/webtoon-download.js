@@ -16,6 +16,10 @@ if (!fs.existsSync(DOWNLOADS_DIR)) {
 }
 
 const COMIX_DOWNLOAD_SCRIPT = path.join(__dirname, '../../comix-downloader/download_comix.py');
+const COMIX_OUTPUT_DIR = path.join(__dirname, '../../temp/comix-downloads');
+if (!fs.existsSync(COMIX_OUTPUT_DIR)) {
+    fs.mkdirSync(COMIX_OUTPUT_DIR, { recursive: true });
+}
 
 const pendingWebtoonDownloads = new Map();
 
@@ -51,9 +55,13 @@ function downloadImage(url) {
 
 async function callPythonDownload(mangaCode, chaptersStr, outputFormat = 'images') {
     return new Promise((resolve, reject) => {
+        const outputDir = path.join(COMIX_OUTPUT_DIR, `${mangaCode}_${Date.now()}`);
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
         const pdfFlag = outputFormat === 'pdf' ? ' --pdf' : '';
         const cmd = `python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaCode}" "${chaptersStr}"${pdfFlag}`;
-        exec(cmd, { timeout: 600000, maxBuffer: 50 * 1024 * 1024 }, (error, stdout) => {
+        exec(cmd, { timeout: 600000, maxBuffer: 1024 * 1024, cwd: outputDir }, (error, stdout) => {
             if (error) {
                 reject(new Error(`Download failed: ${error.message}`));
                 return;
@@ -101,16 +109,28 @@ async function sendImagesDirectly(sock, from, msg, chaptersData, mangaTitle, max
     return totalSent;
 }
 
+async function cleanupOutputDir(outputDir) {
+    if (!outputDir || !fs.existsSync(outputDir)) return;
+    try {
+        fs.rmSync(outputDir, { recursive: true, force: true });
+    } catch (e) {
+        console.error('[WebtoonDownload] Failed to cleanup temp dir:', e.message);
+    }
+}
+
 async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, mangaTitle, outputFormat = 'pdf') {
+    let outputDir = null;
     try {
         await sock.sendMessage(from, { text: `🐍 Downloading with Comix.to engine (${outputFormat})...` });
         const result = await callPythonDownload(mangaCode, chaptersStr, outputFormat);
+        outputDir = result.output_dir;
         
         if (outputFormat === 'pdf') {
             if (result.chapters && result.chapters.length > 0) {
                 for (const ch of result.chapters) {
-                    if (!ch.pdf_data) continue;
-                    const pdfBuffer = Buffer.from(ch.pdf_data, 'base64');
+                    const pdfPath = ch.pdf_path || (outputDir && path.join(outputDir, ch.file_name || ''));
+                    if (!pdfPath || !fs.existsSync(pdfPath)) continue;
+                    const pdfBuffer = fs.readFileSync(pdfPath);
                     const fileName = ch.file_name || `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}_Chapter_${ch.number}.pdf`;
                     await sock.sendMessage(from, {
                         document: pdfBuffer,
@@ -121,14 +141,6 @@ async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, m
                 }
                 await sock.sendMessage(from, {
                     text: `✅ Sent ${result.chapters.length} PDF(s) for ${mangaTitle}`
-                });
-            } else if (result.pdf_data) {
-                const pdfBuffer = Buffer.from(result.pdf_data, 'base64');
-                await sock.sendMessage(from, {
-                    document: pdfBuffer,
-                    mimetype: 'application/pdf',
-                    fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
-                    caption: `✅ ${mangaTitle}\n${result.total_chapters_downloaded} chapter(s)`
                 });
             } else {
                 await sock.sendMessage(from, { text: '❌ No PDF generated.' });
@@ -153,6 +165,10 @@ async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, m
     } catch (error) {
         console.error('[WebtoonDownload] Direct download error:', error);
         await sock.sendMessage(from, { text: `❌ Download failed: ${error.message}` });
+    } finally {
+        if (outputDir) {
+            cleanupOutputDir(outputDir);
+        }
     }
 }
 
