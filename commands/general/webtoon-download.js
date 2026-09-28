@@ -106,14 +106,33 @@ async function downloadChaptersDirect(sock, from, msg, mangaCode, chaptersStr, m
         await sock.sendMessage(from, { text: `🐍 Downloading with Comix.to engine (${outputFormat})...` });
         const result = await callPythonDownload(mangaCode, chaptersStr, outputFormat);
         
-        if (outputFormat === 'pdf' && result.pdf_data) {
-            const pdfBuffer = Buffer.from(result.pdf_data, 'base64');
-            await sock.sendMessage(from, {
-                document: pdfBuffer,
-                mimetype: 'application/pdf',
-                fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
-                caption: `✅ ${mangaTitle}\n${result.total_chapters_downloaded} chapter(s)`
-            });
+        if (outputFormat === 'pdf') {
+            if (result.chapters && result.chapters.length > 0) {
+                for (const ch of result.chapters) {
+                    if (!ch.pdf_data) continue;
+                    const pdfBuffer = Buffer.from(ch.pdf_data, 'base64');
+                    const fileName = ch.file_name || `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}_Chapter_${ch.number}.pdf`;
+                    await sock.sendMessage(from, {
+                        document: pdfBuffer,
+                        mimetype: 'application/pdf',
+                        fileName: fileName,
+                        caption: `📖 ${mangaTitle}\nChapter ${ch.number}${ch.title ? ' - ' + ch.title : ''}`
+                    });
+                }
+                await sock.sendMessage(from, {
+                    text: `✅ Sent ${result.chapters.length} PDF(s) for ${mangaTitle}`
+                });
+            } else if (result.pdf_data) {
+                const pdfBuffer = Buffer.from(result.pdf_data, 'base64');
+                await sock.sendMessage(from, {
+                    document: pdfBuffer,
+                    mimetype: 'application/pdf',
+                    fileName: `${mangaTitle.replace(/[^a-z0-9]/gi, '_')}.pdf`,
+                    caption: `✅ ${mangaTitle}\n${result.total_chapters_downloaded} chapter(s)`
+                });
+            } else {
+                await sock.sendMessage(from, { text: '❌ No PDF generated.' });
+            }
             return;
         }
         
@@ -241,6 +260,18 @@ module.exports = {
             const numbers = new Set(selectionText.split(/[\s,]+/).map(Number).filter(n => !isNaN(n) && n >= 1));
             selectedChapters = chapters.filter(ch => numbers.has(parseInt(ch.number, 10)));
         }
+        
+        const seen = new Set();
+        const uniqueChapters = [];
+        for (const ch of selectedChapters) {
+            const key = ch.number;
+            if (!seen.has(key)) {
+                seen.add(key);
+                uniqueChapters.push(ch);
+            }
+        }
+        selectedChapters = uniqueChapters;
+        
         if (selectedChapters.length === 0) {
             await sock.sendMessage(from, { 
                 text: '❌ Invalid selection. Please enter valid chapter numbers.\n\nExample: 1 2 3 or 1-5 or all' 
