@@ -43,6 +43,13 @@
 - **Facebook** - Download videos
 - **Pinterest** - Download images
 
+### 📚 Webtoon Commands
+- **\.webtoon <query>\** - Search webtoons on Comix.to
+- **\.webtoon-download <manga_code>\** - Download chapters as PDF or images
+
+> **Note:** Webtoon commands require Python 3.10+ and Chrome/Chromium installed.
+> See [Webtoon Commands Setup](#-webtoon-commands-setup) for details.
+
 ### 🎮 Entertainment
 - **Memes** - Random meme generator
 - **Jokes** - Daily jokes
@@ -212,7 +219,7 @@ WHATSAPP_SESSION_PATH=../sessions
 
 ## 📁 Project Structure
 
-```
+`
 Giluce-WhatsApp-Chatbot/
 │
 ├── whatsapp-bot/              # Node.js Bot (Baileys)
@@ -228,14 +235,22 @@ Giluce-WhatsApp-Chatbot/
 │   ├── config.js             # Configuration
 │   └── index.js             # Entry point
 │
+├── comix-downloader/         # Python webtoon downloader (Comix.to)
+│   ├── main.py              # CLI entry point
+│   ├── download_comix.py    # Chapter download wrapper
+│   ├── search_comix.py      # Search wrapper
+│   ├── src/                 # Core downloader library
+│   └── requirements.txt     # Python dependencies
+│
+├── webtoon-api/              # Optional FastAPI wrapper
+│   └── main.py              # REST API for webtoon features
+│
 └── whatsapp-bot-laravel/    # Laravel Dashboard
     ├── app/                  # Application controllers
     ├── resources/views/       # Blade templates
     ├── routes/               # Web routes
     └── database/migrations/  # Database migrations
-```
-
----
+`---
 
 ## 🔧 API Configuration
 
@@ -271,6 +286,47 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+---
+
+## 📚 Webtoon Commands Setup
+
+The webtoon features require additional Python dependencies and a Chrome/Chromium browser for automation.
+
+### Prerequisites
+
+- **Python 3.10+** installed and available in PATH
+- **Chrome** or **Chromium** browser installed
+- **Pip packages** (installed automatically via comix-downloader/requirements.txt)
+
+### Installation
+
+`ash
+# Install Python dependencies
+cd comix-downloader
+pip install -r requirements.txt
+`
+
+### How It Works
+
+| Command | Python Entry Point | Description |
+|---------|-------------------|-------------|
+| .webtoon <query> | comix-downloader/search_comix.py | Searches Comix.to and returns results |
+| .webtoon-download <code> | comix-downloader/download_comix.py | Downloads chapters as PDF/images |
+
+### Hosting Considerations
+
+**These commands cannot run on Render or similar serverless platforms** because they require:
+- A persistent Chrome/Chromium browser for nodriver automation
+- Valid Comix.to cookies to bypass Cloudflare protection
+- Significant memory and CPU for PDF generation
+
+**Recommended hosting:**
+- **VPS** (OVH, DigitalOcean, Hetzner) with Docker + Chrome headless
+- **Local PC / WAMP** with PM2 or similar process manager
+- **Dedicated server** for best performance
+
+See [comix-downloader/README.md](comix-downloader/README.md) for detailed setup instructions.
 
 ---
 
