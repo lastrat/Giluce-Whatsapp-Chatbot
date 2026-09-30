@@ -151,6 +151,8 @@ const startBot = async () => {
 
     attachSocketEvents(sock, sessionId);
 
+    handler.initializeAutomation();
+
     console.log(`
 ╔═══════════════════════════════════════════════════╗
 ║   Giluce WhatsApp Bot - Console Mode             ║

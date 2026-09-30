@@ -5,7 +5,7 @@
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['237671624397'], // Add your number without + or spaces
+    ownerNumber: ['237671624397, 237671624397'], // Add your number without + or spaces
     ownerName: ['Giluce Bot', 'Admin'],
     
     // Bot Configuration
@@ -19,7 +19,7 @@ module.exports = {
     packname: 'Giluce Bot',
     
     // Bot Behavior
-    selfMode: false, // Private mode - only owner can use commands
+    selfMode: true, // Private mode - only owner can use commands
     autoRead: false,
     autoTyping: true,
     autoBio: false,
@@ -28,7 +28,7 @@ module.exports = {
     autoReactMode: 'all', // set bot or all via cmd
     antiviewonce: true,
     antidelete: true,
-    autoStatut: false,
+    autoStatut: true,
     autoStatutEmoji: '👀',
     
     // Group Settings Defaults

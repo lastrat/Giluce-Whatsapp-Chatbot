@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghostroar Digital - Connexion WhatsApp</title>
+    <title>Giluce - Connexion WhatsApp</title>
     <style>
         * {
             margin: 0;
@@ -288,5 +288,13 @@
             updateStatus('error', 'Connexion perdue. Actualisez la page.');
         };
     </script>
+    <script src="https://res.wang.market/translate/translate.js"></script>
+<script>
+translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+translate.service.use('client.edge'); //设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
+translate.listener.start(); //开启页面元素动态监控，js改变的内容也会被翻译 http://translate.zvo.cn/4067.html
+translate.request.listener.start(); //对ajax请求进行监控，以进行对其翻译 http://translate.zvo.cn/4086.html
+translate.execute();//进行翻译
+</script>
 </body>
 </html>
