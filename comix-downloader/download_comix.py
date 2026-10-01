@@ -10,12 +10,24 @@ import asyncio
 import tempfile
 import subprocess
 import os
+import re
 from pathlib import Path
 
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
 from src.api.comix import ComixAPI
+
+
+def extract_manga_code(input_str: str) -> str:
+    if not input_str:
+        return input_str
+    input_str = input_str.strip()
+    if input_str.lower().startswith('http'):
+        match = re.search(r'/title/([^/?#]+)', input_str)
+        if match:
+            return match.group(1)
+    return input_str
 
 
 def parse_chapters(chapters_str: str, total_chapters: list) -> list:
@@ -217,7 +229,7 @@ def main():
     if len(sys.argv) < 3:
         print(json.dumps({"ok": False, "error": "Usage: python download_comix.py <manga_code> <chapters|list> [--pdf]"}))
         sys.exit(1)
-    manga_code = sys.argv[1]
+    manga_code = extract_manga_code(sys.argv[1])
     chapters_str = sys.argv[2]
     output_format = 'pdf' if '--pdf' in sys.argv else 'images'
     asyncio.run(main_async(manga_code, chapters_str, output_format))

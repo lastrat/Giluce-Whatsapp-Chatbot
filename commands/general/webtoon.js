@@ -8,12 +8,29 @@ const config = require('../../config');
 
 const COMIX_SEARCH_SCRIPT = path.join(__dirname, '../../comix-downloader/search_comix.py');
 
+function extractMangaCode(input) {
+    if (!input) return null;
+    input = input.trim();
+    if (/^https?:\/\//i.test(input)) {
+        try {
+            const url = new URL(input);
+            const parts = url.pathname.split('/').filter(Boolean);
+            const titlePart = parts[parts.length - 1] || '';
+            const code = titlePart.split('-')[0];
+            return code || null;
+        } catch {
+            return null;
+        }
+    }
+    return input;
+}
+
 module.exports = {
     name: 'webtoon',
     aliases: ['wt', 'webtoon-search'],
     category: 'general',
     description: 'Search webtoons on Comix.to',
-    usage: '.webtoon <query>',
+    usage: '.webtoon <query_or_url>',
     
     async execute(sock, msg, args, context) {
         const { from } = context;
@@ -21,7 +38,7 @@ module.exports = {
         try {
             if (args.length === 0) {
                 return await sock.sendMessage(from, { 
-                    text: '❌ Please provide a search query!\n\nExample: .webtoon violet evergarden' 
+                    text: '❌ Please provide a search query or Comix.to URL!\n\nExample: .webtoon violet evergarden' 
                 });
             }
             

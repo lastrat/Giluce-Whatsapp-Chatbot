@@ -21,6 +21,23 @@ if (!fs.existsSync(COMIX_OUTPUT_DIR)) {
     fs.mkdirSync(COMIX_OUTPUT_DIR, { recursive: true });
 }
 
+function extractMangaCode(input) {
+    if (!input) return null;
+    input = input.trim();
+    if (/^https?:\/\//i.test(input)) {
+        try {
+            const url = new URL(input);
+            const parts = url.pathname.split('/').filter(Boolean);
+            const titlePart = parts[parts.length - 1] || '';
+            const code = titlePart.split('-')[0];
+            return code || null;
+        } catch {
+            return null;
+        }
+    }
+    return input;
+}
+
 const pendingWebtoonDownloads = new Map();
 
 function downloadImage(url) {
@@ -177,17 +194,17 @@ module.exports = {
     aliases: ['wtd', 'wt-download', 'webtoon-pdf'],
     category: 'general',
     description: 'Download webtoon chapters from Comix.to as PDF',
-    usage: '.webtoon-download <manga_code>',
+    usage: '.webtoon-download <manga_code_or_url>',
     
     async execute(sock, msg, args, context) {
         const { from } = context;
         try {
             if (args.length === 0) {
                 return await sock.sendMessage(from, { 
-                    text: '❌ Please provide a manga code!\n\nExample: .webtoon-download zxl15' 
+                    text: '❌ Please provide a manga code!\n\nExample: .webtoon-download zxl15\nOr: .webtoon-download https://comix.to/title/zxl15-would-you-like-to-have-an-affair-with-me'
                 });
             }
-            const mangaId = args[0];
+            const mangaId = extractMangaCode(args[0]);
             await sock.sendMessage(from, { 
                 text: '📥 Fetching manga info from Comix.to...\n\nDefault format: PDF. Add "images" to send pages directly.',
                 react: { text: '📥', key: msg.key }
