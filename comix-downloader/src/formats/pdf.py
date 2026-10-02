@@ -33,7 +33,7 @@ def _load_image_for_pdf(source) -> Image.Image:
     return img
 
 
-def _write_pdf(images: list[tuple[int, Image.Image]], output_path: Path, title: str) -> Path:
+def _write_pdf(images: list[tuple[int, Image.Image]], output_path: Path, title: str, quality: int = 75) -> Path:
     if not images:
         raise ValueError("No valid images provided for PDF creation")
 
@@ -51,7 +51,7 @@ def _write_pdf(images: list[tuple[int, Image.Image]], output_path: Path, title: 
             c.setPageSize((img_width, img_height))
 
             img_buffer = BytesIO()
-            img.save(img_buffer, format='JPEG', quality=95)
+            img.save(img_buffer, format='JPEG', quality=quality, optimize=True)
             img_buffer.seek(0)
 
             c.drawImage(ImageReader(img_buffer), 0, 0, img_width, img_height)
@@ -73,7 +73,8 @@ def _write_pdf(images: list[tuple[int, Image.Image]], output_path: Path, title: 
 def create_pdf(
     image_paths: list[Path],
     output_path: str | Path,
-    title: str = "Manga Chapter"
+    title: str = "Manga Chapter",
+    quality: int = 75
 ) -> Path:
     """
     Create a PDF from a list of image files.
@@ -91,13 +92,14 @@ def create_pdf(
         (idx, _load_image_for_pdf(img_path))
         for idx, img_path in enumerate(sorted(image_paths), 1)
     ]
-    return _write_pdf(images, output_path, title)
+    return _write_pdf(images, output_path, title, quality=quality)
 
 
 def create_pdf_from_bytes(
     image_data: list[tuple[int, bytes]],
     output_path: str | Path,
-    title: str = "Manga Chapter"
+    title: str = "Manga Chapter",
+    quality: int = 75
 ) -> Path:
     """
     Create a PDF directly from image bytes without saving to disk first.
@@ -115,4 +117,4 @@ def create_pdf_from_bytes(
         (idx, _load_image_for_pdf(BytesIO(data)))
         for idx, data in sorted(image_data, key=lambda x: x[0])
     ]
-    return _write_pdf(images, output_path, title)
+    return _write_pdf(images, output_path, title, quality=quality)
