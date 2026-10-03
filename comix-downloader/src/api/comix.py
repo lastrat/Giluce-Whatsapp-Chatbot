@@ -145,7 +145,27 @@ async def _page_has_cloudflare_challenge(page) -> bool:
         title = await page.evaluate("document.title")
         title = title if isinstance(title, str) else ""
         lower_title = title.strip().lower()
-        if lower_title in {"just a moment...", "attention required!", "attention required! | cloudflare"}:
+        if lower_title in {
+            "just a moment...",
+            "attention required!",
+            "attention required! | cloudflare",
+            "un instant...",
+            "un instant... | cloudflare",
+            "verification...",
+            "verification... | cloudflare",
+            "carregando...",
+            "carregando... | cloudflare",
+            "espera un momento...",
+            "espera un momento... | cloudflare",
+            "warten sie einen moment...",
+            "warten sie einen moment... | cloudflare",
+            "momento...",
+            "momento... | cloudflare",
+            "please wait...",
+            "please wait... | cloudflare",
+            "checking your browser...",
+            "checking your browser... | cloudflare",
+        }:
             return True
         marker = await page.evaluate(
             "Boolean(document.querySelector('#challenge-running, #challenge-stage, form#challenge-form, #cf-challenge-running'))"
@@ -551,6 +571,7 @@ class ComixAPI:
                 "Boolean(document.getElementById('initial-data'))",
                 headless=headless,
                 operation="discovery",
+                timeout=120.0,
             )
             await _publish_comix_session(browser, page)
             await _save_comix_cookies(browser)
@@ -584,20 +605,34 @@ class ComixAPI:
         if headless is None:
             headless = ConfigManager().get("headless", True)
         page = max(1, int(page))
-        try:
-            result = run_async(
-                cls._get_discovery_async(
-                    keyword=keyword,
-                    page_number=page,
-                    limit=limit,
-                    highlights=False,
-                    headless=headless,
+        last_error = None
+        for attempt in range(3):
+            try:
+                result = run_async(
+                    cls._get_discovery_async(
+                        keyword=keyword,
+                        page_number=page,
+                        limit=limit,
+                        highlights=False,
+                        headless=headless,
+                    )
                 )
-            )
-            return cls._normalize_manga_browse_page(result.get("data", {}), page)
-        except Exception:
-            logger.exception("Discovery search failed for %r", keyword)
-            raise
+                return cls._normalize_manga_browse_page(result.get("data", {}), page)
+            except RuntimeError as exc:
+                if "Cloudflare" not in str(exc):
+                    raise
+                last_error = exc
+                logger.warning(
+                    "Discovery search Cloudflare error for %r (attempt %s/3): %s",
+                    keyword,
+                    attempt + 1,
+                    exc,
+                )
+            except Exception:
+                logger.exception("Discovery search failed for %r", keyword)
+                raise
+        if last_error:
+            raise last_error
 
     @classmethod
     def get_manga_highlights(
@@ -651,6 +686,7 @@ class ComixAPI:
                 "Boolean(document.getElementById('initial-data'))",
                 headless=headless,
                 operation="manga details",
+                timeout=120.0,
             )
             initial_data = await _wait_for_initial_data(
                 page,
@@ -962,6 +998,7 @@ class ComixAPI:
                 "Boolean(document.getElementById('initial-data'))",
                 headless=headless,
                 operation="chapter listing",
+                timeout=120.0,
             )
             initial_data = await _wait_for_initial_data(
                 page,
@@ -1114,7 +1151,7 @@ class ComixAPI:
                 "document.querySelectorAll('.rpage-page').length > 0",
                 headless=headless,
                 operation="chapter reader",
-                timeout=90.0,
+                timeout=120.0,
                 unavailable_script=(
                     "Boolean(document.body && /could not be found|page not found|404/i.test("
                     "document.body.innerText || ''))"
