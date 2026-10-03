@@ -60,7 +60,16 @@ async def _start_comix_browser(headless: bool):
     """Start a browser and load the shared Comix cookie jar if available."""
     _browser_lock.acquire()
     try:
-        browser = await start_browser(headless)
+        user_data_dir = os.environ.get("COMIX_USER_DATA_DIR")
+        if not user_data_dir:
+            default_dir = Path.home() / "AppData/Local/Google/Chrome/User Data"
+            if default_dir.exists():
+                user_data_dir = str(default_dir)
+        try:
+            browser = await start_browser(headless, user_data_dir=user_data_dir)
+        except Exception:
+            logger.warning("Failed to start browser with user data dir %s, trying without", user_data_dir)
+            browser = await start_browser(headless)
         for cookie_file in _cookie_file_candidates():
             if not cookie_file.exists():
                 continue
@@ -70,6 +79,10 @@ async def _start_comix_browser(headless: bool):
                 break
             except Exception as exc:
                 logger.warning("Failed loading cookies from %s: %s", cookie_file, exc)
+                try:
+                    cookie_file.unlink(missing_ok=True)
+                except Exception:
+                    pass
         return browser
     finally:
         _browser_lock.release()

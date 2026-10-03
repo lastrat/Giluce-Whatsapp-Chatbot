@@ -165,13 +165,15 @@ async def _get_desktop_user_agent(uc: Any, config_factory: Any) -> str:
         return _user_agent_cache
 
 
-async def start_browser(headless: bool, nodriver: Any = None):
+async def start_browser(headless: bool, nodriver: Any = None, user_data_dir: str | None = None):
     """Start nodriver using the shared browser argument policy."""
     if not isinstance(headless, bool):
         raise TypeError(f"headless must be a bool, got {type(headless).__name__}")
 
     uc = nodriver if nodriver is not None else load_nodriver()
     browser_args = get_browser_args(headless)
+    if user_data_dir:
+        browser_args.append(f"--user-data-dir={user_data_dir}")
 
     # Supplying an explicit Config lets us verify the final command line
     # before Chrome is spawned.  Keep the fallback for lightweight test doubles
