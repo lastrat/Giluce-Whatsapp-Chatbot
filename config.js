@@ -5,7 +5,7 @@
 
 module.exports = {
     // Bot Owner Configuration
-    ownerNumber: ['237671624397, 237671624397'], // Add your number without + or spaces
+    ownerNumber: ['237671624397'], // Add your number without + or spaces
     ownerName: ['Giluce Bot', 'Admin'],
     
     // Bot Configuration
@@ -82,6 +82,9 @@ module.exports = {
     // Limits
     maxWarnings: 3,
     
+    // Python path for webtoon commands
+    pythonPath: process.env.PYTHON_PATH || 'C:\\Users\\Lastrategie\\AppData\\Local\\Programs\\Python\\Python312\\python.exe',
+
     // Social Links
     social: {
         github: 'https://github.com/giluce',

@@ -26,7 +26,7 @@ logger = get_logger(__name__)
 _browser_lock = threading.Lock()
 
 _CANONICAL_COOKIE_FILE = Path(__file__).resolve().parents[2] / "cf_cookies.dat"
-_CLOUDFLARE_TIMEOUT_SECONDS = 60.0
+_CLOUDFLARE_TIMEOUT_SECONDS = 180.0
 _CLOUDFLARE_POLL_SECONDS = 0.25
 _CLOUDFLARE_TITLE = "just a moment..."
 _INITIAL_DATA_TIMEOUT_SECONDS = 15.0

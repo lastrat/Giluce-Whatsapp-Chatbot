@@ -7,6 +7,7 @@ const path = require('path');
 const config = require('../../config');
 
 const COMIX_SEARCH_SCRIPT = path.join(__dirname, '../../comix-downloader/search_comix.py');
+const PYTHON_PATH = config.pythonPath || 'python';
 
 function extractMangaCode(input) {
     if (!input) return null;
@@ -51,11 +52,15 @@ module.exports = {
             
             // Search using Comix.to via Python script
             const searchResults = await new Promise((resolve, reject) => {
-                exec(`python "${COMIX_SEARCH_SCRIPT}" "${query.replace(/"/g, '\\"')}"`, 
+                exec(`"${PYTHON_PATH}" "${COMIX_SEARCH_SCRIPT}" "${query.replace(/"/g, '\\"')}"`, 
                     { timeout: 120000 },
                     (error, stdout, stderr) => {
                         if (error) {
-                            reject(new Error(`Search failed: ${error.message}`));
+                            if (error.message && error.message.includes('Cloudflare')) {
+                        reject(new Error('Cloudflare verification failed. Please try again later or use a direct Comix.to URL.'));
+                    } else {
+                        reject(new Error(`Search failed: ${error.message}`));
+                    }
                             return;
                         }
                         try {

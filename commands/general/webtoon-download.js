@@ -17,6 +17,7 @@ if (!fs.existsSync(DOWNLOADS_DIR)) {
 
 const COMIX_DOWNLOAD_SCRIPT = path.join(__dirname, '../../comix-downloader/download_comix.py');
 const COMIX_OUTPUT_DIR = path.join(__dirname, '../../temp/comix-downloads');
+const PYTHON_PATH = config.pythonPath || 'python';
 if (!fs.existsSync(COMIX_OUTPUT_DIR)) {
     fs.mkdirSync(COMIX_OUTPUT_DIR, { recursive: true });
 }
@@ -77,7 +78,7 @@ async function callPythonDownload(mangaCode, chaptersStr, outputFormat = 'images
             fs.mkdirSync(outputDir, { recursive: true });
         }
         const pdfFlag = outputFormat === 'pdf' ? ' --pdf' : '';
-        const cmd = `python "${COMIX_DOWNLOAD_SCRIPT}" "${mangaCode}" "${chaptersStr}"${pdfFlag}`;
+        const cmd = `"${PYTHON_PATH}" "${COMIX_DOWNLOAD_SCRIPT}" "${mangaCode}" "${chaptersStr}"${pdfFlag}`;
         exec(cmd, { timeout: 600000, maxBuffer: 1024 * 1024, cwd: outputDir }, (error, stdout) => {
             if (error) {
                 reject(new Error(`Download failed: ${error.message}`));
@@ -88,7 +89,12 @@ async function callPythonDownload(mangaCode, chaptersStr, outputFormat = 'images
                 if (result.ok) {
                     resolve(result);
                 } else {
-                    reject(new Error(result.error || 'Unknown error'));
+                    const errMsg = result.error || 'Unknown error';
+                    if (errMsg.includes('Cloudflare')) {
+                        reject(new Error('Cloudflare verification failed. Please try again later.'));
+                    } else {
+                        reject(new Error(errMsg));
+                    }
                 }
             } catch (e) {
                 reject(new Error(`Failed to parse download results: ${e.message}`));
