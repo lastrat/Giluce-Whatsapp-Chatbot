@@ -26,7 +26,7 @@ logger = get_logger(__name__)
 _browser_lock = threading.Lock()
 
 _CANONICAL_COOKIE_FILE = Path(__file__).resolve().parents[2] / "cf_cookies.dat"
-_CLOUDFLARE_TIMEOUT_SECONDS = 180.0
+_CLOUDFLARE_TIMEOUT_SECONDS = 300.0
 _CLOUDFLARE_POLL_SECONDS = 0.25
 _CLOUDFLARE_TITLE = "just a moment..."
 _INITIAL_DATA_TIMEOUT_SECONDS = 15.0
@@ -65,10 +65,24 @@ async def _start_comix_browser(headless: bool):
             default_dir = Path.home() / "AppData/Local/Google/Chrome/User Data"
             if default_dir.exists():
                 user_data_dir = str(default_dir)
+        profile_dir = None
+        if user_data_dir:
+            if Path(user_data_dir, "Default").exists():
+                profile_dir = os.path.join(user_data_dir, "Default")
+            elif Path(user_data_dir, "Profile 1").exists():
+                profile_dir = os.path.join(user_data_dir, "Profile 1")
+            elif Path(user_data_dir, "Profile 2").exists():
+                profile_dir = os.path.join(user_data_dir, "Profile 2")
+            else:
+                profiles = [p for p in Path(user_data_dir).iterdir() if p.is_dir() and p.name.startswith("Profile")]
+                if profiles:
+                    profile_dir = str(sorted(profiles)[0])
+        if profile_dir:
+            logger.info("Using Chrome profile dir: %s", profile_dir)
         try:
-            browser = await start_browser(headless, user_data_dir=user_data_dir)
-        except Exception:
-            logger.warning("Failed to start browser with user data dir %s, trying without", user_data_dir)
+            browser = await start_browser(headless, user_data_dir=profile_dir)
+        except Exception as exc:
+            logger.warning("Failed to start browser with profile dir %s: %s", profile_dir, exc)
             browser = await start_browser(headless)
         for cookie_file in _cookie_file_candidates():
             if not cookie_file.exists():
@@ -619,7 +633,7 @@ class ComixAPI:
             headless = ConfigManager().get("headless", True)
         page = max(1, int(page))
         last_error = None
-        for attempt in range(3):
+        for attempt in range(5):
             try:
                 result = run_async(
                     cls._get_discovery_async(
@@ -636,11 +650,14 @@ class ComixAPI:
                     raise
                 last_error = exc
                 logger.warning(
-                    "Discovery search Cloudflare error for %r (attempt %s/3): %s",
+                    "Discovery search Cloudflare error for %r (attempt %s/5): %s",
                     keyword,
                     attempt + 1,
                     exc,
                 )
+                if attempt < 4:
+                    import time
+                    time.sleep(10 * (attempt + 1))
             except Exception:
                 logger.exception("Discovery search failed for %r", keyword)
                 raise
