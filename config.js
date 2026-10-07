@@ -85,6 +85,13 @@ module.exports = {
     // Python path for webtoon commands
     pythonPath: process.env.PYTHON_PATH || 'C:\\Users\\Lastrategie\\AppData\\Local\\Programs\\Python\\Python312\\python.exe',
 
+    // LM Studio local AI
+    lmStudio: {
+        enabled: true,
+        url: 'http://localhost:1234/v1/chat/completions',
+        model: 'gemma-3-4b-it'
+    },
+
     // Social Links
     social: {
         github: 'https://github.com/giluce',

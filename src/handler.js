@@ -962,7 +962,14 @@ const handleMessage = async (sock, msg) => {
         }
         
         // Check prefix
-        if (!body.startsWith(config.prefix)) return;
+        if (!body.startsWith(config.prefix)) {
+            const quizCmd = getCommand('quiz');
+            if (quizCmd && quizCmd.handleSelection && !msg.key.fromMe) {
+                const handled = await quizCmd.handleSelection(sock, msg, from, body);
+                if (handled) return;
+            }
+            return;
+        }
         
         // Parse command
         const args = body.slice(config.prefix.length).trim().split(/\s+/);

@@ -11,6 +11,7 @@ Usage:
     # Or with uvicorn directly
     uvicorn main:app --host 0.0.0.0 --port 8001
 
+
 API Endpoints:
     GET  /                    - Health check
     POST /search              - Search webtoons
@@ -18,6 +19,7 @@ API Endpoints:
     POST /download            - Start download task
     GET  /download/{task_id}  - Check download status
     GET  /download/{task_id}/file - Download generated PDF
+
 
 Examples:
     # Search for webtoons
