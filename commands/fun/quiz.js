@@ -176,9 +176,6 @@ async function isAnswerCorrect(question, userAnswer, correctAnswer) {
     const normalizedUser = normalizeAnswer(userAnswer);
     const normalizedCorrect = normalizeAnswer(correctAnswer);
 
-    const aiVerdict = await askLMStudio(`Are these two answers equivalent for the question: "${question}"?\nCorrect: "${correctAnswer}"\nUser: "${userAnswer}"\nAnswer true or false only.`);
-    if (typeof aiVerdict === 'boolean') return aiVerdict;
-
     if (normalizedUser === normalizedCorrect) return true;
 
     const userTokens = tokenize(normalizedUser);
@@ -197,7 +194,12 @@ async function isAnswerCorrect(question, userAnswer, correctAnswer) {
     const correctSet = new Set(correctTokens);
     const containsMostCorrect = [...correctSet].filter(t => userSet.has(t)).length >= Math.max(1, Math.ceil(correctTokens.length * 0.6));
 
-    return similarity >= 0.5 && containsMostCorrect;
+    if (similarity >= 0.5 && containsMostCorrect) return true;
+
+    const aiVerdict = await askLMStudio(`Are these two answers equivalent for the question: "${question}"?\nCorrect: "${correctAnswer}"\nUser: "${userAnswer}"\nAnswer true or false only.`);
+    if (typeof aiVerdict === 'boolean') return aiVerdict;
+
+    return false;
 }
 
 function loadQuestions() {
