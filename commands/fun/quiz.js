@@ -178,7 +178,13 @@ async function isAnswerCorrect(question, userAnswer, correctAnswer) {
 
     if (normalizedUser === normalizedCorrect) return true;
 
-    const aiVerdict = await askLMStudio(`Are these two answers equivalent for the question: "${question}"?\nCorrect: "${correctAnswer}"\nUser: "${userAnswer}"\nAnswer true or false only.`);
+    const aiVerdict = await askLMStudio(`You are a permissive but accurate quiz validator.
+Question: "${question}"
+Correct answer: "${correctAnswer}"
+User answer: "${userAnswer}"
+Accept the user's answer if it is clearly the same person/thing as the correct answer, even if shortened, abbreviated, or partially reversed.
+Reject only if it is clearly wrong or unrelated.
+Respond ONLY with "true" or "false".`);
     if (typeof aiVerdict === 'boolean') return aiVerdict;
 
     const userTokens = tokenize(normalizedUser);
