@@ -352,6 +352,22 @@ module.exports = {
         const q = quiz.currentQuestion;
         if (!q) return false;
 
+        const trimmed = body.trim().toLowerCase();
+        if (trimmed === 'pass') {
+            quiz.questionAnswered = true;
+            clearTimeout(quiz.timeoutId);
+
+            await sock.sendMessage(groupId, {
+                text: `⏭️ *Passed!*\n\nThe correct answer was: *${q.answer}*\n\n➡️ Next question...`
+            });
+
+            quiz.currentIndex++;
+            setTimeout(() => {
+                this.askQuestion(sock, groupId, quiz);
+            }, 2000);
+            return true;
+        }
+
         const isCorrect = await this.isAnswerCorrect(q.question, body, q.answer);
 
         if (isCorrect) {
