@@ -55,6 +55,41 @@
 - **Jokes** - Daily jokes
 - **Lyrics** - Song lyrics finder
 - **Stickers** - Create stickers from images
+- **Anime Quiz** - Interactive anime quiz with AI-powered answer validation
+
+### 🧠 Anime Quiz
+
+The `.quiz` command runs an interactive anime quiz competition in groups with AI-powered answer validation.
+
+| Command | Description |
+|---------|-------------|
+| `.quiz` | Start a quiz with 10 questions, 15s per question |
+| `.quiz <count>` | Start a quiz with `<count>` questions |
+| `.quiz <count> <duration>` | Start with custom count and duration (seconds) |
+| `.quiz stop` | Stop the quiz and show final scores |
+| `pass` | Skip the current question during a quiz |
+
+**Features:**
+- Questions loaded from `database/quiz_anime.txt`
+- AI validation via LM Studio (local, free) — accepts partial, abbreviated, or reordered answers
+- Wikipedia named-entity check for proper nouns
+- Local keyword similarity fallback
+- First correct answer wins a point
+- Wrong answers show ❌ reaction
+- Final leaderboard with real player names
+
+**LM Studio Setup (for AI validation):**
+
+Configure in `config.js`:
+```javascript
+lmStudio: {
+    enabled: true,
+    url: 'http://localhost:1234/v1/chat/completions',
+    model: 'gemma-3-4b-it'
+}
+```
+
+LM Studio must be running with the specified model loaded on port 1234. If unavailable, the bot falls back to local heuristics.
 
 ### 👑 Owner Commands
 - **Broadcast** - Send messages to all users
@@ -214,6 +249,17 @@ WHATSAPP_SESSION_PATH=../sessions
 | `.tiktok` | Download TikTok video |
 | `.facebook` | Download Facebook video |
 | `.lyrics` | Get song lyrics |
+
+### Fun Commands
+
+| Command | Description |
+|---------|-------------|
+| `.quiz [count] [duration]` | Start anime quiz |
+| `.quiz stop` | Stop quiz and show scores |
+| `pass` | Skip current quiz question |
+| `.bomb` | Bomb number game |
+| `.truth` | Random truth question |
+| `.dare` | Random dare challenge |
 
 ---
 
