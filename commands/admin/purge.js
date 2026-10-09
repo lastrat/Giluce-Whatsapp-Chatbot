@@ -34,14 +34,26 @@ module.exports = {
             return;
         }
 
-        // Bot JID in participant format
-        let botJid = sock.user?.id?.split(':')[0] + '@s.whatsapp.net';
-        const senderJid = sender;
+        // Base identifier (strips device suffix "123:45@s.whatsapp.net" -> "123")
+        const baseId = (jid) => {
+            if (!jid) return '';
+            return jid.split('@')[0].split(':')[0];
+        };
 
-        // Filter out: bot itself and the admin who launched the command
+        // Build ALL possible bot identifiers (JID + LID) to protect the bot
+        const botBases = new Set();
+        if (sock.user?.id) botBases.add(baseId(sock.user.id));
+        if (sock.user?.lid) botBases.add(baseId(sock.user.lid));
+        const senderBase = baseId(sender);
+
+        // Filter out: bot itself (all its id formats) and the admin who launched the command
         const targets = groupMetadata.participants
             .map(p => p.id)
-            .filter(id => id && id !== botJid && id !== senderJid);
+            .filter(id => {
+                if (!id) return false;
+                const base = baseId(id);
+                return base && !botBases.has(base) && base !== senderBase;
+            });
 
         if (targets.length === 0) {
             await sock.sendMessage(from, { text: '❌ Aucun membre à expulser!' });
