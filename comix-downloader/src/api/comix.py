@@ -509,17 +509,40 @@ class ComixAPI:
                 const moduleScripts = Array.from(document.querySelectorAll('script[type="module"][src]'))
                     .map((script) => script.src);
 
+                const seen = new Set();
+                const isApiModule = (mod) => Object.values(mod).some((value) =>
+                    value && typeof value === 'object' &&
+                    ((typeof value.list === 'function' && typeof value.top === 'function') ||
+                     typeof value.chapters === 'function'));
+                const tryImport = async (moduleUrl) => {{
+                    try {{
+                        const mod = await import(moduleUrl);
+                        return isApiModule(mod) ? mod : null;
+                    }} catch (e) {{
+                        return null;
+                    }}
+                }};
+
                 for (const scriptUrl of moduleScripts) {{
+                    const direct = await tryImport(scriptUrl);
+                    if (direct) return direct;
+
+                    let source = '';
                     try {{
                         const response = await fetch(scriptUrl, {{ credentials: 'same-origin' }});
                         if (!response.ok) continue;
-                        const source = await response.text();
-                        const matches = Array.from(source.matchAll(/from\\s*["']\\.\\/(env-[^"']+\\.js)["']/g));
-                        for (const match of matches) {{
-                            const moduleUrl = new URL(match[1], scriptUrl).href;
-                            try {{ return await import(moduleUrl); }} catch (e) {{}}
-                        }}
-                    }} catch (e) {{}}
+                        source = await response.text();
+                    }} catch (e) {{
+                        continue;
+                    }}
+
+                    const chunkNames = Array.from(source.matchAll(/["']([A-Za-z0-9_.-]+\\.js)["']/g)).map((m) => m[1]);
+                    for (const name of chunkNames) {{
+                        if (seen.has(name)) continue;
+                        seen.add(name);
+                        const mod = await tryImport(new URL('./' + name, scriptUrl).href);
+                        if (mod) return mod;
+                    }}
                 }}
                 throw new Error('Comix API module not found');
             }}
