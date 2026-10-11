@@ -12,6 +12,7 @@ import concurrent.futures
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
+from urllib.parse import quote
 from ..core.models import MangaInfo, Chapter
 from ..utils.retry import retry_with_backoff
 from ..utils.logger import get_logger
@@ -615,7 +616,13 @@ class ComixAPI:
         browser = await _start_comix_browser(headless)
 
         try:
-            page = await browser.get("https://comix.to/browse")
+            browse_url = "https://comix.to/browse"
+            if keyword:
+                browse_url += f"?q={quote(keyword)}&sort=relevance:desc"
+            if page_number > 1:
+                separator = "&" if "?" in browse_url else "?"
+                browse_url += f"{separator}page={int(page_number)}"
+            page = await browser.get(browse_url)
             await _wait_for_comix_page(
                 page,
                 "Boolean(document.getElementById('initial-data'))",
@@ -626,16 +633,81 @@ class ComixAPI:
             await _publish_comix_session(browser, page)
             await _save_comix_cookies(browser)
 
-            result = await cls._fetch_discovery_via_page_api(
-                page,
-                keyword=keyword,
-                page_number=page_number,
-                limit=limit,
-                highlights=highlights,
-            )
-            return result
+            try:
+                result = await cls._fetch_discovery_via_page_api(
+                    page,
+                    keyword=keyword,
+                    page_number=page_number,
+                    limit=limit,
+                    highlights=highlights,
+                )
+                return result
+            except Exception as exc:
+                logger.warning(
+                    "Comix discovery page API unavailable (%s); falling back to DOM scraping",
+                    exc,
+                )
+            return await cls._fetch_discovery_via_dom(page)
         finally:
             await _close_comix_browser(browser)
+
+    @classmethod
+    async def _fetch_discovery_via_dom(cls, page) -> dict:
+        """Scrape rendered browse/search results directly from the DOM.
+
+        Comix no longer exposes a stable in-page API module across deployments,
+        so the catalog is read from the server-rendered result rows instead.
+        """
+
+        scrape_js = r"""(() => {
+            const rows = Array.from(document.querySelectorAll('.lrow'));
+            const items = rows.map((row) => {
+                const link = row.querySelector('.lrow__title-link') || row.querySelector('.lrow__poster');
+                const href = link ? link.getAttribute('href') : null;
+                const posterImg = row.querySelector('.lrow__poster img');
+                const titleEl = row.querySelector('.lrow__title');
+                const meta = (selector) => {
+                    const el = row.querySelector(selector);
+                    return el ? el.textContent.trim() : null;
+                };
+                const stripCh = (text) => text ? text.replace(/^ch\.?\s*/i, '').trim() : null;
+                return {
+                    title: titleEl ? titleEl.textContent.trim() : null,
+                    url: href,
+                    hid: href ? href.replace(/^\/title\//, '').split(/[-/]/)[0] : null,
+                    poster: posterImg && posterImg.getAttribute('src')
+                        ? { large: posterImg.getAttribute('src') }
+                        : {},
+                    type: meta('.lrow__type') ? meta('.lrow__type').toLowerCase() : null,
+                    status: meta('.lrow__status') ? meta('.lrow__status').toLowerCase() : null,
+                    year: meta('.lrow__year'),
+                    latest_chapter: stripCh(meta('.lrow__ch')),
+                    rated_avg: meta('.lrow__rating'),
+                };
+            });
+            return JSON.stringify(items);
+        })()"""
+
+        raw_items = []
+        for _ in range(6):
+            raw = await page.evaluate(scrape_js, return_by_value=True)
+            if isinstance(raw, str) and raw:
+                try:
+                    parsed = json.loads(raw)
+                    if isinstance(parsed, list):
+                        raw_items = parsed
+                except json.JSONDecodeError:
+                    raw_items = []
+            if raw_items:
+                break
+            await page.sleep(1.0)
+
+        highlight_limit = cls.DISCOVERY_HIGHLIGHT_LIMIT
+        return {
+            "data": {"items": raw_items, "meta": {"totalCount": len(raw_items)}},
+            "trending": raw_items[:highlight_limit],
+            "latest": {"items": raw_items[:highlight_limit]},
+        }
 
     @classmethod
     def search_manga(
@@ -927,18 +999,43 @@ class ComixAPI:
                 const moduleScripts = Array.from(document.querySelectorAll('script[type="module"][src]'))
                     .map((script) => script.src);
 
+                const seen = new Set();
+                const isApiModule = (mod) => Object.values(mod).some((value) =>
+                    value && typeof value === 'object' &&
+                    ((typeof value.list === 'function' && typeof value.top === 'function') ||
+                     typeof value.chapters === 'function'));
+                const tryImport = async (moduleUrl) => {{
+                    try {{
+                        const mod = await import(moduleUrl);
+                        return isApiModule(mod) ? mod : null;
+                    }} catch (e) {{
+                        return null;
+                    }}
+                }};
+
                 for (const scriptUrl of moduleScripts) {{
+                    const direct = await tryImport(scriptUrl);
+                    if (direct) return direct;
+
+                    let source = '';
                     try {{
                         const response = await fetch(scriptUrl, {{ credentials: 'same-origin' }});
                         if (!response.ok) continue;
-                        const source = await response.text();
-                        const matches = Array.from(source.matchAll(/from\\s*["']\\.\\/(env-[^"']+\\.js)["']/g));
-                        for (const match of matches) {{
-                            const moduleUrl = new URL(match[1], scriptUrl).href;
-                            try {{
-                                return await import(moduleUrl);
-                            }} catch (e) {{}}
-                        }}
+                        source = await response.text();
+                    }} catch (e) {{
+                        continue;
+                    }}
+
+                    const chunkNames = Array.from(source.matchAll(/["']([A-Za-z0-9_.-]+\\.js)["']/g)).map((m) => m[1]);
+                    for (const name of chunkNames) {{
+                        if (seen.has(name)) continue;
+                        seen.add(name);
+                        const mod = await tryImport(new URL('./' + name, scriptUrl).href);
+                        if (mod) return mod;
+                    }}
+                }}
+                throw new Error('Comix API module not found');
+            }}
                     }} catch (e) {{}}
                 }}
 
