@@ -51,3 +51,22 @@ session.db
 
 # Package locks (optional - can keep if you want exact versions)
 # package-lock.json
+
+# Python (comix-downloader)
+__pycache__/
+*.py[cod]
+*.class
+comix-downloader/__pycache__/
+comix-downloader/cf_cookies.dat
+comix-downloader/*.log
+comix-downloader/src/__pycache__/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+.env.testing
+
+# Quiz and data files
+database/quiz_anime*.txt
