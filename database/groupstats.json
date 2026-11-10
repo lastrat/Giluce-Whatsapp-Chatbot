@@ -1,9 +1,9 @@
 {
   "120363317494770000@g.us": {
-    "totalMessages": 716,
+    "totalMessages": 1198,
     "members": {
       "237671624397@s.whatsapp.net": {
-        "messages": 129,
+        "messages": 280,
         "firstSeen": 1773763577167
       },
       "178288991412298@lid": {
@@ -75,43 +75,43 @@
         "firstSeen": 1789859383414
       },
       "237692082998@s.whatsapp.net": {
-        "messages": 65,
+        "messages": 104,
         "firstSeen": 1790460509458
       },
       "237692600996@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 38,
         "firstSeen": 1790460801295
       },
       "237670103401@s.whatsapp.net": {
-        "messages": 89,
+        "messages": 156,
         "firstSeen": 1790463911120
       },
       "237691310102@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 40,
         "firstSeen": 1790543773387
       },
       "237691779667@s.whatsapp.net": {
-        "messages": 60,
+        "messages": 144,
         "firstSeen": 1790543775742
       },
       "237682516490@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 52,
         "firstSeen": 1790545207012
       },
       "237621709156@s.whatsapp.net": {
-        "messages": 11,
+        "messages": 27,
         "firstSeen": 1790552146667
       },
       "237671464130@s.whatsapp.net": {
-        "messages": 23,
+        "messages": 26,
         "firstSeen": 1790580949857
       },
       "237657585525@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 16,
         "firstSeen": 1790581558010
       },
       "237680103213@s.whatsapp.net": {
-        "messages": 20,
+        "messages": 28,
         "firstSeen": 1790583175013
       },
       "237697072382@s.whatsapp.net": {
@@ -119,12 +119,20 @@
         "firstSeen": 1791321761212
       },
       "237674219127@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 21,
         "firstSeen": 1791403885971
       },
       "237621726686@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 4,
         "firstSeen": 1791412603275
+      },
+      "237686039634@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791755767229
+      },
+      "237656535926@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791828471049
       }
     },
     "createdAt": 1773763577167
@@ -416,7 +424,7 @@
     "createdAt": 1773763580210
   },
   "237682090379-1602660585@g.us": {
-    "totalMessages": 557,
+    "totalMessages": 608,
     "members": {
       "115148408770648@lid": {
         "messages": 3,
@@ -607,15 +615,15 @@
         "firstSeen": 1790433244614
       },
       "16132524901@s.whatsapp.net": {
-        "messages": 38,
+        "messages": 60,
         "firstSeen": 1790460199243
       },
       "237689523579@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 16,
         "firstSeen": 1790532478394
       },
       "237657044777@s.whatsapp.net": {
-        "messages": 28,
+        "messages": 31,
         "firstSeen": 1790532482873
       },
       "23793732598@s.whatsapp.net": {
@@ -623,7 +631,7 @@
         "firstSeen": 1790532630849
       },
       "237694837444@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 11,
         "firstSeen": 1790532897068
       },
       "237691471248@s.whatsapp.net": {
@@ -651,7 +659,7 @@
         "firstSeen": 1790591260999
       },
       "237698453034@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 8,
         "firstSeen": 1790591588520
       },
       "23791050031@s.whatsapp.net": {
@@ -659,7 +667,7 @@
         "firstSeen": 1790606526364
       },
       "237677417638@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 13,
         "firstSeen": 1790612173896
       },
       "23797021761@s.whatsapp.net": {
@@ -667,7 +675,7 @@
         "firstSeen": 1790698358703
       },
       "237694237945@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 7,
         "firstSeen": 1790707412625
       },
       "237697716995@s.whatsapp.net": {
@@ -679,7 +687,7 @@
         "firstSeen": 1790760177200
       },
       "237699577899@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 5,
         "firstSeen": 1790784878958
       },
       "237673335800@s.whatsapp.net": {
@@ -691,11 +699,11 @@
         "firstSeen": 1790883235880
       },
       "237657005283@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 10,
         "firstSeen": 1790883357433
       },
       "23799310311@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 5,
         "firstSeen": 1790883368502
       },
       "237689692240@s.whatsapp.net": {
@@ -711,12 +719,20 @@
         "firstSeen": 1790885077896
       },
       "237657790253@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790974972151
       },
       "15146077375@s.whatsapp.net": {
         "messages": 4,
         "firstSeen": 1791223046380
+      },
+      "237691931673@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791683977598
+      },
+      "237696520615@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791741347867
       }
     },
     "createdAt": 1773764900699
@@ -752,7 +768,7 @@
     "createdAt": 1773765244933
   },
   "120363200589587129@g.us": {
-    "totalMessages": 140,
+    "totalMessages": 498,
     "members": {
       "60249818009722@s.whatsapp.net": {
         "messages": 12,
@@ -763,7 +779,7 @@
         "firstSeen": 1774561897305
       },
       "237675893057@s.whatsapp.net": {
-        "messages": 119,
+        "messages": 468,
         "firstSeen": 1791314580789
       },
       "237683903803@s.whatsapp.net": {
@@ -785,6 +801,38 @@
       "237657090094@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791492562090
+      },
+      "237692436302@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558860085
+      },
+      "237657678462@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558885439
+      },
+      "237678141588@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558891512
+      },
+      "23672446009@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626684068
+      },
+      "237694365113@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791825582792
+      },
+      "237655093246@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825675831
+      },
+      "237682873767@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791828706022
+      },
+      "237670897770@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913801653
       }
     },
     "createdAt": 1773777249072
@@ -970,7 +1018,7 @@
     "createdAt": 1774179184888
   },
   "120363407526004579@g.us": {
-    "totalMessages": 205,
+    "totalMessages": 209,
     "members": {
       "91229568135303@s.whatsapp.net": {
         "messages": 97,
@@ -993,7 +1041,7 @@
         "firstSeen": 1774528769254
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 30,
+        "messages": 34,
         "firstSeen": 1774619829388
       },
       "227925978820770@s.whatsapp.net": {
@@ -1004,7 +1052,7 @@
     "createdAt": 1774201640844
   },
   "120363230197538936@g.us": {
-    "totalMessages": 116,
+    "totalMessages": 157,
     "members": {
       "38513324126238@s.whatsapp.net": {
         "messages": 5,
@@ -1123,7 +1171,7 @@
         "firstSeen": 1790605753997
       },
       "237695620020@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 13,
         "firstSeen": 1790622426679
       },
       "237679382482@s.whatsapp.net": {
@@ -1139,7 +1187,7 @@
         "firstSeen": 1790883244766
       },
       "23795914926@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1790883365098
       },
       "237655721610@s.whatsapp.net": {
@@ -1151,7 +1199,7 @@
         "firstSeen": 1791046267428
       },
       "237696764626@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1791154669068
       },
       "237686310161@s.whatsapp.net": {
@@ -1195,7 +1243,7 @@
         "firstSeen": 1791492546026
       },
       "23793981232@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1791492563323
       },
       "237679542254@s.whatsapp.net": {
@@ -1213,12 +1261,68 @@
       "120363230197538936@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791493279557
+      },
+      "237652135163@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791531610079
+      },
+      "237656103620@s.whatsapp.net": {
+        "messages": 6,
+        "firstSeen": 1791558812186
+      },
+      "237620510564@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791626758674
+      },
+      "237651673144@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626758783
+      },
+      "22893325501@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791664771993
+      },
+      "237678172890@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791666489864
+      },
+      "237655059273@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791694032199
+      },
+      "237688532819@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791704859687
+      },
+      "237690184159@s.whatsapp.net": {
+        "messages": 10,
+        "firstSeen": 1791741345489
+      },
+      "237691019706@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825768534
+      },
+      "237658865868@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913130805
+      },
+      "237658321970@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791913131330
+      },
+      "237656832062@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913156332
+      },
+      "23758321116@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913163284
       }
     },
     "createdAt": 1774528920055
   },
   "120363203089045640@g.us": {
-    "totalMessages": 303,
+    "totalMessages": 319,
     "members": {
       "237671624397@s.whatsapp.net": {
         "messages": 15,
@@ -1305,18 +1409,42 @@
         "firstSeen": 1790974973783
       },
       "237697903676@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790975219807
       },
       "237658621484@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1790975264831
+      },
+      "237694121624@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791558932269
+      },
+      "237650362981@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791558932317
+      },
+      "33605722432@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558942136
+      },
+      "237655613839@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791558942714
+      },
+      "23756299809@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791558989528
+      },
+      "237657743028@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558999777
       }
     },
     "createdAt": 1774528989486
   },
   "23797489561-1603051718@g.us": {
-    "totalMessages": 114,
+    "totalMessages": 189,
     "members": {
       "212772763766791@s.whatsapp.net": {
         "messages": 86,
@@ -1335,7 +1463,7 @@
         "firstSeen": 1790409835606
       },
       "237693530662@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 87,
         "firstSeen": 1790758218791
       },
       "237694110704@s.whatsapp.net": {
@@ -1365,12 +1493,24 @@
       "237692862180@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791154659455
+      },
+      "23795140412@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791626649114
+      },
+      "237695035213@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791913261105
+      },
+      "237676689649@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791915528252
       }
     },
     "createdAt": 1774531052568
   },
   "120363292730438038@g.us": {
-    "totalMessages": 56,
+    "totalMessages": 69,
     "members": {
       "78959081468133@s.whatsapp.net": {
         "messages": 1,
@@ -1417,7 +1557,7 @@
         "firstSeen": 1789898633699
       },
       "237654318164@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1790621569670
       },
       "237676784670@s.whatsapp.net": {
@@ -1461,7 +1601,7 @@
         "firstSeen": 1791037695455
       },
       "8613187728799@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 5,
         "firstSeen": 1791202277125
       },
       "237693201923@s.whatsapp.net": {
@@ -1473,7 +1613,7 @@
         "firstSeen": 1791202305045
       },
       "237652477553@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 6,
         "firstSeen": 1791203920935
       },
       "237694313841@s.whatsapp.net": {
@@ -1499,12 +1639,40 @@
       "237695603298@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791492613495
+      },
+      "8618395840811@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791558910597
+      },
+      "120363292730438038@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791648766349
+      },
+      "237654796281@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791650232895
+      },
+      "237688284890@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791653144465
+      },
+      "237690662463@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791653500345
+      },
+      "237641675609@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741417065
+      },
+      "237671450865@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791924606147
       }
     },
     "createdAt": 1774532465603
   },
   "120363114060578983@g.us": {
-    "totalMessages": 60,
+    "totalMessages": 78,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 5,
@@ -1543,7 +1711,7 @@
         "firstSeen": 1790594399858
       },
       "237691052623@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 7,
         "firstSeen": 1790605852357
       },
       "23790049261@s.whatsapp.net": {
@@ -1551,7 +1719,7 @@
         "firstSeen": 1790672167861
       },
       "237690646976@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 9,
         "firstSeen": 1790673114567
       },
       "237699926790@s.whatsapp.net": {
@@ -1559,26 +1727,38 @@
         "firstSeen": 1790882301669
       },
       "237654346331@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790883506076
       },
       "237651075441@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 7,
         "firstSeen": 1791064123436
       },
       "237676789310@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 7,
         "firstSeen": 1791064126448
       },
       "237696724335@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791492597906
+      },
+      "237672145840@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626699806
+      },
+      "237694750339@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791641770850
+      },
+      "237657618855@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791835858080
       }
     },
     "createdAt": 1774532503213
   },
   "120363194525453904@g.us": {
-    "totalMessages": 13,
+    "totalMessages": 19,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 4,
@@ -1605,18 +1785,22 @@
         "firstSeen": 1790344004938
       },
       "237676789310@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 6,
         "firstSeen": 1791064222193
       },
       "237651075441@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791064276209
+      },
+      "237654346331@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791655458288
       }
     },
     "createdAt": 1774532509808
   },
   "120363240948620670@g.us": {
-    "totalMessages": 319,
+    "totalMessages": 337,
     "members": {
       "177721468526796@s.whatsapp.net": {
         "messages": 2,
@@ -1755,11 +1939,11 @@
         "firstSeen": 1790611385824
       },
       "237695204665@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 7,
         "firstSeen": 1790611599636
       },
       "237694021726@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 6,
         "firstSeen": 1790613237675
       },
       "237659161159@s.whatsapp.net": {
@@ -1795,7 +1979,7 @@
         "firstSeen": 1790882021021
       },
       "237691439554@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 14,
         "firstSeen": 1790882023542
       },
       "23799178694@s.whatsapp.net": {
@@ -1807,7 +1991,7 @@
         "firstSeen": 1790882028321
       },
       "237691227750@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 7,
         "firstSeen": 1790882028714
       },
       "237655299159@s.whatsapp.net": {
@@ -1819,7 +2003,7 @@
         "firstSeen": 1790882406028
       },
       "237657664546@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1790882431738
       },
       "237693567437@s.whatsapp.net": {
@@ -1827,7 +2011,7 @@
         "firstSeen": 1790882441724
       },
       "237674693867@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1790882711979
       },
       "237690311620@s.whatsapp.net": {
@@ -1847,7 +2031,7 @@
         "firstSeen": 1790882862585
       },
       "8619548104842@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 6,
         "firstSeen": 1790884021494
       },
       "237694586753@s.whatsapp.net": {
@@ -1869,12 +2053,36 @@
       "237690145909@s.whatsapp.net": {
         "messages": 2,
         "firstSeen": 1791318411399
+      },
+      "237696459762@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791825712538
+      },
+      "237696914106@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825712753
+      },
+      "237659439894@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825712783
+      },
+      "237696613886@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825713444
+      },
+      "237655177932@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913258052
+      },
+      "237695514343@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913283988
       }
     },
     "createdAt": 1774533721892
   },
   "120363420344403418@g.us": {
-    "totalMessages": 750,
+    "totalMessages": 1666,
     "members": {
       "140115305299986@s.whatsapp.net": {
         "messages": 1,
@@ -2073,7 +2281,7 @@
         "firstSeen": 1790343579529
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 15,
         "firstSeen": 1790343843693
       },
       "85251409862764@s.whatsapp.net": {
@@ -2113,7 +2321,7 @@
         "firstSeen": 1790456519236
       },
       "237657618855@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 23,
         "firstSeen": 1790532314432
       },
       "237691632379@s.whatsapp.net": {
@@ -2121,11 +2329,11 @@
         "firstSeen": 1790532371111
       },
       "237694099028@s.whatsapp.net": {
-        "messages": 28,
+        "messages": 51,
         "firstSeen": 1790532375624
       },
       "237688292732@s.whatsapp.net": {
-        "messages": 16,
+        "messages": 24,
         "firstSeen": 1790532377179
       },
       "237658446618@s.whatsapp.net": {
@@ -2141,83 +2349,83 @@
         "firstSeen": 1790544733902
       },
       "237699926790@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 8,
         "firstSeen": 1790601154277
       },
       "237692280295@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 9,
         "firstSeen": 1790601785630
       },
       "237697261707@s.whatsapp.net": {
-        "messages": 38,
+        "messages": 196,
         "firstSeen": 1790601814232
       },
       "237695467799@s.whatsapp.net": {
-        "messages": 27,
+        "messages": 150,
         "firstSeen": 1790602580544
       },
       "237654771226@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 16,
         "firstSeen": 1790605041531
       },
       "237673335800@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 5,
         "firstSeen": 1790673675384
       },
       "237695602578@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 10,
         "firstSeen": 1790674084798
       },
       "237696218993@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 9,
         "firstSeen": 1790700364524
       },
       "237694237945@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 10,
         "firstSeen": 1790707393237
       },
       "237675985141@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 26,
         "firstSeen": 1790709928406
       },
       "237651316960@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 56,
         "firstSeen": 1790710144146
       },
       "237658886708@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1790753610336
       },
       "237689523579@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 9,
         "firstSeen": 1790753923876
       },
       "237697766244@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 30,
         "firstSeen": 1790754425037
       },
       "237682207882@s.whatsapp.net": {
-        "messages": 21,
+        "messages": 33,
         "firstSeen": 1790754556672
       },
       "237659374504@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 8,
         "firstSeen": 1790756868064
       },
       "237681574822@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 102,
         "firstSeen": 1790760361822
       },
       "237678623024@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790763154398
       },
       "237686046425@s.whatsapp.net": {
-        "messages": 13,
+        "messages": 111,
         "firstSeen": 1790882000904
       },
       "237657937902@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 16,
         "firstSeen": 1790882002755
       },
       "237698069995@s.whatsapp.net": {
@@ -2225,27 +2433,27 @@
         "firstSeen": 1790882383099
       },
       "237690538829@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 21,
         "firstSeen": 1790885602937
       },
       "237652280710@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 18,
         "firstSeen": 1790885711124
       },
       "237657790253@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 13,
         "firstSeen": 1790974257001
       },
       "237640732710@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 48,
         "firstSeen": 1790974272852
       },
       "237690336016@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 35,
         "firstSeen": 1790974397901
       },
       "237683860551@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1790974534188
       },
       "23756490543@s.whatsapp.net": {
@@ -2257,7 +2465,7 @@
         "firstSeen": 1791315531043
       },
       "237693903515@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1791317937292
       },
       "237672900476@s.whatsapp.net": {
@@ -2273,7 +2481,7 @@
         "firstSeen": 1791406725126
       },
       "237640735489@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 5,
         "firstSeen": 1791407390819
       },
       "237657248324@s.whatsapp.net": {
@@ -2283,6 +2491,58 @@
       "237697029315@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791442662212
+      },
+      "237622107254@s.whatsapp.net": {
+        "messages": 22,
+        "firstSeen": 1791558817127
+      },
+      "237670953489@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791558864682
+      },
+      "237651014648@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558879892
+      },
+      "237682992659@s.whatsapp.net": {
+        "messages": 64,
+        "firstSeen": 1791558884196
+      },
+      "237659923779@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791626409167
+      },
+      "237693622620@s.whatsapp.net": {
+        "messages": 7,
+        "firstSeen": 1791626424376
+      },
+      "237655512300@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791626517410
+      },
+      "237678077344@s.whatsapp.net": {
+        "messages": 5,
+        "firstSeen": 1791626680119
+      },
+      "237693961504@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791654103927
+      },
+      "237677731871@s.whatsapp.net": {
+        "messages": 24,
+        "firstSeen": 1791825746137
+      },
+      "237671324336@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913135096
+      },
+      "237673031783@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791913274642
+      },
+      "237673760975@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791913277997
       }
     },
     "createdAt": 1774539041542
@@ -2358,7 +2618,7 @@
     "createdAt": 1774539902452
   },
   "120363161391187640@g.us": {
-    "totalMessages": 59,
+    "totalMessages": 109,
     "members": {
       "88738722005236@s.whatsapp.net": {
         "messages": 46,
@@ -2369,18 +2629,22 @@
         "firstSeen": 1790362475914
       },
       "237693484425@s.whatsapp.net": {
-        "messages": 11,
+        "messages": 60,
         "firstSeen": 1790672152200
       },
       "237679277485@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791202301793
+      },
+      "237677290673@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791707402469
       }
     },
     "createdAt": 1774541116740
   },
   "120363067329015759@g.us": {
-    "totalMessages": 66,
+    "totalMessages": 74,
     "members": {
       "212772763766791@s.whatsapp.net": {
         "messages": 7,
@@ -2423,8 +2687,12 @@
         "firstSeen": 1790362485660
       },
       "237675992051@s.whatsapp.net": {
-        "messages": 16,
+        "messages": 19,
         "firstSeen": 1790539060364
+      },
+      "237693530662@s.whatsapp.net": {
+        "messages": 5,
+        "firstSeen": 1791558811409
       }
     },
     "createdAt": 1774541855684
@@ -2440,7 +2708,7 @@
     "createdAt": 1774560701591
   },
   "237655335829-1562368515@g.us": {
-    "totalMessages": 29,
+    "totalMessages": 32,
     "members": {
       "251702397677674@s.whatsapp.net": {
         "messages": 14,
@@ -2485,6 +2753,18 @@
       "78709654556776@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1790362484975
+      },
+      "237675992051@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791647097225
+      },
+      "237654100476@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791647357828
+      },
+      "237681668985@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825758773
       }
     },
     "createdAt": 1774560837897
@@ -2500,7 +2780,7 @@
     "createdAt": 1774597094797
   },
   "120363164832659422@g.us": {
-    "totalMessages": 43,
+    "totalMessages": 61,
     "members": {
       "264299419279474@s.whatsapp.net": {
         "messages": 16,
@@ -2523,7 +2803,7 @@
         "firstSeen": 1785700884529
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 7,
         "firstSeen": 1789859403623
       },
       "63277837070390@s.whatsapp.net": {
@@ -2549,19 +2829,47 @@
       "237680531061@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791315323101
+      },
+      "23755875936@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791656816339
+      },
+      "237690655805@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791656848450
+      },
+      "237691303602@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791657247587
+      },
+      "237681391985@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791657300777
+      },
+      "237693500011@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791659313388
+      },
+      "23796373320@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791663670840
+      },
+      "237641482352@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791667552430
       }
     },
     "createdAt": 1774601282708
   },
   "120363043169812692@g.us": {
-    "totalMessages": 189,
+    "totalMessages": 219,
     "members": {
       "127294274285597@s.whatsapp.net": {
         "messages": 4,
         "firstSeen": 1774601648490
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 25,
         "firstSeen": 1774601874468
       },
       "47854542438468@s.whatsapp.net": {
@@ -2577,26 +2885,30 @@
         "firstSeen": 1789825381752
       },
       "237693500011@s.whatsapp.net": {
-        "messages": 16,
+        "messages": 19,
         "firstSeen": 1790712448930
       },
       "23774610686@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 22,
         "firstSeen": 1790755571280
       },
       "237698951193@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790975212792
       },
       "23796373320@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 9,
         "firstSeen": 1790975547168
+      },
+      "237690910902@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791626670750
       }
     },
     "createdAt": 1774601648490
   },
   "120363110731176914@g.us": {
-    "totalMessages": 406,
+    "totalMessages": 422,
     "members": {
       "237671624397@s.whatsapp.net": {
         "messages": 1,
@@ -2623,7 +2935,7 @@
         "firstSeen": 1790343582594
       },
       "237659197506@s.whatsapp.net": {
-        "messages": 212,
+        "messages": 228,
         "firstSeen": 1790538632709
       }
     },
@@ -2656,7 +2968,7 @@
     "createdAt": 1774616655236
   },
   "120363361479754381@g.us": {
-    "totalMessages": 80,
+    "totalMessages": 112,
     "members": {
       "237671624397@s.whatsapp.net": {
         "messages": 2,
@@ -2667,8 +2979,12 @@
         "firstSeen": 1775673800344
       },
       "237653208265@s.whatsapp.net": {
-        "messages": 51,
+        "messages": 82,
         "firstSeen": 1790620190160
+      },
+      "237693027350@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626645612
       }
     },
     "createdAt": 1774616683969
@@ -2688,7 +3004,7 @@
     "createdAt": 1774629190150
   },
   "120363194181739923@g.us": {
-    "totalMessages": 398,
+    "totalMessages": 415,
     "members": {
       "43435490844853@s.whatsapp.net": {
         "messages": 8,
@@ -2703,14 +3019,18 @@
         "firstSeen": 1789422688273
       },
       "237659197506@s.whatsapp.net": {
-        "messages": 219,
+        "messages": 235,
         "firstSeen": 1790538577038
+      },
+      "237692149433@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558955193
       }
     },
     "createdAt": 1774630409711
   },
   "120363300440967069@g.us": {
-    "totalMessages": 393,
+    "totalMessages": 413,
     "members": {
       "43435490844853@s.whatsapp.net": {
         "messages": 5,
@@ -2725,7 +3045,7 @@
         "firstSeen": 1785700923002
       },
       "237659197506@s.whatsapp.net": {
-        "messages": 220,
+        "messages": 240,
         "firstSeen": 1790538629952
       },
       "120363300440967069@s.whatsapp.net": {
@@ -2764,11 +3084,15 @@
     "createdAt": 1774638249356
   },
   "23755173852-1497267040@g.us": {
-    "totalMessages": 5,
+    "totalMessages": 6,
     "members": {
       "147433996714015@s.whatsapp.net": {
         "messages": 5,
         "firstSeen": 1774638869240
+      },
+      "23755535058@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626703463
       }
     },
     "createdAt": 1774638869240
@@ -2794,7 +3118,7 @@
     "createdAt": 1774648740091
   },
   "120363277263866116@g.us": {
-    "totalMessages": 8,
+    "totalMessages": 15,
     "members": {
       "237671624397@s.whatsapp.net": {
         "messages": 1,
@@ -2809,7 +3133,7 @@
         "firstSeen": 1790071329892
       },
       "237658257729@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 9,
         "firstSeen": 1790773228776
       },
       "120363277263866116@s.whatsapp.net": {
@@ -2824,11 +3148,15 @@
     "createdAt": 1774651843790
   },
   "120363029637925494@g.us": {
-    "totalMessages": 1,
+    "totalMessages": 2,
     "members": {
       "120363029637925494@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1775072813830
+      },
+      "237655031389@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741448975
       }
     },
     "createdAt": 1775072813830
@@ -3036,7 +3364,7 @@
     "createdAt": 1775477966211
   },
   "120363046634412378@g.us": {
-    "totalMessages": 69,
+    "totalMessages": 125,
     "members": {
       "159966258327806@s.whatsapp.net": {
         "messages": 61,
@@ -3045,6 +3373,10 @@
       "237680344211@s.whatsapp.net": {
         "messages": 8,
         "firstSeen": 1790688879088
+      },
+      "23799867815@s.whatsapp.net": {
+        "messages": 56,
+        "firstSeen": 1791825669775
       }
     },
     "createdAt": 1775479024691
@@ -3102,7 +3434,7 @@
     "createdAt": 1775479463639
   },
   "120363387375587640@g.us": {
-    "totalMessages": 41,
+    "totalMessages": 47,
     "members": {
       "147665690038477@s.whatsapp.net": {
         "messages": 6,
@@ -3125,8 +3457,16 @@
         "firstSeen": 1790883943442
       },
       "237658913010@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 6,
         "firstSeen": 1791314808346
+      },
+      "237671207712@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825780937
+      },
+      "237651838792@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825783627
       }
     },
     "createdAt": 1775480098327
@@ -3152,7 +3492,7 @@
     "createdAt": 1775488096499
   },
   "120363396907107117@g.us": {
-    "totalMessages": 59,
+    "totalMessages": 62,
     "members": {
       "35193012363390@s.whatsapp.net": {
         "messages": 3,
@@ -3167,7 +3507,7 @@
         "firstSeen": 1790343934031
       },
       "8619511259457@s.whatsapp.net": {
-        "messages": 34,
+        "messages": 37,
         "firstSeen": 1790594132474
       }
     },
@@ -3288,7 +3628,7 @@
     "createdAt": 1775723631429
   },
   "120363092694177854@g.us": {
-    "totalMessages": 121,
+    "totalMessages": 142,
     "members": {
       "231881022955663@s.whatsapp.net": {
         "messages": 79,
@@ -3311,14 +3651,18 @@
         "firstSeen": 1790022036101
       },
       "237694489640@s.whatsapp.net": {
-        "messages": 38,
+        "messages": 58,
         "firstSeen": 1790532451047
+      },
+      "237695267243@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791559696790
       }
     },
     "createdAt": 1775724500246
   },
   "120363058557680301@g.us": {
-    "totalMessages": 253,
+    "totalMessages": 351,
     "members": {
       "92642461389043@s.whatsapp.net": {
         "messages": 4,
@@ -3337,7 +3681,7 @@
         "firstSeen": 1775729270378
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 13,
         "firstSeen": 1775729820302
       },
       "85633091543050@s.whatsapp.net": {
@@ -3381,7 +3725,7 @@
         "firstSeen": 1790370235529
       },
       "237657484180@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 24,
         "firstSeen": 1790532383108
       },
       "237692238886@s.whatsapp.net": {
@@ -3389,11 +3733,11 @@
         "firstSeen": 1790532384313
       },
       "237679307909@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 10,
         "firstSeen": 1790532386576
       },
       "237694351163@s.whatsapp.net": {
-        "messages": 18,
+        "messages": 31,
         "firstSeen": 1790532387311
       },
       "237695975952@s.whatsapp.net": {
@@ -3401,15 +3745,15 @@
         "firstSeen": 1790532388367
       },
       "237690505393@s.whatsapp.net": {
-        "messages": 21,
+        "messages": 44,
         "firstSeen": 1790532392823
       },
       "237691310102@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 23,
         "firstSeen": 1790532397465
       },
       "237696651160@s.whatsapp.net": {
-        "messages": 33,
+        "messages": 39,
         "firstSeen": 1790602839318
       },
       "120363058557680301@s.whatsapp.net": {
@@ -3421,7 +3765,7 @@
         "firstSeen": 1790602941823
       },
       "237658943259@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 21,
         "firstSeen": 1790603593812
       },
       "237658839042@s.whatsapp.net": {
@@ -3433,7 +3777,7 @@
         "firstSeen": 1790605039290
       },
       "237699315875@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 4,
         "firstSeen": 1790605228478
       },
       "237655714761@s.whatsapp.net": {
@@ -3457,12 +3801,24 @@
         "firstSeen": 1790672117112
       },
       "237698942333@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 7,
         "firstSeen": 1790672157396
       },
       "237678997078@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 8,
         "firstSeen": 1790706086184
+      },
+      "237696589673@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791536722406
+      },
+      "237658507524@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558833211
+      },
+      "237656939187@s.whatsapp.net": {
+        "messages": 7,
+        "firstSeen": 1791835983700
       }
     },
     "createdAt": 1775729218371
@@ -3536,17 +3892,25 @@
     "createdAt": 1777149575457
   },
   "120363194945522276@g.us": {
-    "totalMessages": 1,
+    "totalMessages": 5,
     "members": {
       "83099161473085@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1777159327190
+      },
+      "23791050031@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791644629345
+      },
+      "123046669095117@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791834608654
       }
     },
     "createdAt": 1777159327190
   },
   "120363321843253514@g.us": {
-    "totalMessages": 23,
+    "totalMessages": 25,
     "members": {
       "137576543424697@s.whatsapp.net": {
         "messages": 12,
@@ -3561,14 +3925,14 @@
         "firstSeen": 1785750279885
       },
       "23750738737@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 10,
         "firstSeen": 1790532346537
       }
     },
     "createdAt": 1777186301455
   },
   "120363425825035725@g.us": {
-    "totalMessages": 668,
+    "totalMessages": 707,
     "members": {
       "93274207469705@s.whatsapp.net": {
         "messages": 6,
@@ -3899,7 +4263,7 @@
         "firstSeen": 1790439735844
       },
       "15145741701@s.whatsapp.net": {
-        "messages": 37,
+        "messages": 38,
         "firstSeen": 1790533832683
       },
       "237673474225@s.whatsapp.net": {
@@ -3935,7 +4299,7 @@
         "firstSeen": 1790543775987
       },
       "22951385538@s.whatsapp.net": {
-        "messages": 29,
+        "messages": 34,
         "firstSeen": 1790544311329
       },
       "243975030536@s.whatsapp.net": {
@@ -3959,7 +4323,7 @@
         "firstSeen": 1790617604648
       },
       "22654358747@s.whatsapp.net": {
-        "messages": 21,
+        "messages": 24,
         "firstSeen": 1790624314176
       },
       "237659817417@s.whatsapp.net": {
@@ -3971,7 +4335,7 @@
         "firstSeen": 1790678682109
       },
       "22673985249@s.whatsapp.net": {
-        "messages": 48,
+        "messages": 51,
         "firstSeen": 1790710172849
       },
       "237695461204@s.whatsapp.net": {
@@ -3999,7 +4363,7 @@
         "firstSeen": 1790882187325
       },
       "22953088468@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 7,
         "firstSeen": 1790883353017
       },
       "237688506746@s.whatsapp.net": {
@@ -4019,7 +4383,7 @@
         "firstSeen": 1790884021702
       },
       "237686361833@s.whatsapp.net": {
-        "messages": 37,
+        "messages": 39,
         "firstSeen": 1790884027166
       },
       "22671465720@s.whatsapp.net": {
@@ -4035,7 +4399,7 @@
         "firstSeen": 1790975491994
       },
       "237657641497@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790975509041
       },
       "237659730164@s.whatsapp.net": {
@@ -4083,7 +4447,7 @@
         "firstSeen": 1791202275959
       },
       "22957072185@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1791206478754
       },
       "24106333951@s.whatsapp.net": {
@@ -4095,7 +4459,7 @@
         "firstSeen": 1791206564150
       },
       "237697928371@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791210710505
       },
       "22892811699@s.whatsapp.net": {
@@ -4111,7 +4475,7 @@
         "firstSeen": 1791442863862
       },
       "237690160047@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791492551189
       },
       "237670861625@s.whatsapp.net": {
@@ -4123,18 +4487,58 @@
         "firstSeen": 1791492738529
       },
       "22677583530@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 4,
         "firstSeen": 1791492836286
       },
       "22787304796@s.whatsapp.net": {
         "messages": 4,
         "firstSeen": 1791495512893
+      },
+      "22892077951@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791537708929
+      },
+      "212697717465@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558913843
+      },
+      "242061152228@s.whatsapp.net": {
+        "messages": 7,
+        "firstSeen": 1791661736341
+      },
+      "237657093656@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791663417353
+      },
+      "237670494508@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791752307306
+      },
+      "22899861379@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791752746932
+      },
+      "22994622898@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791753207768
+      },
+      "242064780713@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791828822167
+      },
+      "2250502305101@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913262908
+      },
+      "22374530912@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791913283967
       }
     },
     "createdAt": 1785615321723
   },
   "120363412092226626@g.us": {
-    "totalMessages": 4095,
+    "totalMessages": 4157,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 348,
@@ -4273,7 +4677,7 @@
         "firstSeen": 1785621802356
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 20,
+        "messages": 21,
         "firstSeen": 1785622117735
       },
       "205866557010015@s.whatsapp.net": {
@@ -4437,7 +4841,7 @@
         "firstSeen": 1790343644110
       },
       "237657670321@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 10,
         "firstSeen": 1790532650870
       },
       "237654592808@s.whatsapp.net": {
@@ -4473,11 +4877,11 @@
         "firstSeen": 1790599251903
       },
       "237691111773@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 11,
         "firstSeen": 1790600015870
       },
       "237691052623@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 20,
         "firstSeen": 1790605621419
       },
       "237690143432@s.whatsapp.net": {
@@ -4493,7 +4897,7 @@
         "firstSeen": 1790702511421
       },
       "237655680605@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 8,
         "firstSeen": 1790709631028
       },
       "237698592494@s.whatsapp.net": {
@@ -4525,7 +4929,7 @@
         "firstSeen": 1791064066900
       },
       "22585580501@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 6,
         "firstSeen": 1791064070757
       },
       "237657225886@s.whatsapp.net": {
@@ -4545,18 +4949,42 @@
         "firstSeen": 1791209142694
       },
       "237656527937@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 4,
         "firstSeen": 1791218350150
       },
       "237694237945@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 5,
         "firstSeen": 1791492802929
+      },
+      "22999693465@s.whatsapp.net": {
+        "messages": 31,
+        "firstSeen": 1791741499250
+      },
+      "237659496649@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741501809
+      },
+      "212777101139@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791753412220
+      },
+      "237655730384@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791825730079
+      },
+      "237676789310@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791825740679
+      },
+      "237683145232@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825745034
       }
     },
     "createdAt": 1785615344066
   },
   "120363428171986797@g.us": {
-    "totalMessages": 4466,
+    "totalMessages": 9563,
     "members": {
       "145818820591633@s.whatsapp.net": {
         "messages": 444,
@@ -4683,7 +5111,7 @@
         "firstSeen": 1788198286891
       },
       "237698954932@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 13,
         "firstSeen": 1788204964628
       },
       "201099109785618@s.whatsapp.net": {
@@ -4699,7 +5127,7 @@
         "firstSeen": 1789896624716
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 888,
+        "messages": 914,
         "firstSeen": 1789896624736
       },
       "250276955082825@s.whatsapp.net": {
@@ -4739,19 +5167,19 @@
         "firstSeen": 1790416487294
       },
       "33605692609@s.whatsapp.net": {
-        "messages": 119,
+        "messages": 895,
         "firstSeen": 1790532452858
       },
       "237681396510@s.whatsapp.net": {
-        "messages": 21,
+        "messages": 67,
         "firstSeen": 1790532471845
       },
       "237620681972@s.whatsapp.net": {
-        "messages": 13,
+        "messages": 155,
         "firstSeen": 1790532490718
       },
       "237670103401@s.whatsapp.net": {
-        "messages": 53,
+        "messages": 143,
         "firstSeen": 1790535748531
       },
       "237654401587@s.whatsapp.net": {
@@ -4759,51 +5187,51 @@
         "firstSeen": 1790545701842
       },
       "2290161304864@s.whatsapp.net": {
-        "messages": 20,
+        "messages": 50,
         "firstSeen": 1790549624300
       },
       "237640834008@s.whatsapp.net": {
-        "messages": 18,
+        "messages": 27,
         "firstSeen": 1790550345646
       },
       "23794652169@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 13,
         "firstSeen": 1790553488138
       },
       "237651387960@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 8,
         "firstSeen": 1790619052637
       },
       "237691310102@s.whatsapp.net": {
-        "messages": 100,
+        "messages": 236,
         "firstSeen": 1790620320009
       },
       "22558008053@s.whatsapp.net": {
-        "messages": 44,
+        "messages": 129,
         "firstSeen": 1790621010572
       },
       "22566813932@s.whatsapp.net": {
-        "messages": 98,
+        "messages": 409,
         "firstSeen": 1790625293549
       },
       "237656521542@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 49,
         "firstSeen": 1790627669676
       },
       "237659802144@s.whatsapp.net": {
-        "messages": 100,
+        "messages": 261,
         "firstSeen": 1790630514374
       },
       "120363428171986797@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1790630523323
       },
       "237686241566@s.whatsapp.net": {
-        "messages": 263,
+        "messages": 584,
         "firstSeen": 1790630622730
       },
       "2347025058160@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1790673613631
       },
       "237698520572@s.whatsapp.net": {
@@ -4811,15 +5239,15 @@
         "firstSeen": 1790684220627
       },
       "237687862087@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 18,
         "firstSeen": 1790687264497
       },
       "237696194565@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 34,
         "firstSeen": 1790687312498
       },
       "79196291338@s.whatsapp.net": {
-        "messages": 11,
+        "messages": 26,
         "firstSeen": 1790701961998
       },
       "22576146663@s.whatsapp.net": {
@@ -4831,15 +5259,15 @@
         "firstSeen": 1791202284772
       },
       "212621703491@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 25,
         "firstSeen": 1791202286147
       },
       "237680285732@s.whatsapp.net": {
-        "messages": 21,
+        "messages": 212,
         "firstSeen": 1791202286946
       },
       "22879593572@s.whatsapp.net": {
-        "messages": 138,
+        "messages": 171,
         "firstSeen": 1791216402669
       },
       "24106091608@s.whatsapp.net": {
@@ -4847,7 +5275,7 @@
         "firstSeen": 1791235221900
       },
       "237656613978@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 62,
         "firstSeen": 1791235672893
       },
       "243972079757@s.whatsapp.net": {
@@ -4859,11 +5287,11 @@
         "firstSeen": 1791236768798
       },
       "2250507745324@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 5,
         "firstSeen": 1791241495824
       },
       "237698885747@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 19,
         "firstSeen": 1791314671567
       },
       "237656397803@s.whatsapp.net": {
@@ -4871,15 +5299,15 @@
         "firstSeen": 1791314743493
       },
       "237655184459@s.whatsapp.net": {
-        "messages": 24,
+        "messages": 39,
         "firstSeen": 1791314809935
       },
       "237688620396@s.whatsapp.net": {
-        "messages": 22,
+        "messages": 40,
         "firstSeen": 1791319121130
       },
       "22564048205@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 86,
         "firstSeen": 1791319319201
       },
       "237697135787@s.whatsapp.net": {
@@ -4891,7 +5319,7 @@
         "firstSeen": 1791320694402
       },
       "221778734959@s.whatsapp.net": {
-        "messages": 25,
+        "messages": 36,
         "firstSeen": 1791409536810
       },
       "22573980189@s.whatsapp.net": {
@@ -4899,20 +5327,96 @@
         "firstSeen": 1791410451552
       },
       "22584751822@s.whatsapp.net": {
-        "messages": 41,
+        "messages": 128,
         "firstSeen": 1791411350747
       },
       "237651960291@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 10,
         "firstSeen": 1791411352347
       },
       "237650473184@s.whatsapp.net": {
-        "messages": 30,
+        "messages": 93,
         "firstSeen": 1791492910246
       },
       "237656772267@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 13,
         "firstSeen": 1791493457790
+      },
+      "237697315529@s.whatsapp.net": {
+        "messages": 10,
+        "firstSeen": 1791534024339
+      },
+      "243855545858@s.whatsapp.net": {
+        "messages": 38,
+        "firstSeen": 1791558993168
+      },
+      "233206381777@s.whatsapp.net": {
+        "messages": 591,
+        "firstSeen": 1791626507986
+      },
+      "237691370589@s.whatsapp.net": {
+        "messages": 1086,
+        "firstSeen": 1791626522845
+      },
+      "22891156123@s.whatsapp.net": {
+        "messages": 103,
+        "firstSeen": 1791626528716
+      },
+      "243999575408@s.whatsapp.net": {
+        "messages": 146,
+        "firstSeen": 1791626529605
+      },
+      "237655512300@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791626548407
+      },
+      "237654225477@s.whatsapp.net": {
+        "messages": 16,
+        "firstSeen": 1791626655562
+      },
+      "25377420566@s.whatsapp.net": {
+        "messages": 95,
+        "firstSeen": 1791626689615
+      },
+      "22879780747@s.whatsapp.net": {
+        "messages": 19,
+        "firstSeen": 1791626713254
+      },
+      "237695904431@s.whatsapp.net": {
+        "messages": 32,
+        "firstSeen": 1791641288433
+      },
+      "130833880993812@s.whatsapp.net": {
+        "messages": 40,
+        "firstSeen": 1791644566686
+      },
+      "237693862427@s.whatsapp.net": {
+        "messages": 37,
+        "firstSeen": 1792939551033
+      },
+      "33688737046@s.whatsapp.net": {
+        "messages": 8,
+        "firstSeen": 1793658001155
+      },
+      "237655086741@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1793658002737
+      },
+      "237674140177@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1793658002761
+      },
+      "237657367647@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1793658038796
+      },
+      "237671334867@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1793658040026
+      },
+      "233559134576@s.whatsapp.net": {
+        "messages": 43,
+        "firstSeen": 1793732487062
       }
     },
     "createdAt": 1785618234887
@@ -4936,7 +5440,7 @@
     "createdAt": 1785618576781
   },
   "120363408762771148@g.us": {
-    "totalMessages": 112,
+    "totalMessages": 119,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 64,
@@ -5023,18 +5527,26 @@
         "firstSeen": 1790343943245
       },
       "237691111773@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 4,
         "firstSeen": 1791154664991
       },
       "237691052623@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791202303784
+      },
+      "237689472746@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791652985374
+      },
+      "237676789310@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791825740967
       }
     },
     "createdAt": 1785621381138
   },
   "120363410965370632@g.us": {
-    "totalMessages": 46,
+    "totalMessages": 50,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 39,
@@ -5055,6 +5567,10 @@
       "159734900486165@s.whatsapp.net": {
         "messages": 3,
         "firstSeen": 1786113244788
+      },
+      "237676789310@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791825740606
       }
     },
     "createdAt": 1785621415610
@@ -5400,7 +5916,7 @@
     "createdAt": 1785664104327
   },
   "120363422671337360@g.us": {
-    "totalMessages": 1577,
+    "totalMessages": 1709,
     "members": {
       "277481328234564@s.whatsapp.net": {
         "messages": 111,
@@ -5411,7 +5927,7 @@
         "firstSeen": 1785709331685
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 717,
+        "messages": 766,
         "firstSeen": 1785709332516
       },
       "268667669504103@s.whatsapp.net": {
@@ -5443,7 +5959,7 @@
         "firstSeen": 1790362628333
       },
       "237690893517@s.whatsapp.net": {
-        "messages": 164,
+        "messages": 211,
         "firstSeen": 1790462656959
       },
       "237696174661@s.whatsapp.net": {
@@ -5459,11 +5975,11 @@
         "firstSeen": 1790536550037
       },
       "237655672732@s.whatsapp.net": {
-        "messages": 62,
+        "messages": 79,
         "firstSeen": 1790608453255
       },
       "237682566066@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 22,
         "firstSeen": 1790617398816
       },
       "237656716088@s.whatsapp.net": {
@@ -5471,11 +5987,11 @@
         "firstSeen": 1790627723848
       },
       "237688190584@s.whatsapp.net": {
-        "messages": 39,
+        "messages": 48,
         "firstSeen": 1790755080836
       },
       "237683145232@s.whatsapp.net": {
-        "messages": 204,
+        "messages": 207,
         "firstSeen": 1791065132362
       },
       "237694501628@s.whatsapp.net": {
@@ -5494,7 +6010,7 @@
     "createdAt": 1785709331670
   },
   "120363142326154820@g.us": {
-    "totalMessages": 53,
+    "totalMessages": 90,
     "members": {
       "230687122673892@s.whatsapp.net": {
         "messages": 9,
@@ -5561,28 +6077,48 @@
         "firstSeen": 1790757114125
       },
       "23795628587@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 20,
         "firstSeen": 1791202302337
       },
       "23775367154@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 9,
         "firstSeen": 1791202321631
       },
       "237651227868@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 6,
         "firstSeen": 1791314775902
       },
       "237659973532@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791314778333
       },
       "237695473031@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 4,
         "firstSeen": 1791314780251
       },
       "237691626416@s.whatsapp.net": {
         "messages": 2,
         "firstSeen": 1791314786725
+      },
+      "237696919767@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791657957898
+      },
+      "237699169207@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825570785
+      },
+      "237683165887@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825721373
+      },
+      "237653522397@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913256794
+      },
+      "237698426444@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791949010570
       }
     },
     "createdAt": 1785771297739
@@ -5606,7 +6142,7 @@
     "createdAt": 1785800212068
   },
   "120363428485472607@g.us": {
-    "totalMessages": 117,
+    "totalMessages": 135,
     "members": {
       "49095838318801@s.whatsapp.net": {
         "messages": 36,
@@ -5705,7 +6241,7 @@
         "firstSeen": 1790620738436
       },
       "237691111773@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 7,
         "firstSeen": 1790688918505
       },
       "237686424594@s.whatsapp.net": {
@@ -5717,7 +6253,7 @@
         "firstSeen": 1790712746086
       },
       "237675681837@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1791209124594
       },
       "237656527937@s.whatsapp.net": {
@@ -5725,14 +6261,34 @@
         "firstSeen": 1791218349899
       },
       "237694237945@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 3,
         "firstSeen": 1791316061787
+      },
+      "15147053874@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791565566097
+      },
+      "23791472492@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791664288050
+      },
+      "237676789310@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791825740211
+      },
+      "237689472746@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913312244
+      },
+      "237690626958@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913318816
       }
     },
     "createdAt": 1785800341442
   },
   "120363411989124469@g.us": {
-    "totalMessages": 317,
+    "totalMessages": 373,
     "members": {
       "195781957013711@s.whatsapp.net": {
         "messages": 2,
@@ -5847,15 +6403,15 @@
         "firstSeen": 1790366988026
       },
       "16132524901@s.whatsapp.net": {
-        "messages": 34,
+        "messages": 48,
         "firstSeen": 1790460198966
       },
       "237657044777@s.whatsapp.net": {
-        "messages": 50,
+        "messages": 62,
         "firstSeen": 1790461010567
       },
       "237699611059@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 18,
         "firstSeen": 1790461599950
       },
       "237640546083@s.whatsapp.net": {
@@ -5863,7 +6419,7 @@
         "firstSeen": 1790536530630
       },
       "237657005283@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 10,
         "firstSeen": 1790538400685
       },
       "33620933022@s.whatsapp.net": {
@@ -5871,11 +6427,11 @@
         "firstSeen": 1790548397766
       },
       "237698453034@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 9,
         "firstSeen": 1790586650615
       },
       "237697118860@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 4,
         "firstSeen": 1790621616378
       },
       "237655258177@s.whatsapp.net": {
@@ -5883,11 +6439,11 @@
         "firstSeen": 1790759809279
       },
       "237673201882@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 6,
         "firstSeen": 1790760151766
       },
       "237689227585@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1790760336522
       },
       "23756490543@s.whatsapp.net": {
@@ -5895,11 +6451,11 @@
         "firstSeen": 1790768499168
       },
       "237696640922@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 19,
         "firstSeen": 1790883359223
       },
       "237657790253@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1790883376709
       },
       "237682192248@s.whatsapp.net": {
@@ -5929,12 +6485,16 @@
       "237697716995@s.whatsapp.net": {
         "messages": 1,
         "firstSeen": 1791064079094
+      },
+      "237671624397@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741338543
       }
     },
     "createdAt": 1786113287462
   },
   "120363401507890483@g.us": {
-    "totalMessages": 227,
+    "totalMessages": 236,
     "members": {
       "99518821445633@s.whatsapp.net": {
         "messages": 3,
@@ -5989,7 +6549,7 @@
         "firstSeen": 1790532351620
       },
       "237697656431@s.whatsapp.net": {
-        "messages": 37,
+        "messages": 40,
         "firstSeen": 1790532358355
       },
       "237688588321@s.whatsapp.net": {
@@ -6005,7 +6565,7 @@
         "firstSeen": 1790545968673
       },
       "237676018142@s.whatsapp.net": {
-        "messages": 43,
+        "messages": 44,
         "firstSeen": 1790580930580
       },
       "237657122441@s.whatsapp.net": {
@@ -6037,8 +6597,12 @@
         "firstSeen": 1791314609606
       },
       "237680258727@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 14,
         "firstSeen": 1791492856847
+      },
+      "237682340292@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1793658011137
       }
     },
     "createdAt": 1788210926145
@@ -6054,11 +6618,15 @@
     "createdAt": 1789457469284
   },
   "120363064173952864@g.us": {
-    "totalMessages": 5,
+    "totalMessages": 10,
     "members": {
       "212772763766791@s.whatsapp.net": {
         "messages": 5,
         "firstSeen": 1789458606934
+      },
+      "237693530662@s.whatsapp.net": {
+        "messages": 5,
+        "firstSeen": 1791626649632
       }
     },
     "createdAt": 1789458606934
@@ -6134,7 +6702,7 @@
     "createdAt": 1790019080043
   },
   "120363041830537003@g.us": {
-    "totalMessages": 782,
+    "totalMessages": 846,
     "members": {
       "60245506294000@s.whatsapp.net": {
         "messages": 2,
@@ -6201,11 +6769,11 @@
         "firstSeen": 1790344022921
       },
       "2348107106127@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 39,
         "firstSeen": 1790532514899
       },
       "917023951514@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 6,
         "firstSeen": 1790532978487
       },
       "120363041830537003@s.whatsapp.net": {
@@ -6215,6 +6783,66 @@
       "923340928710@s.whatsapp.net": {
         "messages": 3,
         "firstSeen": 1791314853308
+      },
+      "27724207450@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626385978
+      },
+      "919679729037@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626389282
+      },
+      "2349128754402@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626389353
+      },
+      "919433406997@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626389877
+      },
+      "2349162123734@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626392153
+      },
+      "918075457421@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791626396028
+      },
+      "2348100886986@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626396455
+      },
+      "212629843237@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626412112
+      },
+      "2348162337303@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626489997
+      },
+      "923311489610@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626542789
+      },
+      "420734717052@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791741400195
+      },
+      "6588180450@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741400232
+      },
+      "923196615238@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741400930
+      },
+      "269647307907102@s.whatsapp.net": {
+        "messages": 21,
+        "firstSeen": 1791825705442
+      },
+      "16385786798288@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825709571
       }
     },
     "createdAt": 1790343577136
@@ -6302,7 +6930,7 @@
     "createdAt": 1790406895845
   },
   "120363397873883632@g.us": {
-    "totalMessages": 25,
+    "totalMessages": 30,
     "members": {
       "180874092015730@s.whatsapp.net": {
         "messages": 10,
@@ -6337,17 +6965,17 @@
         "firstSeen": 1790417896321
       },
       "237657232446@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 7,
         "firstSeen": 1791443011008
       }
     },
     "createdAt": 1790414594845
   },
   "120363411929937671@g.us": {
-    "totalMessages": 17562,
+    "totalMessages": 21615,
     "members": {
       "8801866583384@s.whatsapp.net": {
-        "messages": 29,
+        "messages": 44,
         "firstSeen": 1790580941678
       },
       "26775139379@s.whatsapp.net": {
@@ -6367,11 +6995,11 @@
         "firstSeen": 1790580955086
       },
       "201214095593@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1790580955119
       },
       "923014560543@s.whatsapp.net": {
-        "messages": 41,
+        "messages": 56,
         "firstSeen": 1790580955346
       },
       "31662968701026@s.whatsapp.net": {
@@ -6391,7 +7019,7 @@
         "firstSeen": 1790580962196
       },
       "237671624397@s.whatsapp.net": {
-        "messages": 30,
+        "messages": 109,
         "firstSeen": 1790580966952
       },
       "2348121086460@s.whatsapp.net": {
@@ -6399,7 +7027,7 @@
         "firstSeen": 1790580968562
       },
       "918509822754@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 7,
         "firstSeen": 1790580990962
       },
       "26772435252@s.whatsapp.net": {
@@ -6407,11 +7035,11 @@
         "firstSeen": 1790580991027
       },
       "2348124209195@s.whatsapp.net": {
-        "messages": 31,
+        "messages": 35,
         "firstSeen": 1790581005341
       },
       "2349036880298@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 21,
         "firstSeen": 1790581033185
       },
       "255741447995@s.whatsapp.net": {
@@ -6419,7 +7047,7 @@
         "firstSeen": 1790581033920
       },
       "923469423512@s.whatsapp.net": {
-        "messages": 29,
+        "messages": 57,
         "firstSeen": 1790582069898
       },
       "27665665031@s.whatsapp.net": {
@@ -6431,15 +7059,15 @@
         "firstSeen": 1790584953701
       },
       "2349018093349@s.whatsapp.net": {
-        "messages": 64,
+        "messages": 70,
         "firstSeen": 1790584977358
       },
       "2349012661645@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 12,
         "firstSeen": 1790586742304
       },
       "923707065758@s.whatsapp.net": {
-        "messages": 46,
+        "messages": 84,
         "firstSeen": 1790587596183
       },
       "27646058628@s.whatsapp.net": {
@@ -6447,11 +7075,11 @@
         "firstSeen": 1790587931349
       },
       "260951971902@s.whatsapp.net": {
-        "messages": 43,
+        "messages": 66,
         "firstSeen": 1790588058735
       },
       "2349035667275@s.whatsapp.net": {
-        "messages": 74,
+        "messages": 99,
         "firstSeen": 1790588445655
       },
       "27621834910@s.whatsapp.net": {
@@ -6459,7 +7087,7 @@
         "firstSeen": 1790590615643
       },
       "77055390751@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 10,
         "firstSeen": 1790590683365
       },
       "27799400929@s.whatsapp.net": {
@@ -6467,19 +7095,19 @@
         "firstSeen": 1790591883763
       },
       "27751597880@s.whatsapp.net": {
-        "messages": 224,
+        "messages": 239,
         "firstSeen": 1790592326937
       },
       "2347055057533@s.whatsapp.net": {
-        "messages": 28,
+        "messages": 58,
         "firstSeen": 1790592926902
       },
       "50948247470@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 9,
         "firstSeen": 1790593194696
       },
       "255794469700@s.whatsapp.net": {
-        "messages": 3237,
+        "messages": 3242,
         "firstSeen": 1790594407002
       },
       "923007992662@s.whatsapp.net": {
@@ -6499,11 +7127,11 @@
         "firstSeen": 1790597821349
       },
       "8801742564047@s.whatsapp.net": {
-        "messages": 15,
+        "messages": 26,
         "firstSeen": 1790599253911
       },
       "163183692087307@s.whatsapp.net": {
-        "messages": 44,
+        "messages": 176,
         "firstSeen": 1790601276663
       },
       "27765604385@s.whatsapp.net": {
@@ -6511,7 +7139,7 @@
         "firstSeen": 1790601837593
       },
       "918586979092@s.whatsapp.net": {
-        "messages": 17,
+        "messages": 23,
         "firstSeen": 1790605639764
       },
       "254781554742@s.whatsapp.net": {
@@ -6523,7 +7151,7 @@
         "firstSeen": 1790606412689
       },
       "120363411929937671@s.whatsapp.net": {
-        "messages": 28,
+        "messages": 37,
         "firstSeen": 1790606432729
       },
       "918653986753@s.whatsapp.net": {
@@ -6547,7 +7175,7 @@
         "firstSeen": 1790625880734
       },
       "2349169111445@s.whatsapp.net": {
-        "messages": 759,
+        "messages": 763,
         "firstSeen": 1790631121869
       },
       "233245305379@s.whatsapp.net": {
@@ -6559,11 +7187,11 @@
         "firstSeen": 1790632511615
       },
       "27784435713@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 25,
         "firstSeen": 1790632908920
       },
       "2348029214393@s.whatsapp.net": {
-        "messages": 10,
+        "messages": 46,
         "firstSeen": 1790672026634
       },
       "32467317461@s.whatsapp.net": {
@@ -6575,7 +7203,7 @@
         "firstSeen": 1790672088559
       },
       "2348142934923@s.whatsapp.net": {
-        "messages": 92,
+        "messages": 122,
         "firstSeen": 1790672097842
       },
       "54571888042234@s.whatsapp.net": {
@@ -6607,11 +7235,11 @@
         "firstSeen": 1790691436736
       },
       "18765157648@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 6,
         "firstSeen": 1790691720191
       },
       "917023951514@s.whatsapp.net": {
-        "messages": 14,
+        "messages": 86,
         "firstSeen": 1790696314155
       },
       "2347068058321@s.whatsapp.net": {
@@ -6643,7 +7271,7 @@
         "firstSeen": 1790768657953
       },
       "27724207450@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 16,
         "firstSeen": 1790774415419
       },
       "19549318110@s.whatsapp.net": {
@@ -6651,7 +7279,7 @@
         "firstSeen": 1790776924687
       },
       "2348147508670@s.whatsapp.net": {
-        "messages": 7,
+        "messages": 9,
         "firstSeen": 1790882845395
       },
       "176047119155207@s.whatsapp.net": {
@@ -6703,7 +7331,7 @@
         "firstSeen": 1790883663973
       },
       "2349165071492@s.whatsapp.net": {
-        "messages": 206,
+        "messages": 252,
         "firstSeen": 1790883664112
       },
       "78353876963465@s.whatsapp.net": {
@@ -6711,11 +7339,11 @@
         "firstSeen": 1790883673974
       },
       "237686959060@s.whatsapp.net": {
-        "messages": 61,
+        "messages": 82,
         "firstSeen": 1790883674998
       },
       "24104567462@s.whatsapp.net": {
-        "messages": 9,
+        "messages": 15,
         "firstSeen": 1790883675019
       },
       "923016542609@s.whatsapp.net": {
@@ -6743,7 +7371,7 @@
         "firstSeen": 1790883809772
       },
       "2349068633713@s.whatsapp.net": {
-        "messages": 13,
+        "messages": 17,
         "firstSeen": 1790883810543
       },
       "201060981967@s.whatsapp.net": {
@@ -6771,7 +7399,7 @@
         "firstSeen": 1790883904776
       },
       "27866335043633@s.whatsapp.net": {
-        "messages": 107,
+        "messages": 486,
         "firstSeen": 1790883906761
       },
       "212653402723@s.whatsapp.net": {
@@ -6803,15 +7431,15 @@
         "firstSeen": 1790974255240
       },
       "50955012230@s.whatsapp.net": {
-        "messages": 60,
+        "messages": 65,
         "firstSeen": 1790974522879
       },
       "2349049674913@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 4,
         "firstSeen": 1790974538910
       },
       "923357433862@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 13,
         "firstSeen": 1790974933951
       },
       "2348083064237@s.whatsapp.net": {
@@ -6831,7 +7459,7 @@
         "firstSeen": 1790975216376
       },
       "2349166255902@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 7,
         "firstSeen": 1790975221082
       },
       "601128096587@s.whatsapp.net": {
@@ -6839,11 +7467,11 @@
         "firstSeen": 1790975558462
       },
       "255799455692@s.whatsapp.net": {
-        "messages": 109,
+        "messages": 111,
         "firstSeen": 1791022504569
       },
       "917007846527@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791025863668
       },
       "2348083873181@s.whatsapp.net": {
@@ -6851,15 +7479,15 @@
         "firstSeen": 1791025990239
       },
       "8801607928300@s.whatsapp.net": {
-        "messages": 38,
+        "messages": 53,
         "firstSeen": 1791025994282
       },
       "237689660487@s.whatsapp.net": {
-        "messages": 19,
+        "messages": 20,
         "firstSeen": 1791026225701
       },
       "919863334245@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 7,
         "firstSeen": 1791031595162
       },
       "212695610779@s.whatsapp.net": {
@@ -6879,7 +7507,7 @@
         "firstSeen": 1791044782234
       },
       "27649581356@s.whatsapp.net": {
-        "messages": 11,
+        "messages": 39,
         "firstSeen": 1791154657986
       },
       "923009821824@s.whatsapp.net": {
@@ -6887,11 +7515,11 @@
         "firstSeen": 1791202292964
       },
       "2348169155634@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 21,
         "firstSeen": 1791218579865
       },
       "233599246637@s.whatsapp.net": {
-        "messages": 2,
+        "messages": 3,
         "firstSeen": 1791222616532
       },
       "69329848643807@s.whatsapp.net": {
@@ -6911,11 +7539,11 @@
         "firstSeen": 1791314771304
       },
       "2348162470805@s.whatsapp.net": {
-        "messages": 60,
+        "messages": 73,
         "firstSeen": 1791314971168
       },
       "256755605163@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791314980337
       },
       "22891794883@s.whatsapp.net": {
@@ -6927,11 +7555,11 @@
         "firstSeen": 1791407782211
       },
       "263711785757@s.whatsapp.net": {
-        "messages": 36,
+        "messages": 178,
         "firstSeen": 1791407963930
       },
       "2348168359099@s.whatsapp.net": {
-        "messages": 4,
+        "messages": 5,
         "firstSeen": 1791408709231
       },
       "217519004610764@s.whatsapp.net": {
@@ -6939,7 +7567,7 @@
         "firstSeen": 1791409771159
       },
       "2347037319801@s.whatsapp.net": {
-        "messages": 79,
+        "messages": 126,
         "firstSeen": 1791413748831
       },
       "217562138832986@s.whatsapp.net": {
@@ -6947,19 +7575,19 @@
         "firstSeen": 1791442662456
       },
       "18768626260@s.whatsapp.net": {
-        "messages": 181,
+        "messages": 704,
         "firstSeen": 1791442862915
       },
       "22597637473@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 8,
         "firstSeen": 1791442880375
       },
       "221711202436@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 7,
         "firstSeen": 1791442891434
       },
       "923446811405@s.whatsapp.net": {
-        "messages": 5,
+        "messages": 8,
         "firstSeen": 1791442895088
       },
       "77412909998203@s.whatsapp.net": {
@@ -6967,7 +7595,7 @@
         "firstSeen": 1791442898218
       },
       "923130122643@s.whatsapp.net": {
-        "messages": 6,
+        "messages": 30,
         "firstSeen": 1791442998523
       },
       "393312368487@s.whatsapp.net": {
@@ -6983,11 +7611,11 @@
         "firstSeen": 1791492546419
       },
       "923014778989@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 2,
         "firstSeen": 1791492555456
       },
       "27774585889@s.whatsapp.net": {
-        "messages": 3,
+        "messages": 4,
         "firstSeen": 1791492559241
       },
       "923163040668@s.whatsapp.net": {
@@ -6999,20 +7627,224 @@
         "firstSeen": 1791492590267
       },
       "2349018860801@s.whatsapp.net": {
-        "messages": 101,
+        "messages": 225,
         "firstSeen": 1791492590348
       },
       "27655337618@s.whatsapp.net": {
-        "messages": 8,
+        "messages": 146,
         "firstSeen": 1791492741756
       },
       "8801783465925@s.whatsapp.net": {
-        "messages": 12,
+        "messages": 17,
         "firstSeen": 1791492809564
       },
       "393883653567@s.whatsapp.net": {
-        "messages": 1,
+        "messages": 8,
         "firstSeen": 1791492912054
+      },
+      "33695405500@s.whatsapp.net": {
+        "messages": 143,
+        "firstSeen": 1791521740985
+      },
+      "8801860003659@s.whatsapp.net": {
+        "messages": 92,
+        "firstSeen": 1791521954675
+      },
+      "8801755094853@s.whatsapp.net": {
+        "messages": 13,
+        "firstSeen": 1791558794689
+      },
+      "62895627015582@s.whatsapp.net": {
+        "messages": 7,
+        "firstSeen": 1791558795876
+      },
+      "2349161059204@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791558810738
+      },
+      "255610563170@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791561042715
+      },
+      "2349118513336@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626373320
+      },
+      "255774399900@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791626412050
+      },
+      "26776771443@s.whatsapp.net": {
+        "messages": 9,
+        "firstSeen": 1791626535257
+      },
+      "919204856994@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626555761
+      },
+      "2349113021198@s.whatsapp.net": {
+        "messages": 13,
+        "firstSeen": 1791626646466
+      },
+      "4917681346302@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791626717512
+      },
+      "254715966325@s.whatsapp.net": {
+        "messages": 80,
+        "firstSeen": 1791637742741
+      },
+      "2349133167169@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791639288273
+      },
+      "255680499093@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791639294732
+      },
+      "27692246638@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791639296124
+      },
+      "243912985727@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791639304238
+      },
+      "2347040017403@s.whatsapp.net": {
+        "messages": 40,
+        "firstSeen": 1791639646820
+      },
+      "263780008918@s.whatsapp.net": {
+        "messages": 199,
+        "firstSeen": 1791639649964
+      },
+      "2347061477104@s.whatsapp.net": {
+        "messages": 55,
+        "firstSeen": 1791639651974
+      },
+      "263712116712@s.whatsapp.net": {
+        "messages": 344,
+        "firstSeen": 1791639952195
+      },
+      "201022418996@s.whatsapp.net": {
+        "messages": 8,
+        "firstSeen": 1791640543049
+      },
+      "255756311567@s.whatsapp.net": {
+        "messages": 46,
+        "firstSeen": 1791640555554
+      },
+      "249129450071@s.whatsapp.net": {
+        "messages": 8,
+        "firstSeen": 1791641058307
+      },
+      "919330243303@s.whatsapp.net": {
+        "messages": 12,
+        "firstSeen": 1791642071118
+      },
+      "212788619076@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791642580688
+      },
+      "2349134710315@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791643478129
+      },
+      "8801756586469@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791643515237
+      },
+      "919775541336@s.whatsapp.net": {
+        "messages": 10,
+        "firstSeen": 1791644777939
+      },
+      "37495449699@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791645355414
+      },
+      "2348119629066@s.whatsapp.net": {
+        "messages": 36,
+        "firstSeen": 1791648318357
+      },
+      "27697961780@s.whatsapp.net": {
+        "messages": 8,
+        "firstSeen": 1791648818792
+      },
+      "421950493335@s.whatsapp.net": {
+        "messages": 30,
+        "firstSeen": 1791649746544
+      },
+      "2349063478975@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791652829880
+      },
+      "56946769762@s.whatsapp.net": {
+        "messages": 605,
+        "firstSeen": 1791653577472
+      },
+      "2348163788529@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791658256925
+      },
+      "91598851448850@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791658461346
+      },
+      "2348132974842@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791684162685
+      },
+      "2348072863574@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791703081489
+      },
+      "256701487186@s.whatsapp.net": {
+        "messages": 24,
+        "firstSeen": 1791707555391
+      },
+      "8801846949726@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1791741381959
+      },
+      "4915511557574@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791741385457
+      },
+      "8801831108400@s.whatsapp.net": {
+        "messages": 7,
+        "firstSeen": 1791741405378
+      },
+      "112747404599299@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791741419012
+      },
+      "255683195092@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825632090
+      },
+      "2347069026612@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825657535
+      },
+      "194794684997878@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791825761250
+      },
+      "967737790745@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791826219838
+      },
+      "254117343254@s.whatsapp.net": {
+        "messages": 2,
+        "firstSeen": 1791839147372
+      },
+      "56707006882044@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791913239440
+      },
+      "919242191119@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1791916333856
       }
     },
     "createdAt": 1790580941677
@@ -7048,7 +7880,7 @@
     "createdAt": 1790705312531
   },
   "120363319959723684@g.us": {
-    "totalMessages": 19760,
+    "totalMessages": 19795,
     "members": {
       "84134819020969@s.whatsapp.net": {
         "messages": 9720,
@@ -7059,24 +7891,52 @@
         "firstSeen": 1790716628909
       },
       "118236725149741@s.whatsapp.net": {
-        "messages": 4114,
+        "messages": 4149,
         "firstSeen": 1790716691903
       }
     },
     "createdAt": 1790716623509
   },
   "120363401748015737@g.us": {
-    "totalMessages": 174,
+    "totalMessages": 180,
     "members": {
       "237671624397@s.whatsapp.net": {
-        "messages": 143,
+        "messages": 148,
         "firstSeen": 1791230149910
       },
       "237698954932@s.whatsapp.net": {
-        "messages": 31,
+        "messages": 32,
         "firstSeen": 1791231674411
       }
     },
     "createdAt": 1791230149910
+  },
+  "120363222794396656@g.us": {
+    "totalMessages": 6,
+    "members": {
+      "237671624397@s.whatsapp.net": {
+        "messages": 5,
+        "firstSeen": 1791560844849
+      },
+      "237676918094@s.whatsapp.net": {
+        "messages": 1,
+        "firstSeen": 1791561085624
+      }
+    },
+    "createdAt": 1791560844849
+  },
+  "120363425420238108@g.us": {
+    "totalMessages": 7,
+    "members": {
+      "237671624397@s.whatsapp.net": {
+        "messages": 3,
+        "firstSeen": 1793659188033
+      },
+      "237698954932@s.whatsapp.net": {
+        "messages": 4,
+        "firstSeen": 1793659190537
+      }
+    },
+    "createdAt": 1793659188033
   }
 }

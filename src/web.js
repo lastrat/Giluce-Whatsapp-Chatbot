@@ -9,10 +9,15 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/src', express.static(path.join(__dirname, '../src')));
 
+let sock = null;
 let qrData = null;
-let connectionStatus = 'idle'; // idle | qr | paired | connecting | connected | error
+let connectionStatus = 'idle';
 let statusMessage = 'En attente de connexion...';
 let listeners = [];
+
+function setSocket(socket) {
+    sock = socket;
+}
 
 const broadcast = () => {
     const payload = { qrData, connectionStatus, statusMessage };
@@ -54,6 +59,42 @@ app.post('/status', (req, res) => {
     res.json({ ok: true });
 });
 
+app.post('/send', async (req, res) => {
+    try {
+        const { phone, message } = req.body || {};
+        
+        if (!phone || !message) {
+            return res.status(400).json({ 
+                ok: false, 
+                error: 'Phone number and message are required' 
+            });
+        }
+        
+        if (!sock) {
+            return res.status(503).json({ 
+                ok: false, 
+                error: 'WhatsApp not connected' 
+            });
+        }
+        
+        // Format phone number to WhatsApp JID
+        let jid = phone.replace(/\D/g, '');
+        if (!jid.includes('@')) {
+            jid = jid + '@s.whatsapp.net';
+        }
+        
+        await sock.sendMessage(jid, { text: message });
+        
+        res.json({ ok: true, message: 'Message sent successfully' });
+    } catch (error) {
+        console.error('Send message error:', error);
+        res.status(500).json({ 
+            ok: false, 
+            error: error.message || 'Failed to send message' 
+        });
+    }
+});
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
@@ -76,6 +117,7 @@ module.exports = {
         statusMessage = message || statusMessage;
         broadcast();
     },
+    setSocket: setSocket,
     close: () => {
         server.close();
     }

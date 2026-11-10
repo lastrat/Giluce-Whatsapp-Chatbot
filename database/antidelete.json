@@ -3474,6 +3474,2553 @@
       },
       "timestamp": 1791492739136,
       "savedAt": 1791492741051
+    },
+    {
+      "senderJid": "27986392793327@lid",
+      "content": {
+        "conversation": ",",
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "9/X1pd4VN9gTFw==",
+            "recipientTimestamp": "1791402490"
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "27qJnTWgvUqe0kT752nAOpTua1noRKYACN4r77oxSjU="
+        }
+      },
+      "timestamp": 1791535218267,
+      "savedAt": 1791535226156
+    },
+    {
+      "senderJid": "27986392793327@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Ceci",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "AC2CAB0E50254BB632465D0B34009220",
+            "participant": "27986392793327@lid",
+            "quotedMessage": {
+              "imageMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7118-24/839046944_1098821089710956_8645295888759059175_n.enc?ccb=11-4&oh=01_Q5Aa5wGh0SbnJ3l9Ykcz7XkMjGTounHraLw0zZ2_C3SOb8JYfQ&oe=6AF01DBC&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "image/jpeg",
+                "fileSha256": "NlgqZRSJyAcZ/IOv6gDEc6K7Srlt+I9qZb2KWxVwmhk=",
+                "fileLength": "48180",
+                "height": 1008,
+                "width": 567,
+                "mediaKey": "ShMjp9oDpEvLp/YDcTF/7NV8YOLqFhsxbv2/CJEpTz8=",
+                "fileEncSha256": "XPFnGx3uwzCTaLJUDMIcXtXbiILsJboFeaJ+8frGWk4=",
+                "directPath": "/v/t62.7118-24/839046944_1098821089710956_8645295888759059175_n.enc?ccb=11-4&oh=01_Q5Aa5wGh0SbnJ3l9Ykcz7XkMjGTounHraLw0zZ2_C3SOb8JYfQ&oe=6AF01DBC&_nc_sid=5e03e0",
+                "mediaKeyTimestamp": "1791536561",
+                "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAD8AIwMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAADBAACBQYBAQADAQEAAAAAAAAAAAAAAAABAgMEAP/aAAwDAQACEAMQAAAARA+nFx2unZPYeBtzF6dGDYZ7ammfPTroKDzWRZjn6qjd01ZSGuYZW2XiUtdw1BR3/8QAJBAAAgICAwABBAMAAAAAAAAAAQIAAwQREiExEwVBYXEUUWL/2gAIAQEAAT8Ayk4U/szDr5EmZlS1uNTHWk1uX9nxgz6gB8I/cx7RVXreiYVTIbZMdTXYVP2M/kKOgsuxTkIBy1Lcc1sR9hKgfmQfmXY5a1jGr4nUrIOxM9krKkj2U8bMhe+hMcA2sTDi0Hs1iVN7Pqp6rlScXI/zKR5AehF2vkyqTfX+RFpZAbH/AK0JQfJvUBi9iX7dAmpQhR1G+oSd+zlNwNFI2DOO/DP/xAAeEQEAAgEEAwAAAAAAAAAAAAABAAIQAxETMRJhgv/aAAgBAgEBPwCnX1ExSzyNY9Yob6oxwOzPNUWcnqf/xAAcEQACAgIDAAAAAAAAAAAAAAAAAQIREiEiMYH/2gAIAQMBAT8Al34JmiS42JXIxJaiIoaEkiz/2Q==",
+                "contextInfo": {
+                  "forwardingScore": 0,
+                  "featureEligibilities": {
+                    "canBeReshared": true
+                  },
+                  "pairedMediaType": "NOT_PAIRED_MEDIA",
+                  "statusSourceType": "IMAGE"
+                },
+                "scansSidecar": "FLOu6H1n7MyXzltMMaNtD9LSbGf1hyE+PpD+JY3hEuFYgckYXiadlA==",
+                "scanLengths": [
+                  5816,
+                  15947,
+                  9146,
+                  17271
+                ],
+                "midQualityFileSha256": "Z2jie61Lw29FglXxXHdswlC/DNDpa0DUWrUukm4ZHks="
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1791536692672,
+      "savedAt": 1791536708200
+    },
+    {
+      "senderJid": "275531413094528@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".file",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "DnEKyVRy+XCbN9A7+2JrGOtzfMSWzd7mxye8JWq+ifE="
+        }
+      },
+      "timestamp": 1791558794784,
+      "savedAt": 1791558795265
+    },
+    {
+      "senderJid": "275531413094528@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "file",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "POADMOmP978hLGKRrzEH3uOC7B6fmsWupTudIoYKAi0="
+        }
+      },
+      "timestamp": 1791558794583,
+      "savedAt": 1791558795484
+    },
+    {
+      "senderJid": "230687122673892@lid",
+      "content": {
+        "audioMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7117-24/841192625_1107295098449525_2371540962104809239_n.enc?ccb=11-4&oh=01_Q5Aa5wFe7juVO5OHkntN-Z_yGekmUTG-T06NH7FZwSvVcbnFKw&oe=6AF0394D&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "audio/ogg; codecs=opus",
+          "fileSha256": "oU+astJYYJJ+7r2vyv5lsHp1vqARLIUszDGlJb1wnc4=",
+          "fileLength": "61248",
+          "seconds": 27,
+          "ptt": true,
+          "mediaKey": "4vh1h6haC2eMOhNOelgFE4xMOw3lsycpZN8paGOasec=",
+          "fileEncSha256": "6b6WLT4tCIj6yjd4QZzHLx6E7E5TjNH4Xqa52jlTrPo=",
+          "directPath": "/v/t62.7117-24/841192625_1107295098449525_2371540962104809239_n.enc?ccb=11-4&oh=01_Q5Aa5wFe7juVO5OHkntN-Z_yGekmUTG-T06NH7FZwSvVcbnFKw&oe=6AF0394D&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791541779",
+          "contextInfo": {},
+          "waveform": "AC1BUStBQkQ0UlVJMEU+GUROUQBEUFM8QFpMAAAAKVZLSkEAU0wAKQcAADRMAAo9QUkAAGIyGUIAAAAAV01MJA=="
+        },
+        "messageContextInfo": {
+          "messageSecret": "wJKoZxWjS/Cmvl2EEN3eXEgUaVi86V4d1MfsZG8ki6I="
+        }
+      },
+      "timestamp": 1791558808815,
+      "savedAt": 1791558809644
+    },
+    {
+      "senderJid": "161048908820559@lid",
+      "content": {
+        "conversation": "GVTBE",
+        "senderKeyDistributionMessage": {
+          "groupId": "120363058557680301@g.us",
+          "axolotlSenderKeyDistributionMessage": "MwiRyuHQBhAAGiDP6pTLu6hjO0TwjgNePmOBWv80dNYvWBxZmcMES+6hESIhBeUbCVib1Arc9wMjlUD361xBCvxQp+bAkv1KKm+0CGsC"
+        },
+        "messageContextInfo": {
+          "messageSecret": "959WZwjnExeACtQcVdD4t+JkLY5U+2+bdKnioo7jt8o="
+        }
+      },
+      "timestamp": 1791558832743,
+      "savedAt": 1791558864017
+    },
+    {
+      "senderJid": "221212944912607@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363292730438038@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwix2PbFAxAAGiBqwgDkLzoASoKlqUIlHGP2e8OQmSegtcrcGZaMRa3y6iIhBWJ8LyNSQda1fUTGeAAtwx9ikVwwPo6v3wMaiBVmXsA4"
+        },
+        "messageContextInfo": {
+          "messageSecret": "jfQkZ6BVwhYpU3bEgYNeiU3c9lO7yCrbmDnkmIjE6hs="
+        },
+        "albumMessage": {
+          "expectedImageCount": 2,
+          "expectedVideoCount": 0
+        }
+      },
+      "timestamp": 1791558901368,
+      "savedAt": 1791558908781
+    },
+    {
+      "senderJid": "221212944912607@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQMdEuMDHYUp0z8CJfiZrqsH96ySQVtxQNvFLklSUVnbXh3W29D1YzAizC68AoRDSuNHEz72SwKv50nJtO_CpC2FyyTbNJb-M9aSUoV42w?ccb=9-4&oh=01_Q5Aa5wEsaknR6gKV9Xf1O9J6zG8TZAbg7PN1KHBNNbFtG81C0A&oe=6AF039E4&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "fileSha256": "LJDOmNmvP0wcZNAF+G4Cvd5WR4ze3JK0RrSyVoFWgoA=",
+          "fileLength": "109882",
+          "height": 1280,
+          "width": 589,
+          "mediaKey": "DeJIj7iYZoyI3u5D7bu9u4b1UFtSbIYV3l4i69atZjw=",
+          "fileEncSha256": "09BJqAFWVj4vh/8stKekzKaL4f6u9Xuryt9H3xuJl+Q=",
+          "directPath": "/o1/v/t24/f2/m238/AQMdEuMDHYUp0z8CJfiZrqsH96ySQVtxQNvFLklSUVnbXh3W29D1YzAizC68AoRDSuNHEz72SwKv50nJtO_CpC2FyyTbNJb-M9aSUoV42w?ccb=9-4&oh=01_Q5Aa5wEsaknR6gKV9Xf1O9J6zG8TZAbg7PN1KHBNNbFtG81C0A&oe=6AF039E4&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791549979",
+          "jpegThumbnail": "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",
+          "contextInfo": {
+            "statusSourceType": "IMAGE"
+          },
+          "firstScanSidecar": "8FS49ZscDhbRTw==",
+          "firstScanLength": 7766,
+          "scansSidecar": "8FS49ZscDhbRT3QJErQUUqzyYWnon06GQpFkyfPWD2DiRbJeRljdVQ==",
+          "scanLengths": [
+            7766,
+            48059,
+            26655,
+            27400
+          ],
+          "midQualityFileSha256": "QufLbT2TW7bJstZ3RyuXwTSMptQCyzDCMWhj2aSXATA=",
+          "imageSourceType": "USER_IMAGE"
+        },
+        "messageContextInfo": {
+          "messageSecret": "2kX/8mfbyhp9E51bR4ZMbCV8XtNbVtLvt1CfkcWXcls=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363292730438038@g.us",
+              "fromMe": true,
+              "id": "2A8FA5357229412DF73A"
+            }
+          }
+        }
+      },
+      "timestamp": 1791558908237,
+      "savedAt": 1791558908797
+    },
+    {
+      "senderJid": "221212944912607@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQOi_UKzBoVMekKQgSDs6svmOJDPTgSF5Z3ZdFqzplgPGAAS6y9ctl1HFsnsqGCBXahMGCbNGNArqBVwKnySLXl-8aCQmytlWVoWlmfNqw?ccb=9-4&oh=01_Q5Aa5wHd4HWKFMSAldwF7rt56tsPmCARlsbsTzMuz8Mhy1FBHA&oe=6AF04B3E&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "fileSha256": "o25KGNqiEJD4xWOhr6+pXZRudlLyLzjhsvt8aL+OhjQ=",
+          "fileLength": "115452",
+          "height": 1280,
+          "width": 589,
+          "mediaKey": "Xj+8WZMVJdNlRCz8AFGJ8X10rYXrFpHwffLbvm5lMTE=",
+          "fileEncSha256": "wbP2c9xJAUWp6vevIfBK/bBtVmAFjBI8+45wk75JiLk=",
+          "directPath": "/o1/v/t24/f2/m238/AQOi_UKzBoVMekKQgSDs6svmOJDPTgSF5Z3ZdFqzplgPGAAS6y9ctl1HFsnsqGCBXahMGCbNGNArqBVwKnySLXl-8aCQmytlWVoWlmfNqw?ccb=9-4&oh=01_Q5Aa5wHd4HWKFMSAldwF7rt56tsPmCARlsbsTzMuz8Mhy1FBHA&oe=6AF04B3E&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791549979",
+          "jpegThumbnail": "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",
+          "contextInfo": {
+            "statusSourceType": "IMAGE"
+          },
+          "firstScanSidecar": "BDPlD9tHlMasZw==",
+          "firstScanLength": 7776,
+          "scansSidecar": "BDPlD9tHlMasZxu/yLDo4FZbk+PCS4O0Uc10a1GtwiVGdheyzcmQeA==",
+          "scanLengths": [
+            7776,
+            50595,
+            28293,
+            28786
+          ],
+          "midQualityFileSha256": "ag9j8rzBc2hIX5FE/qjEsxffyHIgirxDY8M5j0nj6pc=",
+          "imageSourceType": "USER_IMAGE"
+        },
+        "messageContextInfo": {
+          "messageSecret": "ra9NVDuq8Lxein+Zgje6aYULfHnOlosHaWfb1TJaZW8=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363292730438038@g.us",
+              "fromMe": true,
+              "id": "2A8FA5357229412DF73A"
+            }
+          }
+        }
+      },
+      "timestamp": 1791558908504,
+      "savedAt": 1791558910868
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQOGS7dRomujQKoAtbxGcPBNWwiz8mLmZ8bFDqsCOhSUwqPY_6SYVl076z74A_MH0hslFhbIF4S_B2mkKbgIWuSbuVwMCkyVp2iqHmvRJw?ccb=9-4&oh=01_Q5Aa5wFmQFGWmry61bWN9s1YjVC7xuG5IfWkDW4F5wTIoBV3gA&oe=6AF14335&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "*╭┈───〔 JAWAD-MD 〕┈───⊷*\n*├✦ Owner:* JawadTech\n*├✦ Commands:* 909\n*├✦ Runtime:* 2h 14m 13s\n*├✦ Prefix:* .\n*├✦ Mode:* public\n*├✦ Version:* 7.0.0 Bᴇᴛᴀ\n*╰───────────────────⊷*\n\n`『 AI 』`\n╭───────────────────⊷\n*┋ ⬡ ᴀɪ*\n*┋ ⬡ ʙᴏᴛ*\n*┋ ⬡ ɢᴘᴛ*\n*┋ ⬡ ɢᴘᴛ2*\n*┋ ⬡ ɢᴘᴛ3*\n*┋ ⬡ ɢᴘᴛ35ᴛᴜʀʙᴏ*\n*┋ ⬡ ɢᴘᴛ4*\n*┋ ⬡ ɢᴘᴛ4ᴛᴜʀʙᴏ*\n*┋ ⬡ ɢᴘᴛ4ᴏ*\n*┋ ⬡ ɢᴘᴛ4ᴏᴍɪɴɪ*\n*┋ ⬡ ɢᴘᴛ4ᴠɪsɪᴏɴ*\n*┋ ⬡ ɢᴘᴛ4ᴀʟʟ*\n*┋ ⬡ ɢᴘᴛ5*\n*┋ ⬡ ɢᴘᴛ5ᴍɪɴɪ*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛ*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛ35*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛ4*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛ4ᴏ*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛ4ᴛᴜʀʙᴏ*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛᴘʟᴜs*\n*┋ ⬡ ᴄʜᴀᴛɢᴘᴛᴇʟɪᴛᴇ*\n*┋ ⬡ ᴏ1*\n*┋ ⬡ ᴏ1ᴍɪɴɪ*\n*┋ ⬡ ᴏ1ᴘʀᴇᴠɪᴇᴡ*\n*┋ ⬡ ᴏ3*\n*┋ ⬡ ᴏ3ᴍɪɴɪ*\n*┋ ⬡ ᴏ4*\n*┋ ⬡ ᴏ4ᴍɪɴɪ*\n*┋ ⬡ ᴏ5*\n*┋ ⬡ ᴏ5ᴍɪɴɪ*\n*┋ ⬡ ᴄᴏᴘɪʟᴏᴛ*\n*┋ ⬡ ᴍsᴄᴏᴘɪʟᴏᴛ*\n*┋ ⬡ ᴇʟɪᴛᴇᴄᴏᴘɪʟᴏᴛ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴠ2*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴠ3*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴠ4*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋʀ1*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋʀ2*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴄᴏᴅᴇʀ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴄᴏᴅᴇʀ2*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴍᴀᴛʜ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋʟʟᴍ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴠʟ*\n*┋ ⬡ ᴅᴇᴇᴘsᴇᴇᴋᴄʜᴀᴛ*\n*┋ ⬡ ɢᴇᴍɪɴɪ*\n*┋ ⬡ ɢᴇᴍɪɴɪᴘʀᴏ*\n*┋ ⬡ ɢᴇᴍɪɴɪᴜʟᴛʀᴀ*\n*┋ ⬡ ɢᴇᴍɪɴɪɴᴀɴᴏ*\n*┋ ⬡ ɢᴇᴍɪɴɪ15*\n*┋ ⬡ ɢᴇᴍɪɴɪ15ᴘʀᴏ*\n*┋ ⬡ ɢᴇᴍɪɴɪ15ғʟᴀsʜ*\n*┋ ⬡ ɢᴇᴍɪɴɪ20*\n*┋ ⬡ ɢᴇᴍɪɴɪ20ғʟᴀsʜ*\n*┋ ⬡ ɢᴇᴍɪɴɪ25*\n*┋ ⬡ ɢᴇᴍɪɴɪ25ᴘʀᴏ*\n*┋ ⬡ ɢᴇᴍɪɴɪ25ғʟᴀsʜ*\n*┋ ⬡ ɢᴇᴍɪɴɪ3*\n*┋ ⬡ ɢᴇᴍɪɴɪ3ᴘʀᴏ*\n*┋ ⬡ ɢᴇᴍɪɴɪ3ғʟᴀsʜ*\n*┋ ⬡ ɢᴇᴍɪɴɪ3ᴜʟᴛʀᴀ*\n*┋ ⬡ ʙᴀʀᴅ*\n*┋ ⬡ ᴘᴀʟᴍ*\n*┋ ⬡ ᴘᴀʟᴍ2*\n*┋ ⬡ ɢʀᴏᴋ*\n*┋ ⬡ ɢʀᴏᴋ1*\n*┋ ⬡ ɢʀᴏᴋ15*\n*┋ ⬡ ɢʀᴏᴋ2*\n*┋ ⬡ ɢʀᴏᴋ2ᴍɪɴɪ*\n*┋ ⬡ ɢʀᴏᴋ3*\n*┋ ⬡ ɢʀᴏᴋ3ᴍɪɴɪ*\n*┋ ⬡ ɢʀᴏᴋ4*\n*┋ ⬡ ɢʀᴏᴋ4ᴍɪɴɪ*\n*┋ ⬡ ɢʀᴏᴋʙᴇᴛᴀ*\n*┋ ⬡ ɢʀᴏᴋᴠɪsɪᴏɴ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ1*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ2*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇɪɴsᴛᴀɴᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ3*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ3ᴏᴘᴜs*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ3sᴏɴɴᴇᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ3ʜᴀɪᴋᴜ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ35*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ35sᴏɴɴᴇᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ35ʜᴀɪᴋᴜ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ37*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ37sᴏɴɴᴇᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ4*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ4ᴏᴘᴜs*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇ4sᴏɴɴᴇᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇᴏᴘᴜs*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇsᴏɴɴᴇᴛ*\n*┋ ⬡ ᴄʟᴀᴜᴅᴇʜᴀɪᴋᴜ*\n*┋ ⬡ ǫᴡᴇɴ*\n*┋ ⬡ ǫᴡᴇɴ15*\n*┋ ⬡ ǫᴡᴇɴ2*\n*┋ ⬡ ǫᴡᴇɴ25*\n*┋ ⬡ ǫᴡᴇɴ3*\n*┋ ⬡ ǫᴡᴇɴᴄᴏᴅᴇʀ*\n*┋ ⬡ ǫᴡᴇɴᴍᴀᴛʜ*\n*┋ ⬡ ǫᴡᴇɴᴠʟ*\n*┋ ⬡ ǫᴡᴇɴᴍᴀx*\n*┋ ⬡ ǫᴡᴇɴᴘʟᴜs*\n*┋ ⬡ ǫᴡᴇɴᴛᴜʀʙᴏ*\n*┋ ⬡ ʟʟᴀᴍᴀ2*\n*┋ ⬡ ʟʟᴀᴍᴀ3*\n*┋ ⬡ ʟʟᴀᴍᴀ4*\n*┋ ⬡ ᴍɪsᴛʀᴀʟ*\n*┋ ⬡ ᴍɪxᴛʀᴀʟ*\n*┋ ⬡ ғᴀʟᴄᴏɴ*\n*┋ ⬡ ʙʟᴏᴏᴍ*\n*┋ ⬡ ʙʟᴏᴏᴍᴢ*\n*┋ ⬡ ᴏʀᴄᴀ*\n*┋ ⬡ ᴠɪᴄᴜɴᴀ*\n*┋ ⬡ ᴀʟᴘᴀᴄᴀ*\n*┋ ⬡ ᴘʜɪ2*\n*┋ ⬡ ᴘʜɪ3*\n*┋ ⬡ ᴘʜɪ4*\n*┋ ⬡ ᴡɪᴢᴀʀᴅ*\n*┋ ⬡ ᴄᴏᴅᴇᴛ5*\n*┋ ⬡ ᴄᴏᴅᴇx*\n*┋ ⬡ sᴛᴀʀᴄᴏᴅᴇʀ*\n*┋ ⬡ ᴄᴏᴅᴇɢᴇɴ*\n*┋ ⬡ ᴋɪᴍɪ*\n*┋ ⬡ ᴘᴇʀᴘʟᴇxɪᴛʏ*\n*┋ ⬡ ʏɪ*\n*┋ ⬡ ʏɪ34ʙ*\n*┋ ⬡ ᴄᴏᴍᴍᴀɴᴅ*\n*┋ ⬡ ᴄᴏᴍᴍᴀɴᴅʀ*\n*┋ ⬡ ᴊᴜʀᴀssɪᴄ*\n*┋ ⬡ ᴀɪ21*\n*┋ ⬡ sᴏʟᴀʀ*\n*┋ ⬡ ʟᴜᴍɪɴ*\n*┋ ⬡ ʀᴇᴅᴘᴀᴊᴀᴍᴀ*\n*┋ ⬡ ᴅᴏʟʟʏ*\n*┋ ⬡ ʜᴜɢɢɪɴɢ*\n*┋ ⬡ ᴏᴘᴇɴᴀssɪsᴛ*\n*┋ ⬡ ɢᴘᴛɴᴇᴏ*\n*┋ ⬡ ɢᴘᴛᴊ*\n*┋ ⬡ ғʟᴀɴᴛ5*\n*┋ ⬡ sᴛᴀʀʟɪɴ*\n*┋ ⬡ ᴛᴀʟᴋᴀɪ*\n*┋ ⬡ ʙʀᴀɪɴ*\n*┋ ⬡ ᴇʟɪᴛᴇ*\n*┋ ⬡ ᴇʟɪᴛᴇɢᴘᴛ*\n*┋ ⬡ ᴀssɪsᴛᴀɴᴛ*\n*┋ ⬡ sᴍᴀʀᴛ*\n*┋ ⬡ ɢᴇɴɪᴜs*\n*┋ ⬡ ᴘʀᴏᴀɪ*\n*┋ ⬡ ᴜʟᴛʀᴀ*\n*┋ ⬡ ᴍᴀxᴀɪ*\n*┋ ⬡ ɴᴏᴠᴀ*\n*┋ ⬡ ᴢᴇɴɪᴛʜ*\n*┋ ⬡ ᴀᴘᴇx*\n*┋ ⬡ ᴠᴇʀᴛᴇx*\n*┋ ⬡ ᴘᴜʟsᴇ*\n*┋ ⬡ ǫᴜᴀɴᴛᴜᴍ*\n*┋ ⬡ ɴᴇᴏ*\n*┋ ⬡ ᴏᴍᴇɢᴀ*\n*┋ ⬡ ᴍᴀᴛʜɢᴘᴛ*\n*┋ ⬡ ɢʀᴀᴍᴍᴀʀ*\n╰───────────────────⊷\n`『 ANIME 』`\n╭───────────────────⊷\n*┋ ⬡ ɢᴀʀʟ*\n*┋ ⬡ ᴡᴀɪғᴜ*\n*┋ ⬡ ɴᴇᴋᴏ*\n*┋ ⬡ ᴍᴇɢᴜᴍɪɴ*\n*┋ ⬡ ᴍᴀɪᴅ*\n*┋ ⬡ ᴀᴡᴏᴏ*\n╰───────────────────⊷\n`『 AUDIO 』`\n╭───────────────────⊷\n*┋ ⬡ ʙᴀss*\n*┋ ⬡ ᴅᴇᴇᴘ*\n*┋ ⬡ sᴍᴏᴏᴛʜ*\n*┋ ⬡ ғᴀᴛ*\n*┋ ⬡ ᴛᴜᴘᴀɪ*\n*┋ ⬡ ʙʟᴏᴡɴ*\n*┋ ⬡ ʀᴀᴅɪᴏ*\n*┋ ⬡ ʀᴏʙᴏᴛ*\n*┋ ⬡ ᴄʜɪᴘᴍᴜɴᴋ*\n*┋ ⬡ ɴɪɢʜᴛᴄᴏʀᴇ*\n*┋ ⬡ ᴇᴀʀʀᴀᴘᴇ*\n*┋ ⬡ ʀᴇᴠᴇʀsᴇ*\n*┋ ⬡ sʟᴏᴡ*\n*┋ ⬡ ғᴀsᴛ*\n*┋ ⬡ ʙᴀʙʏ*\n*┋ ⬡ ᴅᴇᴍᴏɴ*\n*┋ ⬡ ᴛᴏᴍᴘ3*\n*┋ ⬡ ᴛᴏᴘᴛᴛ*\n╰───────────────────⊷\n`『 DOWNLOAD 』`\n╭───────────────────⊷\n*┋ ⬡ ᴛᴡɪᴛᴛᴇʀ*\n*┋ ⬡ ɢᴅʀɪᴠᴇ*\n*┋ ⬡ ᴄᴀᴘᴄᴜᴛ*\n*┋ ⬡ ᴀᴘᴋ*\n*┋ ⬡ ғʙ*\n*┋ ⬡ ɪɢᴅʟ*\n*┋ ⬡ ɪɢᴅʟ2*\n*┋ ⬡ ɪɢᴅʟ3*\n*┋ ⬡ ᴍᴇᴅɪᴀғɪʀᴇ*\n*┋ ⬡ ᴅʟɴᴘᴍ*\n*┋ ⬡ ᴍᴇɢᴀᴅʟ*\n*┋ ⬡ ᴛᴛᴍᴘ3*\n*┋ ⬡ ɪɢᴍᴘ3*\n*┋ ⬡ ᴛɪᴋᴛᴏᴋ*\n*┋ ⬡ ᴛɪᴋᴛᴏᴋ2*\n*┋ ⬡ ᴛɪᴋᴛᴏᴋ3*\n*┋ ⬡ ʏᴛᴘᴏsᴛ*\n*┋ ⬡ ᴅᴏᴡɴʟᴏᴀᴅ*\n*┋ ⬡ ᴅʟɴᴘᴍ*\n*┋ ⬡ ᴛsᴛɪᴄᴋᴇʀ*\n*┋ ⬡ ᴛɪᴋᴛᴏᴋsᴇᴀʀᴄʜ*\n*┋ ⬡ sᴜʀᴀʜ*\n*┋ ⬡ ᴛᴛs*\n*┋ ⬡ ɢɪᴛᴄʟᴏɴᴇ*\n*┋ ⬡ ᴘʟᴀʏ*\n*┋ ⬡ ᴠɪᴅᴇᴏ*\n*┋ ⬡ sᴏɴɢ*\n*┋ ⬡ ᴅʀᴀᴍᴀ*\n*┋ ⬡ ᴄᴀʀᴛᴏᴏɴ*\n*┋ ⬡ ᴍᴏᴠɪᴇ*\n╰───────────────────⊷\n`『 FUN 』`\n╭───────────────────⊷\n*┋ ⬡ ᴍᴜᴛʜ*\n*┋ ⬡ ᴄʜᴀʀᴀᴄᴛᴇʀ*\n*┋ ⬡ ɪᴍɢ*\n*┋ ⬡ ᴇᴍɪx*\n*┋ ⬡ ᴄᴏᴍᴘᴀᴛɪʙɪʟɪᴛʏ*\n*┋ ⬡ ᴀᴜʀᴀ*\n*┋ ⬡ ʀᴏᴀsᴛ*\n*┋ ⬡ 8ʙᴀʟʟ*\n*┋ ⬡ ᴄᴏᴍᴘʟɪᴍᴇɴᴛ*\n*┋ ⬡ ʟᴏᴠᴇᴛᴇsᴛ*\n*┋ ⬡ ᴇᴍᴏᴊɪ*\n*┋ ⬡ sʜɪᴘ*\n*┋ ⬡ ᴅᴀᴅ*\n*┋ ⬡ ᴍᴏᴍ*\n*┋ ⬡ sᴏɴ*\n*┋ ⬡ ᴅᴀᴜɢʜᴛᴇʀ*\n*┋ ⬡ ʙᴏʏғʀɪᴇɴᴅ*\n*┋ ⬡ ɢɪʀʟғʀɪᴇɴᴅ*\n*┋ ⬡ ᴛᴡɪɴ*\n*┋ ⬡ ᴘᴀʀᴛɴᴇʀ*\n*┋ ⬡ ʙᴏᴅʏɢᴜᴀʀᴅ*\n*┋ ⬡ ʙᴏss*\n*┋ ⬡ ᴇᴍᴘʟᴏʏᴇᴇ*\n*┋ ⬡ ᴘᴇᴛ*\n*┋ ⬡ sᴇʀᴠᴀɴᴛ*\n*┋ ⬡ ɪᴅᴏʟ*\n*┋ ⬡ ғᴀɴ*\n*┋ ⬡ ɢʜᴏsᴛ*\n*┋ ⬡ ᴀɴɢᴇʟ*\n*┋ ⬡ ᴅᴇᴠɪʟ*\n*┋ ⬡ ᴋɪɴɢ*\n*┋ ⬡ ǫᴜᴇᴇɴ*\n*┋ ⬡ sʟᴀᴠᴇ*\n*┋ ⬡ ᴍᴀsᴛᴇʀ*\n*┋ ⬡ ɢᴇɴɪᴜs*\n*┋ ⬡ ғᴏᴏʟ*\n*┋ ⬡ ʀɪᴄʜ*\n*┋ ⬡ ᴘᴏᴏʀ*\n*┋ ⬡ ʙʜᴀɪ*\n*┋ ⬡ ʙᴀʜᴀɴ*\n*┋ ⬡ ᴡɪғᴇ*\n*┋ ⬡ ʜᴜsʙᴀɴᴅ*\n*┋ ⬡ ᴄʜᴀᴄʜᴀ*\n*┋ ⬡ ᴄʜᴀᴄʜɪ*\n*┋ ⬡ ɴᴀɴᴀ*\n*┋ ⬡ ɴᴀɴɪ*\n*┋ ⬡ ᴍᴀᴍᴀ*\n*┋ ⬡ ᴍᴀᴍɪ*\n*┋ ⬡ ʙᴇsᴛғʀɪᴇɴᴅ*\n*┋ ⬡ ᴇɴᴇᴍʏ*\n*┋ ⬡ ᴄʀᴜsʜ*\n*┋ ⬡ ᴛᴇᴀᴄʜᴇʀ*\n*┋ ⬡ sᴛᴜᴅᴇɴᴛ*\n*┋ ⬡ ʀɪᴠᴀʟ*\n*┋ ⬡ ʀᴜɴᴍᴜʀᴇᴇᴅ*\n*┋ ⬡ ғʟɪʀᴛ*\n*┋ ⬡ ǫᴜᴏᴛᴇ*\n*┋ ⬡ ᴄᴏsᴘʟᴀʏ*\n*┋ ⬡ ᴊᴏᴋᴇ*\n*┋ ⬡ ʙᴀᴄʜᴀ*\n*┋ ⬡ ʙᴀᴄʜɪ*\n*┋ ⬡ ᴛᴇᴄʜɴᴏʟᴏɢɪᴀ*\n*┋ ⬡ ᴛᴀʀᴏᴜɴ*\n*┋ ⬡ ᴄᴀᴋᴇ*\n*┋ ⬡ ᴘɪᴄᴋᴜᴘ*\n*┋ ⬡ sɪɢᴍᴀ*\n*┋ ⬡ ʀɪᴢᴢ*\n*┋ ⬡ sɪᴍᴘ*\n*┋ ⬡ ᴠɪʙᴇ*\n*┋ ⬡ ʀᴀᴛᴇ*\n*┋ ⬡ sʜɪᴘɴᴀᴍᴇ*\n*┋ ⬡ ᴅɪᴄᴇ*\n*┋ ⬡ ᴄᴏɪɴ*\n*┋ ⬡ ғᴀᴄᴛ*\n*┋ ⬡ ᴄʜᴀᴅ*\n*┋ ⬡ ɴᴘᴄ*\n*┋ ⬡ ᴍᴀɪɴᴄʜᴀʀᴀᴄᴛᴇʀ*\n*┋ ⬡ ᴅᴇʟᴜʟᴜ*\n*┋ ⬡ ʀᴇᴅғʟᴀɢ*\n*┋ ⬡ ɢʀᴇᴇɴғʟᴀɢ*\n*┋ ⬡ ᴛʀᴜᴛʜ*\n*┋ ⬡ ᴅᴀʀᴇ*\n*┋ ⬡ ᴡʏʀ*\n*┋ ⬡ ʜᴏʀᴏsᴄᴏᴘᴇ*\n*┋ ⬡ ʟᴜʀᴋ*\n*┋ ⬡ ᴍᴀʀɪɢᴇ*\n*┋ ⬡ sʜᴏᴏᴛ*\n*┋ ⬡ sʟᴇᴇᴘ*\n*┋ ⬡ ᴄʟᴀᴘ*\n*┋ ⬡ sʜʀᴜɢ*\n*┋ ⬡ sᴛᴀʀᴇ*\n*┋ ⬡ ᴡᴀᴠᴇ*\n*┋ ⬡ ᴘᴏᴋᴇ*\n*┋ ⬡ ᴄᴏɴғᴜsᴇᴅ*\n*┋ ⬡ sᴍɪʟᴇ*\n*┋ ⬡ ᴘᴇᴄᴋ*\n*┋ ⬡ ᴡɪɴᴋ*\n*┋ ⬡ sɪᴘ*\n*┋ ⬡ ʙʟᴜsʜ*\n*┋ ⬡ sᴍᴜɢ*\n*┋ ⬡ ᴛɪᴄᴋʟᴇ*\n*┋ ⬡ ʏᴇᴇᴛ*\n*┋ ⬡ ᴛʜɪɴᴋ*\n*┋ ⬡ ʜɪɢʜғɪᴠᴇ*\n*┋ ⬡ ғᴇᴇᴅ*\n*┋ ⬡ ʙɪᴛᴇ*\n*┋ ⬡ ᴛᴇᴇʜᴇᴇ*\n*┋ ⬡ sʜᴏᴄᴋᴇᴅ*\n*┋ ⬡ ʙʟᴇʜ*\n*┋ ⬡ ʙᴏʀᴇᴅ*\n*┋ ⬡ ɴᴏᴍ*\n*┋ ⬡ ɴʏᴀ*\n*┋ ⬡ ʏᴀᴡɴ*\n*┋ ⬡ ғᴀᴄᴇᴘᴀʟᴍ*\n*┋ ⬡ ᴄᴜᴅᴅʟᴇ*\n*┋ ⬡ ᴋɪᴄᴋ*\n*┋ ⬡ ʜᴀᴘᴘʏ*\n*┋ ⬡ ᴄᴀʀʀʏ*\n*┋ ⬡ ʜᴜɢ*\n*┋ ⬡ ᴋᴀʙᴇᴅᴏɴ*\n*┋ ⬡ ʙᴀᴋᴀ*\n*┋ ⬡ ʙᴏɴᴋ*\n*┋ ⬡ ᴘᴀᴛ*\n*┋ ⬡ ᴀɴɢʀʏ*\n*┋ ⬡ sᴘɪɴ*\n*┋ ⬡ sʜᴀᴋᴇ*\n*┋ ⬡ ʀᴜɴ*\n*┋ ⬡ ɴᴏᴅ*\n*┋ ⬡ ɴᴏᴘᴇ*\n*┋ ⬡ ᴋɪss*\n*┋ ⬡ ᴅᴀɴᴄᴇ*\n*┋ ⬡ ᴘᴜɴᴄʜ*\n*┋ ⬡ ʜᴀɴᴅsʜᴀᴋᴇ*\n*┋ ⬡ sʟᴀᴘ*\n*┋ ⬡ ᴄʀʏ*\n*┋ ⬡ ᴘᴏᴜᴛ*\n*┋ ⬡ ʙʟᴏᴡᴋɪss*\n*┋ ⬡ ʜᴀɴᴅʜᴏʟᴅ*\n*┋ ⬡ sᴀʟᴜᴛᴇ*\n*┋ ⬡ ᴛʜᴜᴍʙsᴜᴘ*\n*┋ ⬡ ʟᴀᴜɢʜ*\n*┋ ⬡ ᴛᴀʙʟᴇғʟɪᴘ*\n*┋ ⬡ ʏᴇs*\n*┋ ⬡ ɴᴏ*\n*┋ ⬡ sᴛᴏᴘ*\n*┋ ⬡ sᴏʀʀʏ*\n*┋ ⬡ sᴀᴅ*\n*┋ ⬡ sᴄᴀʀᴇᴅ*\n*┋ ⬡ sᴜʀᴘʀɪsᴇᴅ*\n*┋ ⬡ ᴛɪʀᴇᴅ*\n*┋ ⬡ sɪɢʜ*\n*┋ ⬡ sʜʏ*\n*┋ ⬡ ɴᴜᴢᴢʟᴇ*\n*┋ ⬡ ᴄᴏᴏʟ*\n*┋ ⬡ ᴄᴇʟᴇʙʀᴀᴛᴇ*\n*┋ ⬡ ʏᴀʏ*\n*┋ ⬡ ʜᴇᴀᴅʙᴀɴɢ*\n*┋ ⬡ ɴᴏsᴇʙʟᴇᴇᴅ*\n*┋ ⬡ ʙᴜʟʟʏ*\n*┋ ⬡ ᴄʀɪɴɢᴇ*\n*┋ ⬡ ᴋɪʟʟ*\n*┋ ⬡ ᴀᴡᴏᴏ*\n*┋ ⬡ ɢʟᴏᴍᴘ*\n*┋ ⬡ ʙᴏʏᴅᴘ1*\n*┋ ⬡ ʙᴏʏᴅᴘ2*\n*┋ ⬡ ʙᴏʏᴅᴘ3*\n*┋ ⬡ ʙᴏʏᴅᴘ4*\n*┋ ⬡ ʙᴏʏᴅᴘ5*\n*┋ ⬡ ʙᴏʏᴅᴘ6*\n*┋ ⬡ ʙᴏʏᴅᴘ7*\n*┋ ⬡ ʙᴏʏᴅᴘ8*\n*┋ ⬡ ʙᴏʏᴅᴘ9*\n*┋ ⬡ ʙᴏʏᴅᴘ10*\n*┋ ⬡ ʙᴏʏᴅᴘ11*\n*┋ ⬡ ʙᴏʏᴅᴘ12*\n*┋ ⬡ ʙᴏʏᴅᴘ13*\n*┋ ⬡ ʙᴏʏᴅᴘ14*\n*┋ ⬡ ʙᴏʏᴅᴘ15*\n*┋ ⬡ ʙᴏʏᴅᴘ16*\n*┋ ⬡ ʙᴏʏᴅᴘ17*\n*┋ ⬡ ʙᴏʏᴅᴘ18*\n*┋ ⬡ ʙᴏʏᴅᴘ19*\n*┋ ⬡ ʙᴏʏᴅᴘ20*\n*┋ ⬡ ʙᴏʏᴅᴘ21*\n*┋ ⬡ ʙᴏʏᴅᴘ22*\n*┋ ⬡ ɢɪʀʟᴅᴘ1*\n*┋ ⬡ ɢɪʀʟᴅᴘ2*\n*┋ ⬡ ɢɪʀʟᴅᴘ3*\n*┋ ⬡ ɢɪʀʟᴅᴘ4*\n*┋ ⬡ ɢɪʀʟᴅᴘ5*\n*┋ ⬡ ɢɪʀʟᴅᴘ6*\n*┋ ⬡ ɢɪʀʟᴅᴘ7*\n*┋ ⬡ ɢɪʀʟᴅᴘ8*\n*┋ ⬡ ɢɪʀʟᴅᴘ9*\n*┋ ⬡ ɢɪʀʟᴅᴘ10*\n*┋ ⬡ ɢɪʀʟᴅᴘ11*\n*┋ ⬡ ɢɪʀʟᴅᴘ12*\n*┋ ⬡ ɢɪʀʟᴅᴘ13*\n*┋ ⬡ ɢɪʀʟᴅᴘ14*\n*┋ ⬡ ɢɪʀʟᴅᴘ15*\n*┋ ⬡ ɢɪʀʟᴅᴘ16*\n*┋ ⬡ ɢɪʀʟᴅᴘ17*\n*┋ ⬡ ɢɪʀʟᴅᴘ18*\n*┋ ⬡ ɢɪʀʟᴅᴘ19*\n*┋ ⬡ ɢɪʀʟᴅᴘ20*\n*┋ ⬡ ɢɪʀʟᴅᴘ21*\n*┋ ⬡ ɢɪʀʟᴅᴘ22*\n*┋ ⬡ ʀᴇᴘᴇᴀᴛ*\n*┋ ⬡ sʜᴀʏᴀʀɪ*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ1*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ2*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ3*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ4*\n*┋ ⬡ ᴀɴɪᴍᴇɢɪʀʟ5*\n*┋ ⬡ ᴅᴏɢ*\n╰───────────────────⊷\n`『 GROUP 』`\n╭───────────────────⊷\n*┋ ⬡ ᴅᴇʟ*\n*┋ ⬡ ᴜɴᴍᴜᴛᴇ*\n*┋ ⬡ ᴍᴜᴛᴇ*\n*┋ ⬡ ᴛᴀɢᴀʟʟ*\n*┋ ⬡ ᴋɪᴄᴋ*\n*┋ ⬡ ᴘʀᴏᴍᴏᴛᴇ*\n*┋ ⬡ ᴅᴇᴍᴏᴛᴇ*\n*┋ ⬡ ɢᴄᴘᴘ*\n*┋ ⬡ ʀᴇᴠᴏᴋᴇ*\n*┋ ⬡ ʟɪɴᴋ*\n*┋ ⬡ ɢɪɴғᴏ*\n*┋ ⬡ ᴜᴘᴅᴀᴛᴇɢᴅᴇsᴄ*\n*┋ ⬡ ᴜᴘᴅᴀᴛᴇɢɴᴀᴍᴇ*\n*┋ ⬡ ᴘᴏʟʟ*\n*┋ ⬡ ᴏᴜᴛ*\n*┋ ⬡ ɴᴇᴡɢᴄ*\n*┋ ⬡ ᴇɴᴅ*\n*┋ ⬡ ᴊᴏɪɴ*\n*┋ ⬡ ɪɴᴠɪᴛᴇ*\n*┋ ⬡ ᴛᴀɢ*\n*┋ ⬡ ᴀᴄᴄᴇᴘᴛᴀʟʟ*\n*┋ ⬡ ʀᴇᴊᴇᴄᴛᴀʟʟ*\n*┋ ⬡ ʀᴇǫᴜᴇsᴛs*\n*┋ ⬡ ᴀᴄᴄᴇᴘᴛ*\n*┋ ⬡ ʀᴇᴊᴇᴄᴛ*\n*┋ ⬡ ᴀᴅᴅ*\n*┋ ⬡ ɢᴄsᴛᴀᴛᴜs2*\n*┋ ⬡ ɢᴄsᴛᴀᴛᴜs*\n*┋ ⬡ ᴇᴠᴇʀʏᴏɴᴇ*\n*┋ ⬡ ᴄʜʀᴇᴀᴄᴛ*\n*┋ ⬡ ᴄʜʀᴇᴀᴄᴛ2*\n╰───────────────────⊷\n`『 LOGO 』`\n╭───────────────────⊷\n*┋ ⬡ ᴀᴅᴠɢʟᴏᴡ*\n*┋ ⬡ ᴀᴍᴏɴɢᴜs*\n*┋ ⬡ ʙᴘʟᴏɢᴏ*\n*┋ ⬡ ʙᴘsᴛʏʟᴇ*\n*┋ ⬡ ᴄᴀʀᴛᴏᴏɴᴛxᴛ*\n*┋ ⬡ ᴅᴇʟᴇᴛᴇᴛxᴛ*\n*┋ ⬡ ᴄʟᴏᴜᴅs*\n*┋ ⬡ ғʟᴀɢ3ᴅ*\n*┋ ⬡ ғʀᴇᴇᴄʀᴇᴀᴛᴇ*\n*┋ ⬡ ɢᴀʟᴀxʏ*\n*┋ ⬡ ɢᴀʟᴀxʏᴡᴘ*\n*┋ ⬡ ɢʟɪᴛᴄʜ*\n*┋ ⬡ ɢʟᴏᴡ*\n*┋ ⬡ ɢʀᴀᴅɪᴇɴᴛ*\n*┋ ⬡ ʟɪɢʜᴛғx*\n*┋ ⬡ ʟᴏɢᴏᴍᴀᴋᴇʀ*\n*┋ ⬡ ʟᴜxᴜʀʏɢᴏʟᴅ*\n*┋ ⬡ ɴᴇᴏɴ*\n*┋ ⬡ ᴘᴀᴘᴇʀᴄᴜᴛ*\n*┋ ⬡ ᴘɪxᴇʟɢʟɪᴛᴄʜ*\n*┋ ⬡ ʀᴏʏᴀʟ*\n*┋ ⬡ sᴀɴᴅ*\n*┋ ⬡ ᴛʏᴘᴏɢʀᴀᴘʜʏ*\n*┋ ⬡ ʙᴇᴀᴄʜ*\n*┋ ⬡ ᴜɴᴅᴇʀᴡᴀᴛᴇʀ*\n*┋ ⬡ ᴡᴀᴛᴇʀᴄᴏʟᴏʀ*\n*┋ ⬡ ᴡʀɪᴛᴇ*\n╰───────────────────⊷\n`『 MAIN 』`\n╭───────────────────⊷\n*┋ ⬡ ғᴇᴛᴄʜ*\n*┋ ⬡ ʜᴇʟᴘ*\n*┋ ⬡ ᴘɪɴɢ*\n*┋ ⬡ ᴘɪɴɢ2*\n*┋ ⬡ ᴍᴇɴᴜ*\n*┋ ⬡ ᴏᴡɴᴇʀ*\n*┋ ⬡ ɢɪᴛʜᴜʙsᴛᴀʟᴋ*\n*┋ ⬡ ᴀɴɪᴍᴇ*\n╰───────────────────⊷\n`『 OTHER 』`\n╭───────────────────⊷\n*┋ ⬡ ɢᴇᴛᴘᴘ*\n*┋ ⬡ ᴍᴇᴇ*\n*┋ ⬡ sʀᴇᴘᴏ*\n*┋ ⬡ ᴜɴʙᴀɴ0*\n*┋ ⬡ ᴜɴʙᴀɴ1*\n*┋ ⬡ ᴜɴʙᴀɴ2*\n*┋ ⬡ ᴜɴʙᴀɴ3*\n*┋ ⬡ ᴜɴʙᴀɴ4*\n*┋ ⬡ ᴜɴʙᴀɴ5*\n*┋ ⬡ ᴜɴʙᴀɴ6*\n*┋ ⬡ ᴜɴʙᴀɴ7*\n*┋ ⬡ ᴜɴʙᴀɴ8*\n*┋ ⬡ ᴜɴʙᴀɴ9*\n*┋ ⬡ ᴜɴʙᴀɴ10*\n*┋ ⬡ ᴜɴʙᴀɴ11*\n*┋ ⬡ ᴜɴʙᴀɴ12*\n*┋ ⬡ ᴜɴʙᴀɴ13*\n*┋ ⬡ ᴜɴʙᴀɴ14*\n*┋ ⬡ ᴜɴʙᴀɴ15*\n*┋ ⬡ ᴜɴʙᴀɴ16*\n*┋ ⬡ ᴜɴʙᴀɴ17*\n*┋ ⬡ ᴜɴʙᴀɴ18*\n*┋ ⬡ ᴜɴʙᴀɴ19*\n*┋ ⬡ ᴜɴʙᴀɴ20*\n*┋ ⬡ ᴜɴʙᴀɴ21*\n*┋ ⬡ ᴜɴʙᴀɴ22*\n*┋ ⬡ ᴜɴʙᴀɴ23*\n*┋ ⬡ ᴜɴʙᴀɴ24*\n*┋ ⬡ ᴜɴʙᴀɴ25*\n*┋ ⬡ ᴜɴʙᴀɴ26*\n*┋ ⬡ ᴜɴʙᴀɴ27*\n*┋ ⬡ ᴜɴʙᴀɴ28*\n*┋ ⬡ ᴜɴʙᴀɴ29*\n*┋ ⬡ ᴜɴʙᴀɴ30*\n*┋ ⬡ ᴜɴʙᴀɴ31*\n*┋ ⬡ ᴜɴʙᴀɴ32*\n*┋ ⬡ ᴜɴʙᴀɴ33*\n*┋ ⬡ ᴜɴʙᴀɴ34*\n*┋ ⬡ ᴜɴʙᴀɴ35*\n*┋ ⬡ ᴜɴʙᴀɴ36*\n*┋ ⬡ ᴜɴʙᴀɴ37*\n*┋ ⬡ ᴜɴʙᴀɴ38*\n*┋ ⬡ ᴜɴʙᴀɴ39*\n*┋ ⬡ ᴜɴʙᴀɴ40*\n*┋ ⬡ ᴜɴʙᴀɴ41*\n*┋ ⬡ ᴜɴʙᴀɴ42*\n*┋ ⬡ ᴜɴʙᴀɴ43*\n*┋ ⬡ ᴜɴʙᴀɴ44*\n*┋ ⬡ ᴜɴʙᴀɴ45*\n*┋ ⬡ ᴜɴʙᴀɴ46*\n*┋ ⬡ ᴜɴʙᴀɴ47*\n*┋ ⬡ ᴜɴʙᴀɴ48*\n*┋ ⬡ ᴜɴʙᴀɴ49*\n*┋ ⬡ ᴜɴʙᴀɴ50*\n*┋ ⬡ ᴜɴʙᴀɴ51*\n*┋ ⬡ ᴜɴʙᴀɴ52*\n*┋ ⬡ ᴜɴʙᴀɴ53*\n*┋ ⬡ ᴜɴʙᴀɴ54*\n*┋ ⬡ ᴜɴʙᴀɴ55*\n*┋ ⬡ ᴜɴʙᴀɴ56*\n*┋ ⬡ ᴜɴʙᴀɴ57*\n*┋ ⬡ ᴜɴʙᴀɴ58*\n*┋ ⬡ ᴜɴʙᴀɴ59*\n*┋ ⬡ ᴜɴʙᴀɴ60*\n*┋ ⬡ ᴜɴʙᴀɴ61*\n*┋ ⬡ ᴜɴʙᴀɴ62*\n*┋ ⬡ ᴜɴʙᴀɴ63*\n*┋ ⬡ ᴜɴʙᴀɴ64*\n*┋ ⬡ ᴜɴʙᴀɴ65*\n*┋ ⬡ ᴜɴʙᴀɴ66*\n*┋ ⬡ ᴜɴʙᴀɴ67*\n*┋ ⬡ ᴜɴʙᴀɴ68*\n*┋ ⬡ ᴜɴʙᴀɴ69*\n*┋ ⬡ ᴜɴʙᴀɴ70*\n*┋ ⬡ ᴜɴʙᴀɴ71*\n*┋ ⬡ ᴜɴʙᴀɴ72*\n*┋ ⬡ ᴜɴʙᴀɴ73*\n*┋ ⬡ ᴜɴʙᴀɴ74*\n*┋ ⬡ ᴜɴʙᴀɴ75*\n*┋ ⬡ ᴜɴʙᴀɴ76*\n*┋ ⬡ ᴜɴʙᴀɴ77*\n*┋ ⬡ ᴜɴʙᴀɴ78*\n*┋ ⬡ ᴜɴʙᴀɴ79*\n*┋ ⬡ ᴜɴʙᴀɴ80*\n*┋ ⬡ ᴜɴʙᴀɴ81*\n*┋ ⬡ ᴜɴʙᴀɴ82*\n*┋ ⬡ ᴜɴʙᴀɴ83*\n*┋ ⬡ ᴜɴʙᴀɴ84*\n*┋ ⬡ ᴜɴʙᴀɴ85*\n*┋ ⬡ ᴜɴʙᴀɴ86*\n*┋ ⬡ ᴜɴʙᴀɴ87*\n*┋ ⬡ ᴜɴʙᴀɴ88*\n*┋ ⬡ ᴜɴʙᴀɴ89*\n*┋ ⬡ ᴜɴʙᴀɴ90*\n*┋ ⬡ ᴜɴʙᴀɴ91*\n*┋ ⬡ ᴜɴʙᴀɴ92*\n*┋ ⬡ ᴜɴʙᴀɴ93*\n*┋ ⬡ ᴜɴʙᴀɴ94*\n*┋ ⬡ ᴜɴʙᴀɴ95*\n*┋ ⬡ ᴜɴʙᴀɴ96*\n*┋ ⬡ ᴜɴʙᴀɴ97*\n*┋ ⬡ ᴜɴʙᴀɴ98*\n*┋ ⬡ ᴜɴʙᴀɴ99*\n*┋ ⬡ ɢᴘᴀss*\n*┋ ⬡ ᴀɴɪᴍᴇ1*\n*┋ ⬡ ᴀɴɪᴍᴇ2*\n*┋ ⬡ ᴀɴɪᴍᴇ3*\n*┋ ⬡ ᴀɴɪᴍᴇ4*\n*┋ ⬡ ᴀɴɪᴍᴇ5*\n╰───────────────────⊷\n`『 OWNER 』`\n╭───────────────────⊷\n*┋ ⬡ ᴠᴠ3*\n*┋ ⬡ ᴠᴠ*\n*┋ ⬡ ᴠᴠ2*\n*┋ ⬡ ᴅᴇʟᴇᴛᴇ*\n*┋ ⬡ ғᴏʀᴡᴀʀᴅ*\n*┋ ⬡ ʟᴇᴀᴠᴇ*\n*┋ ⬡ ʜɪᴅᴇᴛᴀɢ*\n*┋ ⬡ ɪᴋ*\n*┋ ⬡ ʙʟᴏᴄᴋ*\n*┋ ⬡ ᴜɴʙʟᴏᴄᴋ*\n*┋ ⬡ ᴘᴀɪʀ*\n*┋ ⬡ ғᴏʟʟᴏᴡ*\n*┋ ⬡ ғᴏʟʟᴏᴡ2*\n*┋ ⬡ ᴜɴғᴏʟʟᴏᴡ*\n*┋ ⬡ ᴜɴғᴏʟʟᴏᴡ2*\n*┋ ⬡ sᴛᴀᴛᴜs*\n*┋ ⬡ sᴛᴀᴛᴜs2*\n*┋ ⬡ ғᴜʟʟᴘᴘ*\n*┋ ⬡ ʙʟᴏᴄᴋ*\n*┋ ⬡ ᴜɴʙʟᴏᴄᴋ*\n╰───────────────────⊷\n`『 SEARCH 』`\n╭───────────────────⊷\n*┋ ⬡ ᴅᴇғɪɴᴇ*\n*┋ ⬡ ʏᴛs*\n╰───────────────────⊷\n`『 SETTING 』`\n╭───────────────────⊷\n*┋ ⬡ ᴘʀɪᴠᴀᴄʏ*\n*┋ ⬡ ʙʟᴏᴄᴋʟɪsᴛ*\n*┋ ⬡ ɢᴇᴛʙɪᴏ*\n*┋ ⬡ sᴇᴛᴘᴘᴀʟʟ*\n*┋ ⬡ sᴇᴛᴏɴʟɪɴᴇ*\n*┋ ⬡ sᴇᴛɴᴀᴍᴇ*\n*┋ ⬡ ᴜᴘᴅᴀᴛᴇʙɪᴏ*\n*┋ ⬡ ɢʀᴏᴜᴘsᴘʀɪᴠᴀᴄʏ*\n*┋ ⬡ ɢᴇᴛᴘʀɪᴠᴀᴄʏ*\n╰───────────────────⊷\n`『 SETTINGS 』`\n╭───────────────────⊷\n*┋ ⬡ sᴜᴅᴏ*\n*┋ ⬡ ᴅᴇʟsᴜᴅᴏ*\n*┋ ⬡ ʟɪsᴛsᴜᴅᴏ*\n*┋ ⬡ sᴛᴀᴛᴜsᴇᴍᴏᴊɪ*\n*┋ ⬡ sᴛᴀᴛᴜsʟɪᴋᴇ*\n*┋ ⬡ ʙᴏᴛᴅᴘ*\n*┋ ⬡ ᴡᴇʟᴄᴏᴍᴇ*\n*┋ ⬡ ɢᴏᴏᴅʙʏᴇ*\n*┋ ⬡ sᴇᴛᴡᴇʟᴄᴏᴍᴇ*\n*┋ ⬡ sᴇᴛɢᴏᴏᴅʙʏᴇ*\n*┋ ⬡ ᴀᴜᴛᴏʀᴇᴀᴅ*\n*┋ ⬡ ᴀɴᴛɪʟɪɴᴋ*\n*┋ ⬡ ᴀɴᴛɪsᴛᴀᴛᴜs*\n*┋ ⬡ ᴀɴᴛɪᴅᴇʟᴇᴛᴇ*\n*┋ ⬡ ʀᴇᴄᴏʀᴅɪɴɢ*\n*┋ ⬡ sᴛᴀᴛᴜsᴠɪᴇᴡ*\n*┋ ⬡ ᴀᴜᴛᴏʀᴇᴀᴄᴛ*\n*┋ ⬡ ᴀɴᴛɪᴄᴀʟʟ*\n*┋ ⬡ ᴀɴᴛɪᴄᴀʟʟᴍsɢ*\n*┋ ⬡ ᴀᴅᴍɪɴᴀᴄᴛɪᴏɴ*\n*┋ ⬡ ᴀᴜᴛᴏᴛʏᴘɪɴɢ*\n*┋ ⬡ ᴏɴʟɪɴᴇ*\n*┋ ⬡ ᴍᴏᴅᴇ*\n*┋ ⬡ ᴘʀᴇғɪx*\n*┋ ⬡ ʙᴏᴛɴᴀᴍᴇ*\n*┋ ⬡ ᴏᴡɴᴇʀɴᴀᴍᴇ*\n*┋ ⬡ ᴏᴡɴᴇʀɴᴜᴍʙᴇʀ*\n*┋ ⬡ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ*\n*┋ ⬡ sᴛɪᴄᴋᴇʀɴᴀᴍᴇ*\n*┋ ⬡ ᴅᴇʟᴘᴀᴛʜ*\n*┋ ⬡ ʀᴇᴀᴄᴛᴇᴍᴏᴊɪs*\n*┋ ⬡ ᴏᴡɴᴇʀᴇᴍᴏᴊɪs*\n*┋ ⬡ ᴍᴇɴᴛɪᴏɴʀᴇᴘʟʏ*\n*┋ ⬡ sᴇᴛᴛɪɴɢs*\n╰───────────────────⊷\n`『 SOUND 』`\n╭───────────────────⊷\n*┋ ⬡ sᴏᴜɴᴅ*\n*┋ ⬡ sᴏᴜɴᴅ2*\n*┋ ⬡ sᴏᴜɴᴅ3*\n*┋ ⬡ sᴏᴜɴᴅ4*\n*┋ ⬡ sᴏᴜɴᴅ5*\n*┋ ⬡ sᴏᴜɴᴅ6*\n*┋ ⬡ sᴏᴜɴᴅ7*\n*┋ ⬡ sᴏᴜɴᴅ8*\n*┋ ⬡ sᴏᴜɴᴅ9*\n*┋ ⬡ sᴏᴜɴᴅ10*\n*┋ ⬡ sᴏᴜɴᴅ11*\n*┋ ⬡ sᴏᴜɴᴅ12*\n*┋ ⬡ sᴏᴜɴᴅ13*\n*┋ ⬡ sᴏᴜɴᴅ14*\n*┋ ⬡ sᴏᴜɴᴅ15*\n*┋ ⬡ sᴏᴜɴᴅ16*\n╰───────────────────⊷\n`『 TOOLS 』`\n╭───────────────────⊷\n*┋ ⬡ ᴇᴀʀᴛʜǫᴜᴀᴋᴇ*\n*┋ ⬡ ᴛsᴜɴᴀᴍɪ*\n*┋ ⬡ ᴠᴏʟᴄᴀɴᴏ*\n*┋ ⬡ ᴛᴏʀɴᴀᴅᴏ*\n*┋ ⬡ ʜᴜʀʀɪᴄᴀɴᴇ*\n*┋ ⬡ ᴀʟɪᴇɴɪɴᴠᴀsɪᴏɴ*\n*┋ ⬡ ᴢᴏᴍʙɪᴇ*\n*┋ ⬡ ᴠᴀᴍᴘɪʀᴇ*\n*┋ ⬡ ᴡᴇʀᴇᴡᴏʟғ*\n*┋ ⬡ ᴡɪᴢᴀʀᴅᴍᴀɢɪᴄ*\n*┋ ⬡ ғᴀɪʀʏ*\n*┋ ⬡ ᴍᴇʀᴍᴀɪᴅ*\n*┋ ⬡ ᴅʀᴀɢᴏɴғɪʀᴇ*\n*┋ ⬡ ᴘʜᴏᴇɴɪx*\n*┋ ⬡ ᴘᴇɢᴀsᴜs*\n*┋ ⬡ ᴄᴇɴᴛᴀᴜʀ*\n*┋ ⬡ ɢʀɪғғɪɴ*\n*┋ ⬡ ᴄʏʙᴏʀɢ*\n*┋ ⬡ ɴɪɴᴊᴀ*\n*┋ ⬡ sᴀᴍᴜʀᴀɪ*\n*┋ ⬡ ᴠɪᴋɪɴɢ*\n*┋ ⬡ ᴘɪʀᴀᴛᴇ*\n*┋ ⬡ ᴋɴɪɢʜᴛ*\n*┋ ⬡ ɢʟᴀᴅɪᴀᴛᴏʀ*\n*┋ ⬡ sᴘᴀʀᴛᴀɴ*\n*┋ ⬡ ᴘʜᴀʀᴀᴏʜ*\n*┋ ⬡ ᴍᴀʏᴀɴ*\n*┋ ⬡ ᴀᴛʟᴀɴᴛɪs*\n*┋ ⬡ ᴏʟʏᴍᴘᴜs*\n*┋ ⬡ ᴠᴀʟʜᴀʟʟᴀ*\n*┋ ⬡ sʜᴀᴍᴀɴ*\n*┋ ⬡ ᴡɪᴛᴄʜsᴘᴇʟʟ*\n*┋ ⬡ ɴᴇᴄʀᴏᴍᴀɴᴄᴇʀ*\n*┋ ⬡ ᴀʟᴄʜᴇᴍɪsᴛ*\n*┋ ⬡ ᴍᴏɴᴋ*\n*┋ ⬡ ʏᴏɢɪ*\n*┋ ⬡ ɢᴜʀᴜ*\n*┋ ⬡ sᴀɢᴇ*\n*┋ ⬡ ᴍʏsᴛɪᴄ*\n*┋ ⬡ ᴏʀᴀᴄʟᴇ*\n*┋ ⬡ sᴏʀᴄᴇʀᴇʀ*\n*┋ ⬡ ᴇɴᴄʜᴀɴᴛᴇʀ*\n*┋ ⬡ ᴄᴏɴᴊᴜʀᴇʀ*\n*┋ ⬡ ɪʟʟᴜsɪᴏɴɪsᴛ*\n*┋ ⬡ ᴅɪᴠɪɴᴇʀ*\n*┋ ⬡ sᴇᴇʀ*\n*┋ ⬡ ᴘʀᴏᴘʜᴇᴛ*\n*┋ ⬡ ᴀsᴛʀᴀʟ*\n*┋ ⬡ ᴍᴇᴅɪᴜᴍ*\n*┋ ⬡ ᴛᴇʟᴇᴘᴀᴛʜ*\n*┋ ⬡ ᴄʜᴜᴍɪ*\n*┋ ⬡ ʟᴏᴀᴅɪɴɢ*\n*┋ ⬡ ᴄᴅ*\n*┋ ⬡ ᴡᴛʜʀ*\n*┋ ⬡ ᴛʏᴘᴇ*\n*┋ ⬡ sᴘɪɴɴᴇʀ*\n*┋ ⬡ ʀᴏᴄᴋᴇᴛ*\n*┋ ⬡ ᴄʟᴏᴄᴋ*\n*┋ ⬡ ғɪɴɢ*\n*┋ ⬡ ʜᴀᴘᴘʏ*\n*┋ ⬡ ʜᴇᴀʀᴛ*\n*┋ ⬡ ᴀɴɢʀʏ*\n*┋ ⬡ sᴀᴅ*\n*┋ ⬡ sʜʏ*\n*┋ ⬡ ᴍᴏᴏɴ*\n*┋ ⬡ ᴄᴏɴғᴜsᴇᴅ*\n*┋ ⬡ ɴɪᴋᴀʟ*\n*┋ ⬡ ғᴏɴᴛ*\n*┋ ⬡ ғᴏɴᴛ1*\n*┋ ⬡ ғᴏɴᴛ2*\n*┋ ⬡ ғᴏɴᴛ3*\n*┋ ⬡ ғᴏɴᴛ4*\n*┋ ⬡ ғᴏɴᴛ5*\n*┋ ⬡ ғᴏɴᴛ6*\n*┋ ⬡ ғᴏɴᴛ7*\n*┋ ⬡ ғᴏɴᴛ8*\n*┋ ⬡ ғᴏɴᴛ9*\n*┋ ⬡ ғᴏɴᴛ10*\n*┋ ⬡ ғᴏɴᴛ11*\n*┋ ⬡ ғᴏɴᴛ12*\n*┋ ⬡ ғᴏɴᴛ13*\n*┋ ⬡ ғᴏɴᴛ14*\n*┋ ⬡ ғᴏɴᴛ15*\n*┋ ⬡ ғᴏɴᴛ16*\n*┋ ⬡ ғᴏɴᴛ17*\n*┋ ⬡ ғᴏɴᴛ18*\n*┋ ⬡ ғᴏɴᴛ19*\n*┋ ⬡ ғᴏɴᴛ20*\n*┋ ⬡ ғᴏɴᴛ21*\n*┋ ⬡ ғᴏɴᴛ22*\n*┋ ⬡ ғᴏɴᴛ23*\n*┋ ⬡ ғᴏɴᴛ24*\n*┋ ⬡ ғᴏɴᴛ25*\n*┋ ⬡ ғᴏɴᴛ26*\n*┋ ⬡ ғᴏɴᴛ27*\n*┋ ⬡ ғᴏɴᴛ28*\n*┋ ⬡ ғᴏɴᴛ29*\n*┋ ⬡ ғᴏɴᴛ30*\n*┋ ⬡ ғᴏɴᴛ31*\n*┋ ⬡ ғᴏɴᴛ32*\n*┋ ⬡ ғᴏɴᴛ33*\n*┋ ⬡ ғᴏɴᴛ34*\n*┋ ⬡ ғᴏɴᴛ35*\n*┋ ⬡ ғᴏɴᴛ36*\n*┋ ⬡ ғᴏɴᴛ37*\n*┋ ⬡ ғᴏɴᴛ38*\n*┋ ⬡ ғᴏɴᴛ39*\n*┋ ⬡ ғᴏɴᴛ40*\n*┋ ⬡ ғᴏɴᴛ41*\n*┋ ⬡ ғᴏɴᴛ42*\n*┋ ⬡ ғᴏɴᴛ43*\n*┋ ⬡ ғᴏɴᴛ44*\n*┋ ⬡ ғᴏɴᴛ45*\n*┋ ⬡ ғᴏɴᴛ46*\n*┋ ⬡ ғᴏɴᴛ47*\n*┋ ⬡ ғᴏɴᴛ48*\n*┋ ⬡ ғᴏɴᴛ49*\n*┋ ⬡ ғᴏɴᴛ50*\n*┋ ⬡ ғᴏɴᴛ51*\n*┋ ⬡ ғᴏɴᴛ52*\n*┋ ⬡ ғᴏɴᴛ53*\n*┋ ⬡ ғᴏɴᴛ54*\n*┋ ⬡ ғᴏɴᴛ55*\n*┋ ⬡ ғᴏɴᴛ56*\n*┋ ⬡ ғᴏɴᴛ57*\n*┋ ⬡ ғᴏɴᴛ58*\n*┋ ⬡ ғᴏɴᴛ59*\n*┋ ⬡ ғᴏɴᴛ60*\n*┋ ⬡ ғᴏɴᴛ61*\n*┋ ⬡ ғᴏɴᴛ62*\n*┋ ⬡ ғᴏɴᴛ63*\n*┋ ⬡ ғᴏɴᴛ64*\n*┋ ⬡ ғᴏɴᴛ65*\n*┋ ⬡ ғᴏɴᴛ66*\n*┋ ⬡ ғᴏɴᴛ67*\n*┋ ⬡ ғᴏɴᴛ68*\n*┋ ⬡ ғᴏɴᴛ69*\n*┋ ⬡ ғᴏɴᴛ70*\n*┋ ⬡ ғᴏɴᴛ71*\n*┋ ⬡ ғᴏɴᴛ72*\n*┋ ⬡ ғᴏɴᴛ73*\n*┋ ⬡ ғᴏɴᴛ74*\n*┋ ⬡ ғᴏɴᴛ75*\n*┋ ⬡ ғᴏɴᴛ76*\n*┋ ⬡ ғᴏɴᴛ77*\n*┋ ⬡ ғᴏɴᴛ78*\n*┋ ⬡ ғᴏɴᴛ79*\n*┋ ⬡ ғᴏɴᴛ80*\n*┋ ⬡ ғᴏɴᴛ81*\n*┋ ⬡ ғᴏɴᴛ82*\n*┋ ⬡ ғᴏɴᴛ83*\n*┋ ⬡ ғᴏɴᴛ84*\n*┋ ⬡ ғᴏɴᴛ85*\n*┋ ⬡ ғᴏɴᴛ86*\n*┋ ⬡ ғᴏɴᴛ87*\n*┋ ⬡ ғᴏɴᴛ88*\n*┋ ⬡ ғᴏɴᴛ89*\n*┋ ⬡ ғᴏɴᴛ90*\n*┋ ⬡ ғᴏɴᴛ91*\n*┋ ⬡ ғᴏɴᴛ92*\n*┋ ⬡ ғᴏɴᴛ93*\n*┋ ⬡ ғᴏɴᴛ94*\n*┋ ⬡ ғᴏɴᴛ95*\n*┋ ⬡ ғᴏɴᴛ96*\n*┋ ⬡ ғᴏɴᴛ97*\n*┋ ⬡ ғᴏɴᴛ98*\n*┋ ⬡ ғᴏɴᴛ99*\n*┋ ⬡ ғᴏɴᴛ100*\n*┋ ⬡ ғᴏɴᴛ101*\n*┋ ⬡ ғᴏɴᴛ102*\n*┋ ⬡ ғᴏɴᴛ103*\n*┋ ⬡ ғᴏɴᴛ104*\n*┋ ⬡ ғᴏɴᴛ105*\n*┋ ⬡ ɴᴘᴍ*\n*┋ ⬡ sᴛɪᴄᴋᴇʀ*\n*┋ ⬡ ᴀᴛᴛᴘ*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ1*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ2*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ3*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ4*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ5*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ6*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ7*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ8*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ9*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ10*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ11*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ12*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ13*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ14*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ15*\n*┋ ⬡ ᴜᴘsᴄᴀʟᴇ16*\n*┋ ⬡ ᴜɴʙʟᴜʀ*\n*┋ ⬡ ʙʟᴜʀғᴀᴄᴇ*\n*┋ ⬡ ʀᴇᴍᴏᴠᴇʙɢ*\n*┋ ⬡ ʀᴇᴍᴏᴠᴇʙɢ2*\n*┋ ⬡ ʀᴇᴍɪɴɪ*\n*┋ ⬡ ᴇɴʜᴀɴᴄᴇ1*\n*┋ ⬡ ᴇɴʜᴀɴᴄᴇ4*\n*┋ ⬡ ᴇɴʜᴀɴᴄᴇ8*\n*┋ ⬡ ᴇɴʜᴀɴᴄᴇ16*\n*┋ ⬡ ᴄᴏʟᴏʀɪᴢᴇ*\n╰───────────────────⊷\n`『 UTILITY 』`\n╭───────────────────⊷\n*┋ ⬡ ᴀʟɪᴠᴇ*\n*┋ ⬡ ᴜᴘᴛɪᴍᴇ*\n*┋ ⬡ ᴄᴏɴᴠᴇʀᴛ*\n*┋ ⬡ ᴄᴘᴘ*\n*┋ ⬡ sᴛʀᴜᴄᴛᴜʀᴇ*\n*┋ ⬡ ʀᴀᴡ2*\n*┋ ⬡ ɪᴅ*\n*┋ ⬡ ɢᴇᴛʟɪᴅ*\n*┋ ⬡ ᴘʀᴀʏᴛɪᴍᴇ*\n*┋ ⬡ ᴄᴀᴘᴛɪᴏɴ*\n*┋ ⬡ ᴜʀʟ*\n*┋ ⬡ ɢᴇᴛɪᴍᴀɢᴇ*\n╰───────────────────⊷\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",
+          "fileSha256": "NvvpB+CG0Vxa6gOAn5F2f9LbIGt2ps3OF4O0xU7Qoe0=",
+          "fileLength": "200996",
+          "height": 768,
+          "width": 1360,
+          "mediaKey": "EB9od738bufoJCjLYhRrynGxprsJEoCRJ4EjFtPqgNM=",
+          "fileEncSha256": "AqE+8aC9QsQJP+oIm0Trbk/YNKsE4eCZb6b8VHis7pM=",
+          "directPath": "/o1/v/t24/f2/m233/AQOGS7dRomujQKoAtbxGcPBNWwiz8mLmZ8bFDqsCOhSUwqPY_6SYVl076z74A_MH0hslFhbIF4S_B2mkKbgIWuSbuVwMCkyVp2iqHmvRJw?ccb=9-4&oh=01_Q5Aa5wFmQFGWmry61bWN9s1YjVC7xuG5IfWkDW4F5wTIoBV3gA&oe=6AF14335&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791611535",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQBAgMFBv/EACsQAAIBAwIDBgcAAAAAAAAAAAECAwAEESFBEhMiBRQxNHGBUWFyg5Ghsf/EABgBAAIDAAAAAAAAAAAAAAAAAAIDAAEE/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAECMRESIUH/2gAMAwEAAhEDEQA/AOQupY444o4VKyqCJDgYbcH949quYu9TxrYxO3QAV3YjxP5NRPNEjlF1Kvklcf35U1bTyqzXFnJy+LRioGVocj3HxAtpeKPIzD7hGd6FW+ji7zyZVgwDxMdMHHx9abR+27iLjilmkjPSCFBGnttSM13e8o2stw7IOko22NtfSo0mDHZPhqh4mstl5uL6hRRRSplQtD9xo2mlUjFFFLVGlWf/2Q==",
+          "contextInfo": {
+            "stanzaId": "AC6F9A6482FADD8759F97EB86E36BB32",
+            "participant": "29369607188681@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".menu",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "29369607188681@lid"
+            ],
+            "forwardingScore": 999,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363430297481707@newsletter",
+              "serverMessageId": 143,
+              "newsletterName": "JAWAD-MD"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "0lp8unuh9iSP+OdDrCv67BE1Byq+ukIucCiSfAxJYuE="
+        }
+      },
+      "timestamp": 1791626603532,
+      "savedAt": 1791626611049
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "✅ *Bot mode set to:* private\n📝 *Description:* 🔒 Only owner commands work",
+          "contextInfo": {
+            "stanzaId": "ACCC500D74D1DC4856455D4384A39053",
+            "participant": "27655337618@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".mode private",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "O5SC5Kx2s5IFz6efsIJmmJ1xhEbbCSBO1WHlgVZoz+w="
+        }
+      },
+      "timestamp": 1791626611017,
+      "savedAt": 1791626611366
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "videoMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7161-24/843605680_2119879598623051_4357811301384522319_n.enc?ccb=11-4&oh=01_Q5Aa5wGiJvPXzyA8_eNFGYl1D25gRUJxjasvNdmlAtMdQ8CD2Q&oe=6AF13840&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "video/mp4",
+          "fileSha256": "g2qEv0KCJOQfqz8LfliUfrVr98IKVkhmI0lN2uP/0rI=",
+          "fileLength": "1082046",
+          "mediaKey": "EnpeH1inEbto2U8Yyx4YtZAyHDccdCajQnlRer3aRGc=",
+          "caption": "🎵 “350 days have passed in enforced disappearance.”\n👤 *Author:* Khizar_SafetyPro🇸🇦\n⚡ *Username:* @malik1236411\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX*",
+          "fileEncSha256": "6d7YkSo6lpxCdpoxZi7rF4pEy4+6KxyN9F1ebfnKvTQ=",
+          "directPath": "/v/t62.7161-24/843605680_2119879598623051_4357811301384522319_n.enc?ccb=11-4&oh=01_Q5Aa5wGiJvPXzyA8_eNFGYl1D25gRUJxjasvNdmlAtMdQ8CD2Q&oe=6AF13840&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791603403",
+          "contextInfo": {
+            "stanzaId": "A56B077185BCF9DBFD71B3FF7740F39A",
+            "participant": "22239860764894@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ". TikTok https://www.tiktok.com/@malik1236411/video/7690539235027242247?_r=1&u_code=e80j1c26b9c5il&preview_pb=0&sharer_language=en&_d=f5f41ddjlg2cke&share_item_id=7690539235027242247&source=h5_m&timestamp=1791567910&user_id=7232615914935583750&sec_user_id=MS4wLjABAAAAt2aVpisnld_jW-4s7U3XfKLYRle1ZZ4k-53JWG27WoBskjBYBh3qTjeAdtxE-GLb&social_share_type=0&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7694688451593586433&share_link_id=829690f7-88d2-49f9-bee5-4c720c636985&share_app_id=1233&ugbiz_name=MAIN&ug_btm=b2001&sp_root_share_link_id=829690f7-88d2-49f9-bee5-4c720c636985&link_reflow_popup_iteration_sharer=%7B%22click_empty_to_play%22%3A1%2C%22dynamic_cover%22%3A1%2C%22follow_to_play_duration%22%3A-1.0%2C%22profile_clickable%22%3A1%7D&panel_source_v2=share_panel&share_enter_from=homepage_hot&item_author_type=2&enable_checksum=1&sp_level=1&sp_root_u=e80j1c26b9c5il&sp_root_d=f5f41ddjlg2cke",
+                "matchedText": "https://www.tiktok.com/@malik1236411/video/7690539235027242247?_r=1&u_code=e80j1c26b9c5il&preview_pb=0&sharer_language=en&_d=f5f41ddjlg2cke&share_item_id=7690539235027242247&source=h5_m&timestamp=1791567910&user_id=7232615914935583750&sec_user_id=MS4wLjABAAAAt2aVpisnld_jW-4s7U3XfKLYRle1ZZ4k-53JWG27WoBskjBYBh3qTjeAdtxE-GLb&social_share_type=0&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7694688451593586433&share_link_id=829690f7-88d2-49f9-bee5-4c720c636985&share_app_id=1233&ugbiz_name=MAIN&ug_btm=b2001&sp_root_share_link_id=829690f7-88d2-49f9-bee5-4c720c636985&link_reflow_popup_iteration_sharer=%7B%22click_empty_to_play%22%3A1%2C%22dynamic_cover%22%3A1%2C%22follow_to_play_duration%22%3A-1.0%2C%22profile_clickable%22%3A1%7D&panel_source_v2=share_panel&share_enter_from=homepage_hot&item_author_type=2&enable_checksum=1&sp_level=1&sp_root_u=e80j1c26b9c5il&sp_root_d=f5f41ddjlg2cke",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "Mq/LzcVYmtwj1+amHXmPOGVVcaGbk/43P1gbO+IIxZo="
+        }
+      },
+      "timestamp": 1791626580450,
+      "savedAt": 1791626611381
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "❌ All download sources failed! Try again later.",
+          "contextInfo": {
+            "stanzaId": "ACEB25E4DE77E489C22260C8D9EF2A2E",
+            "participant": "203951454556350@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".play kehlani gangsta remake slowed",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "DhenwdRPwOnX4tRLQ6tvbYSk3O5DEUswvhnVdXwcNhM="
+        }
+      },
+      "timestamp": 1791626579695,
+      "savedAt": 1791626611403
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m269/AQPv06TNjBzIQaDEfWXVGpYLtFEwiG-Fjv4oDWNeSqBAKkUVRoiZk9wbPzsGKS2ZJzfgrvTw6LrZ4Die96MdhLsT2sbQM9ABaSAIEVPfWA?ccb=9-4&oh=01_Q5Aa5wF-qsXvJpnLsBkk3QoNjp4hZ31g4lBZkhkRA8DwyYFvpA&oe=6AF13180&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "- *AUDIO DOWNLOADER 🎧*\n╭━━❐━⪼\n┇๏ *Title* - kehlani - gangsta (flashback version) // slowed + reverb\n┇๏ *Duration* - 3:44\n┇๏ *Views* - 4,429,689\n┇๏ *Author* - mizuki\n┇๏ *Status* - Downloading...\n╰━━❑━⪼\n> Powered by JAWAD-MD",
+          "fileSha256": "wzjoY4YXj/W9PbmC8QehILF3Zelz+RBYWGQL40uBoNE=",
+          "fileLength": "57536",
+          "height": 720,
+          "width": 1280,
+          "mediaKey": "mDai7NIEdCrQZuDRuV3mCWBFmm+V4IOovHPd8GxMvao=",
+          "fileEncSha256": "W198o79/Bd1Za4apDgvr/cA1g65JVed2a2LyGmUcoKs=",
+          "directPath": "/o1/v/t24/f2/m269/AQPv06TNjBzIQaDEfWXVGpYLtFEwiG-Fjv4oDWNeSqBAKkUVRoiZk9wbPzsGKS2ZJzfgrvTw6LrZ4Die96MdhLsT2sbQM9ABaSAIEVPfWA?ccb=9-4&oh=01_Q5Aa5wF-qsXvJpnLsBkk3QoNjp4hZ31g4lBZkhkRA8DwyYFvpA&oe=6AF13180&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791602389",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUH/8QAJxAAAgEDAwIGAwAAAAAAAAAAAQIDAAQRBRIhMWEGExQVQ1FxgbH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDbnk2bQUdlPJKLnFKmqyAapcFH3ITkEfgU3o+RS14qsz6hLpYyysuHIGQCPv8AVDJflXdKcsxDqVOT24/lZ8gktJ42glcSYyCp5B7Vekk29SE7k1oaJa2F0ZjLKhlJUKCwzjtUTlF0qDWiV0e7Kkg+WelFFQczk5c555q1pAHutrx8goopaf/Z",
+          "contextInfo": {
+            "stanzaId": "ACEB25E4DE77E489C22260C8D9EF2A2E",
+            "participant": "203951454556350@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".play kehlani gangsta remake slowed",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "/4xs5nL+kuc4tWN4Af+VmL+PWxejjTvUkwSGhzSGyzg="
+        }
+      },
+      "timestamp": 1791626579640,
+      "savedAt": 1791626611548
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "❌ All download sources failed! Try again later.",
+          "contextInfo": {
+            "stanzaId": "AC72439FE73C8C098A83954772DEBD96",
+            "participant": "203951454556350@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".play kekhani gangsta remix",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "nBejhI5knCFWm/zDzOaD8PRXC0/SO94t2foiNc0pmnU="
+        }
+      },
+      "timestamp": 1791626578661,
+      "savedAt": 1791626611563
+    },
+    {
+      "senderJid": "215371906814136@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m269/AQOSjWaolkUMKTwmw4Sgzk6QOX8L7E35Wx_wZfdQt_Nla3F4MPwbgXHUF3wfYMbIWsMne-r1wPdyT98ZNoR5k9XQi0cpa67ekEDm-OCysQ?ccb=9-4&oh=01_Q5Aa5wFC054pna3mfcqe7_5Qgo2PR3aeQ8qNwfYr5JbIPLhHPw&oe=6AF10CDC&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "- *AUDIO DOWNLOADER 🎧*\n╭━━❐━⪼\n┇๏ *Title* - Kehlani - Gangsta (Arkane Skye Remix)\n┇๏ *Duration* - 5:04\n┇๏ *Views* - 204,717\n┇๏ *Author* - ABIHAIL S ALVAREZ\n┇๏ *Status* - Downloading...\n╰━━❑━⪼\n> Powered by JAWAD-MD",
+          "fileSha256": "FLA1z54orBF6tlb2MG2aGYdzmRNQMSzGIVnLsEYieUc=",
+          "fileLength": "18544",
+          "height": 360,
+          "width": 480,
+          "mediaKey": "bIxBZLWJfQ55g2Wpd8ANc22iLB6jAXNsuYLSGjvl0cg=",
+          "fileEncSha256": "lEAQI5VtF+0z7tiolOrD5TvzcI0WHjQOLKVmdru1frA=",
+          "directPath": "/o1/v/t24/f2/m269/AQOSjWaolkUMKTwmw4Sgzk6QOX8L7E35Wx_wZfdQt_Nla3F4MPwbgXHUF3wfYMbIWsMne-r1wPdyT98ZNoR5k9XQi0cpa67ekEDm-OCysQ?ccb=9-4&oh=01_Q5Aa5wFC054pna3mfcqe7_5Qgo2PR3aeQ8qNwfYr5JbIPLhHPw&oe=6AF10CDC&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791602330",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUEAwb/xAAmEAACAQMDAwUBAQAAAAAAAAABAgMABBEFEjETISIkUWKRwUGh/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAIBA//EABoRAAICAwAAAAAAAAAAAAAAAAABERIhMUH/2gAMAwEAAhEDEQA/APGLZJv2tISfYD9rSmlxzrmLrDHPBxRbrwIJYAkc8VYsrKfVonNlAkqLJudC/kONpxnuOf8Aa6YS0a44R30uKFcy9Y544GazNZJv2rIQfYirdxaXGmJG95D0YHfdFExAbsSG7Z7fvaprXXgACxAJ4phrQUdONlfRxv6lWZfjjOaopq1lDN1Laa5hPxjGfsMKUqbsiqD6tZTTdS5mupj/AEtGCfssanXt9FI/plZV+XOaUpdiqP/Z",
+          "contextInfo": {
+            "stanzaId": "AC72439FE73C8C098A83954772DEBD96",
+            "participant": "203951454556350@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".play kekhani gangsta remix",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "aGCDbXYPgW+cOeKBTcK031+6CbPiGi46I1EbhcwffqA="
+        }
+      },
+      "timestamp": 1791626578617,
+      "savedAt": 1791626611582
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Mon ex vient de lire ça elle est venue entrain de gronder dans mon pv parce Darrow a été trop arrogant 🤣💔 qu'on a tué son pax",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "ACD4DE3AF709E7B0A62ACD852E68DA02",
+            "participant": "24953944551677@lid",
+            "quotedMessage": {
+              "conversation": "Oui, autour de la table"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "TPIE87yi9EEXDL5+ERYY9CKr/3dcJSkFQijug25/9XM="
+        }
+      },
+      "timestamp": 1791626619273,
+      "savedAt": 1791626619586
+    },
+    {
+      "senderJid": "145818820591633@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "C'est subjectif",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "AC346FA69AB2661B34C5A510E2079489",
+            "participant": "12477383340202@lid",
+            "quotedMessage": {
+              "conversation": "Qqn n'a même pas fini le LN il dit il est fan"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "Uz3eDM88njdrtyRRPvY7IE7AjIyfnIXjwJQtZfqZd38="
+        }
+      },
+      "timestamp": 1791626650065,
+      "savedAt": 1791626650767
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/840022626_1538418521660992_9207477278312330655_n.enc?ccb=11-4&oh=01_Q5Aa5wFuRoy_VXD9vDoMTEpK5rmJazUFQI74zChSSx-wWPl-iw&oe=6AF16028&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "Ks95UQgdEIBUEq3S4/5kC7B8oRnwVlW6PYv7CFxdnXQ=",
+          "fileEncSha256": "k3/gElPkfWRaII6W597bjWFhVVyEg6i0GmPAp0FC3LI=",
+          "mediaKey": "jEvVFR7aluIvg3gtYGU6x5VzftGWKyOn8DwXOrLNjXU=",
+          "mimetype": "image/webp",
+          "directPath": "/v/t62.15575-24/840022626_1538418521660992_9207477278312330655_n.enc?ccb=11-4&oh=01_Q5Aa5wFuRoy_VXD9vDoMTEpK5rmJazUFQI74zChSSx-wWPl-iw&oe=6AF16028&_nc_sid=5e03e0",
+          "fileLength": "458276",
+          "mediaKeyTimestamp": "1791486321",
+          "firstFrameLength": 457826,
+          "firstFrameSidecar": "T9vS0HY+UIMtgA==",
+          "isAnimated": true,
+          "contextInfo": {},
+          "stickerSentTs": "1791625733389",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false
+        },
+        "messageContextInfo": {
+          "messageSecret": "plPisK5d0MYy5ylj9NTiJT36oZe/I1mWVO30Ah6o+lg="
+        }
+      },
+      "timestamp": 1791626719679,
+      "savedAt": 1791626719964
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "audioMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7117-24/839448125_1609735314507845_3582618584385093792_n.enc?ccb=11-4&oh=01_Q5Aa5wHHg5Z1hWP7cbH31K_w69A31ADg41qbwajWmz7SVGjejQ&oe=6AF16781&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "audio/ogg; codecs=opus",
+          "fileSha256": "hzcmYN8LynOzu+VEzHLjB52wYORChK7NIA5XJIIp7lE=",
+          "fileLength": "279976",
+          "seconds": 122,
+          "ptt": true,
+          "mediaKey": "a99zWFjHymZiRfeiOaEwgUhjwAgFoDz2hD/JChM6Zws=",
+          "fileEncSha256": "2iJ3aHuTPh/eaFLcMcb0xNNMKgldwmO7THpLEn9uHw8=",
+          "directPath": "/v/t62.7117-24/839448125_1609735314507845_3582618584385093792_n.enc?ccb=11-4&oh=01_Q5Aa5wHHg5Z1hWP7cbH31K_w69A31ADg41qbwajWmz7SVGjejQ&oe=6AF16781&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791624459",
+          "contextInfo": {
+            "stanzaId": "AC2664BE49FAA5AFD1661C12A6BF08CD",
+            "participant": "12477383340202@lid",
+            "quotedMessage": {
+              "audioMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7117-24/845124831_1663551998676578_2834312974198641454_n.enc?ccb=11-4&oh=01_Q5Aa5wHnVuwxSsny82QLDT4xXvKgfddztiHQ5YdGcugvUOtG-Q&oe=6AF1566F&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "audio/ogg; codecs=opus",
+                "fileSha256": "xe7rU/oBBhcRmSByTM/G4jyQydGN5LDwgE2151Mc+cY=",
+                "fileLength": "175084",
+                "seconds": 74,
+                "ptt": true,
+                "mediaKey": "gaBpBcQjoMLDDNkps+k6MGZicS6plJkNoJbWcB3DPOw=",
+                "fileEncSha256": "NAX+ld5BBoU1MSaqX8+Y/pIipwOYwZZs4TP6xUh3MdQ=",
+                "directPath": "/v/t62.7117-24/845124831_1663551998676578_2834312974198641454_n.enc?ccb=11-4&oh=01_Q5Aa5wHnVuwxSsny82QLDT4xXvKgfddztiHQ5YdGcugvUOtG-Q&oe=6AF1566F&_nc_sid=5e03e0",
+                "mediaKeyTimestamp": "1791623149",
+                "contextInfo": {},
+                "waveform": "ABE9HBJDBlopOFlMGAlXOE0PVQRRPAAAA0oXAhZAAjkLJTtWTUMDCjc7A0kEAj9FNkg7TUgfTTJHJj4APE00Dg=="
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "waveform": "ADpOQlNQACc1PEVURAAADkYAAEssWwBAL1oAACczAA8DKhtCAExBAgAgAA0BABsjAFc7ES03PzE8AGBBACsjQw=="
+        },
+        "messageContextInfo": {
+          "messageSecret": "Ex7X3Qbkyka8V8A4jtbhUiSVWQBE/bEUYV29IGZGEg8="
+        }
+      },
+      "timestamp": 1791626709522,
+      "savedAt": 1791626721084
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "audioMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7117-24/845820587_1569972237766211_2359139865152257415_n.enc?ccb=11-4&oh=01_Q5Aa5wEKekd0ehmV44a96tmPxdOwxJOqD8Vd1s6246WvEVeyOQ&oe=6AF166D7&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "audio/ogg; codecs=opus",
+          "fileSha256": "uAA8BPhLclqsF21J59XhIbhS/0nhWIq3e1iGQoINnI8=",
+          "fileLength": "209687",
+          "seconds": 90,
+          "ptt": true,
+          "mediaKey": "tZnBBq3Uy4Laq8jl3aUI+0IN/YcqYei8QRWRughwjVU=",
+          "fileEncSha256": "Im0KLVktFHNTcu9G/uBnY24Tco6W6zNwB2yKRYopWTQ=",
+          "directPath": "/v/t62.7117-24/845820587_1569972237766211_2359139865152257415_n.enc?ccb=11-4&oh=01_Q5Aa5wEKekd0ehmV44a96tmPxdOwxJOqD8Vd1s6246WvEVeyOQ&oe=6AF166D7&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791625098",
+          "contextInfo": {
+            "stanzaId": "AC14A1F28FC52CF7CC4A0487A21E2862",
+            "participant": "12477383340202@lid",
+            "quotedMessage": {
+              "conversation": "La fin dit tout \n\nAttendez, le seul but de Cecilconne était de retourner dans son monde avec Nico \n\nMême Tess lui a pourtant dit qu'Agrona lui mentait, mais le croire était la seule option sur laquelle elle pouvait s'agripper \n\nJe répète, elle n'est pas mauvaise \nElle ne voyait tout simplement pas les choses comme nous \nSo Agrona est le gentil, ceux de Dicathen sont les méchants"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "waveform": "ADAVUgAALksNUzk/AFEASyUPRFsAOlAIAABUPEhUQwsUBFo9VB4XRElJTy4zHQBWRgVLAAAAKS1gTAU+GURSAA=="
+        },
+        "messageContextInfo": {
+          "messageSecret": "RQq7VIWQyDoBQcRg5SeCWxSaMIqmBrqlPjaKJhGI+B8="
+        }
+      },
+      "timestamp": 1791626714900,
+      "savedAt": 1791626721403
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "audioMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7117-24/841955934_1454257719927539_1868186697404488269_n.enc?ccb=11-4&oh=01_Q5Aa5wGf17oR6qG5c1V66rSTBeSTCLuN9P-a83iXrww8cFYySA&oe=6AF1A360&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "audio/ogg; codecs=opus",
+          "fileSha256": "NH+HMmp72YziuDrOeDcIU1EPlmkJejwd55SwSp7+dsE=",
+          "fileLength": "43260",
+          "seconds": 18,
+          "ptt": true,
+          "mediaKey": "PoqfK16JdbDbhcUqaNtQBnEZmNwkV8uF4apOccALcRg=",
+          "fileEncSha256": "WH+1vtkwFcG8mTpljqy3ubmzSdG5evIGAKYqe1ImiVM=",
+          "directPath": "/v/t62.7117-24/841955934_1454257719927539_1868186697404488269_n.enc?ccb=11-4&oh=01_Q5Aa5wGf17oR6qG5c1V66rSTBeSTCLuN9P-a83iXrww8cFYySA&oe=6AF1A360&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791629221",
+          "contextInfo": {
+            "stanzaId": "AC88B10ECD99A8332CF536BD153AFAB0",
+            "participant": "12477383340202@lid",
+            "quotedMessage": {
+              "audioMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7117-24/843571799_1637344977777103_4864636573906741432_n.enc?ccb=11-4&oh=01_Q5Aa5wF69KbcLzdWNJPR3uG0hpa5Ra9P34MrDKp2dCbmQ6W8QQ&oe=6AF1A027&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "audio/ogg; codecs=opus",
+                "fileSha256": "5f2QKhIPTG59xE4OEbzWb7gMKH1VwrybZJlaGyXJimU=",
+                "fileLength": "17492",
+                "seconds": 7,
+                "ptt": true,
+                "mediaKey": "51ljAQclUOY7nEnGFYFAs7v7coGPRAlTZg7aOYzXK3U=",
+                "fileEncSha256": "zHXzAjRcinLrpaehQZSFrKHof+kOWCm2F0PGWyyB3WM=",
+                "directPath": "/v/t62.7117-24/843571799_1637344977777103_4864636573906741432_n.enc?ccb=11-4&oh=01_Q5Aa5wF69KbcLzdWNJPR3uG0hpa5Ra9P34MrDKp2dCbmQ6W8QQ&oe=6AF1A027&_nc_sid=5e03e0",
+                "mediaKeyTimestamp": "1791629157",
+                "contextInfo": {},
+                "waveform": "ACYfGSIgY15BEQIyVzscUEw8MgAAAAUSPzRQLCskAgojADVgTEA7PEZWPDA7NUYBABMAAgJKTmJUQTQqBgMDAw=="
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "waveform": "AF8SXFcAPwxLRjgCADooDDlQWBcoAAALY147Fwo3SyIcQD4bFA1bVjMzCAERBwBXKywOCgAHKwBhVyBIGEYnFg=="
+        },
+        "messageContextInfo": {
+          "messageSecret": "Wlhy/1RYT6jrzhoMgNHCiiv9Nwn3+jNbM4s1GTvgqrE="
+        }
+      },
+      "timestamp": 1791629237689,
+      "savedAt": 1791629258928
+    },
+    {
+      "senderJid": "71030789935193@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "❌ Failed to convert sticker to image.\n\nError: FFmpeg exited with code 69: ffmpeg version 8.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\r\n  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      60. 26.100 / 60. 26.100\r\n  libavcodec     62. 28.100 / 62. 28.100\r\n  libavformat    62. 12.100 / 62. 12.100\r\n  libavdevice    62.  3.100 / 62.  3.100\r\n  libavfilter    11. 14.100 / 11. 14.100\r\n  libswscale      9.  5.100 /  9.  5.100\r\n  libswresample   6.  3.100 /  6.  3.100\r\n[webp @ 00000220baf594c0] skipping unsupported chunk: ANIM\r\n[webp @ 00000220baf594c0] skipping unsupported chunk: ANMF\r\n    Last message repeated 71 times\r\n[webp @ 00000220baf594c0] image data not found\r\n[in#0/webp_pipe @ 00000220baf57e80] Could not find codec parameters for stream 0 (Video: webp, none): unspecified size\r\nConsider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options\r\nInput #0, webp_pipe, from 'C:\\Users\\LASTRA~1\\AppData\\Local\\Temp\\input_1791629774404.webp':\r\n  Duration: N/A, bitrate: N/A\r\n  Stream #0:0: Video: webp, none, 25 fps, 25 tbr, 25 tbn\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))\r\nPress [q] to stop, [?] for help\r\n[webp @ 00000220baf6e7c0] skipping unsupported chunk: ANIM\r\n[webp @ 00000220baf6e7c0] skipping unsupported chunk: ANMF\r\n    Last message repeated 71 times\r\n[webp @ 00000220baf6e7c0] image data not found\r\n[vist#0:0/webp @ 00000220baf58180] [dec:webp @ 00000220baf61a40] Decoding error: Invalid data found when processing input\r\n[vist#0:0/webp @ 00000220baf58180] [dec:webp @ 00000220baf61a40] Decode error rate 1 exceeds maximum 0.666667\r\n[vf#0:0 @ 00000220baf60a40] Cannot determine format of input 0:0 after EOF\r\n[vf#0:0 @ 00000220baf60a40] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vf#0:0 @ 00000220baf60a40] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/libx264 @ 00000220baf5dbc0] [enc:libx264 @ 00000220baf3c1c0] Could not open encoder before EOF\r\n[vost#0:0/libx264 @ 00000220baf5dbc0] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/libx264 @ 00000220baf5dbc0] Terminating thread with return code -22 (Invalid argument)\r\n[vist#0:0/webp @ 00000220baf58180] [dec:webp @ 00000220baf61a40] Task finished with error code: -1145393733 (Error number -1145393733 occurred)\r\n[vist#0:0/webp @ 00000220baf58180] [dec:webp @ 00000220baf61a40] Terminating thread with return code -1145393733 (Error number -1145393733 occurred)\r\n[out#0/mp4 @ 00000220bb09b740] Nothing was written into output file, because at least one of its streams received no packets.\r\nframe=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.00    \r\nConversion failed!\r\n"
+        },
+        "messageContextInfo": {
+          "messageSecret": "4QVQtAAO/12ZSEp54qgV5rklFmhiARll+FvaMssdAtA="
+        }
+      },
+      "timestamp": 1791629776136,
+      "savedAt": 1791629783934
+    },
+    {
+      "senderJid": "116282682798314@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363411929937671@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwikj9m4BhAAGiBaRuC6nENrqSOVuT4BFkWS56hiAm0RgCjoHtJGC0BrmyIhBRjTYG1IvLlJ4QfMLTMguACgpOpiaCwiqsEM2PeaqX1m"
+        },
+        "extendedTextMessage": {
+          "text": "@94017320685768",
+          "previewType": "NONE",
+          "contextInfo": {
+            "mentionedJid": [
+              "94017320685768@lid"
+            ],
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "3PMwi1BicCBOCOOhhglW1fzOT4/vvVHYckko8iUSrG0="
+        }
+      },
+      "timestamp": 1791633085035,
+      "savedAt": 1791633089032
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "La femme ? Lol 😂 sans leur rencontre étant gamins ça n'allait pas arriver rappel toi que dans la timeline alternative ya pas de \"Arthur x tess\" mais \"Arthur x Caera\"",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "AC25C714B9A911B32EC22EE28E68DD7F",
+            "participant": "12477383340202@lid",
+            "quotedMessage": {
+              "audioMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7117-24/840033379_1638387687869057_9138643216507592795_n.enc?ccb=11-4&oh=01_Q5Aa5wGyO6mLMd413U8A0qSpPkfyvVtujqT0eiLhrac28p5mKQ&oe=6AF18EAB&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "audio/ogg; codecs=opus",
+                "fileSha256": "mI0hTTwW9/Uh1HvResEAVa8nwTKiySAB/a7aEOiUrkI=",
+                "fileLength": "52059",
+                "seconds": 22,
+                "ptt": true,
+                "mediaKey": "ip5ClOPqgqAJ9LnlTTiFKzoiVInRlZevx9W7h9Mqa6o=",
+                "fileEncSha256": "bkQEXsnA8HbXdZTQQApa0H5H2x0SMh6Wx/kqYrEITAE=",
+                "directPath": "/v/t62.7117-24/840033379_1638387687869057_9138643216507592795_n.enc?ccb=11-4&oh=01_Q5Aa5wGyO6mLMd413U8A0qSpPkfyvVtujqT0eiLhrac28p5mKQ&oe=6AF18EAB&_nc_sid=5e03e0",
+                "mediaKeyTimestamp": "1791629452",
+                "contextInfo": {},
+                "waveform": "J0FIV1pWVU88Pls/TVVNUEhPS0xFSlJLTTZXMVZTVFhHOFRSQzVXNkVQSlRgJhcwRzlNWidaOEsyTVVcUVJQQA=="
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "DBc8Ms3gnX6DrGEYsr1eIFTJQblwJ/QjIrJRQQ/kKJg="
+        }
+      },
+      "timestamp": 1791635247523,
+      "savedAt": 1791635585885
+    },
+    {
+      "senderJid": "38745587880114@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".pair+255764681492",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "recipientKeyHash": "9/X1pd4VN9gTFw==",
+            "recipientTimestamp": "1791402490"
+          },
+          "deviceListMetadataVersion": 2,
+          "messageSecret": "M3YAfVKrToI0BRmtjb2z6fn7kcrxUdyANRbVBMhqyl4="
+        }
+      },
+      "timestamp": 1791640555546,
+      "savedAt": 1791640564955
+    },
+    {
+      "senderJid": "38745587880114@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m231/AQOUCeO_zDfVDrKVAHCLBYsDx2s7CRcrY53tsMgOKWF20CZPvVx9SkhSkJ4_PFrpkZepTT4CeJP7axbBQGePQSi3vlawkzNHjzK1zmE7Kw?ccb=9-4&oh=01_Q5Aa5wHto2h-dbhy7_MwYCSs0hTXETxAYsSNqFo5fB2OiCoOLg&oe=6AF1ADE6&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "╭─⟢𓆩 𝗗𝗥 𝗛𝗢𝗡𝗘𝗬 𝗠𝗜𝗡𝗜 𓆪𓂃ꜛ⸙\n│  *👑 Ξ ⤹ Owner*: ‽‽MRVIBES‽‽\n│  *⚙️ Ξ ⤹ Mode*: Private 🔐\n│  *📜 Ξ ⤹ Commands*: 119\n│  *🚀 Ξ ⤹ Version*: v1.0.0\n│  *🖥️ Ξ ⤹ Server*: #1\n│  *💻 Ξ ⤹ Developer*: 𝐅ᴀᴍᴏᴜꜱ 𝐇ᴏɴᴇʏ\n╰──────────────⟢\n\n╭─⟢ ᴀᴅᴍɪɴ / ᴍᴏᴅᴇʀᴀᴛɪᴏɴ𓂃ꜛ⸙\n│ ⤷ .accept\n│ ⤷ .add\n│ ⤷ .adminlock\n│ ⤷ .antilink\n│ ⤷ .antistatus\n│ ⤷ .kick / .remove\n│ ⤷ .kickoffline\n│ ⤷ .remcode\n│ ⤷ .tagactive\n│ ⤷ .tagall\n╰──────────────⟢\n\n╭─⟢ ᴀɪ / ᴄʜᴀᴛʙᴏᴛ𓂃ꜛ⸙\n│ ⤷ .ai\n│ ⤷ .caption\n│ ⤷ .gpt\n│ ⤷ .imagine / .txt2img\n│ ⤷ .remini / .hd\n╰──────────────⟢\n\n╭─⟢ ʙᴏᴛ ꜱᴇᴛᴛɪɴɢꜱ𓂃ꜛ⸙\n│ ⤷ .anticall\n│ ⤷ .antidelete\n│ ⤷ .antiedit\n│ ⤷ .autoreacts\n│ ⤷ .autoread / .autoseen\n│ ⤷ .autotyping\n│ ⤷ .botdp / .botpp\n│ ⤷ .ghost\n│ ⤷ .mode\n│ ⤷ .presence\n│ ⤷ .setname\n╰──────────────⟢\n\n╭─⟢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀꜱ𓂃ꜛ⸙\n│ ⤷ .apk\n│ ⤷ .drama\n│ ⤷ .fb / .facebook\n│ ⤷ .gdrive\n│ ⤷ .igdl / .ig2\n│ ⤷ .igstory\n│ ⤷ .insta / .ig\n│ ⤷ .mf\n│ ⤷ .pinterest / .pin\n│ ⤷ .pinv / .pinvideo\n│ ⤷ .snapchat / .snap\n│ ⤷ .spotify\n│ ⤷ .tiktok / .tt\n│ ⤷ .video / .vid\n│ ⤷ .ytmp3 / .ytaudio\n│ ⤷ .ytmp4 / .yt\n╰──────────────⟢\n\n╭─⟢ ꜰᴜɴ / ɢᴀᴍᴇꜱ𓂃ꜛ⸙\n│ ⤷ .8ball\n│ ⤷ .aura\n│ ⤷ .character\n│ ⤷ .choose\n│ ⤷ .dare\n│ ⤷ .emojimix / .emix\n│ ⤷ .fancy\n│ ⤷ .hack\n│ ⤷ .horoscope / .zodiac\n│ ⤷ .joke\n│ ⤷ .lyrics / .lyric\n│ ⤷ .meme\n│ ⤷ .roast\n│ ⤷ .ship\n│ ⤷ .truth\n╰──────────────⟢\n\n╭─⟢ ɢᴇɴᴇʀᴀʟ / ʙᴀꜱɪᴄ𓂃ꜛ⸙\n│ ⤷ .alive\n│ ⤷ .ping\n│ ⤷ .runtime\n│ ⤷ .session\n╰──────────────⟢\n\n╭─⟢ ɢʀᴏᴜᴘ / ɢʀᴏᴜᴘ-ᴀᴅᴍɪɴ𓂃ꜛ⸙\n│ ⤷ .autolock / .al\n│ ⤷ .autounlock / .aul\n│ ⤷ .demote / .dismiss\n│ ⤷ .gclink\n│ ⤷ .goodbye / .bye\n│ ⤷ .groupinfo / .ginfo\n│ ⤷ .hidetag\n│ ⤷ .lock / .mute\n│ ⤷ .promote / .admin\n│ ⤷ .unlock / .open\n│ ⤷ .welcome / .well\n╰──────────────⟢\n\n╭─⟢ ɪɴꜰᴏ / ʜᴇʟᴘ𓂃ꜛ⸙\n│ ⤷ .botinfo\n│ ⤷ .link\n│ ⤷ .menu2\n│ ⤷ .owner\n│ ⤷ .pair\n│ ⤷ .support\n╰──────────────⟢\n\n╭─⟢ ᴍᴇᴅɪᴀ / ᴄᴏɴᴠᴇʀᴛᴇʀ𓂃ꜛ⸙\n│ ⤷ .attp\n│ ⤷ .gif / .tgif\n│ ⤷ .qc / .quote\n│ ⤷ .readmore\n│ ⤷ .s / .sticker\n│ ⤷ .song / .play\n│ ⤷ .take\n│ ⤷ .toaudio / .tomp3\n│ ⤷ .toimg / .simg\n│ ⤷ .tovideo / .smp4\n│ ⤷ .voice / .v\n╰──────────────⟢\n\n╭─⟢ ᴏᴡɴᴇʀ / ʙᴏᴛ-ᴄᴏɴᴛʀᴏʟ𓂃ꜛ⸙\n│ ⤷ .block\n│ ⤷ .chforword / .chfwd\n│ ⤷ .clear\n│ ⤷ .jgroup\n│ ⤷ .mention\n│ ⤷ .prefix\n│ ⤷ .restart\n│ ⤷ .serverinfo\n│ ⤷ .unblock\n╰──────────────⟢\n\n╭─⟢ ᴛᴏᴏʟꜱ / ᴜᴛɪʟɪᴛʏ𓂃ꜛ⸙\n│ ⤷ .bmi\n│ ⤷ .clearcache\n│ ⤷ .gcstatus / .gcs\n│ ⤷ .getpp / .dp\n│ ⤷ .id\n│ ⤷ .ocr\n│ ⤷ .qr / .qrcode\n│ ⤷ .rebrandly / .rbly\n│ ⤷ .repeat\n│ ⤷ .save / .grab\n│ ⤷ .speedtest / .speed\n│ ⤷ .status\n│ ⤷ .translate / .tr\n│ ⤷ .tts / .say\n│ ⤷ .ttstalk\n│ ⤷ .uptime\n│ ⤷ .url\n│ ⤷ .vv\n│ ⤷ .vv2\n│ ⤷ .watermark / .wm\n│ ⤷ .weather\n╰──────────────⟢\n\n┌──────────────────────────┐\n│  ⚡ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs ᴄᴏᴍɪɴɢ sᴏᴏɴ... ✨\n└──────────────────────────┘",
+          "fileSha256": "Lcy7UNvs32Z/NtHEQF6KKEQpD08V1tyaQBERLV8UcSc=",
+          "fileLength": "31674",
+          "height": 414,
+          "width": 736,
+          "mediaKey": "ZhDZme2KOWQl7BmNCqQffXsP/xNwRh1t0F5k7gDHf9I=",
+          "fileEncSha256": "AiHJrunghbbPcdxGR7jcOs3ltbsCNCm9/xxMSM36gR0=",
+          "directPath": "/o1/v/t24/f2/m231/AQOUCeO_zDfVDrKVAHCLBYsDx2s7CRcrY53tsMgOKWF20CZPvVx9SkhSkJ4_PFrpkZepTT4CeJP7axbBQGePQSi3vlawkzNHjzK1zmE7Kw?ccb=9-4&oh=01_Q5Aa5wHto2h-dbhy7_MwYCSs0hTXETxAYsSNqFo5fB2OiCoOLg&oe=6AF1ADE6&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791641519",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASACADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgED/8QAKhAAAgEDAQYFBQAAAAAAAAAAAQIDAAQRBQYSITEyYSJRcYGRI0GhwdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AwkUYcZbgucE8eHxU+ZIZlCW9rCM4AKsxY/P8rS6VpVrcaUtsbkiKRhKy7gPix58+VVm1UCWMltBHO0oVMAFQCoz27/ugpIY4lmBli30XqUtu/mva5jsnjxbxNG+eH1QwNXeyejjUI5LuSYxtDIAhwDk8+Ofap+p6TbWFhd4nVzOPEDEMk5zz+3tQYYSOvS7D0NGdmOWYk9zSlB1ZZEGEkZR5A4o0sjdUjH1NKUH/2Q==",
+          "contextInfo": {
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363403964756123@newsletter",
+              "serverMessageId": 200,
+              "newsletterName": "ᴅʀ ʜᴏɴᴇʏ ᴍɪɴɪ ʙᴏᴛx 💀"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "RSLkLcOAQrg+wNJkRKZwkmQ7gQwc98AVB27lGPhpNek="
+        }
+      },
+      "timestamp": 1791641519780,
+      "savedAt": 1791641525387
+    },
+    {
+      "senderJid": "198415141089481@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".trs fuck off i gooned with your mother",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "lkJ4Tl/avuLq+Wkd97vgKgfHq1rn7OCn4I8KVlNI5Gw="
+        }
+      },
+      "timestamp": 1791650656522,
+      "savedAt": 1791650662910
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQNK-BkRw_0dlP2GWqCDzPhtuPlMN82yypSvel_Fx7MpGcxTq-UvDi3Br6Lo4PsaPc4XkP8KCoc7gvY1p5xpWKDYdu3oXwOJ0fW7asesKw?ccb=9-4&oh=01_Q5Aa5wG_cnL3h1UMJKErefBf0S23F4Xzj-x1kpW8sSJ9l6ftBw&oe=6AF1D5AE&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "\n> ╭┈〔 *𝙸𝙽𝙵𝙾 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│➣ *𝙾𝚆𝙽𝙴𝚁:* 𝙿𝚁𝙸𝙼𝙸𝚂 - ¿? +\n> ┃𖤍│➣ *𝚅𝙴𝚁𝚂𝙸𝙾𝙽:* 7.6.0\n> ┃𖤍│➣ *𝙿𝚁𝙴𝙵𝙸𝚇:* .\n> ┃𖤍│➣ *𝚃𝙾𝙳𝙰𝚈:* Saturday\n> ┃𖤍│➣ *𝙳𝙰𝚃𝙴:* 10/10/2026\n> ┃𖤍│➣ *ᴜᴘᴛɪᴍᴇ*: 2h 8m 11s\n> ┃𖤍│➣ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴:* v22.23.3\n> ┃𖤍│➣ *𝙼𝙾𝙳𝙴:* 🌍 Public\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n\n> ╭┈〔 *𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│  → *`𝙼𝙰𝙸𝙽 𝙷𝚄𝙱`*\n> ┃𖤍│➣ *.𝙰𝙻𝙻-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝙾𝚃-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝚄𝙶-𝙼𝙴𝙽𝚄*\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n",
+          "fileSha256": "4DIitDQJRKKISUkf8B9lSn6sWpBjUada+tvIqh/yIxo=",
+          "fileLength": "277752",
+          "height": 1254,
+          "width": 1254,
+          "mediaKey": "3g9OOeidXySVNqUI36cCQLxxGSDVhNLwLlsEUxq80/Y=",
+          "fileEncSha256": "Duqi9jND1bxlrJkkwQTgrzO85K9oaoO3W6FEiTNoxw4=",
+          "directPath": "/o1/v/t24/f2/m238/AQNK-BkRw_0dlP2GWqCDzPhtuPlMN82yypSvel_Fx7MpGcxTq-UvDi3Br6Lo4PsaPc4XkP8KCoc7gvY1p5xpWKDYdu3oXwOJ0fW7asesKw?ccb=9-4&oh=01_Q5Aa5wG_cnL3h1UMJKErefBf0S23F4Xzj-x1kpW8sSJ9l6ftBw&oe=6AF1D5AE&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791652098",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABQMEAAEG/8QAKRAAAQMDAwMDBQEAAAAAAAAAAQIDEQAEMQUSQSFRYRMiMhQVI4Gx0f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABACER/9oADAMBAAIRAxEAPwDi7e2U5EDOPNNaDotvfl9y5fUlhkCSjkk4Bom2SktgbiAfkfHNLfcF6Y2w8yGS6CRsAJSUxgzx1rC3Nd5V9V01i2eT9O8stKwpwYPYkYoi4bCDHPI7U61cvALLq/yPD1SlSekHsOx4oy4QhKVAHqk7QTyMj+0GDtloEnYlWD7TPmr12w26tuFlPpQnaoeY4opm6LaQB1jv/lSouVLISV5MCTAE1Uqm9kFsh12Q8CRAIiI5/dUbsJlyMTxWlPgLhSviSPaZmoX7kOAnbCietAgX/9k=",
+          "contextInfo": {
+            "stanzaId": "AC758CE4EC3544FA379A019659A10CFE",
+            "participant": "237686959060@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".menu",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "237686959060@s.whatsapp.net"
+            ],
+            "forwardingScore": 999,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363425413527865@newsletter",
+              "serverMessageId": 143,
+              "newsletterName": "𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "uR4IxOTDepUpZ4apgOoad5VoppnMMgt6h87Z8n9a3Uw="
+        }
+      },
+      "timestamp": 1791652097510,
+      "savedAt": 1791652102137
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m237/AQPV3w3ky-N10M4chnzyHXY8Y2x88vkuY7WznSBA7cEnAzjk1KiAUjYIBda87sp0TyXl1Gke5e9b7DFz06gpp1DmtWAPczoT8mpTwiLS1A?ccb=9-4&oh=01_Q5Aa5wEOlduLFv3JGjgWQtgCzQCXTK6TNGkgLlTnEvq1mMsrsQ&oe=6AF1CC69&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "\n> ╭┈〔 *𝙸𝙽𝙵𝙾 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│➣ *𝙾𝚆𝙽𝙴𝚁:* 𝙿𝚁𝙸𝙼𝙸𝚂 - ¿? +\n> ┃𖤍│➣ *𝚅𝙴𝚁𝚂𝙸𝙾𝙽:* 7.6.0\n> ┃𖤍│➣ *𝙿𝚁𝙴𝙵𝙸𝚇:* .\n> ┃𖤍│➣ *𝚃𝙾𝙳𝙰𝚈:* Saturday\n> ┃𖤍│➣ *𝙳𝙰𝚃𝙴:* 10/10/2026\n> ┃𖤍│➣ *ᴜᴘᴛɪᴍᴇ*: 2h 9m 2s\n> ┃𖤍│➣ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴:* v22.23.3\n> ┃𖤍│➣ *𝙼𝙾𝙳𝙴:* 🌍 Public\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n\n> ╭┈〔 *𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│  → *`𝙼𝙰𝙸𝙽 𝙷𝚄𝙱`*\n> ┃𖤍│➣ *.𝙰𝙻𝙻-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝙾𝚃-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝚄𝙶-𝙼𝙴𝙽𝚄*\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n",
+          "fileSha256": "4DIitDQJRKKISUkf8B9lSn6sWpBjUada+tvIqh/yIxo=",
+          "fileLength": "277752",
+          "height": 1254,
+          "width": 1254,
+          "mediaKey": "xyFgmh8oHH828VgNP176jSvS0bVmO0+mX+JTBdmkH/8=",
+          "fileEncSha256": "TVJv2CgrIwPq7bmxL1fo2Mpi6j7PbMx2HPVqHUqGggI=",
+          "directPath": "/o1/v/t24/f2/m237/AQPV3w3ky-N10M4chnzyHXY8Y2x88vkuY7WznSBA7cEnAzjk1KiAUjYIBda87sp0TyXl1Gke5e9b7DFz06gpp1DmtWAPczoT8mpTwiLS1A?ccb=9-4&oh=01_Q5Aa5wEOlduLFv3JGjgWQtgCzQCXTK6TNGkgLlTnEvq1mMsrsQ&oe=6AF1CC69&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791652149",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABQMEAAEG/8QAKRAAAQMDAwMDBQEAAAAAAAAAAQIDEQAEMQUSQSFRYRMiMhQVI4Gx0f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABACER/9oADAMBAAIRAxEAPwDi7e2U5EDOPNNaDotvfl9y5fUlhkCSjkk4Bom2SktgbiAfkfHNLfcF6Y2w8yGS6CRsAJSUxgzx1rC3Nd5V9V01i2eT9O8stKwpwYPYkYoi4bCDHPI7U61cvALLq/yPD1SlSekHsOx4oy4QhKVAHqk7QTyMj+0GDtloEnYlWD7TPmr12w26tuFlPpQnaoeY4opm6LaQB1jv/lSouVLISV5MCTAE1Uqm9kFsh12Q8CRAIiI5/dUbsJlyMTxWlPgLhSviSPaZmoX7kOAnbCietAgX/9k=",
+          "contextInfo": {
+            "stanzaId": "ACD821C1351A82990D0304F601556373",
+            "participant": "36636809232415@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".menu",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "36636809232415@lid"
+            ],
+            "forwardingScore": 999,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363425413527865@newsletter",
+              "serverMessageId": 143,
+              "newsletterName": "𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "2P5PX7ercdEE+OaQCgoSUB1OsSJXxWmrdelM+Gl1t7U="
+        }
+      },
+      "timestamp": 1791652148464,
+      "savedAt": 1791652370574
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".mode private",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "ZnZFLcRIoH0TcLVcCoNAIe4/vXqotcULEY1PNKEaaVY="
+        }
+      },
+      "timestamp": 1791652373958,
+      "savedAt": 1791652390267
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "*🔹 𝙼𝙾𝙳𝙴:* 𝙿𝚄𝙱𝙻𝙸𝙲\n\n*— 𝚃𝙾 𝙿𝚄𝚃 𝚃𝙷𝙴 𝙱𝙾𝚃 𝙸𝙽 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙼𝙾𝙳𝙴 𝚃𝚈𝙿𝙴 .self 𝙾𝚁 .setmode self*",
+          "contextInfo": {
+            "stanzaId": "AC998F467A231F26A4DE5C791C168EA2",
+            "participant": "237686959060@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".mode private",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "237686959060@s.whatsapp.net"
+            ],
+            "isQuestion": true,
+            "nonJidMentions": 0
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "5BWD2dPk4XOpxprdPXnuVBdtZ63SCIoC9VdJUZFmkmU="
+        }
+      },
+      "timestamp": 1791652374600,
+      "savedAt": 1791652390752
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".mode self",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "aKbuDStVUyF5pJaQLj6SwL321mfhs9TmpERt7a/RDpc="
+        }
+      },
+      "timestamp": 1791652385503,
+      "savedAt": 1791652414719
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "*🔹 𝙼𝙾𝙳𝙴:* 𝙿𝚄𝙱𝙻𝙸𝙲\n\n*— 𝚃𝙾 𝙿𝚄𝚃 𝚃𝙷𝙴 𝙱𝙾𝚃 𝙸𝙽 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙼𝙾𝙳𝙴 𝚃𝚈𝙿𝙴 .self 𝙾𝚁 .setmode self*",
+          "contextInfo": {
+            "stanzaId": "ACEAD67AAFBB06BBA9D07C6C04A11CC9",
+            "participant": "237686959060@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".mode self",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "237686959060@s.whatsapp.net"
+            ],
+            "isQuestion": true,
+            "nonJidMentions": 0
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "ucyVYuN0w9HkwRiyQhfcMS1h73GmUWw08LGMvgBSVq4="
+        }
+      },
+      "timestamp": 1791652385977,
+      "savedAt": 1791652415570
+    },
+    {
+      "senderJid": "198415141089481@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".story anime gooning night",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "9PrrtxKRAyQU26/OuwNfx7xq/BXXudTt7AnAZ8NYdFY="
+        }
+      },
+      "timestamp": 1791653049568,
+      "savedAt": 1791653067814
+    },
+    {
+      "senderJid": "29803482767525@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m232/AQPN99lbZU4ftrdyE7YKzvRCsHOWp4-FtEkLt_r2UHNCSuchTcQTciPu-v4RGihNwmImfQ1AJreR_9cbnRLRPbBzXs1yT7Egt7xVhbXrJg?ccb=9-4&oh=01_Q5Aa5wFylp4K4XUTkEAZ5xoTDFv3XHNCn_nEWAsOuhbbMI6yKA&oe=6AF1D22F&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "\n> ╭┈〔 *𝙸𝙽𝙵𝙾 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│➣ *𝙾𝚆𝙽𝙴𝚁:* 𝙿𝚁𝙸𝙼𝙸𝚂 - ¿? +\n> ┃𖤍│➣ *𝚅𝙴𝚁𝚂𝙸𝙾𝙽:* 7.6.0\n> ┃𖤍│➣ *𝙿𝚁𝙴𝙵𝙸𝚇:* .\n> ┃𖤍│➣ *𝚃𝙾𝙳𝙰𝚈:* Saturday\n> ┃𖤍│➣ *𝙳𝙰𝚃𝙴:* 10/10/2026\n> ┃𖤍│➣ *ᴜᴘᴛɪᴍᴇ*: 2h 26m 17s\n> ┃𖤍│➣ *𝚁𝚄𝙽𝚃𝙸𝙼𝙴:* v22.23.3\n> ┃𖤍│➣ *𝙼𝙾𝙳𝙴:* 🔒 Self\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n\n> ╭┈〔 *𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃* 〕\n> ┆𖤍╭────↯\n> ┃𖤍│  → *`𝙼𝙰𝙸𝙽 𝙷𝚄𝙱`*\n> ┃𖤍│➣ *.𝙰𝙻𝙻-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝙾𝚃-𝙼𝙴𝙽𝚄*\n> ┃𖤍│➣ *.𝙱𝚄𝙶-𝙼𝙴𝙽𝚄*\n> ┆𖤍╰────↯\n> ╰┄┄┄┄┄┄┄┄┄┄┄┄┄〩\n",
+          "fileSha256": "4DIitDQJRKKISUkf8B9lSn6sWpBjUada+tvIqh/yIxo=",
+          "fileLength": "277752",
+          "height": 1254,
+          "width": 1254,
+          "mediaKey": "5uOvzBDs7q6gmyzHeUDvHlTaZoB9e+/OOlAiQOEpD3E=",
+          "fileEncSha256": "Y7ggVgIMP/oyRcA3Mcu+KR6cglDJRBaBsEY9wBYDJsY=",
+          "directPath": "/o1/v/t24/f2/m232/AQPN99lbZU4ftrdyE7YKzvRCsHOWp4-FtEkLt_r2UHNCSuchTcQTciPu-v4RGihNwmImfQ1AJreR_9cbnRLRPbBzXs1yT7Egt7xVhbXrJg?ccb=9-4&oh=01_Q5Aa5wFylp4K4XUTkEAZ5xoTDFv3XHNCn_nEWAsOuhbbMI6yKA&oe=6AF1D22F&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791653183",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgACADASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAABQMEAAEG/8QAKRAAAQMDAwMDBQEAAAAAAAAAAQIDEQAEMQUSQSFRYRMiMhQVI4Gx0f/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABACER/9oADAMBAAIRAxEAPwDi7e2U5EDOPNNaDotvfl9y5fUlhkCSjkk4Bom2SktgbiAfkfHNLfcF6Y2w8yGS6CRsAJSUxgzx1rC3Nd5V9V01i2eT9O8stKwpwYPYkYoi4bCDHPI7U61cvALLq/yPD1SlSekHsOx4oy4QhKVAHqk7QTyMj+0GDtloEnYlWD7TPmr12w26tuFlPpQnaoeY4opm6LaQB1jv/lSouVLISV5MCTAE1Uqm9kFsh12Q8CRAIiI5/dUbsJlyMTxWlPgLhSviSPaZmoX7kOAnbCietAgX/9k=",
+          "contextInfo": {
+            "stanzaId": "AC3623BE10F2EABCA713B3256F788FAF",
+            "participant": "237686959060@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".menu",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "mentionedJid": [
+              "237686959060@s.whatsapp.net"
+            ],
+            "forwardingScore": 999,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363425413527865@newsletter",
+              "serverMessageId": 143,
+              "newsletterName": "𝚂𝚀𝚄𝙸𝙲𝙷𝚈 𝙱𝙾𝚃"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "fPsNpD0XutH/uF8KauA0wA8QTbxWrowFVQ2CBXXZ8ck="
+        }
+      },
+      "timestamp": 1791653183309,
+      "savedAt": 1791653189683
+    },
+    {
+      "senderJid": "198415141089481@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Klepnutím na text ho prilepíte do textového poľa.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Klepnutím na text ho prilepíte do textového poľa.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Klepnutím na text ho prilepíte do textového poľa.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Klepnutím na text ho prilepíte do textového poľa.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Pomocou ikony úprav môžete text pripnúť, pridať alebo odstrániť.Víta vás Gboard! Tu bude uložený každý skopírovaný text.Klepnutím na text ho prilepíte do textového poľa.Ak chcete text pripnúť, pridržte ho. Odopnutý text sa po hodine odstráni.",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "YVYYcHo7UtC5YVWc0bQ9er0cQqCXJfbqJtIoHtvslSg="
+        }
+      },
+      "timestamp": 1791653562521,
+      "savedAt": 1791653565406
+    },
+    {
+      "senderJid": "198415141089481@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".ai what is gooning",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "k+ueoQDeiEuNo/94aCV8CX63zhBf1C0m3Y/ESkzp+wo="
+        }
+      },
+      "timestamp": 1791654657603,
+      "savedAt": 1791654717848
+    },
+    {
+      "senderJid": "198415141089481@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".story gooning on anime",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN",
+              "initiatedByMe": false
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "aeE2p4u6c19ZF3Mb1w8ilWIqF7obQL37Cn60LLD6BDU="
+        }
+      },
+      "timestamp": 1791654697844,
+      "savedAt": 1791654718063
+    },
+    {
+      "senderJid": "144173478985808@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363420344403418@g.us",
+          "axolotlSenderKeyDistributionMessage": "MwiwksSJBhAAGiDHzfasU4OXtSFl2dTLYg5rUGCw1K+2QrTlnhMZlYNGyiIhBRZ0CbYH7zfVWsRy/ZdOk7YNjdnftlzz5330ni769+xS"
+        },
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQPhAe7opgyp2ykKJhIIoMVMCU2s2WtqL0kL_zRG3jtwvyidzYPY68dJiGeBscP6oSxb_hUcZNyndhlG-cL4QSjP1r1U_KkEPCWTv_73bg?ccb=9-4&oh=01_Q5Aa5wGRxjrWJ15GO95cSwKRRkjmuLk6huZQrP9xIQLKAgRhOA&oe=6AF15C73&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "• Sortie Sportive BAL OTAKU 237 (Douala)\n• Objectif : Santé, forme et amusement footballistique\n• Date & Heure : Dimanche 18 Octobre a  8h00\n• Lieu : DOUALA:Parcours Vita\n• Tenue : Tenue de sport obligatoire pour tous donc veilllez porter la tenue de sport car il y a un contrôle de police qui pourrais vous interpellez si vous n’êtes pas en tenue de sport …\n• rafraîchissement du sport du J-J:\n Garçons : 2 000 FCFA\n Filles : 1 000 FCFA\n​​​​​​​​​@all",
+          "fileSha256": "8ktbD/leVqTSrcRDACwacuRVQffxo88sty9cy/IL7Jg=",
+          "fileLength": "249881",
+          "height": 1280,
+          "width": 853,
+          "mediaKey": "+NFHChDxJCpi51tpIrIQ8PPUmj+Uwj7x4j3mynZYI50=",
+          "fileEncSha256": "lWUric/azQC9DQFlRWVxYSVfaK9A+J3hbYWyNOHJKys=",
+          "directPath": "/o1/v/t24/f2/m238/AQPhAe7opgyp2ykKJhIIoMVMCU2s2WtqL0kL_zRG3jtwvyidzYPY68dJiGeBscP6oSxb_hUcZNyndhlG-cL4QSjP1r1U_KkEPCWTv_73bg?ccb=9-4&oh=01_Q5Aa5wGRxjrWJ15GO95cSwKRRkjmuLk6huZQrP9xIQLKAgRhOA&oe=6AF15C73&_nc_sid=e6ed6c&_nc_hot=1791654088",
+          "mediaKeyTimestamp": "1791623354",
+          "jpegThumbnail": "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",
+          "contextInfo": {
+            "forwardingScore": 1,
+            "isForwarded": true,
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "firstScanSidecar": "fD13Y1Qan4DS3A==",
+          "firstScanLength": 19085,
+          "scansSidecar": "fD13Y1Qan4DS3AZRS+wkTJ8R2sgkTJkYBuqaIcgYJKjHnPifPRFSgw==",
+          "scanLengths": [
+            19085,
+            129247,
+            51179,
+            50368
+          ],
+          "midQualityFileSha256": "1rz2SC/zhaZvqIrZvdUAeJx0jkY84QQvWzojyfTAhDQ=",
+          "imageSourceType": "USER_IMAGE"
+        },
+        "messageContextInfo": {
+          "messageSecret": "lJAKct/Lgq6h8MDEaE41Xgd19YAriHYYKMbMesBn+9k="
+        }
+      },
+      "timestamp": 1791654103628,
+      "savedAt": 1791655869898
+    },
+    {
+      "senderJid": "36636809232415@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".hacker Tackubayah",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "+OlX9iPyZNCDbPKz5gXXy9h7kdWSdQmuId8+MpOUdn4="
+        }
+      },
+      "timestamp": 1791657220080,
+      "savedAt": 1791657229609
+    },
+    {
+      "senderJid": "19692995539005@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363425825035725@g.us",
+          "axolotlSenderKeyDistributionMessage": "MwiIjaiWBRAAGiDC2l77ez1RoAstCxdxL4IUpRIgaP2CaMpUUaOUw0l1BiIhBdTns66tYfg9/4mv8bna/IYZdQugs8oYiAsJXbz8EG0o"
+        },
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m239/AQP8qN-fH5a3NizPGbsmXpLRfT_GfNqLPUf_fLbuaqVAqmco15HTGGNuVvDJh9wzb4Z2BMXDA_UgdJ9G-IvPNMekW1P633JhDjwcyx3tFA?ccb=9-4&oh=01_Q5Aa5wH3SH8gbJqw9_wJZBnu9JHfft1PHUzmqt0x9O3K6XB3LQ&oe=6AF20C27&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "fileSha256": "7e4kqa0JNQh3tmwyzwovPs2hhEfFhzcijqCh7i/G/i4=",
+          "fileLength": "81692",
+          "height": 1280,
+          "width": 576,
+          "mediaKey": "SnXavLZ3T3aMzF+3hfe9AHh6GW+5Z2S4XHc9V+qIjYM=",
+          "fileEncSha256": "7nX0smj8N3kV/l39e2rO6mFl8KySUwwQ27deHpQBNDg=",
+          "directPath": "/o1/v/t24/f2/m239/AQP8qN-fH5a3NizPGbsmXpLRfT_GfNqLPUf_fLbuaqVAqmco15HTGGNuVvDJh9wzb4Z2BMXDA_UgdJ9G-IvPNMekW1P633JhDjwcyx3tFA?ccb=9-4&oh=01_Q5Aa5wH3SH8gbJqw9_wJZBnu9JHfft1PHUzmqt0x9O3K6XB3LQ&oe=6AF20C27&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791661340",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAIAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAAAgMEBQEGAQEBAQEBAAAAAAAAAAAAAAAAAQMCBP/aAAwDAQACEAMQAAAA9KVpCURRBFsttVc8H2e7txl90K0jaWRp6yGtpZNV2DzanQT/xAAmEAACAgIBAgYDAQAAAAAAAAABAgARAxIEFCEFEyIzQWExQ1JT/9oACAEBAAE/AFqF9TVGBtlupjAPxMjhCFL1MZCt2Mbk4sR9UHIwOVAJhANnTvcD12VDAgGvpBuar/Ig5nG/2EPM4wb3hB4hxl/YsHiGAj3FgWaTWACiKmJbYCiZ5eNST5bVHC2CMYqOBZIFfUxuUYFIvUOAuoNiMjoa0qZWLHvFMx4M+ZARkAEycPOBZyr2Eaeb9TqHH4JnUOfkzqDoV1E//8QAIBEAAgIBAwUAAAAAAAAAAAAAAQIAAxEQE1EhIkJhcf/aAAgBAgEBPwDTHqYMdkrOCIrCzxIj11P3Mq/TESodVAzNx+ZuPzP/xAAcEQEAAgIDAQAAAAAAAAAAAAABABICIREgQVH/2gAIAQMBAT8A6FsnRGw8JByNCxcvWVJU+T//2Q==",
+          "contextInfo": {
+            "pairedMediaType": "NOT_PAIRED_MEDIA"
+          },
+          "scansSidecar": "piFDwwPJEp9ElPCo/dFM9I6cnzIeo89LRnx3NXDOhUuDnj4VRymK0g==",
+          "scanLengths": [
+            6652,
+            40684,
+            14538,
+            19818
+          ],
+          "midQualityFileSha256": "tWz6F9D+pU/nqx3gx5LV3pmfVtBXwpG6ofKN4Jv0eXk="
+        },
+        "messageContextInfo": {
+          "messageSecret": "8LeR7rPz4Gv39Q4ySEETu+DPeTbsHqqgdJfqJsM96M8="
+        }
+      },
+      "timestamp": 1791661735647,
+      "savedAt": 1791661738872
+    },
+    {
+      "senderJid": "36636809232415@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363411929937671@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwjp9KSMARAAGiAN2ndOxpxVBICp6QNhRSJarplwuenUW431N1EFlUEOTCIhBWBXwJMLuCbwRu3NiHMAK8PFNRb4GiuO3GT8nlTy1LAE"
+        },
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQOtfhGU7udolnWiRiPw34WKLyeE-MQRAKlwfiNqHrBV9PIkAJmHN_YQM8oHN4kFTWwX09gYZ50RY2aJu8ET3XFZAtpcERUCBddEIMdWEg?ccb=9-4&oh=01_Q5Aa5wGZRDwfd2arf5H2CienUvpl6M680cTELNJ9cfQAFdzKUA&oe=6AF2BA18&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".sticker",
+          "fileSha256": "3hZluylBZ09elmRo8Hx01zdKohxleRW/n/t/iHQh3t8=",
+          "fileLength": "103724",
+          "height": 1080,
+          "width": 809,
+          "mediaKey": "fEKeju8iyb38LlTagC1qJIqhlum1OVd/lRGlD8XxULU=",
+          "fileEncSha256": "q+cWaWOJ4a/UrOPopgmu4Iy2c273OPFFpyjQL3+fdfc=",
+          "directPath": "/o1/v/t24/f2/m238/AQOtfhGU7udolnWiRiPw34WKLyeE-MQRAKlwfiNqHrBV9PIkAJmHN_YQM8oHN4kFTWwX09gYZ50RY2aJu8ET3XFZAtpcERUCBddEIMdWEg?ccb=9-4&oh=01_Q5Aa5wGZRDwfd2arf5H2CienUvpl6M680cTELNJ9cfQAFdzKUA&oe=6AF2BA18&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791702674",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEMAMgMBIgACEQEDEQH/xAAvAAADAQEBAAAAAAAAAAAAAAAAAQMCBQQBAAMBAQAAAAAAAAAAAAAAAAABAgME/9oADAMBAAIQAxAAAADtLU9MmnqlM2BgoDmXXF1efn9Pm1PrXpUXAsN+SHnnrlaWfM57leLWb7ZxBU3gvNpMJmkAaBrAAgAMgFABf//EACIQAAICAgEFAQEBAAAAAAAAAAABAhEDEgQQITFBURMUYv/aAAgBAQABPwDU1NTU1NShZINXY88U/A8sKsjKMvDJShF02bQq7Lj9Hx4v2PBH6fzxryYXXMnFSJ4JSfkeNJU2bY/pXTNPTHJnEx7ZXl6OvhUfiJcyfolypfTkZZTxSVnC5UoYtbFzO3dEeXikftj+ljpsd0Y4aTaXs8eyux+n+WLxRSLQkrKbbG5I2kWOTrsKQmhujZNmq+k+0uj7MiPumR89P//EAB4RAAEEAgMBAAAAAAAAAAAAAAEAAhESEFETITBB/9oACAECAQE/AOQD6g8bVxtXG8N6a44gKAoEKoVPH//EABoRAQEBAQADAAAAAAAAAAAAAAEAERICEDD/2gAIAQMBAT8A4bluW4skNDLD0rax5N18f//Z",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "8dU6+679+Ag7tKIVnHyF7gGsHfm4hT6qx+8eWE8+WO4Ac+wNVH6S6Q==",
+          "scanLengths": [
+            7419,
+            25945,
+            25482,
+            44878
+          ],
+          "midQualityFileSha256": "wpZmeIsttjpwoN+cJfge73kJfzSVySrCaBfcL3tI3ZE="
+        },
+        "messageContextInfo": {
+          "messageSecret": "uM2WHKrmtUEA+7luyMWeh1lAmAQZurURi09kt35KmC4="
+        }
+      },
+      "timestamp": 1791702819172,
+      "savedAt": 1791702928730
+    },
+    {
+      "senderJid": "36636809232415@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m237/AQPPhKvCSLyhjIS174c72sqD6xR1TJxUOEwMwzfxc7rzqosYc3DiOHojzPBIL4s062Uli5dlJXwQcEz-qufdPo1UzcePBK3JNm4mFhF0TQ?ccb=9-4&oh=01_Q5Aa5wFD7MXN2OZFiCpa4DCc6xPt9a8csf8qz6-5jDx4VFJBHA&oe=6AF2AA6E&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".sticker",
+          "fileSha256": "ye0gxifgOOKaoiPm8PHf5IklbE3mE9mvl9pYCmP16+4=",
+          "fileLength": "44953",
+          "height": 656,
+          "width": 482,
+          "mediaKey": "e39NQiloz37OLFN8zmCsUUIG8e5bQpu6YEp6+ulOJpc=",
+          "fileEncSha256": "WHRMsHmNxrY3eeWogyQmUywnvfMNiYsXXrhIm5/n7J4=",
+          "directPath": "/o1/v/t24/f2/m237/AQPPhKvCSLyhjIS174c72sqD6xR1TJxUOEwMwzfxc7rzqosYc3DiOHojzPBIL4s062Uli5dlJXwQcEz-qufdPo1UzcePBK3JNm4mFhF0TQ?ccb=9-4&oh=01_Q5Aa5wFD7MXN2OZFiCpa4DCc6xPt9a8csf8qz6-5jDx4VFJBHA&oe=6AF2AA6E&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791703020",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgANQMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAAAwQCAQUGAQEBAQEAAAAAAAAAAAAAAAABAAIE/9oADAMBAAIQAxAAAACPlPOdRvrpQNVQPDSWS+lvEFWKmXJ9D4baKjGvIO81lNMzKpWJm0UY1ib0U6xG6jFMxzI4OjX5DDzgTjAJSAX/xAAmEAACAwABBAEDBQAAAAAAAAABAgADESEEEhNSIhRBURAxMkJh/9oACAEBAAE/AD09frPDV6QdPUf6z6en1E+np9YaKfSCin0EKgwjiVuGJH6+T5ZOIrTsZlYgSgHvIgHMFZcgCNWRbn+x6ipwzygNnbKrazW1RPaW/YyutunuDMRk8tbPuDNitSVxSNIlldiWcr95dYrFc54j1gtss04RHtc4GJiPix7CF7hH6m1wAWlIJSPwcgODmXHWWKRkHyqIEI7RzKnxRLVIwx9MUHugX8iVFQsuQEfyiNgwx0LoYtWHmMgnZCIfkYa+YzEcCbsI5mAfadn4niZG0wLo2f/EAB0RAAIBBAMAAAAAAAAAAAAAAAABEgIRIVEgMUH/2gAIAQIBAT8Au9jbM7JPZEdJEeGLwqEx9iZIRjj/AP/EABwRAAICAgMAAAAAAAAAAAAAAAABEBESICExQf/aAAgBAwEBPwCeBGRetj70Sj2P/9k=",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "2EQl7uG6K+XaK9+lrFymP1yt37QujkrhkwQuOx0GLnfaGXVcbcxYFA==",
+          "scanLengths": [
+            3534,
+            12881,
+            10257,
+            18281
+          ],
+          "midQualityFileSha256": "UTsIZEZHFyuidyTwBbr35y94+srSt8dU5YsFAbi4q8M="
+        },
+        "messageContextInfo": {
+          "messageSecret": "7U2BSBh1DvRbcOH9Mn7iNDFQWZzwNbq1H4fTWSFn1xE="
+        }
+      },
+      "timestamp": 1791703046098,
+      "savedAt": 1791703061818
+    },
+    {
+      "senderJid": "88738722005236@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "MZgJZJSbtcqtbzPOGRiIKRxdXUDa0EyL3ewTkJ/xyeI="
+        },
+        "albumMessage": {
+          "expectedImageCount": 1,
+          "expectedVideoCount": 1
+        }
+      },
+      "timestamp": 1791706211914,
+      "savedAt": 1791706220695
+    },
+    {
+      "senderJid": "88738722005236@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQPSJ9qWqbaQf1h7ad0KmHm9B7w2_toD0wW9Yas69k8bRrWIn7_wbhhcfxg7wS2rXkSClFoI0SVXQEUJR0bSbL2IpDNOsfoIHSmgENQrgg?ccb=9-4&oh=01_Q5Aa5wGlRpaW4V37rqmdl3XMWTLgYwyiuHiasUFFjmEKNhwI9g&oe=6AF299DE&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "2500fr le bracelet \n8000fr l’ensemble des 4 !!!",
+          "fileSha256": "X2upjugTIlmHVUjvw83CzmBRnQTBljirpcwJfmkpRjA=",
+          "fileLength": "196826",
+          "height": 1080,
+          "width": 810,
+          "mediaKey": "ySkaoXcYsB4Hn9EejAZjcPx6F9SKVT9ZZ2b1iqkxs4M=",
+          "fileEncSha256": "RAaexknwBXjryEUb1WAk6jcnjUPOyMTm+7lYC547VmA=",
+          "directPath": "/o1/v/t24/f2/m238/AQPSJ9qWqbaQf1h7ad0KmHm9B7w2_toD0wW9Yas69k8bRrWIn7_wbhhcfxg7wS2rXkSClFoI0SVXQEUJR0bSbL2IpDNOsfoIHSmgENQrgg?ccb=9-4&oh=01_Q5Aa5wGlRpaW4V37rqmdl3XMWTLgYwyiuHiasUFFjmEKNhwI9g&oe=6AF299DE&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791706211",
+          "jpegThumbnail": "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",
+          "contextInfo": {
+            "pairedMediaType": "SD_IMAGE_PARENT",
+            "statusSourceType": "IMAGE"
+          },
+          "firstScanSidecar": "jOu+LxDC7VDAzA==",
+          "firstScanLength": 12635,
+          "scansSidecar": "jOu+LxDC7VDAzOAXQlF89UO7Zmr6xqs6+e7049X1luf2gAPLgWTIXA==",
+          "scanLengths": [
+            12635,
+            51067,
+            56512,
+            76610
+          ],
+          "midQualityFileSha256": "g0G5Ohqu/gHCivxYpgNnNeWBHs9sYisVroEm/uMWIRE=",
+          "imageSourceType": "USER_IMAGE"
+        },
+        "messageContextInfo": {
+          "messageSecret": "TK5UnLJ35NAS7K90AwjAdbehUgRPBYPkFZlTQ3sE4fE=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363161391187640@g.us",
+              "fromMe": true,
+              "id": "2A8A918DA6673BE9315A"
+            }
+          }
+        }
+      },
+      "timestamp": 1791706213146,
+      "savedAt": 1791706221198
+    },
+    {
+      "senderJid": "88738722005236@lid",
+      "content": {
+        "videoMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7161-24/845809884_2356466858428024_3202191324538476388_n.enc?ccb=11-4&oh=01_Q5Aa5wE__ZoBpzJHs5-lrv0SSzPrOoNnm2PFLs96UqSghYq5xQ&oe=6AF2B856&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "video/mp4",
+          "fileSha256": "06RrTJhd8KXHukSToIEx6DgA2KJ7oJprujd30HdZaik=",
+          "fileLength": "890570",
+          "seconds": 5,
+          "mediaKey": "lLdFcDH+GWRGG2A8W02efIe30DBUz4bDMC8z24VtIgY=",
+          "height": 1024,
+          "width": 576,
+          "fileEncSha256": "FBPafqIo3JFEjvTbAFL0dvkt+Coj9kDYw/Q20H94aLQ=",
+          "directPath": "/v/t62.7161-24/845809884_2356466858428024_3202191324538476388_n.enc?ccb=11-4&oh=01_Q5Aa5wE__ZoBpzJHs5-lrv0SSzPrOoNnm2PFLs96UqSghYq5xQ&oe=6AF2B856&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791706213",
+          "jpegThumbnail": "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",
+          "contextInfo": {
+            "pairedMediaType": "SD_VIDEO_PARENT",
+            "statusSourceType": "VIDEO"
+          },
+          "streamingSidecar": "HfeE+yPLRR8+N+75mJdP+aUPpZrW/d/9zdBFnA8JVhOaWEf06qjjaGUIJA5b7c/c5i07yVHqyNCymDmGqECwovL451J2c0HZC9ZtQ+SZFKpV2wMRng3LzMptXgXUG9KZmcWXL92DjTWDiz1Rjr+JwUsVMA/ZfTU/zSq5lRjhiZ4KIq8vVXmm1fhTklg=",
+          "motionPhotoPresentationOffsetMs": "0",
+          "metadataUrl": "",
+          "videoSourceType": "USER_VIDEO"
+        },
+        "messageContextInfo": {
+          "messageSecret": "LSNSERdTo9cdzxrVK6eT/fXUSSGifwMe3mPh0trifH8=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363161391187640@g.us",
+              "fromMe": true,
+              "id": "2A8A918DA6673BE9315A"
+            }
+          }
+        }
+      },
+      "timestamp": 1791706215055,
+      "savedAt": 1791706221733
+    },
+    {
+      "senderJid": "108637271887904@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363411929937671@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwi91YDjARABGiCUn+dGAToFN5pQCMLXi5wjQKVEz8uYbrdRXbm2eJWC8SIhBWTWNiOXrL09c2PsjAXtoZCH6CHamd7sRJaAJv2vUtAK"
+        },
+        "extendedTextMessage": {
+          "text": "┌─▣ 🐙 ANOYMOUS MINI ▣\n│\n│✦ Repository : Anoymous-mini\n│✦ Owner      : BASH-ha\n│✦ License    : MIT\n│✦ Language   : JavaScript\n│\n│✦ ⭐ Stars    : 0\n│✦ 🍴 Forks    : 0\n│✦ 🐛 Issues   : 0\n│✦ 👀 Watchers : 0\n│✦ 📅 Updated  : 27 Sept 2026\n└─▣\n\n🔗 *Clone / Star / Fork:*\nhttps://github.com/BASH-ha/Anoymous-mini\n\n_If you like this bot, please give it a ⭐ on GitHub!_",
+          "matchedText": "https://github.com/BASH-ha/Anoymous-mini",
+          "description": "Contribute to BASH-ha/Anoymous-mini development by creating an account on GitHub.",
+          "title": "GitHub - BASH-ha/Anoymous-mini",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "AC565D45D5F86C525A866101C9A6B8BF",
+            "participant": "256701487186@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".repo",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "forwardingScore": 1,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363405445990040@newsletter",
+              "serverMessageId": 1,
+              "newsletterName": "Anoymous Mini"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "NlgT/qTfP5kdcbpVKzni5/VeShvQLpO9C2+BtzwmyMo="
+        }
+      },
+      "timestamp": 1791707578222,
+      "savedAt": 1791707585998
+    },
+    {
+      "senderJid": "108637271887904@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m237/AQNei9CgIHgIoVFTyIYnuJiMNW5KCSEB-StKivMWqBe82UZxBUPP8BPc5Nl2vUVdGtiNolD4rPaFc_eq5OLgiOenkbWRSvGMlHVZLYGW1g?ccb=9-4&oh=01_Q5Aa5wHg3FLpNhw45TsDK9oA3xjIdkaiSCBIhnGSAfkHINO3oA&oe=6AF2A5F7&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "┌─▣ ✧ ANOYMOUS MINI BOT ✧ ▣\n│\n│✦ 🌅 Good morning, Boss 👑\n│\n│✦ Prefix   : [.]\n│✦ Owner    : +256701487186\n│✦ Bot User : +256701487186\n│✦ Uptime   : 1d 20h 56m 20s\n│✦ Version  : v1.0.0\n│✦ Commands : 166\n└─▣\n\n\n┌─▣ 🌐 GENERAL ▣\n│✦ .ping\n│✦ .menu\n│✦ .alive\n│✦ .owner\n│✦ .bashiri\n│✦ .repo\n│✦ .panel\n│✦ .deploy\n│✦ .greet\n│✦ .tts\n│✦ .id\n│✦ .uptime\n│✦ .stats\n│✦ .botinfo\n└─▣\n\n\n┌─▣ 📥 DOWNLOADER ▣\n│✦ .tiktok\n│✦ .instagram\n│✦ .video\n│✦ .play\n│✦ .spotify\n│✦ .facebook\n│✦ .vcf\n│✦ .apk\n│✦ .mediafire\n└─▣\n\n\n┌─▣ 📤 UPLOAD ▣\n│✦ .url\n│✦ .catbox\n│✦ .forward\n└─▣\n\n\n┌─▣ 🎨 STICKER ▣\n│✦ .sticker\n│✦ .toimg\n│✦ .stickertelegram\n│✦ .wasted\n│✦ .smeme\n│✦ .steal\n└─▣\n\n\n┌─▣ 🖼️ MEDIA ▣\n│✦ .getpp\n│✦ .setpp\n│✦ .save\n│✦ .vv\n│✦ .ocr\n│✦ .toaudio\n│✦ .togif\n└─▣\n\n\n┌─▣ 🛠️ GROUP ▣\n│✦ .tagall\n│✦ .hidetag\n│✦ .kick\n│✦ .kickall\n│✦ .mute\n│✦ .unmute\n│✦ .add\n│✦ .promote\n│✦ .demote\n│✦ .resetlink\n│✦ .invite\n│✦ .gname\n│✦ .gcpp\n│✦ .groupinfo\n│✦ .admins\n│✦ .topmembers\n│✦ .gs\n│✦ .opentime\n│✦ .closetime\n└─▣\n\n\n┌─▣ 👥 JOIN REQUESTS ▣\n│✦ .approveall\n│✦ .reject\n└─▣\n\n\n┌─▣ 🛡️ MODERATION ▣\n│✦ .warn\n│✦ .block\n│✦ .unblock\n│✦ .antilink\n│✦ .antistatusmention\n│✦ .antispam\n│✦ .banword\n│✦ .unbanword\n│✦ .listbanword\n│✦ .afk\n└─▣\n\n\n┌─▣ 🤖 AUTOMATION ▣\n│✦ .autoread\n│✦ .autotyping\n│✦ .autorecording\n│✦ .alwaysonline\n│✦ .autoreactstatus\n│✦ .autostatus\n│✦ .autosavestatus\n│✦ .antidelete\n│✦ .anticall\n│✦ .autoreact \n└─▣\n\n\n┌─▣ 🎉 FUN ▣\n│✦ .truth\n│✦ .dare\n│✦ .tod\n│✦ .joke\n│✦ .quote\n│✦ .fact\n│✦ .flirt\n│✦ .compliment\n│✦ .insult\n│✦ .roseday\n│✦ .goodnight\n│✦ .8ball\n│✦ .flip\n│✦ .wyr\n│✦ .nhie\n│✦ .riddle\n│✦ .trivia\n│✦ .iqtest\n│✦ .ship\n│✦ .shipname\n│✦ .couple\n│✦ .marry\n│✦ .divorce\n│✦ .soulmate\n│✦ .kiss\n│✦ .hug\n│✦ .slap\n│✦ .rate\n│✦ .gay\n│✦ .horny\n│✦ .pp\n│✦ .meme\n│✦ .cat\n│✦ .dog\n│✦ .deepthought\n│✦ .truthbomb\n│✦ .showerthought\n│✦ .topic\n│✦ .surprise\n│✦ .story\n└─▣\n\n\n┌─▣ 🌍 UTILITY ▣\n│✦ .calc\n│✦ .qr\n│✦ .shorten\n│✦ .weather\n│✦ .translate\n│✦ .poll\n│✦ .time\n│✦ .password\n│✦ .worldclock\n│✦ .uuid\n│✦ .font\n│✦ .morse\n│✦ .remind\n│✦ .todo\n│✦ .timezone\n│✦ .country\n│✦ .africa\n│✦ .receipt\n│✦ .hashtag\n│✦ .capital\n│✦ .slogan\n│✦ .culture\n│✦ .flag\n│✦ .countryhistory\n│✦ .startupidea\n│✦ .wordoftheday\n└─▣\n\n\n┌─▣ 🕌 ISLAM ▣\n│✦ .quran\n│✦ .hadith\n│✦ .dua\n│✦ .islamfact\n└─▣\n\n\n┌─▣ 👑 OWNER ▣\n│✦ .mode\n│✦ .setprefix\n│✦ .setmenuimage\n│✦ .delmenuimage\n│✦ .setbio\n│✦ .addsudo\n│✦ .delsudo\n│✦ .listsudo\n│✦ .broadcast\n│✦ .allgroups\n│✦ .join\n│✦ .leave\n│✦ .update\n│✦ .clear\n│✦ .restart\n│✦ .gitclone\n└─▣",
+          "fileSha256": "elHLI2sxdAGZFOCak/dg3Rnkugpxxox3BZSAcCprRW0=",
+          "fileLength": "43615",
+          "mediaKey": "7vQhVbzNQSWvWdlprr2sIZLisgaefWKO7Ti3hOjWii4=",
+          "fileEncSha256": "7kUI7vHXbdZqI8ciPvrqrRN2PGH3UZRYwpD13UhHkw0=",
+          "directPath": "/o1/v/t24/f2/m237/AQNei9CgIHgIoVFTyIYnuJiMNW5KCSEB-StKivMWqBe82UZxBUPP8BPc5Nl2vUVdGtiNolD4rPaFc_eq5OLgiOenkbWRSvGMlHVZLYGW1g?ccb=9-4&oh=01_Q5Aa5wHg3FLpNhw45TsDK9oA3xjIdkaiSCBIhnGSAfkHINO3oA&oe=6AF2A5F7&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791707667",
+          "contextInfo": {
+            "stanzaId": "AC91B956D7CAF8C7D280E61D038DC862",
+            "participant": "256701487186@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": ".menu",
+                "previewType": "NONE",
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "forwardingScore": 1,
+            "isForwarded": true,
+            "forwardedNewsletterMessageInfo": {
+              "newsletterJid": "120363405445990040@newsletter",
+              "serverMessageId": 1,
+              "newsletterName": "Anoymous Mini"
+            }
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "Uj0Nyf4f04FZJ25xM4nAI/TSZrdsmK5wQVGgzOkjGtY="
+        }
+      },
+      "timestamp": 1791707668309,
+      "savedAt": 1791707687008
+    },
+    {
+      "senderJid": "218283894649062@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "🏓🌞 _𝓟𝓲𝓷𝓰𝓲𝓷𝓰..._",
+          "contextInfo": {}
+        },
+        "messageContextInfo": {
+          "messageSecret": "LRqoqDu4MVJ1v/g9FwnFv1Na2I4ZJRR6/vnzcEwnO4A="
+        }
+      },
+      "timestamp": 1791712156265,
+      "savedAt": 1791712158163
+    },
+    {
+      "senderJid": "218283894649062@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Wested",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "3EB0BEAA41044B847D1C69",
+            "participant": "143487022461145@lid",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": "☠️ *WANTED* ☠️\n\n@218283894649062\n\nCrime: being too funny\nReward: 0 coins\n\nDead or alive (preferably alive).",
+                "previewType": "NONE",
+                "contextInfo": {
+                  "mentionedJid": [
+                    "218283894649062@lid"
+                  ]
+                },
+                "inviteLinkGroupTypeV2": "DEFAULT"
+              }
+            },
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "+6WYkRhuKYpcsbcPBTDEuQ3CWI0a3XCjdaB7q+vLtCc="
+        }
+      },
+      "timestamp": 1791713124624,
+      "savedAt": 1791713129348
+    },
+    {
+      "senderJid": "218283894649062@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "*┏━━━━━━━━━━━━━❥❥❥*\n*┃* *❄️🌹𝐄𝐌𝐌𝐘𝐇𝐄𝐍𝐙-𝐕4🌹❄️*\n*┗━━━━━━━━━━━━━❥❥❥*\n\nClearing bot messages...\n\n> ```🔗bot.emmyhenztech.xyz```\n> ```ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴍᴍʏʜᴇɴᴢ-ʙᴏᴛ🤖```"
+        },
+        "messageContextInfo": {
+          "messageSecret": "dZWEhrJazDS7IFVRhcrqeGsUu2lxVii+U4A4D8pe3iI="
+        }
+      },
+      "timestamp": 1791713269643,
+      "savedAt": 1791713269815
+    },
+    {
+      "senderJid": "62135828750457@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Clearing bot messages..."
+        },
+        "messageContextInfo": {
+          "messageSecret": "p7mWAUiLOICEdq58XFBaapeVg51wOdztiamV9Qp2w5Q="
+        }
+      },
+      "timestamp": 1791713270148,
+      "savedAt": 1791713270515
+    },
+    {
+      "senderJid": "218283894649062@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "*┏━━━━━━━━━━━━━❥❥❥*\n*┃* *❄️🌹𝐄𝐌𝐌𝐘𝐇𝐄𝐍𝐙-𝐕4🌹❄️*\n*┗━━━━━━━━━━━━━❥❥❥*\n\nClearing bot messages...\n\n> ```🔗bot.emmyhenztech.xyz```\n> ```ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴍᴍʏʜᴇɴᴢ-ʙᴏᴛ🤖```"
+        },
+        "messageContextInfo": {
+          "messageSecret": "IN6yh1MohuzMAYkosMMZaN+MJgvO8MTZUWBDI5/uWh4="
+        }
+      },
+      "timestamp": 1791713280667,
+      "savedAt": 1791713280817
+    },
+    {
+      "senderJid": "62135828750457@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Clearing bot messages..."
+        },
+        "messageContextInfo": {
+          "messageSecret": "3dccrkefi56Cjt5qDuearRTrXgxccBA5dQFzpJs8mWo="
+        }
+      },
+      "timestamp": 1791713281416,
+      "savedAt": 1791713282180
+    },
+    {
+      "senderJid": "172254478495818@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363411929937671@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwjpw73ABRAAGiAIJj+BPhIHCsKoCL4Zzt0+AtS9hVxC5yw2jHm9ihqWIyIhBbo9PtBZneaqRLhBm430Um0D9y/3wy5tRJA4HNQ2aMsz"
+        },
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m239/AQMqOENbRtwlk5BV2rmahB0lFYMhfJ3ahup5bh1med6KZS81iiv-htxf6aC4XpSAEU54rVGfZu-xc53Kx7_MbowQaKsQtiXsPn2ph3x-Yw?ccb=9-4&oh=01_Q5Aa5wG1kU32CEIWQCMt1k-ByuFC0sAAAzPFGWWg24Am0zLfcQ&oe=6AF303F8&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".gptimage An ultra-realistic 8K multi-exposure photograph featuring three seamless iterations of the same Sri Lankan woman in a borderless, artistic montage against a solid, neutral matte white background. The composition is integrated with dynamic gray paint splatters and textured brushstroke effects that blend the figures together.\n\n1. Large Profile Close-up (Top Left): The woman is shown in a tight profile shot from the chest up, looking toward the left. She has long, voluminous, dark black hair. She is wearing a subtle rose-pink lipstick. Her expression is serene with a slight, confident smile. \n\n2. Medium Close-up (Right): The same woman is shown looking directly forward at the camera with a joyful, radiant smile showing her teeth. Her long, dark black hair falls naturally over her shoulders. This figure is semi-translucent, softly fading into the background composition.\n\n3. Full-Body Figure (Center Foreground): The same woman stands confidently in a full-body pose on a rustic, weathered dark wooden plank platform. Her hands are casually tucked into her pockets, her body slightly turned, smiling warmly at the camera. She is wearing a green button-down long-sleeve shirt with rolled-up cuffs, tucked into high-waisted, straight-leg white trousers. On her feet are clean, minimalist white canvas sneakers. \n\nTechnical Specs & Lighting: Shot on a professional DSLR camera with an 85mm lens at f/2.8 for maximum sharpness and intricate detail on facial features, garment textures, and fabric folds. The lighting is soft, studio-quality diffused light with clean, balanced contrast and no harsh shadows. Hyper-realistic details, 100% facial feature consistency across all three figures.",
+          "fileSha256": "FfIzhmP3GJfzdINg7Ev8p6h3i8+g4kyvLELliMVrykE=",
+          "fileLength": "262237",
+          "height": 1600,
+          "width": 907,
+          "mediaKey": "0j2HuMwkefAWKl4Eo82fkHl686Y54Tq2d4aPDGHiqWM=",
+          "fileEncSha256": "nqZu1sjl71ThwB5NmertmYxNAgFd6Sdu2Ubl/22JTdo=",
+          "directPath": "/o1/v/t24/f2/m239/AQMqOENbRtwlk5BV2rmahB0lFYMhfJ3ahup5bh1med6KZS81iiv-htxf6aC4XpSAEU54rVGfZu-xc53Kx7_MbowQaKsQtiXsPn2ph3x-Yw?ccb=9-4&oh=01_Q5Aa5wG1kU32CEIWQCMt1k-ByuFC0sAAAzPFGWWg24Am0zLfcQ&oe=6AF303F8&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791725407",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIADsAIQMBIgACEQEDEQH/xAAuAAEAAwEAAAAAAAAAAAAAAAADAAECBAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/2gAMAwEAAhADEAAAAN3cM5Wwyqm5L7A6BWih6tnPkjSuTlZXoRT0FzEQOw2m0E2dM441/8QAIhABAAIBAwQDAQAAAAAAAAAAAQACEQMhURITIjEQQVJx/9oACAEBAAE/AOkQeYUC1cy9c9UoDWdDKOQJa1U/kCqY5lMCj6njywX8BNUTCVPctTJk9y9XpqNd2dq3xqr4yj47s2uTsW/UHM1zxMTSr4bwwTNuJ1E19UrXlzNB6qK8yxY9TLFmyet56J3cTuHMq7k+2Cy/x//EAB8RAAIBBAIDAAAAAAAAAAAAAAACARIhMTIQERNhgf/aAAgBAgEBPwCkmJ6Pkjo8NEq1hWddrnkM4PUlBrbik//EABsRAAIDAQEBAAAAAAAAAAAAAAABAhARIRIx/9oACAEDAQE/AK0h5+NE4reKkM4KtP/Z",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA"
+          },
+          "scansSidecar": "nEt8feyLNrFrPEIbCXIl1Tua2R/wKvz7OtOslnsS7gaGA39KdkQj1A==",
+          "scanLengths": [
+            18178,
+            111037,
+            52488,
+            80534
+          ],
+          "midQualityFileSha256": "A9LoRkpe5U8Nmo5m7P601qTL5ZPqnj0a4f9qgrJUjo4="
+        },
+        "messageContextInfo": {
+          "messageSecret": "WLzxOJ0/MZEl1FPuIjkkAn/ppI1/XRsrF4AH6AxnmTI="
+        }
+      },
+      "timestamp": 1791741384470,
+      "savedAt": 1791741385249
+    },
+    {
+      "senderJid": "172254478495818@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".gptimage An ultra-realistic 8K multi-exposure photograph featuring three seamless iterations of the same Sri Lankan woman in a borderless, artistic montage against a solid, neutral matte white background. The composition is integrated with dynamic gray paint splatters and textured brushstroke effects that blend the figures together.\n\n1. Large Profile Close-up (Top Left): The woman is shown in a tight profile shot from the chest up, looking toward the left. She has long, voluminous, dark black hair. She is wearing a subtle rose-pink lipstick. Her expression is serene with a slight, confident smile. \n\n2. Medium Close-up (Right): The same woman is shown looking directly forward at the camera with a joyful, radiant smile showing her teeth. Her long, dark black hair falls naturally over her shoulders. This figure is semi-translucent, softly fading into the background composition.\n\n3. Full-Body Figure (Center Foreground): The same woman stands confidently in a full-body pose on a rustic, weathered dark wooden plank platform. Her hands are casually tucked into her pockets, her body slightly turned, smiling warmly at the camera. She is wearing a green button-down long-sleeve shirt with rolled-up cuffs, tucked into high-waisted, straight-leg white trousers. On her feet are clean, minimalist white canvas sneakers. \n\nTechnical Specs & Lighting: Shot on a professional DSLR camera with an 85mm lens at f/2.8 for maximum sharpness and intricate detail on facial features, garment textures, and fabric folds. The lighting is soft, studio-quality diffused light with clean, balanced contrast and no harsh shadows. Hyper-realistic details, 100% facial feature consistency across all three figures.",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "ACBE3C65D25F1992D3FC0F7C4533CA3D",
+            "participant": "172254478495818@lid",
+            "quotedMessage": {
+              "imageMessage": {
+                "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m239/AQMqOENbRtwlk5BV2rmahB0lFYMhfJ3ahup5bh1med6KZS81iiv-htxf6aC4XpSAEU54rVGfZu-xc53Kx7_MbowQaKsQtiXsPn2ph3x-Yw?ccb=9-4&oh=01_Q5Aa5wG1kU32CEIWQCMt1k-ByuFC0sAAAzPFGWWg24Am0zLfcQ&oe=6AF303F8&_nc_sid=e6ed6c&mms3=true",
+                "mimetype": "image/jpeg",
+                "caption": ".gptimage An ultra-realistic 8K multi-exposure photograph featuring three seamless iterations of the same Sri Lankan woman in a borderless, artistic montage against a solid, neutral matte white background. The composition is integrated with dynamic gray paint splatters and textured brushstroke effects that blend the figures together.\n\n1. Large Profile Close-up (Top Left): The woman is shown in a tight profile shot from the chest up, looking toward the left. She has long, voluminous, dark black hair. She is wearing a subtle rose-pink lipstick. Her expression is serene with a slight, confident smile. \n\n2. Medium Close-up (Right): The same woman is shown looking directly forward at the camera with a joyful, radiant smile showing her teeth. Her long, dark black hair falls naturally over her shoulders. This figure is semi-translucent, softly fading into the background composition.\n\n3. Full-Body Figure (Center Foreground): The same woman stands confidently in a full-body pose on a rustic, weathered dark wooden plank platform. Her hands are casually tucked into her pockets, her body slightly turned, smiling warmly at the camera. She is wearing a green button-down long-sleeve shirt with rolled-up cuffs, tucked into high-waisted, straight-leg white trousers. On her feet are clean, minimalist white canvas sneakers. \n\nTechnical Specs & Lighting: Shot on a professional DSLR camera with an 85mm lens at f/2.8 for maximum sharpness and intricate detail on facial features, garment textures, and fabric folds. The lighting is soft, studio-quality diffused light with clean, balanced contrast and no harsh shadows. Hyper-realistic details, 100% facial feature consistency across all three figures.",
+                "fileSha256": "FfIzhmP3GJfzdINg7Ev8p6h3i8+g4kyvLELliMVrykE=",
+                "fileLength": "262237",
+                "height": 1600,
+                "width": 907,
+                "mediaKey": "0j2HuMwkefAWKl4Eo82fkHl686Y54Tq2d4aPDGHiqWM=",
+                "fileEncSha256": "nqZu1sjl71ThwB5NmertmYxNAgFd6Sdu2Ubl/22JTdo=",
+                "directPath": "/o1/v/t24/f2/m239/AQMqOENbRtwlk5BV2rmahB0lFYMhfJ3ahup5bh1med6KZS81iiv-htxf6aC4XpSAEU54rVGfZu-xc53Kx7_MbowQaKsQtiXsPn2ph3x-Yw?ccb=9-4&oh=01_Q5Aa5wG1kU32CEIWQCMt1k-ByuFC0sAAAzPFGWWg24Am0zLfcQ&oe=6AF303F8&_nc_sid=e6ed6c",
+                "mediaKeyTimestamp": "1791725407",
+                "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIADsAIQMBIgACEQEDEQH/xAAuAAEAAwEAAAAAAAAAAAAAAAADAAECBAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/2gAMAwEAAhADEAAAAN3cM5Wwyqm5L7A6BWih6tnPkjSuTlZXoRT0FzEQOw2m0E2dM441/8QAIhABAAIBAwQDAQAAAAAAAAAAAQACEQMhURITIjEQQVJx/9oACAEBAAE/AOkQeYUC1cy9c9UoDWdDKOQJa1U/kCqY5lMCj6njywX8BNUTCVPctTJk9y9XpqNd2dq3xqr4yj47s2uTsW/UHM1zxMTSr4bwwTNuJ1E19UrXlzNB6qK8yxY9TLFmyet56J3cTuHMq7k+2Cy/x//EAB8RAAIBBAIDAAAAAAAAAAAAAAACARIhMTIQERNhgf/aAAgBAgEBPwCkmJ6Pkjo8NEq1hWddrnkM4PUlBrbik//EABsRAAIDAQEBAAAAAAAAAAAAAAABAhARIRIx/9oACAEDAQE/AK0h5+NE4reKkM4KtP/Z",
+                "contextInfo": {
+                  "pairedMediaType": "NOT_PAIRED_MEDIA"
+                },
+                "scansSidecar": "nEt8feyLNrFrPEIbCXIl1Tua2R/wKvz7OtOslnsS7gaGA39KdkQj1A==",
+                "scanLengths": [
+                  18178,
+                  111037,
+                  52488,
+                  80534
+                ],
+                "midQualityFileSha256": "A9LoRkpe5U8Nmo5m7P601qTL5ZPqnj0a4f9qgrJUjo4="
+              }
+            },
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "4G4YyJNJu4Hl6bfuczLPIWVg9VY3LLH8MceRqkTgVUk="
+        }
+      },
+      "timestamp": 1791741385000,
+      "savedAt": 1791741385410
+    },
+    {
+      "senderJid": "252441819893847@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".ban",
+          "previewType": "NONE",
+          "contextInfo": {
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            }
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "Mv4e/FgXI7uzLEqM3XBNaTOw8ZrFsBMW/9ga1O0po2s="
+        }
+      },
+      "timestamp": 1791741405898,
+      "savedAt": 1791741406152
+    },
+    {
+      "senderJid": "91229568135303@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7118-24/847270310_2252739962173906_3358140668993369040_n.enc?ccb=11-4&oh=01_Q5Aa5wFQTDAqPCyD9aayshXPut3XjfMmA1bK4WiPwNqvwEhLfw&oe=6AF36F3A&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "image/jpeg",
+          "fileSha256": "8ZC/71aIVLBi4JyK3sYx8+AYy2QiFuYa33wmt4jQNqo=",
+          "fileLength": "80109",
+          "height": 1070,
+          "width": 1070,
+          "mediaKey": "/1UoNAf1RV7X8kSXFetyIfh4aI2ZpmZjW2NJ+SBNiN4=",
+          "fileEncSha256": "RKzkt+UInGf+3aovVurfCb31boFSFGC0S2YNnubI2Yw=",
+          "directPath": "/v/t62.7118-24/847270310_2252739962173906_3358140668993369040_n.enc?ccb=11-4&oh=01_Q5Aa5wFQTDAqPCyD9aayshXPut3XjfMmA1bK4WiPwNqvwEhLfw&oe=6AF36F3A&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791752006",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEMAQwMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAABQMEBgIBAQADAQEAAAAAAAAAAAAAAAAAAQMCBP/aAAwDAQACEAMQAAAA0NC4jxRx0naourWKCk49Jn742J4C8zTmhmlF6rv52yWM4txqS9dJ2ANZTQ9LFS/ZpMkM6tlU8dz5fWBYAaqZ59mtJpYj5jdxF5xuWe0SZwK8eDFaQNJtAEOjOwBWAAHoAf/EACwQAAICAQMDAgQHAQAAAAAAAAECAAMRBBIxBRAhEzJBUVJhFBUiMzRCkYH/2gAIAQEAAT8AYhQSY2tUH2HEFqsm9ewUMmCMgzX/AILSJ+wpYzTdTtQ4SoBJTat1auvB7Xgmp42dk01hZTWD5lalVAJyYvtE60pbUpNFRsotZ1OSJ0limnfP1dnTdW3yxGy24cASkMh34lLbgPuIOBOp6dtTbSU4WUmzG1l8AcxEatFGB5PbVWNkVoeeYoVrNh+UI24B4ziUeKx9opyoMYjcV+MBGSmfMRwX2HkdtRaw1GJhBYLGfEBqsBwfAMofC4Mr9izVVsl63DjhpfZSllbu807CzLgdtTS+5zDTZy0qoyrTTMLB6Vi+V4gwq/YS57tW+yltqDlprVKXFSxOJ0oAaKvtqEG0kxrW3fpaaUkscxm9Ngw5BmoydIdvxlKCutVHynUv5LzoxzpB217haDN21s/2M06hRNQfBj2r+X+8btk01yPRWd44nVwm9HBE6S9a6NMus9Sv61/2dS9iiHkSv2y/j/ompd/WsG48wO44Ywsx5YmB3HDGepZ9bf7P/8QAHhEAAgICAgMAAAAAAAAAAAAAAAEQEQIgMUESITL/2gAIAQIBAT8AZ3WmTL9jnxspcRULgu8hijox+lp//8QAHxEAAgICAQUAAAAAAAAAAAAAAREAEAISMSAhIjJB/9oACAEDAQE/AAHF2dKsB9i8aNbgBTY8qnaWMENDmZep6P/Z",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "OKX7Dad30U25rFG4ebpDSQBSykji0EeDuwzHFllyvmpGy3a5rWrSfw==",
+          "scanLengths": [
+            11636,
+            31515,
+            14399,
+            22559
+          ],
+          "midQualityFileSha256": "pX+cXpQdtJpNA7ca8NaWFOTiW6A4/MqJQgdJnHu7uKU="
+        },
+        "messageContextInfo": {
+          "messageSecret": "/iaAaxgEHb88xViHOQ8zs2SbB7p2Cxh4/qc7H98ne2I=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363317494770000@g.us",
+              "fromMe": true,
+              "id": "A56741A78E09F85984CA965B58ED0317"
+            }
+          },
+          "limitSharingV2": {
+            "sharingLimited": false,
+            "trigger": "CHAT_SETTING",
+            "limitSharingSettingTimestamp": "1777234024500",
+            "initiatedByMe": false
+          }
+        }
+      },
+      "timestamp": 1791752007873,
+      "savedAt": 1791753994974
+    },
+    {
+      "senderJid": "91229568135303@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7118-24/845809393_1426214262991531_1313775432479769393_n.enc?ccb=11-4&oh=01_Q5Aa5wGKAZdyp9Q0eZ4S1y7L6sfKVq8EQUwuvqvrqHHpLnHyTA&oe=6AF352A5&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "image/jpeg",
+          "fileSha256": "W8jg8DLazzqGrrSC+q+raIMNIanXsLQ5pdyE2yNvkoo=",
+          "fileLength": "57822",
+          "height": 1024,
+          "width": 768,
+          "mediaKey": "54sAVAwzfcyUoyAsLrjcmRZjKDS2Sz1PqVS865SVnV8=",
+          "fileEncSha256": "XM7nuJ+LRqsFLIGbstE5YQz9M76I6zfzULDXWTZhbus=",
+          "directPath": "/v/t62.7118-24/845809393_1426214262991531_1313775432479769393_n.enc?ccb=11-4&oh=01_Q5Aa5wGKAZdyp9Q0eZ4S1y7L6sfKVq8EQUwuvqvrqHHpLnHyTA&oe=6AF352A5&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1791752005",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEAAMAMBIgACEQEDEQH/xAAvAAADAAMBAAAAAAAAAAAAAAADBAUBAgYAAQEBAQEAAAAAAAAAAAAAAAAAAgED/9oADAMBAAIQAxAAAAAeXQR0CkWWO+1IdChSmNxPsDJTNedUMz7ETVJiFRm2JhkWdHGEwDGxImrSGpbz/8QAIRAAAgICAgIDAQAAAAAAAAAAAQIAAxESBCEiQRAUMYH/2gAIAQEAAT8A1msI6ltiD3FAYAiOuIafGFCDOYzIoA+OODH/AGWXKqHWPYVCn2ZyKfsU7J+ifVxSX9zjUPYwxGqwZya0SsnEZDYRj0JxVIsKA+u4w8nyBEWtKgwXBYS1u5fZeyeXQm7D3OHaiuQxxsI9Dl8qAVnIYVaVAy55ykZ06jZ2xCx2lNpUEAmXg9WS09yy5K1IYzG7kiPTr5gxeQFJiOLqLF/ohBYAzZrT2YvWAJyFtCCEEEylyJU4AZTP/8QAGhEBAAMBAQEAAAAAAAAAAAAAAQACEEEhMf/aAAgBAgEBPwB8gZfkfhiSyZazyFXsJ//EABoRAQEBAAMBAAAAAAAAAAAAAAEAAhAhQTH/2gAIAQMBAT8AO5eMH2Dt4Gyamxn1nR5Jf//Z",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "ePw8GoD/a95wJF6PEcL0fTe+3RSr3GP3rBIgcwLQ4WEoHuEgQ0g+9Q==",
+          "scanLengths": [
+            8270,
+            18333,
+            10602,
+            20617
+          ],
+          "midQualityFileSha256": "q03keoRdJT3Ymv03rON9UYvcjA52MCFHbCImgU1nKC0="
+        },
+        "messageContextInfo": {
+          "messageSecret": "d5BMraj5yKhZ+Mcxjf8RIusXKlEbxScIwF0O8mpYols=",
+          "messageAssociation": {
+            "associationType": "MEDIA_ALBUM",
+            "parentMessageKey": {
+              "remoteJid": "120363317494770000@g.us",
+              "fromMe": true,
+              "id": "A56741A78E09F85984CA965B58ED0317"
+            }
+          },
+          "limitSharingV2": {
+            "sharingLimited": false,
+            "trigger": "CHAT_SETTING",
+            "limitSharingSettingTimestamp": "1777234024500",
+            "initiatedByMe": false
+          }
+        }
+      },
+      "timestamp": 1791752012309,
+      "savedAt": 1791753995342
+    },
+    {
+      "senderJid": "91229568135303@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "MLA0+IvPr7kDu4audb4673wX5kJHK7j1X82NuhnHLNw=",
+          "limitSharingV2": {
+            "sharingLimited": false,
+            "trigger": "CHAT_SETTING",
+            "limitSharingSettingTimestamp": "1777234024500",
+            "initiatedByMe": false
+          }
+        },
+        "albumMessage": {
+          "expectedImageCount": 2,
+          "expectedVideoCount": 0
+        }
+      },
+      "timestamp": 1791752007590,
+      "savedAt": 1791753995565
+    },
+    {
+      "senderJid": "76742475677817@lid",
+      "content": {
+        "conversation": ".getpp"
+      },
+      "timestamp": 1791755458992,
+      "savedAt": 1791755472140
+    },
+    {
+      "senderJid": "76742475677817@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m237/AQO16SqTC2K7CMGWlDxxa9qFSSlAs5tEsGiQRns03PjeIcVX8nKDpljMWnGhvTb5HmitQEyw3kGu2D8TNOdwFEIDsEVmtWipwH-UH455Fg?ccb=9-4&oh=01_Q5Aa5wEaiewppG4CQCCNgn01Bd24xhZ5gbXo0Tk_ze0M6Mzv5A&oe=6AF37EBB&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "👤 Profile picture of @237671624397",
+          "fileSha256": "bO42Lh5RptrS+7uBaX0ngtAzmHJh/nQsVd+VKdHY8gU=",
+          "fileLength": "40671",
+          "height": 640,
+          "width": 640,
+          "mediaKey": "e+g/IfumnGbzTRNDi8+UOz+OJgEMZ5k/PmDDDciYsXQ=",
+          "fileEncSha256": "RfZtPsTdngL7xH0FdxOPeisDu2Fg7d7nzvLPkJulWBc=",
+          "directPath": "/o1/v/t24/f2/m237/AQO16SqTC2K7CMGWlDxxa9qFSSlAs5tEsGiQRns03PjeIcVX8nKDpljMWnGhvTb5HmitQEyw3kGu2D8TNOdwFEIDsEVmtWipwH-UH455Fg?ccb=9-4&oh=01_Q5Aa5wEaiewppG4CQCCNgn01Bd24xhZ5gbXo0Tk_ze0M6Mzv5A&oe=6AF37EBB&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791755461",
+          "jpegThumbnail": "/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgACADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAABQYEAwf/xAArEAACAQMDAQcEAwAAAAAAAAABAgMABBEFEiEGEyNBUWFxkSIxMlKxwdH/xAAXAQEAAwAAAAAAAAAAAAAAAAABAAID/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQACETH/2gAMAwEAAhEDEQA/AHoMwnDZKHx8q561rQ0ezV1USTSHbGnn6+1YrK7e3RY5svEB+RPKD+xWbqOfs2sLqF0ZUZyueRyBQI0jE6n1mC7E84nCE5Kuh249sVd6fqMeo2MV1EOJBnbn7HyqCub+XcZGaNjJ6H/arulbWSDQ4kVVGWZiT6mnoyiexYGYSf2om5leWVlEW5Im27f5NHTa1NLIdjsiBcAA1kh1Ex5V9xycls8mszDOeDIXLp2qkoeAOPEfFXvS94LrSEAUKIjsAHzXmklwrfSpzu54pDS9dv8ATT3L90eTEwypq2Sdvb//2Q==",
+          "contextInfo": {
+            "stanzaId": "A58B2249D571F7965AD0ADE0CB087FCA",
+            "participant": "237671624397@s.whatsapp.net",
+            "quotedMessage": {
+              "conversation": ".getpp"
+            },
+            "mentionedJid": [
+              "237671624397@s.whatsapp.net"
+            ]
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "1lESTnC7CbWGfnp4dR/1F+05cZ6kEacMCEQ72cTZEWs="
+        }
+      },
+      "timestamp": 1791755462947,
+      "savedAt": 1791755472373
+    },
+    {
+      "senderJid": "76742475677817@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": ".getpp",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "3A8075525EB49A701056",
+            "participant": "76742475677817@lid",
+            "quotedMessage": {
+              "stickerMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.15575-24/839449198_1815579002980421_750446527306319278_n.enc?ccb=11-4&oh=01_Q5Aa5wGpr21ME3c6hGi4y1zAr8lEnCQTFIcd3eKA5__W72Awmg&oe=6AF35EF2&_nc_sid=5e03e0&mms3=true",
+                "fileSha256": "M4/s0T4JNPGJHPg1Cc9Vg30OG3HWViFdHrNJfFQCk7E=",
+                "fileEncSha256": "J24ZHv+bDuGbxz2kwD/bxoRj6BCwc6nkNUya8533iN8=",
+                "mediaKey": "s47xZ4c0HRsuEMCrU7bIbFnTWjkUTWfr2m38wxuxdcs=",
+                "mimetype": "image/webp",
+                "height": 64,
+                "width": 64,
+                "directPath": "/v/t62.15575-24/839449198_1815579002980421_750446527306319278_n.enc?ccb=11-4&oh=01_Q5Aa5wGpr21ME3c6hGi4y1zAr8lEnCQTFIcd3eKA5__W72Awmg&oe=6AF35EF2&_nc_sid=5e03e0",
+                "fileLength": "220508",
+                "mediaKeyTimestamp": "1791628764",
+                "firstFrameLength": 220086,
+                "firstFrameSidecar": "FIGP/warlxZsfw==",
+                "isAnimated": true,
+                "stickerSentTs": "1791755418378",
+                "isAvatar": false,
+                "isAiSticker": false,
+                "isLottie": false
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1791755480845,
+      "savedAt": 1791755528970
+    },
+    {
+      "senderJid": "76742475677817@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "❌ Profile picture not found for this user."
+        },
+        "messageContextInfo": {
+          "messageSecret": "Z5rv0X5z6gaSTlx5cZWvh1GmB+Wq9tnt8u8eEOvKmpM="
+        }
+      },
+      "timestamp": 1791755541234,
+      "savedAt": 1791755554518
+    },
+    {
+      "senderJid": "169913922638031@lid",
+      "content": {
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/842310437_1759802535321123_4465083189214379522_n.enc?ccb=11-4&oh=01_Q5Aa5wEJgGaS0-B1TG74A0Gpmj0qUubEf1IDcw3ujAyo-0mTbg&oe=6AF36D69&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "4ZELTv73kAwOlI83CiDFG3odxAogTeDvSpbNsbB2L70=",
+          "fileEncSha256": "bAvX0vBPwOwBY50sAhLrjo2oIymya1qTys3zocrR2yM=",
+          "mediaKey": "zNIDLiWdZeUsJQ3Dl9K4aVgknTPTLNJoaMQCspaAj50=",
+          "mimetype": "image/webp",
+          "height": 512,
+          "width": 512,
+          "directPath": "/v/t62.15575-24/842310437_1759802535321123_4465083189214379522_n.enc?ccb=11-4&oh=01_Q5Aa5wEJgGaS0-B1TG74A0Gpmj0qUubEf1IDcw3ujAyo-0mTbg&oe=6AF36D69&_nc_sid=5e03e0",
+          "fileLength": "39410",
+          "mediaKeyTimestamp": "1791757238",
+          "firstFrameLength": 38978,
+          "firstFrameSidecar": "tKoAlsTVXt0ptg==",
+          "isAnimated": true,
+          "contextInfo": {
+            "stanzaId": "A5504273F336533640FAE315C1A147CA",
+            "participant": "91229568135303@lid",
+            "quotedMessage": {
+              "imageMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7118-24/845801331_1077591951756685_7779730030297469720_n.enc?ccb=11-4&oh=01_Q5Aa5wGAGi60kWF2z9j9T2B6V3zFs8qghQ7tVF6l1FFzt2Yd4g&oe=6AF3584A&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "image/jpeg",
+                "caption": "Je fis mm kehhh les filles si on les parents?\nDepuis Hasard la douce la je vois un peu que les gens veuillent trop la visibilité dans rien hein‼️‼️‼️ jusqua je lis en commentaire de la pars de Afrocosplay kooooooo on vois souvent les personnage pareil dans les jeu vidéo et tout on ne parle pas.... donc on mélange déjà fictif et réalité hein",
+                "fileSha256": "Sxvf2DTOrd4OiHcz/pwFGpTqzGXeCw6TthrIgPaXvsM=",
+                "fileLength": "72016",
+                "height": 1110,
+                "width": 540,
+                "mediaKey": "SKrbrZAkWhQEGn5wJbHgoFHQsp4dv0iYV6I8U491490=",
+                "fileEncSha256": "3PbZTErr4YisQUFRNMR1SpuFWcTHIAML8hwrp5tZO0s=",
+                "directPath": "/v/t62.7118-24/845801331_1077591951756685_7779730030297469720_n.enc?ccb=11-4&oh=01_Q5Aa5wGAGi60kWF2z9j9T2B6V3zFs8qghQ7tVF6l1FFzt2Yd4g&oe=6AF3584A&_nc_sid=5e03e0&_nc_hot=1791751373",
+                "mediaKeyTimestamp": "1791746254",
+                "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEUAIQMBIgACEQEDEQH/xAAwAAABBQEBAAAAAAAAAAAAAAAAAgMEBQYBBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAA0DrKqU28QHQirytnjpbry3K1Zmy7rJ1ZMzGZsCfeMkuRvKTr5yzMy7wZYHivPQBfQGgD/8QAJhAAAgICAgEDBAMAAAAAAAAAAQIAAxEhBBITIjFSBVFhkRVCU//aAAgBAQABPwAE5PtmBz/aWM2MIRmbGTrE9ULothUjc7qWC7nQZzOusTEF6H1TyfaC3MF2BPKftPMULKCT+Z9Ou8hcGX8m2vk2IhnHF9trq7t7ZE8/NGu0U6MotNLqV2Iz9+S741mU3upb86nS/wDyi7YQjWjKwSbGzjc4qO9yhhpZqfx3NVtVxeDyPRlIeByexCprMp43JSza6njs+MLpn3AM7LgZZYN7BBntvInZfmv7nmtJybGjXWtjNjQcm9dJYwEbl8hhjytPLZ82/c//xAAcEQACAgIDAAAAAAAAAAAAAAAAAQIRECESIFH/2gAIAQIBAT8AypSb2hNlnpWrOKKK6//EACARAAEDAgcAAAAAAAAAAAAAAAEAAhIRUQMQEyAhQWP/2gAIAQMBAT8AzcwAVCgKA14Wh6MTpGIa0m6LyMSPSmVIq+3/2Q==",
+                "contextInfo": {
+                  "pairedMediaType": "NOT_PAIRED_MEDIA"
+                },
+                "scansSidecar": "bT2QsbVUW8B8MURi8rN6QTozGueKQJ3HQgkZNp9vSwL1JuBqvBwJBw==",
+                "scanLengths": [
+                  6722,
+                  34395,
+                  13193,
+                  17706
+                ],
+                "midQualityFileSha256": "uuQ11MUe0J4WckuB4RaNyFtuXXM2sYXxm4AtXShNCH8="
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "stickerSentTs": "1791757238040",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false
+        },
+        "messageContextInfo": {
+          "messageSecret": "lzl4ws1LzfO63LSdFaRo/FEQ5baCVFyN8yUjvNT46EY="
+        }
+      },
+      "timestamp": 1791757238933,
+      "savedAt": 1791757245899
+    },
+    {
+      "senderJid": "132212280291350@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "???",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "A5B781C4A8BDAA65ECE4F500C547BD06",
+            "participant": "91229568135303@lid",
+            "quotedMessage": {
+              "conversation": "Jai deja vu plein de vidéo pareil sur tiktok on te filme pas aussi"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        }
+      },
+      "timestamp": 1791759047035,
+      "savedAt": 1791759079840
+    },
+    {
+      "senderJid": "68526337470525@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQOpwLR3ATnJvGQCBemQtwaMU75vIS1lgjucpytmS3pI0ySE8TZ4Z2IXWeM4CfX5eY44tDSOAu9Y5R4kS2pekutnHhi5u9VOqBSf9QCobg?ccb=9-4&oh=01_Q5Aa5wFp1CAnx90dT_ldGqE7rv4p2ziWCRG2Fg0ZrXn_7ylTBA&oe=6AF4203D&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".s",
+          "fileSha256": "1XXJ3lCtI35iszQjHHyaI0HtEAJfMb5Jhd0qrOIDzB0=",
+          "fileLength": "18804",
+          "height": 628,
+          "width": 720,
+          "mediaKey": "DVsOIfNsm3wSRpPLIUYl7323iBRL4UakCbNPIVNVJyo=",
+          "fileEncSha256": "sP0pP8c3OZvOfgdexEwRmR/eZ4UOU0Di4REnmNL82oQ=",
+          "directPath": "/o1/v/t24/f2/m238/AQOpwLR3ATnJvGQCBemQtwaMU75vIS1lgjucpytmS3pI0ySE8TZ4Z2IXWeM4CfX5eY44tDSOAu9Y5R4kS2pekutnHhi5u9VOqBSf9QCobg?ccb=9-4&oh=01_Q5Aa5wFp1CAnx90dT_ldGqE7rv4p2ziWCRG2Fg0ZrXn_7ylTBA&oe=6AF4203D&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791794272",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAD4ASAMBIgACEQEDEQH/xAAvAAACAwEBAAAAAAAAAAAAAAADBAABAgUGAQADAQAAAAAAAAAAAAAAAAAAAgMB/9oADAMBAAIQAxAAAADTqelGxpU44Tn7DoYFaFzMwzWTlFlnVzV9r3STxuYVRySAIhsJXat4SiIrFeB9rE1fQwMAoGuVOpklgmkGyqyWUBWTuwMzf//EACIQAAMAAgICAwADAAAAAAAAAAABAgMREiEQMQQTQSIygf/aAAgBAQABPwDFW6TN6SHcpN8h5k0kc2RaZsdG+yMbimzJlbWjkc0cxZCb34YnzSa/R40hwWtHITMeSUuzl0bZ8V7ky3M+yW6/DKhvTFQqIyaZM1RE3iK1l7f4blT0WZHqjl2KkiX2jHS+paHPbRkjUrT6Of8ALikZa0i6Tb8JkvbMH9EilqjPkmUY6mp6/wBPkZE3pGnpvxshnxqMnozz7bPsqN6Y6fsp7xJofiPZjpykz//EABwRAAICAgMAAAAAAAAAAAAAAAABEBECMRIhQf/aAAgBAgEBPwDcOdCyhooZ6LU1Zx7FP//EABsRAAEFAQEAAAAAAAAAAAAAAAIAARAgMRIh/9oACAEDAQE/AKinGjbBbLrvxFs//9k=",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "OnbVJy8gmwtvGYGrXHzA/N7UB05zXKvmfc9l6eOAnth57awqcGacYQ==",
+          "scanLengths": [
+            3800,
+            5400,
+            3311,
+            6293
+          ],
+          "midQualityFileSha256": "jCJiZAOFPDKFH1/9CU84lIeL3M9oJRx0OBuLVddflUk="
+        },
+        "messageContextInfo": {
+          "messageSecret": "HITlHp5LkNL0zFk56c9rrnULpWIbMrmbC8IfCFWvb0A="
+        }
+      },
+      "timestamp": 1791825618445,
+      "savedAt": 1791825619110
+    },
+    {
+      "senderJid": "68526337470525@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363411929937671@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwjzx4v9AxAAGiC1wd3V9+5iH+smpXsuVckSv5FtKXkPw89IY9TAF+dCdiIhBfHS73Tt2qX0n3WEppuYgO+ntgULAXpDYsAOeTvHtNQq"
+        },
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m239/AQM95eLask-Q7ubggMf4u6Cs9x48pa1kDSJdnbWL1mrNCzahMEYG4fZOrFM62MoHbu_XguflzPlinNInl2FzOZjG5VYO7N5Tm3_LazszHQ?ccb=9-4&oh=01_Q5Aa5wFeOuRIJpOWb8PR2wdBk4CF0zPq5Ww3dEHwCOrcFcYSTg&oe=6AF4096F&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".s",
+          "fileSha256": "Hr1QRub3Vf4X14rlA5Rrgldagu7ZEoPIIJxRW/ifyoo=",
+          "fileLength": "38273",
+          "height": 655,
+          "width": 720,
+          "mediaKey": "AwyxGZQViCjYUl95D0n5Sho6UG9tSV703XE8VM0SCo0=",
+          "fileEncSha256": "zdR3QeBzZljBdMAzvng/agZiHazmdxBdmRHF6l/wiQU=",
+          "directPath": "/o1/v/t24/f2/m239/AQM95eLask-Q7ubggMf4u6Cs9x48pa1kDSJdnbWL1mrNCzahMEYG4fZOrFM62MoHbu_XguflzPlinNInl2FzOZjG5VYO7N5Tm3_LazszHQ?ccb=9-4&oh=01_Q5Aa5wFeOuRIJpOWb8PR2wdBk4CF0zPq5Ww3dEHwCOrcFcYSTg&oe=6AF4096F&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791794236",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEAASAMBIgACEQEDEQH/xAAvAAADAQEBAAAAAAAAAAAAAAADBAUAAgEBAAMBAQAAAAAAAAAAAAAAAAABAwIE/9oADAMBAAIQAxAAAAA6L4MIHO5QXC52NOz35see0F0mYHW5a3bDF8wEOaEvtOpktzZoz3ZV2tbj0SifFhXFEWGStT8fEAK+3qkDVJbG34TkrVJvc0HMPal//8QAJRAAAgMAAgIBAwUAAAAAAAAAAQIAAxEEMRIhQQUTUSIjQmFi/9oACAEBAAE/AOOazUFbsiXA1W/pgQ6N7MZSrdwOQdENhI9yrxi1qyghRsxlLFUJM+yqPig5OWhUjyMDuWELaZs2cfHbxgb7BRT89xrAV0ZAB797OUSEIzZ7VPc8zvUDiM4EptKvsvcsFgs81zrBEfExfiW2IKmHy3ca33kVUIBEK1j2chtr6C7Gt/wIvKB9MIX/AAfUDrT7bSJybQ51fmEYZx6RZRLarEsxtydN6HqEa4GQcVftlzErI/sTmBNCqe47KehPc4V5C4Za6v2Iaj34Rq0PjqzlFU4gA/MqIsZADDcwLTfU1Yr+DaJXyA7AGHR/OBWZe9E51uutYPpZRnrO4uufEeyZx/p1Yq/dGsZy+AKhqdQ1uPLB13NIwyrl/DCW84KnjXBrNp7MrZQ3eT//xAAeEQABAwQDAAAAAAAAAAAAAAAAAQIRAxASQSExUf/aAAgBAgEBPwDQjJWdGLfCpTnlCbJfAaVOjKRF6OREizm+DW7UVD//xAAfEQABBAAHAAAAAAAAAAAAAAABAAIQEQMSICEwQVH/2gAIAQMBAT8A4KnDq6WSkRsToY/1Pd0I/9k=",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "Dv1DMWJtFiSqgzPNKAlxlj/HYAepqRMo+wI4CE6Jmj5RXyT1+P46KQ==",
+          "scanLengths": [
+            5333,
+            13552,
+            7836,
+            11552
+          ],
+          "midQualityFileSha256": "5OIDMYTI2321N7lwzL42ZPdxd3DvB/V1ZmCPE1BwUnw="
+        },
+        "messageContextInfo": {
+          "messageSecret": "gvQG9dQK830y0UToMHMQwQT+4RIlOaAn/+zDxaaXKwI="
+        }
+      },
+      "timestamp": 1791825617865,
+      "savedAt": 1791825619596
+    },
+    {
+      "senderJid": "68526337470525@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m238/AQML5IfSGXXjJ7GyF-ZkHKIdDndsXzoGIXukGIi5jIDDJMGGOxWhp3pYtJrLbFDJrhfJWJgH_lQTWqZo8nZctsdyac8eBZtRUc318Koy9g?ccb=9-4&oh=01_Q5Aa5wE1H_10JX-VVjpfoOMB_W-58HvwUqulsW4MtkGIvN0ShA&oe=6AF3FE45&_nc_sid=e6ed6c&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": ".s",
+          "fileSha256": "ZLzq39vIB9KKxDUt5+dC5VP7v63PQDssEu1OCr0qE4I=",
+          "fileLength": "15533",
+          "height": 497,
+          "width": 523,
+          "mediaKey": "bPyzm9/GNurdZn8KElHsUCZhzYEhgHzrwryVnJP7AwQ=",
+          "fileEncSha256": "2fC2KpLHFnjguRhd1DAnRBCz8aRt6gihf5nTfelpRG4=",
+          "directPath": "/o1/v/t24/f2/m238/AQML5IfSGXXjJ7GyF-ZkHKIdDndsXzoGIXukGIi5jIDDJMGGOxWhp3pYtJrLbFDJrhfJWJgH_lQTWqZo8nZctsdyac8eBZtRUc318Koy9g?ccb=9-4&oh=01_Q5Aa5wE1H_10JX-VVjpfoOMB_W-58HvwUqulsW4MtkGIvN0ShA&oe=6AF3FE45&_nc_sid=e6ed6c",
+          "mediaKeyTimestamp": "1791794213",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAD4AQQMBIgACEQEDEQH/xAAvAAACAwEAAAAAAAAAAAAAAAAABQIDBAEBAAMBAQAAAAAAAAAAAAAAAAACAwEE/9oADAMBAAIQAxAAAABrZUtkrGKayo4vSsUazsOzyZIUwpm6XozpAY2uEzaddVRYuZDSZmNWxpeas4U25ql3zs35m1KSJGIsxsMbzWgUYvokDHq3is9EoL//xAAjEAACAgICAgIDAQAAAAAAAAAAAQIRAxIEIRMxEFEUMkEi/9oACAEBAAE/AMMnGyWlqUh8mET8uXqMR5Gq8kdWQmnE1/2NOyi4q7/hyM+0uvR5GLPKOtfwlnnma2ZghLX9jLtjakJtlSOS6xumSZfxx/dmF9GSpw9ido8k/ozLfHJIl0/njy7E5ONxMXfclVkMS2l2fjL6PZyMTjPpdDKZidSMOVxJz3SqVM2cX7s8pGUbo5MtYjExMxZE6NVk1e1UKMZGiElE5U36+KP6QnRh5UYupH5lZZa/qzzr7J6pvo5VuFjKLoj1TJfYjyM//8QAHBEAAgMAAwEAAAAAAAAAAAAAAAECEBIRITFh/9oACAECAQE/AIxbMocUNGfpDym+64I+1NXF93lGEf/EABsRAQACAwEBAAAAAAAAAAAAAAEAAhARICFB/9oACAEDAQE/AJuHIeROKPyXwYHUbLj/2Q==",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "expiration": 86400,
+            "disappearingMode": {
+              "initiator": "CHANGED_IN_CHAT",
+              "trigger": "UNKNOWN"
+            },
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          },
+          "scansSidecar": "oDmPVUHhfeYp0BixuN+tOdhvgpZZPb86z5qtKkgTgU8NObXNRSpRrg==",
+          "scanLengths": [
+            2709,
+            4802,
+            3069,
+            4953
+          ],
+          "midQualityFileSha256": "D6XnznlpFGX9Z288mGwRLGzQtx2mepICvZKEW4mvR88="
+        },
+        "messageContextInfo": {
+          "messageSecret": "YKnvZX39hbgGteMKIkWXYlwufNN4RKIoYPxZkpb5c74="
+        }
+      },
+      "timestamp": 1791825619857,
+      "savedAt": 1791825620337
+    },
+    {
+      "senderJid": "29752010252326@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363142326154820@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwjs9MKXARAAGiAIGqkejl99t32zM4RBtN8/8+qePSP5UdK0elx66geNYSIhBS63RcNEsAhacXeKI4bKRuaHwYlc1ov9bAwNuIDnACs/"
+        },
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/845846580_1696722518782178_4517498208430332570_n.enc?ccb=11-4&oh=01_Q5Aa5wGQJYR2X6b1lQRkteXP-lS9gamjNtiE4FoFN3nH2PpZEA&oe=6AF4454D&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "Mkg/ex7rZmaZRqs4CayuZspep5VkyxbG9P2uNVfoVLA=",
+          "fileEncSha256": "Hpi3J89jLteDHP7muKkhWIinC7t+9HI0B4gdNaDe5P8=",
+          "mediaKey": "g/DAKLq/C/1moNkSpyXDCQuVoG5hPUFkE+dYu6TAQ3w=",
+          "mimetype": "image/webp",
+          "height": 64,
+          "width": 64,
+          "directPath": "/v/t62.15575-24/845846580_1696722518782178_4517498208430332570_n.enc?ccb=11-4&oh=01_Q5Aa5wGQJYR2X6b1lQRkteXP-lS9gamjNtiE4FoFN3nH2PpZEA&oe=6AF4454D&_nc_sid=5e03e0",
+          "fileLength": "10726",
+          "mediaKeyTimestamp": "1791807229",
+          "isAnimated": false,
+          "contextInfo": {},
+          "stickerSentTs": "1791807228925",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false
+        },
+        "messageContextInfo": {
+          "messageSecret": "KDksx7mDsuq7JHIGz0OSqqCkM8SPIloKNJKkWH6tA6E="
+        }
+      },
+      "timestamp": 1791825721363,
+      "savedAt": 1791825721548
+    },
+    {
+      "senderJid": "77181015355550@lid",
+      "content": {
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/845867797_1478135547497057_7091669778041231337_n.enc?ccb=11-4&oh=01_Q5Aa5wHVIq-JtjuwnKj9vZvBXDUcMMmLwM3XnZOIoicKmUCrMw&oe=6AF476D7&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "NZJJPwLOZJ6c3MHr8cODzGPhrs4+si+wZ1GuhSSaKAc=",
+          "fileEncSha256": "fHf+dC9LhX6yF20C191CCxJQDbsI3m9/nxHhChQHLYo=",
+          "mediaKey": "WhdWAHGcNmOlSlaBLb2DO2hvzvdPk621eF35k5OS48s=",
+          "mimetype": "image/webp",
+          "directPath": "/v/t62.15575-24/845867797_1478135547497057_7091669778041231337_n.enc?ccb=11-4&oh=01_Q5Aa5wHVIq-JtjuwnKj9vZvBXDUcMMmLwM3XnZOIoicKmUCrMw&oe=6AF476D7&_nc_sid=5e03e0",
+          "fileLength": "16342",
+          "mediaKeyTimestamp": "1791827896",
+          "isAnimated": false,
+          "contextInfo": {
+            "stanzaId": "AC84C302C2D442C7BFE650EB4B03343E",
+            "participant": "19220716871841@lid",
+            "quotedMessage": {
+              "conversation": "faut que je dorme même"
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "stickerSentTs": "1791827896152",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false
+        },
+        "messageContextInfo": {
+          "messageSecret": "3iOFcfn5SODXoexijjejPNiO5fbe0QQhpOhvQDQJVaI="
+        }
+      },
+      "timestamp": 1791827895633,
+      "savedAt": 1791827898268
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "W7aFOrd15hVvQVH1oq28es9QqCHEcN5lOawWPqDjqXI="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "ACDB1C96083E8D2FBEF344DECF237574",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913046471,
+      "savedAt": 1791913145447
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "BFCoTIc9zWefQRBuNyldUqeZPIn53nVtVplemSViEXU="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "ACCF748441EAFEC790C1741DB4F94490",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913046199,
+      "savedAt": 1791913145537
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363428171986797@g.us",
+          "axolotlSenderKeyDistributionMessage": "MwimhJi3BxAAGiD4DUACtXiaZfhJEz3OFdY8i3FnoDt+/9i3WxR09XHU+iIhBVf+LcH40xqOKN81h9+6WMIqxLfqljYqCrSp+l9tY/hO"
+        },
+        "messageContextInfo": {
+          "messageSecret": "dqtpgss9mRzoAoeIyqg9zWlOdh1UDEaX05Q9KzgyF6o="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "ACEB4818E0E78E2EE869DE25073DD7FE",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913096878,
+      "savedAt": 1791913145558
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "senderKeyDistributionMessage": {
+          "groupId": "120363428171986797@g.us",
+          "axolotlSenderKeyDistributionMessage": "Mwj0ibOMAhAAGiBsTNqst73itX6890SP41GpBAsg1RetByhMNeE+54a3KiIhBfHVjXZ7D1cUUaqAtNwpGbepuJehDdgd9iOKeGR7gzUk"
+        },
+        "messageContextInfo": {
+          "messageSecret": "jGUL5OCN6NahBBebwqKQD8ruBe42SDXR/Ew81DQDTtU="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "AC899E43095BFCA6E57D4617EE8582FF",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913098864,
+      "savedAt": 1791913145812
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "/1Ea5+tz7XPg/3gsqpINrXfy3U1PUcuJ8xAhtct9OKM="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "AC86BE6CD3B09D57B6261487C8BC1953",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913045792,
+      "savedAt": 1791913146121
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "e1j8du5Eaq0hhorL7LMBJj01FIdR8KeYVXsfO2kyr/o="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "AC21152DEADBC9503380AD50036B1394",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913097169,
+      "savedAt": 1791913146307
+    },
+    {
+      "senderJid": "224155081384148@lid",
+      "content": {
+        "messageContextInfo": {
+          "messageSecret": "Qtma5SwaGV+4mOe8Bg7xUCAL55VrN3Kiq6F54Q/R9Cg="
+        },
+        "groupStatusMentionMessage": {
+          "message": {
+            "protocolMessage": {
+              "key": {
+                "remoteJid": "status@broadcast",
+                "fromMe": true,
+                "id": "ACBC1EED3703A09BB1FEBDA5F72817F7",
+                "participant": "status_me"
+              },
+              "type": "STATUS_MENTION_MESSAGE"
+            }
+          }
+        }
+      },
+      "timestamp": 1791913066692,
+      "savedAt": 1791913146333
+    },
+    {
+      "senderJid": "200407737475315@lid",
+      "content": {
+        "extendedTextMessage": {
+          "text": "Des proportions qui feront pas un banal gobelin",
+          "previewType": "NONE",
+          "contextInfo": {
+            "stanzaId": "AC69D2506BDDFFA00A0465F77D46FE09",
+            "participant": "24953944551677@lid",
+            "quotedMessage": {
+              "imageMessage": {
+                "url": "https://mmg.whatsapp.net/v/t62.7118-24/881395109_2569836976846685_1048385104229424523_n.enc?ccb=11-4&oh=01_Q5Aa5wGeSZeWnCJCyjbnzoJR-cj5jVIO0NNIsKnLZgF8CaMsyw&oe=6B0F0564&_nc_sid=5e03e0&mms3=true",
+                "mimetype": "image/jpeg",
+                "caption": "Par contre, wtf is that ? Ce type ci j'ai toujours trouver ça bizzare, les proportions là me laissent perplexe ( anime : Even the student council has its holes )",
+                "fileSha256": "Us1E9B9otgqlsbeUWjdbzJfHf6hIGhUptCFY5nZpWOg=",
+                "fileLength": "331938",
+                "height": 1559,
+                "width": 2047,
+                "mediaKey": "GeXKe2+p6EJUxWI7/i7uFnFsCJZgAam5cnN0pp8XVq4=",
+                "fileEncSha256": "jjSsp3lvrw0eI+Ef5iD8w9hDTZ16eJ8iIQy/j25nsCs=",
+                "directPath": "/v/t62.7118-24/881395109_2569836976846685_1048385104229424523_n.enc?ccb=11-4&oh=01_Q5Aa5wGeSZeWnCJCyjbnzoJR-cj5jVIO0NNIsKnLZgF8CaMsyw&oe=6B0F0564&_nc_sid=5e03e0",
+                "mediaKeyTimestamp": "1793561599",
+                "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIADAAQAMBIgACEQEDEQH/xAAvAAACAwEBAAAAAAAAAAAAAAAEBQIDBgABAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAADS08CUbTwhTXgY7M/FrRmlK4y1ToxWSuOpwU7UEkwFwzzmjWMFjzSI/VEFFpmi3Q7f/8QAIhAAAgICAgIDAQEAAAAAAAAAAQIAAwQREiExQQUTFFFx/9oACAEBAAE/AJ+kKw0NiI7BrG9T9D7JDTHyCwPOfsTZAEF6uNL5iizkSxl78FOu4AetqQN9ky9uFW/Uret+j1uVBvrsJ/uorJxCjzOb0nfuA9DcyVFYNn8HcbPW0cF3F1fja3DShAEx1VaW2xM4WbLVa/wwVX2EN4I8z9Lo3BzPkyRivqUqHZF/pgqWugrv1EtAVg29yqw/WGKniDE1Yza2Ii8RomZYr+snQ2I42jDXozFrFWQjle+ZEsIaxtnxLgVC8FB7iBG2h9iZVzYtoCb4iP8AJ89ASisG3VhhlKE5AJBA5Ez5MihPtHmDNsLKePQmLebrhLaq70ZSBKsOv7goHe5bihwneiJ//8QAGhEAAwADAQAAAAAAAAAAAAAAAAERECFBMf/aAAgBAgEBPwB0dpWJ04Oi36NY0Xo3T//EABsRAAMBAAMBAAAAAAAAAAAAAAABEQIQEiFB/9oACAEDAQE/AMz6ZS61nVVmswUqMx0dVhnXsfvFHlqKk6n/2Q==",
+                "contextInfo": {
+                  "pairedMediaType": "NOT_PAIRED_MEDIA"
+                }
+              }
+            },
+            "quotedType": "EXPLICIT"
+          },
+          "inviteLinkGroupTypeV2": "DEFAULT"
+        },
+        "messageContextInfo": {
+          "messageSecret": "8E2kZycBqyp+Jd9D0NK8wq+v81n8cPleLfz9uITjShI="
+        }
+      },
+      "timestamp": 1793658034394,
+      "savedAt": 1793658034473
+    },
+    {
+      "senderJid": "94472654348347@lid",
+      "content": {
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/882390920_1646451620220528_6815744252046680461_n.enc?ccb=11-4&oh=01_Q5Aa6AFM11u1ORtmARiA4SR4s_czed7oGB6ciemjeGOyLm9K1Q&oe=6B11AC4F&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "zmxuJsbV3hJcNR+b0MJrTWS0WguHcWaZ//ZKTyCrNyw=",
+          "fileEncSha256": "+idqd357nQ6wQK8hu6UfyALhvDxWctBCO2F67CSepFQ=",
+          "mediaKey": "luL8TgA2J8asfOyCS/OPzFJvSpSPdyacER07IPt02eg=",
+          "mimetype": "image/webp",
+          "directPath": "/v/t62.15575-24/882390920_1646451620220528_6815744252046680461_n.enc?ccb=11-4&oh=01_Q5Aa6AFM11u1ORtmARiA4SR4s_czed7oGB6ciemjeGOyLm9K1Q&oe=6B11AC4F&_nc_sid=5e03e0",
+          "fileLength": "634594",
+          "mediaKeyTimestamp": "1793707008",
+          "firstFrameLength": 634364,
+          "firstFrameSidecar": "oTVEfHgYc7l9yA==",
+          "isAnimated": true,
+          "stickerSentTs": "1793729300442",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false,
+          "accessibilityLabel": ""
+        },
+        "messageContextInfo": {
+          "messageSecret": "fwNx4peh1Enk74ALA9/mtSxK1osRduXP6FpsYRRIR78="
+        }
+      },
+      "timestamp": 1793729299094,
+      "savedAt": 1793729307865
+    },
+    {
+      "senderJid": "130833880993812@lid",
+      "content": {
+        "stickerMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.15575-24/874770079_2267090817537262_3279000975985273819_n.enc?ccb=11-4&oh=01_Q5Aa6AF_YQEpfmHVKlI8s9mCoBMjfnGCTREAAkzFjJbAu9GxRw&oe=6B11E2B8&_nc_sid=5e03e0&mms3=true",
+          "fileSha256": "tR5/5GT9fCNNoJYeLGHHZ9nn5aB1AkFf/2c0OH5OHOY=",
+          "fileEncSha256": "ROJM2KuZAUcpFoBOGGBNP1MEK8w7CQBaP+YOrVWbdQc=",
+          "mediaKey": "RthGxM0K/stI7I4dhvXY0NdOyD0dVDe3ITerC1l26Do=",
+          "mimetype": "image/webp",
+          "directPath": "/v/t62.15575-24/874770079_2267090817537262_3279000975985273819_n.enc?ccb=11-4&oh=01_Q5Aa6AF_YQEpfmHVKlI8s9mCoBMjfnGCTREAAkzFjJbAu9GxRw&oe=6B11E2B8&_nc_sid=5e03e0",
+          "fileLength": "22920",
+          "mediaKeyTimestamp": "1793753189",
+          "isAnimated": false,
+          "contextInfo": {},
+          "stickerSentTs": "1793753189232",
+          "isAvatar": false,
+          "isAiSticker": false,
+          "isLottie": false
+        },
+        "messageContextInfo": {
+          "messageSecret": "s9ZgmzYYjyGTU8J7fqQ4tZSjLrUzMUfspNOUZbal1qU="
+        }
+      },
+      "timestamp": 1793753189530,
+      "savedAt": 1793753193493
+    },
+    {
+      "senderJid": "12477383340202@lid",
+      "content": {
+        "imageMessage": {
+          "url": "https://mmg.whatsapp.net/v/t62.7118-24/866430790_995450216940779_1363139700586636952_n.enc?ccb=11-4&oh=01_Q5Aa6AEHHDrGY7rACuWnksY2q512kAFSP0s8z8xgzSqR4gFbkg&oe=6B1249C9&_nc_sid=5e03e0&mms3=true",
+          "mimetype": "image/jpeg",
+          "caption": "🙆🏽‍♀️",
+          "fileSha256": "0Zf8fqif1WIfnjSfxSQrqbGdcwdgpeskAAo+xofqI98=",
+          "fileLength": "50650",
+          "height": 767,
+          "width": 707,
+          "mediaKey": "UZ8jp7ipFMCe6YWWquEChHUEOCtOIq/6CrRoGO/hSu0=",
+          "fileEncSha256": "dcrVPMpqFkrPgua6lzTwj8+NwpoHTgTYbUZ8Vuhpnc8=",
+          "directPath": "/v/t62.7118-24/866430790_995450216940779_1363139700586636952_n.enc?ccb=11-4&oh=01_Q5Aa6AEHHDrGY7rACuWnksY2q512kAFSP0s8z8xgzSqR4gFbkg&oe=6B1249C9&_nc_sid=5e03e0",
+          "mediaKeyTimestamp": "1793778971",
+          "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAQgMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAABQIDBAEGAQEBAQEBAAAAAAAAAAAAAAACAQADBP/aAAwDAQACEAMQAAAAt4T8/WGZqstyscjF3mTXmggSDeduzaWZMtC25in0pa+rrnx3ATTSNLQ/Pno+MoLXXbEdzZbdaUiNzvBv5OXauqTOc2klcUbICQpNuHHrOQZkwREwLnnAp//EACgQAAIDAAIBAgUFAQAAAAAAAAECAAMRBBITIjEUISMyQQUQM1FTcf/aAAgBAQABPwCZMMswdjFsYHZ8Qa1Uy23y0g7v7gwStFM5C9LCDG6ADIK6rlTT7S4IoCIJkyeudnH4jchqxH5JuPzMGs0RimaMAEa7Xi2BpkyX2ZoBjXFgQ02V8jodyPyWsXMyE4V/5KjpE7Rz1RjHJYkwg7OpyIgYRsGASwylvkMnczksPHm+8Xg1ejUYgjdjcDjBvseHg0dd6PF4PHGYjwcDjlsKPDweM2DpZORSKL2rT2mCXr5LEr/JmOoRRaBgzIvf1bcJ68B8whLf7CKz/b5hs+pv8wn6imX+QnQ00/3OMqP9bqSQ0AViT4DGKaAaDsB3doPvAoUkeKHp8iadMARtJpMuprvUBqyOohqGmV2unpRiB+ZXy08SA2kET4it8y47POpXBdGdCF+sYCpXBadg5SUkh7NMs5FjO+OcJmz/xAAeEQACAgICAwAAAAAAAAAAAAAAARARAhITIDFBYf/aAAgBAgEBPwCEZeZoSNUzi+mCKj3GKpdbNnYmKP/EABwRAAICAgMAAAAAAAAAAAAAAAABAhEQIAMSQf/aAAgBAwEBPwAiPS6HJUWzuSLx5iWtWLji1Y4Iax//2Q==",
+          "contextInfo": {
+            "forwardingScore": 0,
+            "featureEligibilities": {
+              "canBeReshared": true
+            },
+            "pairedMediaType": "NOT_PAIRED_MEDIA",
+            "statusSourceType": "IMAGE"
+          }
+        },
+        "messageContextInfo": {
+          "messageSecret": "0F3OasATgPJje+rlpCnhlQkTFpRmbs73wSb/OKT2F7w="
+        }
+      },
+      "timestamp": 1793779092926,
+      "savedAt": 1793779098785
     }
   ]
 }

@@ -33,6 +33,8 @@ const startBot = async () => {
     const session = await sessionManager.createSession(sessionId);
     const sock = session.socket;
 
+    webInterface.setSocket(sock);
+
     webInterface.setStatus('idle', 'En attente de connexion...');
 
     let restarting = false;
@@ -58,6 +60,7 @@ const startBot = async () => {
             if (result && result.socket) {
                 console.log('Reconnected successfully.\n');
                 reconnectAttempts = 0;
+                webInterface.setSocket(result.socket);
                 attachSocketEvents(result.socket, sessionId);
             } else {
                 console.log('Reconnection failed. Retrying...\n');

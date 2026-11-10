@@ -158,7 +158,7 @@ function tokenize(text) {
     return text.split(' ').filter(word => word.length > 0 && !STOP_WORDS.has(word));
 }
 
-function jaccardSimilarity(setA, setB) {
+function ccardSimilarity(setA, setB) {
     if (setA.size === 0 && setB.size === 0) return 0;
     const intersection = new Set([...setA].filter(x => setB.has(x)));
     const union = new Set([...setA, ...setB]);

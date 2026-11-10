@@ -19,7 +19,7 @@ module.exports = {
     packname: 'Giluce Bot',
     
     // Bot Behavior
-    selfMode: true, // Private mode - only owner can use commands
+    selfMode: false, // Private mode - only owner can use commands
     autoRead: false,
     autoTyping: true,
     autoBio: false,
